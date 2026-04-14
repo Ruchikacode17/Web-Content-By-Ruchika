@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ruchika">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Content Creation Portfolio Practice">
+    <title>Practice Hub | Ruchika Singh</title>
+    
+    <link rel="icon" href="images/a2.ico">
+
+    <style>
+        /* 1. Global Setup */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background 0.4s ease;
+            line-height: 1.6;
+        }
+
+        /* 2. Header & Banner Layout */
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            border: 2px solid #333;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        #col1 {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #eee;
+        }
+
+        /* Fixed image syntax from your code */
+        .profile-img { width: 100%; height: 100%; object-fit: cover; }
+
+        #col2 {
+            width: 75%;
+            height: 150px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .banner-img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* 3. Navigation - Cleaned up the list style */
+        nav { width: 90%; margin: 20px auto; }
+        
+        nav ol {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            gap: 10px;
+        }
+
+        nav li {
+            background: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav li a { color: orange; text-decoration: none; font-weight: bold; font-size: 14px; }
+
+        nav li:hover { background: #555; transform: scale(1.05); }
+
+        /* 4. Main Content Area */
+        main {
+            width: 80%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1 { color: #333; border-bottom: 3px solid orange; display: inline-block; margin-bottom: 20px; }
+
+        .practice-list { margin: 20px 0; padding-left: 20px; }
+        .practice-list li { margin-bottom: 10px; font-weight: 500; }
+        .practice-list a { color: #0066cc; text-decoration: none; }
+        .practice-list a:hover { text-decoration: underline; }
+
+        /* 5. Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+            background: #222;
+            color: #888;
+        }
+
+        /* --- RESPONSIVE MEDIA QUERIES --- */
+        
+        /* Mobile (600px and down) */
+        @media screen and (max-width: 600px) {
+            body { background: Orange; }
+            #col2 { display: none; }
+            header { justify-content: center; }
+            nav ol { flex-direction: column; align-items: center; }
+        }
+
+        /* Tablet (601px to 768px) */
+        @media screen and (min-width: 601px) {
+            body { background: lavender; }
+        }
+
+        /* Landscape/Large Tablet (768px to 992px) */
+        @media screen and (min-width: 768px) {
+            body { background: pink; }
+        }
+
+        /* Desktop (992px and up) */
+        @media screen and (min-width: 992px) {
+            body { background: cyan; }
+            header { width: 80%; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="col1">
+            <img src="images/a13.jpg" class="profile-img" alt="Profile">
+        </div>
+        <div id="col2">
+            <img src="images/a18.jpg" class="banner-img" alt="Banner">
+        </div>
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Web Style</a></li>
+            <li><a href="BookMark.html">Responsive Practice</a></li>
+            <li><a href="FridayDoc.html">Alignment</a></li>
+            <li><a href="Photo Gallery.html">My Profile</a></li>
+            <li><a href="http://Pinterest.com" target="_blank">Pinterest</a></li>
+        </ol>
+    </nav>
+
+    <main>
+        <h1>Practice & Assignment Hub</h1>
+        <p>Currently pursuing <strong>Digital Content Creation</strong> at Arena GTB Nagar. Below are my HTML and Design practice pages:</p>
+        
+        <ol class="practice-list">
+            <li><a href="Profile & Banner WebStyle.html">Ordered & Unordered Lists</a></li>
+            <li><a href="TATA.html">Table Structure (TATA Project)</a></li>
+            <li><a href="Registration.html">Form Validation in HTML</a></li>
+            <li><a href="ResponsiveFooter-Mountain.html">Photo Gallery with CSS Zoom</a></li>
+        </ol>
+
+        <h3 style="margin-top:30px;">Software Skills Mastered:</h3>
+        <p>Adobe Photoshop, Illustrator, Premiere Pro, and After Effects.</p>
+    </main>
+
+    <footer>
+        <p>&copy;Ruchika Singh | Digital Creator</p>
+    </footer>
+
+</body>
+</html>

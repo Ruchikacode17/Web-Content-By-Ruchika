@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Gallery | Responsive Design</title>
+    
+    <style>
+        /* 1. Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            transition: background 0.4s ease;
+            line-height: 1.6;
+        }
+
+        /* 2. Navigation */
+        nav {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        nav ol {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        nav ol li {
+            background: teal;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            transition: 0.4s;
+        }
+
+        nav ol li a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ol li:hover {
+            background: white;
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        nav ol li:hover a {
+            color: maroon;
+        }
+
+        /* 3. Header & Banner */
+        header {
+            width: 90%;
+            margin: 0 auto 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid black;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+        }
+
+        #col1 {
+            width: 120px;
+            height: 120px;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eee;
+            overflow: hidden;
+        }
+
+        .profile-img { width: 100%; height: 100%; object-fit: cover; }
+
+        #col2 {
+            width: 75%;
+            border: 2px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #f9f9f9;
+        }
+
+        .banner-pic { width: 100%; display: block; }
+
+        /* 4. Mountain Gallery Grid */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .cardstyle {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            overflow: hidden;
+            width: 300px;
+            transition: 0.3s;
+        }
+
+        .cardstyle:hover {
+            transform: scale(1.02);
+        }
+
+        .pic {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* 5. Footer Styles */
+        footer {
+            background: #ffe4e1; /* Misty Rose/Pink */
+            padding: 50px 20px;
+            margin-top: 60px;
+            text-align: center;
+            border-top: 3px solid teal;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        footer h3 { color: teal; margin-bottom: 15px; }
+        footer ul { list-style: none; padding: 0; }
+        footer ul li { margin-bottom: 8px; }
+        footer a { color: maroon; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        /* --- MEDIA QUERIES --- */
+
+        /* Phones */
+        @media only screen and (max-width: 600px) {
+            body { background: #994eb1; }
+            #col2 { display: none; }
+            #col1 { margin: 0 auto; }
+            .cardstyle { width: 90%; }
+        }
+
+        /* Tablets */
+        @media only screen and (min-width: 601px) {
+            body { background: orange; }
+            .cardstyle { width: 45%; }
+        }
+
+        /* Laptops */
+        @media only screen and (min-width: 768px) {
+            body { background: chocolate; }
+            .cardstyle { width: 30%; }
+        }
+
+        /* Desktop */
+        @media only screen and (min-width: 992px) {
+            body { background: #ffe4e1; }
+            header { width: 80%; }
+            #col1 { display: none; }
+            #col2 { width: 90%; margin: auto; }
+            .cardstyle { width: 22%; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Practice Work</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="https://google.com" target="_blank">Google</a></li>
+        </ol>
+    </nav>
+
+    <header>
+        <div id="col1">
+            <img src="images/mypic1.jpg" class="profile-img" alt="Ruchika Profile">
+        </div>
+        <div id="col2">
+            <img src="images/a19.jpg" class="banner-pic" alt="Mountain Banner">
+        </div>
+    </header>
+
+    <main>
+        <div class="cardstyle"><img src="images/m1.jpg" class="pic" alt="Banner Preview"></div>
+        <div class="cardstyle"><img src="images/m2.jpg" class="pic" alt="m1"></div>
+        <div class="cardstyle"><img src="images/m3.jpg" class="pic" alt="m2"></div>
+        <div class="cardstyle"><img src="images/m4.jpg" class="pic" alt="m3"></div>
+        <div class="cardstyle"><img src="images/m5.jpg" class="pic" alt="m4"></div>
+        <div class="cardstyle"><img src="images/m6.jpg" class="pic" alt="m5"></div>
+        <div class="cardstyle"><img src="images/m7.jpg" class="pic" alt="m6"></div>
+        <div class="cardstyle"><img src="images/m8.png" class="pic" alt="m7"></div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>RUCHIKA SINGH</h3>
+                <p>UI/UX Creator</p>
+            </div>
+            
+            <div>
+                <h3>Sitemap</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>Connect</h3>
+                <p>Based in Delhi, India</p>
+                <p>Arena GTB Nagar Student</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

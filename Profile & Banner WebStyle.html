@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile & Banner | Responsive Design</title>
+    
+    <style>
+        /* 1. Global Reset & Basic Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background 0.5s ease; /* Smooth color transitions */
+            line-height: 1.6;
+        }
+
+        /* 2. Header Layout using Flexbox */
+        header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            border: 2px solid #333;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Profile Section */
+        #col1 {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #333;
+            border-radius: 50%; /* Perfect circle */
+            overflow: hidden;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Fixed the image syntax errors */
+        #col1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps the profile pic from stretching */
+        }
+
+        /* Banner Section */
+        #col2 {
+            width: 70%;
+            height: 200px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        main {
+            width: 90%;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        /* --- 3. RESPONSIVE MEDIA QUERIES --- */
+
+        /* [MOBILE] Extra small devices (600px and down) */
+        @media only screen and (max-width: 600px) {
+            body { background: beige; } /* Fixed 'beige yellow' */
+            #col2 { display: none; } /* Hide banner on small phones */
+            header { justify-content: center; }
+            #col1 { width: 100px; height: 100px; }
+        }
+
+        /* [TABLET] Small devices (600px and up) */
+        @media only screen and (min-width: 600px) {
+            body { background: purple; color: white; }
+            header { background: rgba(255, 255, 255, 0.9); color: black; }
+        }
+
+        /* [LANDSCAPE TABLET] Medium devices (768px and up) */
+        @media only screen and (min-width: 768px) {
+            body { background: #fce4ec; color: #333; } /* Fixed 'baby pink' */
+            #col1 { width: 10%; min-width: 80px; height: 80px; }
+            #col2 { height: 120px; width: 80%; }
+        }
+
+        /* [DESKTOP] Large devices (992px and up) */
+        @media only screen and (min-width: 992px) {
+            body { background: #ff5252; } /* A cleaner Red */
+            header { width: 80%; }
+            #col2 { height: 350px; font-size: 24px; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="col1">
+            <img src="images/P1.jpeg" alt="Profile Picture">
+        </div>
+        
+        <div id="col2">
+            Professional Banner Area
+        </div>
+    </header>
+
+    <main>
+        <h2>Ruchika Singh | Digital Content Creator</h2>
+        <p>
+            I am currently pursuing a course in <strong>Digital Content Creation</strong> from Arena GTB Nagar, Delhi. 
+            My expertise includes professional design and editing software such as:
+        </p>
+        <ul style="margin: 20px 40px;">
+            <li>Adobe Photoshop & Illustrator</li>
+            <li>Adobe Premiere Pro & After Effects</li>
+            <li>Adobe InDesign & CorelDRAW</li>
+        </ul>
+        <p> <strong>Responsive Web Design</strong> using CSS Media Queries.</p>
+    </main>
+
+    <footer>
+        &copy;Ruchika Singh | Portfolio
+    </footer>
+
+</body>
+</html>

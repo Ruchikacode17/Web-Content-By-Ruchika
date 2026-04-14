@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Bookmarks | Ruchika Singh</title>
+    
+    <style>
+        /* 1. Global Setup */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #fdfdfd;
+        }
+
+        /* 2. Header & News Ticker */
+        header {
+            text-align: center;
+            background: Maroon;
+            padding: 30px;
+            color: yellow;
+            box-shadow: 0 10px 15px gray;
+            position: sticky; /* Menu upar hi rahega scroll karte waqt */
+            top: 0;
+            z-index: 1000;
+        }
+
+        @keyframes blink {
+            from { opacity: 0; color: cyan; }
+            to { opacity: 1; color: yellow; }
+        }
+
+        #my {
+            font-size: 40px;
+            font-weight: bold;
+            animation: blink 1s infinite alternate;
+        }
+
+        #news { color: lavender; font-weight: bold; margin-top: 10px; }
+
+        /* Animation for news content ticker */
+        @keyframes change {
+            0% { content: "Self Study"; color: yellow; }
+            20% { content: "India Is The Best"; }
+            40% { content: "UI/UX Designer"; color: orange; }
+            60% { content: "Lets Create Something Unique"; color: pink; }
+            80% { content: "Digital Marketing"; }
+            100% { content: "Something big is coming"; }
+        }
+
+        #news::after {
+            content: " Loading...";
+            animation: change 12s infinite;
+        }
+
+        /* 3. Navigation Bar */
+        nav {
+            background: #eee;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid Maroon;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* Fixed the huge padding issue */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: Maroon;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: orange; text-decoration: underline; }
+
+        /* 4. Content Sections */
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border: 2px solid #eee;
+            border-radius: 10px;
+            text-align: justify;
+        }
+
+        section h1 {
+            text-align: center;
+            color: Maroon;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover { text-decoration: underline; }
+
+        /* 5. Footer */
+        footer {
+            background: Maroon;
+            padding: 40px;
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body id="top"> <header>
+        <span id="my">Hyper Link Book Mark</span>
+        <div id="news">News: </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#policy">Career Policy</a></li>
+            <li><a href="#end">End Point</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h1>About Our Creative Journey</h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. I am a student at <strong>Arena GTB Nagar</strong> focusing on Digital Content Creation.
+            </p>
+            <p style="margin-top: 15px;">
+                With an MBA background, my goal is to blend business strategy with professional design skills learned in Adobe Photoshop and Premiere Pro.
+            </p>
+            <a href="#top" class="back-link">↑ Back to Top</a>
+        </section>
+
+        <section id="services">
+            <h1>Our Design Services</h1>
+            <p>
+                As a UI/UX Designer in training, we offer a variety of services ranging from graphic design in Illustrator to high-fidelity video editing in After Effects. This bookmark layout demonstrates how internal links can improve user experience on long-form content.
+            </p>
+            <a href="#top" class="back-link">↑ Back to Top</a>
+        </section>
+
+        <section id="policy">
+            <h1>Career Policy</h1>
+            <p>
+                Our policy focuses on continuous learning and team work. We believe that professional growth happens when creative tools meet strategic thinking.
+            </p>
+            <a href="#top" class="back-link">↑ Back to Top</a>
+        </section>
+    </main>
+
+    <footer id="end">
+        <p>&copy; 2026 Ruchika Singh | MBA & Digital Creator</p>
+        <p>Arena GTB Nagar Student Assignment</p>
+        <br>
+        <a href="#top" style="color: yellow; text-decoration: none;">↑ Return to Menu</a>
+    </footer>
+
+</body>
+</html>
