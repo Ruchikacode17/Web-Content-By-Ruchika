@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Banner</title>
+</head>
+<body>
+<header>
+    <img src="Images/a8.jpg" class="pic">
+    <img src="Images/a9.jpg" class="pic">
+    <img src="Images/a10.jpg" class="pic">
+    <img src="Images/a16.jpg" class="pic">
+    <img src="Images/a5.jpg" class="pic">
+</header>
+</body>
+<style>
+    @keyframes runbanner
+    {
+        10%{left:0%;}
+
+        20%{left:-19%;}
+        30%{left:-19%;}
+
+        40%{left:-38%;}
+        50%{left:-38%;}
+
+        60%{left:-57%;}
+        70%{left:-57%;}
+
+        80%{left:-76%;}
+        90%{left:-76%;}
+    }
+    body{
+        overflow:hidden;
+    }
+
+header{
+    //background: rgb(5, 5, 37);
+    width:550%;
+    height:600px;
+    overflow:hidden;
+}
+
+.pic
+{
+    width:19%;
+    height:100%;
+    position:relative;
+    left:0%;
+    animation:runbanner 25s linear infinite  ;
+
+}
+</style>
+
+    
+
+</html>
