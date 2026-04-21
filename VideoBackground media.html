@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index Video</title>
+</head>
+<style>
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e7e7e7;
+}
+
+
+header{
+    font-size: 50px;
+    text-transform: uppercase;
+    background: #00000048;
+    margin-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#text{
+    color: #fced6a;
+}
+video{
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+</style>
+<body>
+
+<header><span id="text">A Cute Pet-Squirrel</span></header>
+<video autoplay loop muted>
+    <source src="Images/v7.mp4" type="video/mp4">
+    <h2>Update your browser/ This video is not supported in your web browser</h2>
+</video>
+</body>
+  </html>
