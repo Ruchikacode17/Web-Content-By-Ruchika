@@ -1,124 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<doctype html>
+
+<html>
+<meta name="author" content="Ravi Kumar">
+<meta name="description" content="Free Web tutorial">
+<meta name="keywords" content="HTML,CSS,Javascript">
+<meta name="author" content="John Doe">
+<meta name-"viewport" content="width=device-width,initial-scale="1.0">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TATA | Ruchika Singh</title>
-    <style>
-        /* Modern CSS Reset and Styling */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body {
-            background-color: #FFDDA1;
-            font-family: 'Verdana', sans-serif;
-            color: #5d4037;
-            line-height: 1.8;
-            padding: 20px;
-        }
+<link rel="icon" href="Images/fev1.ico">
+<title>List in html</title>
+</head> 
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
+<header>
+<span id="my">List in html</span>
+</header>
 
-        header h1 {
-            color: maroon;
-            font-family: 'Calibri', sans-serif;
-            font-style: italic;
-            font-size: 2.5rem;
-        }
+<style>
 
-        header h2 {
-            text-decoration: underline;
-            margin-bottom: 30px;
-        }
+@keyframes blink
+{
+ from{opacity:0;color:rgb(222, 191, 237);}
+ to{opacity:1;color:lavender;}
+}
 
-        .profile-img {
-            height: 300px;
-            width: 300px;
-            border-radius: 50%;
-            margin: 20px auto;
-            display: block;
-            border: 8px solid white;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            object-fit: cover;
-        }
+header
+{
+text-align:left;
+box-sizing:border-box;
+background:#3d012b;
+padding:20px;
+color:white;
+font-size:50px;
+box-shadow:2px 5px 8px black;
+margin-top:10px;
+height:100px;
+}
 
-        main {
-            background: rgba(255, 255, 255, 0.4);
-            padding: 40px;
-            border-radius: 15px;
-            text-align: left;
-            margin-bottom: 30px;
-        }
+#my
+{
+color:white;
+transition:0.50s;
+animation:blink 1s infinite;
+}
 
-        h4 { color: maroon; font-size: 1.5rem; margin-bottom: 15px; }
+main h2 ol 
+{text-align: left;
+background-color: rgb(247, 215, 255);
+}
 
-        mark { background-color: #FDFD96; font-weight: bold; }
+main h2 ul 
+{text-align: left;
+background-color:  rgb(247, 215, 255);
+}
 
-        .service-banner {
-            background-color: maroon;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
 
-        .footer-note {
-            background-color: #FDFD96;
-            padding: 10px;
-            display: inline-block;
-            border-radius: 5px;
-            font-weight: bold;
-        }
+</style>
 
-        .back-btn {
-            display: inline-block;
-            margin-bottom: 20px;
-            padding: 10px 20px;
-            background: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-</head>
+
 <body>
+<main>
+<h2>
 
-    <div class="container">
-        <header>
-            <button class="back-btn" onclick="history.back()"> &larr; Go Back</button>
-            <h1>Ruchika Singh</h1>
-            <h2>About Product Services Data Gallery</h2>
-        </header>
+<!--style of list -->
+<!-- order list -->
+<ol style="list-style-image:url(Images/star.png)">
+<li>India</li>
+<li>USA</li>
+<li>UK</li>
+<li>China</li>
+<li>Nepal</li>
+</ol>
 
-        <img class="profile-img" src="Images/img1.jpg" alt="Logo">
+<ol>
+<li>New Delhi</li>
+<li>Washington D.C</li>
+<li>London</li>
+<li>Beijing</li>
+<li>Kathmandu</li>
+</ol>
 
-        <main>
-            <h4>About us</h4>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                <b><mark>Lorem Ipsum has been the industry's standard dummy</mark></b> text ever since the 1500s.
-            </p>
-            <br>
-            <p><i>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</i></p>
-            <br>
-            <p>
-                <strong>Where does it come from?</strong><br>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in classical Latin literature from 45 BC.
-            </p>
-        </main>
+<!-- variation in list -->
+<ol type="A">
+<li>India</li>
+<li>USA</li>
+<li>UK</li>
+<li>China</li>
+<li>Nepal</li>
+</ol>
 
-        <div class="service-banner">
-            <h5>TATA SERVICES</h5>
-        </div>
+<ol type="a">
+<li>New Delhi</li>
+<li>Washington D.C</li>
+<li>London</li>
+<li>Beijing</li>
+<li>Kathmandu</li>
+</ol>
 
-        <div class="footer-note">
-            <h6>That's all for today</h6>
-        </div>
-    </div>
+<ol type="I">
+<li>India</li>
+<li>USA</li>
+<li>UK</li>
+<li>China</li>
+<li>Nepal</li>
+</ol>
 
+<ol type="i">
+<li>New Delhi</li>
+<li>Washington D.C</li>
+<li>London</li>
+<li>Beijing</li>
+<li>Kathmandu</li>
+</ol>
+
+<!-- unorder list -->
+<ul>
+<li>India</li>
+<li>USA</li>
+<li>UK</li>
+<li>China</li>
+<li>Nepal</li>
+</ul>
+
+<ul type="circle">
+<li>New Delhi</li>
+<li>Washington D.C</li>
+<li>London</li>
+<li>Beijing</li>
+<li>Kathmandu</li>
+</ul>
+
+<ul type="square">
+<li>India</li>
+<li>USA</li>
+<li>UK</li>
+<li>China</li>
+<li>Nepal</li>
+</ul>
+
+<ol start="10">
+<li>New Delhi</li>
+<li>Washington D.C</li>
+<li>London</li>
+<li>Beijing</li>
+<li>Kathmandu</li>
+</ol>
+</h2>
+</main>
 </body>
 </html>
