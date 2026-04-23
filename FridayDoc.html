@@ -1,103 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TATA | Ruchika Singh</title>
+    <title>Design Dew</title>
+
     <style>
-        /* Modern CSS for styling */
         body {
-            background-color: #FFDDA1;
-            font-family: 'Verdana', sans-serif;
-            color: #5d4037;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.8;
+            background-color: #F4D35E;
+            font-family: Verdana;
             text-align: center;
+            margin: 0;
         }
 
-        header h1 {
+        h1 {
             color: maroon;
-            font-family: 'Calibri', sans-serif;
-            font-style: italic;
+            margin-top: 20px;
         }
 
-        header h2 {
+        h2 {
             text-decoration: underline;
-            margin-bottom: 20px;
         }
 
-        .profile-img {
-            height: 300px;
-            width: 300px;
+        img {
+            height: 220px;
+            width: 220px;
             border-radius: 50%;
-            margin: 20px auto;
-            display: block;
-            border: 5px solid white;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            object-fit: cover;
+            border: 4px solid white;
+            margin-top: 20px;
         }
 
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.3);
-            padding: 30px;
-            border-radius: 15px;
+        .container {
+            width: 70%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px gray;
             text-align: left;
         }
 
-        h4 { color: maroon; font-size: 1.5rem; }
-        
-        mark { background-color: #FDFD96; font-weight: bold; }
-
-        .footer-sections { margin-top: 30px; }
-
-        .service-banner {
-            background: maroon;
-            color: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 10px;
+        .container:hover {
+            transform: scale(1.02);
         }
 
-        .note-banner {
-            background: #FDFD96;
+        h4 {
+            color: maroon;
+        }
+
+        .banner {
+            width: 70%;
+            margin: auto;
+            background-color: maroon;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .note {
+            width: 70%;
+            margin: 15px auto;
+            background-color: #FDFD96;
             padding: 10px;
             border-radius: 5px;
-            font-weight: bold;
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Ruchika Singh</h1>
-        <h2>About Product Services Data Gallery</h2>
-    </header>
+    <h1>Ruchika Singh</h1>
+    <h2>About Product Services Data Gallery</h2>
 
-    <img class="profile-img" src="Images/img1.jpg" alt="Logo">
+    <img src="images/p11.jpg">
 
-    <main>
-        <h4>About us</h4>
+    <div class="container">
+        <h4>About Us</h4>
+
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            <strong><mark>Lorem Ipsum has been the industry's standard dummy</mark></strong> text ever since the 1500s.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <b><mark>Lorem Ipsum has been the industry's standard dummy</mark></b>
+            text ever since the 1500s.
         </p>
-        <p><i>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</i></p>
-        <p>
-            <strong>Where does it come from?</strong><br>
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in classical Latin literature from 45 BC.
-        </p>
-    </main>
 
-    <div class="footer-sections">
-        <div class="service-banner">
-            <h5>TATA SERVICES</h5>
-        </div>
-        <div class="note-banner">
-            <h6>That's all for today</h6>
-        </div>
+        <p>
+            <i>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</i>
+        </p>
+
+        <p>
+            <b>Where does it come from?</b><br>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+        </p>
+    </div>
+
+    <div class="banner">
+        <h5>TATA SERVICES</h5>
+    </div>
+
+    <div class="note">
+        <h6>That's all for today</h6>
     </div>
 
 </body>
