@@ -1,178 +1,111 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personal Profile</title>
-    
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    
-<style>
-:root 
-{
- --bg-main: #0c0f17;      
- --bg-secondary: #1a1a2e; 
- --accent-pink: #bba7f8;  
- --accent-light: #af95d8; 
- --text-body: #b0a8ba;    
- }
+    <title>My Profile</title>
 
-body {
-margin: 0;
-            padding: 0;
-            background-color: var(--bg-main);
-            color: var(--text-body);
-            font-family: 'Poppins', sans-serif; 
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Cinzel Decorative', serif;
-            color: lavender;
+    <style>
+        body {
             margin: 0;
-        }
-
-        
-        
-.hero-section 
-{
-min-height: 80vh;             
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 5% 10%;
-position: relative;
-}
-
-       
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: -10%;
-            right: -10%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, Lavender 0%, rgba(0,0,0,0) 70%);
-            opacity: 0.2;
-            z-index: -1; 
-        }
-
-        .hero-text {
-            flex-basis: 50%; 
-            z-index: 2;
-        }
-
-                .hero-text h1 {
-            font-size: 300%;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            background: linear-gradient(to right, var(--accent-light), var(--accent-pink));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
-        }
-
-        .hero-text h2 {
-            font-size: 1.5rem;
-            font-family: 'Poppins', sans-serif;
-            letter-spacing: 3px;
-            color: var(--accent-pink);
-            margin-bottom: 30px;
-        }
-
-        .hero-text p {
-            font-size: 1.1rem;
-            max-width: 500px;
-            line-height: 1.8;
-            margin-bottom: 40px;
-        }
-
-        
-        .hero-image-container {
-            flex-basis: 40%;
-            position: relative;
+            font-family: Verdana;
+            background-color: #0b0f1a;
+            color: white;
             display: flex;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         
-        .profile-blob {
-            width: 350px;
-            height: 350px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 5px solid var(--accent-pink);n 
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-             
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 85%;
+            max-width: 1100px;
+            gap: 50px;
         }
 
-        .profile-blob img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          object-position: top;
+     
+        .text {
+            flex: 1;
         }
 
-               @keyframes morph {
-            0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
-            100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        h3 {
+            color: #b39ddb;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
         }
 
+        h1 {
+            font-size: 42px;
+            color: #d1c4e9;
+            margin: 10px 0;
+        }
 
-               .gallery-section {
-            padding: 100px 10%;
-            background-color: var(--bg-secondary); 
+        p {
+            color: #cfd8dc;
+            max-width: 450px;
+        }
+
+       
+        .image {
+            flex: 1;
             text-align: center;
         }
 
-        .section-title {
-            font-size: 3rem;
-            margin-bottom: 60px;
+        img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            border: 4px solid #b39ddb;
         }
 
-        
-        .slider-frame {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-            border-radius: 20px;
-            border: 1px solid rgba(178, 108, 134, 0.3);
-            padding: 20px;
-            background: var(--bg-main);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-        }
+        /* responsive */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
 
-        #gallery-img {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-            border-radius: 10px;
-            display: block;
-        }
+            p {
+                margin: auto;
+            }
 
+            h1 {
+                font-size: 30px;
+            }
+        }
 
     </style>
 </head>
+
 <body>
 
-    <section class="hero-section">
-        <div class="hero-text">
-            <h2>HELLO! I am Ruchika </h2>
-            <h1>Designs That<br>Brings Ideas<br>to Life</h1>
-            <p>Aspiring UI/UX designer passionate about creating intuitive and visually engaging digital experiences. Exploring design, branding, 
-                and web interfaces while constantly learning and growing creatively. Welcome to my design universe.</p>
+    <div class="section">
+
+       
+        <div class="text">
+            <h3>HELLO! I am Ruchika</h3>
+
+            <h1>
+                DESIGNS THAT<br>
+                BRINGS IDEAS<br>
+                TO LIFE
+            </h1>
+
+            <p>
+                Aspiring UI/UX designer passionate about creating intuitive 
+                and visually engaging digital experiences. Exploring design, 
+                branding, and web interfaces while constantly learning and growing creatively.
+            </p>
         </div>
 
-        <div class="hero-image-container">
-            <div class="profile-blob">
-            <img src="Images/mypic3.jpg" alt="">           
+       
+        <div class="image">
+            <img src="images/mypic1.jpg">
         </div>
-        </div>
-    </section>
 
-
-
+    </div>
 
 </body>
 </html>
