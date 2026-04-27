@@ -1,65 +1,173 @@
 
-<!doctype html>
-<html>
- <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<head><title>MY Practice Work</title></head>
-<header>Daily Workflow</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Practice Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-<div class="container">
+    body {
+      background: linear-gradient(135deg, #0d1a53, #0d1a53);
+      color: white;
+    }
 
-    <div class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="Practice Page.html">Practice Work</a>
-        <a href="http://Pinterest.com">Pinterest</a>
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      opacity: 0.8;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      background: white;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ddd;
+    }
+
+
+  </style>
+</head>
+<body>
+
+         <header>
+    <h1>Practice Page</h1>
+  </header>
+
+  <section class="container">
+    <div class="card">
+      <h2>Home page</h2>
+      <a href="index.html" class="btn">view project</a>
     </div>
 
-    <div class="content">
-        <h2>Practice Page</h2>
-
-        <ul>
-            <li><a href="index.html">Index</a></li>
-            <li><a href="My Profile.html">Profile</a></li>
-            <li><a href="Ruchika Responsive Design.html">Responsive profile</a></li>
-            <li><a href="Photo Gallery.html">Photo gallery</a></li>
-            <li><a href="BookMark.html">Bookmark</a></li>
-            <li><a href="List.html">List</a></li>
-            <li><a href="Table.html">Table</a></li>
-            <li><a href="Navigation.html">Navigation</a></li>
-            <li><a href="Profile & Banner WebStyle.html">Profile & Banner WebStyle</a></li>
-            <li><a href="Login Form.html">Login form</a></li>
-            <li><a href="Registration.html">Registration form</a></li>
-            <li><a href="Banner.html">Banner</a></li>
-            <li><a href="Sliding Banner.html">Run banner</a></li>
-            <li><a href="Iframe.html">Iframe</a></li>
-            <li><a href="media.html">Media(Audio/Video)</a></li>
-            <li><a href="VideoBackground media.html">Video</a></li>
-        </ul>
+    <div class="card">
+      <h2>Profile</h2>
+      <a href="Personal Profile.html" class="btn">view project</a>
     </div>
 
-</div>
+    <div class="card">
+      <h2>Responsive profile</h2>
+      <a href="Ruchika Responsive Design.html" class="btn">view project</a>
+    </div>
 
-<footer class="footer">
-            
+    <div class="card">
+      <h2>Photo Gallery</h2>
+      <a href="Photo Gallery.html" class="btn">view project</a>
+    </div>
 
-            <div class="footer-center">
-                <h4>Links To Connect</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="practice.html">Practice Work</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-right">
-                <h4>Contact</h4>
-                <p>Email:sruchi1993@gmail.com</p>
-                <p>Location: GTB Nagar, Delhi</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Ruchika | A Creator</p>
-            </div>
-        </footer>
+    <div class="card">
+      <h2>Bookmark</h2>
+      <a href="BookMark.html" class="btn">view project</a>
+    </div>
 
+    <div class="card">
+      <h2>List</h2>
+      <a href="List.html" class="btn">view project</a>
+    </div>
 
+    <div class="card">
+      <h2>Table</h2>
+      <a href="Table.html" class="btn">view project</a>
+    </div>
+
+    <div class="card">
+      <h2>Navigation</h2>
+      <a href="Navigation.html" class="btn">view project</a>
+    </div>
+
+    <div class="card">
+      <h2>Profile & Banner Webstyle</h2>
+      <a href="Profile & Banner WebStyle.html" class="btn">view project</a>
+    </div>
+
+    <div class="card">
+      <h2>Login Form</h2>
+      <a href="Login Form.html" class="btn">view project</a>
+    </div>
+
+    <div class="card">
+      <h2>Registration Form</h2>
+      <a href="Registration.html" class="btn">view project</a>
+    </div>
+
+    <div class="card">
+      <h2>Banner</h2>
+      <a href="Banner.html" class="btn">view project</a>
+    </div>
+
+    <div class="card">
+      <h2>Run Banner</h2>
+      <a href="Sliding Banner.html" class="btn">view project</a>
+    </div>
+
+    <div class="card">
+      <h2>I Frame</h2>
+      <a href="Iframe.html" class="btn">view project</a>
+    </div>
+
+    <div class="card">
+      <h2>Audio&Video</h2>
+      <a href="media.html" class="btn">view project</a>
+    </div>
+
+    <div class="card">
+      <h2>Video Media</h2>
+      <a href="VideoBackground media.html" class="btn">view project</a>
+    </div>
+  </section>
+
+  
+</body>
 </html>
