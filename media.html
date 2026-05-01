@@ -6,12 +6,6 @@
 
 <style>
 
- body
-    {
-        padding:0px;
-        margin:0px;
-    }
-
  header
   {
    font-size:30px;
@@ -27,20 +21,18 @@
    //margin:auto;
    margin-bottom:40px;
    margin-top:-20px;
+   
   }
 
   body
    {
-    margin:10px;
+    margin:0px;
     padding:30px;
+    background: beige;
    }
-
-   main ul li:hover
-    {
-        background: rgb(199, 150, 4);
-        width:200px;
-    }
-</style>
+.gap{
+margin-bottom:20px;}
+  </style>
 <header>
     Using Media (Audio/Video) in Web Page
 </header>
@@ -78,7 +70,7 @@
 
 <main>
 
-<audio controls width="200" height="200" autoplay loop muted>
+<audio controls width="200" height="200" autoplay loop muted class="gap">
 <source src="images/a1.mp3" type="audio/mp3">
 <h1>Update your browser/ This audio is not supported in your web browser</h1>
 </audio>
@@ -87,7 +79,7 @@
 
 
 
-<video controls width="900"  autoplay loop muted>
+<video controls width="900"  autoplay loop muted class="gap">
 <source src="images/v3.mp4"  type="video/mp4">
 <h1>Update your browser/ This audio is not supported in your web browser</h1>
 </video>
