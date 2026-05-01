@@ -6,7 +6,7 @@
     <title>Ruchika Responsive Portfolio</title>
     
     <style>
-        /* 1. Global Styles */
+        
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
         body {
@@ -14,7 +14,7 @@
             transition: background 0.5s ease;
         }
 
-        /* 2. Navigation - Fixed closing tags and hover */
+        
         nav {
             width: 90%;
             margin: 20px auto;
@@ -48,7 +48,6 @@
             transform: translateY(-3px);
         }
 
-        /* 3. Header Setup */
         header {
             width: 90%;
             margin: auto;
@@ -67,7 +66,7 @@
         #col2 { width: 80%; text-align: center; font-family: 'Arial Black'; }
         .banner-pic { width: 100%; border-radius: 10px; height: auto; }
 
-        /* 4. Main Gallery Grid */
+        
         main {
             display: flex;
             flex-wrap: wrap;
@@ -89,7 +88,7 @@
 
         .cardstyle:hover { transform: scale(1.03); }
 
-        /* 5. Footer Section */
+
         footer {
             background: #f5f5dc;
             padding: 40px 20px;
@@ -112,12 +111,11 @@
         .social-icons { display: flex; justify-content: center; gap: 15px; margin-top: 10px; }
         .social-icons img { width: 40px; height: 40px; }
 
-        /* --- RESPONSIVE BREAKPOINTS --- */
-
+        
         /* Phones (max 600px) */
         @media screen and (max-width: 600px) {
             body { background: #FFDDA1; }
-            #col2 { display: none; } /* Hides banner on small screens */
+            #col2 { display: none; } 
             #col1 { width: 40%; margin: auto; }
             nav ol { flex-direction: column; align-items: center; }
             .cardstyle { width: 90%; }
@@ -151,11 +149,11 @@
 
     <header>
         <div id="col1">
-            <img src="Images/a1.jpg" alt="Profile pic" class="profile">
+            <img src="images/a1.jpg" alt="Profile pic" class="profile">
         </div>
         <div id="col2">
             <h2 style="margin-bottom:10px;">MY CREATIVE BANNER</h2>
-            <img src="Images/a11.jpg" class="banner-pic" alt="Banner">
+            <img src="images/a11.jpg" class="banner-pic" alt="Banner">
         </div>
     </header>
 
@@ -188,9 +186,9 @@
                 <details>
                     <summary><strong>Social Media Links</strong></summary>
                     <div class="social-icons">
-                        <a href="https://instagram.com"><img src="Images/I2.png" alt="Insta"></a>
-                        <a href="https://google.com"><img src="Images/I3.png" alt="Google"></a>
-                        <a href="https://youtube.com"><img src="Images/I1.png" alt="YouTube"></a>
+                        <a href="https://instagram.com"><img src="images/I2.png" alt="Insta"></a>
+                        <a href="https://google.com"><img src="images/I3.png" alt="Google"></a>
+                        <a href="https://youtube.com"><img src=images/I1.png" alt="YouTube"></a>
                     </div>
                 </details>
             </div>
