@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruchika Portfolio</title>
+    
+    <style>
+        /* 1. Global Styles */
+        body {
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* 2. Animation */
+        @keyframes zoom {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        /* 3. Header Section */
+        header {
+            background-color: #BFCDE0;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/a20.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            box-shadow: 0px 5px 15px gray;
+        }
+
+        header h1 {
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .header-pic {
+            box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            animation: zoom 1.2s ease;
+        }
+
+        /* 4. Gallery Section - Made it more organized */
+        .gallery-container {
+            width: 90%;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .picstyle {
+            width: 220px;
+            height: 220px;
+            box-shadow: 0px 5px 15px gray;
+            border-radius: 20px; /* Made radius a bit smaller for a modern look */
+            transition: all 0.5s ease;
+            object-fit: cover;
+        }
+
+        .picstyle:hover {
+            transform: scale(1.1) rotate(5deg);
+            border-radius: 50px;
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
+        }
+
+        /* 5. About Me Section */
+        .about-section {
+            width: 80%;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .about-section h2 {
+            color: #008b8b; /* Professional Cyan/Darker Teal */
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .mystyle {
+            text-align: justify;
+            color: #555;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        ul.software-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        ul.software-list li {
+            background: #f9f9f9;
+            padding: 10px;
+            border-left: 5px solid #008b8b;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #333;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ruchika's Photo Gallery</h1>
+        <img src="images/mypic1.jpg" class="header-pic" width="200" height="200" alt="Ruchika">
+    </header>
+
+    <main>
+        <div class="gallery-container">
+            <a href="Web Profile Gallery.html"><img src="a1.jpg" class="picstyle" alt="Project 1"></a>
+            <a href="TATA.html"><img src="a2.jpg" class="picstyle" alt="Project 2"></a>
+            <a href="ResponsivePractice.html"><img src="a3.jpg" class="picstyle" alt="Project 3"></a>
+            <a href="Footer.html"><img src="a4.jpg" class="picstyle" alt="Project 4"></a>
+            <a href="Fridaydoc.html"><img src="a5.jpg" class="picstyle" alt="Project 5"></a>
+            <a href="Navigation11Mar.html"><img src="a6.jpg" class="picstyle" alt="Project 6"></a>
+        </div>
+
+        <section class="about-section">
+            <h2>About Me</h2>
+            <div class="mystyle">
+                <p>
+                    My name is <strong>Ruchika</strong>, and I hold an MBA degree. Currently, I am pursuing a <strong>Digital Content Creation</strong> course from Arena GTB Nagar.
+                </p>
+                
+                <p>I have successfully learned the following software tools:</p>
+                <ul class="software-list">
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe InDesign</li>
+                    <li>CorelDRAW</li>
+                    <li>Adobe Premiere Pro</li>
+                    <li>Adobe After Effects</li>
+                </ul>
+
+                <p style="margin-top:30px;">
+                    Thank you for visiting my portfolio. I hope you enjoy my creative journey!
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;Ruchika Singh</p>
+    </footer>
+
+</body>
+</html>

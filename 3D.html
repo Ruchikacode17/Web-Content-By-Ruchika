@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    @keyframes ani {
+        from ( transform:rotateY(0deg) rotateX{0deg} rotateZ(0deg);)
+        to { transform:rotateY {360deg} rotateX{340deg} rotateZ{230deg};}
+    }
+
+    #container{
+        width:500px;
+        height:500px;
+        background-color:black;
+        margin:auto;
+        text-align:center;
+        perspective: 360px;
+
+    }
+
+    #p1 {
+        width:400px;
+        height:400px;
+        background-color:black;
+        position:relative;
+        top:100px;
+        left:100px;
+        animation:ani 5s linear infinite alternate;
+    }
+
+    #p2 {
+        width:400px;
+        height:400px;
+        background-color:black;
+        position:relative;
+        top:100px;
+        left:100px;
+        backface-visibility:hidden;
+        animation:ani 5s linear infinite alternate;
+    }
+
+    .pic {
+        width:100%;
+        height:100%;
+    }
+</style>
+<body>
+
+    <div id="container">
+        <div id="p1">
+            <img src="images/a6.jpg" class="pic">
+        </div>
+
+        <div id="p2">
+            <img src="images/a13.jpg" class="pic">
+        </div>
+    </div>
+    
+</body>
+</html>

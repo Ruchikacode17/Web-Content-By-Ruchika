@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Information | Responsive Design</title>
+    
+    <style>
+               * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background 0.5s ease; /* Smooth color transitions */
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            border: 2px solid #333;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+                #col1 {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #333;
+            border-radius: 50%; /* Perfect circle */
+            overflow: hidden;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #col1 {
+            width: 100%;
+            height: 100%;
+            <img src="images/a7.jpg">
+            object-fit: cover; 
+        }
+
+        #col2 {
+            width: 70%;
+            height: 200px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            <img src="back1.jpg">
+            object-fit: cover;
+        }
+
+        main {
+            width: 90%;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        
+
+        /* [MOBILE]  */
+
+        @media only screen and (max-width: 600px) {
+        body { background: beige; } 
+       
+        #col2 { display: none; }             
+        header { justify-content: center; }
+            
+        #col1 { width: 100px; height: 100px; }
+        }
+
+        /* [TABLET] */
+
+        @media only screen and (min-width: 600px) {
+            body { background: purple; color: white; }
+            header { background: rgba(255, 255, 255, 0.9); color: black; }
+        }
+
+        /* [LANDSCAPE TABLET]  */
+        @media only screen and (min-width: 768px) {
+            body { background: #fce4ec; color: #333; } /* Fixed 'baby pink' */
+            #col1 { width: 10%; min-width: 80px; height: 80px; }
+            #col2 { height: 120px; width: 80%; }
+        }
+
+        /* [DESKTOP]  */
+        @media only screen and (min-width: 992px) {
+            body { background: #ff5252; } /* A cleaner Red */
+            header { width: 80%; }
+            #col2 { height: 350px; font-size: 24px; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+    </head>
+
+    <body>
+
+    <header>
+        <div id="col1">
+            <img src="images/Course Info.jpg" alt="Profile Picture">
+        </div>
+        
+        <div id="col2">
+         <img src="images/Course Info Banner.jpg" alt="Banner">
+
+        </div>
+
+    </header>
+
+    <main>
+        <h2>Ruchika Singh | Digital Content Creator</h2>
+        <p>
+            I am currently pursuing a course in <strong>Digital Content Creation</strong> from Arena GTB Nagar, Delhi. 
+            My expertise includes professional design and editing software such as:
+        </p>
+        <ul style="margin: 20px 40px;">
+            <li>Adobe Photoshop & Illustrator</li>
+            <li>Adobe Premiere Pro & After Effects</li>
+            <li>Adobe InDesign & CorelDRAW</li>
+        </ul>
+        <p> <strong>Responsive Web Design</strong> using CSS Media Queries.</p>
+    </main>
+
+    <footer>
+        &copy;Ruchika Singh | Portfolio
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Gallery</title>
+    
+    <style>
+        /* 1. Global Setup */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background 0.4s ease;
+        }
+
+        /* 2. Header - Fixed Flexbox syntax */
+        header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid black;
+            padding: 20px;
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+        }
+
+        #col1 {
+            width: 120px;
+            height: 120px;
+            border: 2px solid black;
+            border-radius: 50%; /* Circle */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eee;
+        }
+
+        #col2 {
+            width: 70%;
+            height: 150px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f9f9f9;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        /* 3. Main Gallery */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Modern way to add space */
+            padding: 20px;
+        }
+
+        .cardstyle {
+            width: 280px;
+            height: auto; /* Allow height to adjust */
+            background: white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .cardstyle:hover {
+            transform: translateY(-5px); /* Professional hover effect */
+        }
+
+        .pic {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Prevents image stretching */
+            display: block;
+        }
+
+        /* 4. Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 30px;
+            border-top: 1px solid #ccc;
+        }
+
+        /* --- MEDIA QUERIES (Responsive Logic) --- */
+
+        /* Phones (600px and down) */
+        @media only screen and (max-width: 600px) {
+            body { background: #d2b48c; } /* tan */
+            #col2 { display: none; }
+            #col1 { margin: auto; }
+            header { justify-content: center; }
+            .cardstyle { width: 90%; }
+        }
+
+        /* Portrait Tablets (600px and up) */
+        @media only screen and (min-width: 600px) {
+            body { background: #a52a2a; } /* brown */
+            #col1 { width: 80px; height: 80px; }
+            #col2 { width: 75%; }
+            .cardstyle { width: 45%; }
+        }
+
+        /* Landscape Tablets (768px and up) */
+        @media only screen and (min-width: 768px) {
+            body { background: #fce4ec; } /* Valid Baby Pink Hex */
+            #col1 { width: 120px; height: 120px; }
+            .cardstyle { width: 30%; }
+        }
+
+        /* Laptops/Desktops (992px and up) */
+        @media only screen and (min-width: 992px) {
+            body { background: #e6e6fa; } /* lavender */
+            header { width: 80%; }
+            #col2 { width: 90%; height: 350px; margin: auto; }
+            #col1 { display: none; }
+            .cardstyle { width: 22%; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="col1">Profile</div>
+        <div id="col2">Portfolio Banner</div>
+    </header>
+
+    <main>
+        <div class="cardstyle"><img src="Images/a1.jpg" class="pic" alt="Project 1"></div>
+        <div class="cardstyle"><img src="Images/a2.jpg" class="pic" alt="Project 2"></div>
+        <div class="cardstyle"><img src="Images/a3.jpg" class="pic" alt="Project 3"></div>
+        <div class="cardstyle"><img src="Images/a4.jpg" class="pic" alt="Project 4"></div>
+        <div class="cardstyle"><img src="Images/a5.jpg" class="pic" alt="Project 5"></div>
+        <div class="cardstyle"><img src="Images/a6.jpg" class="pic" alt="Project 6"></div>
+        <div class="cardstyle"><img src="Images/a7.jpg" class="pic" alt="Project 7"></div>
+        <div class="cardstyle"><img src="Images/a8.jpg" class="pic" alt="Project 8"></div>
+        <div class="cardstyle"><img src="Images/a9.jpg" class="pic" alt="Project 9"></div>
+        <div class="cardstyle"><img src="Images/a10.jpg" class="pic" alt="Project 10"></div>
+    </main>
+
+    <footer>
+        <p>&copy;Ruchika Singh</p>
+    </footer>
+
+</body>
+</html>

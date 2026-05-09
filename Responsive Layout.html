@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruchika | Responsive Portfolio Practice</title>
+    <style>
+        /* --- 1. Basic Reset & Common Styles --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: Verdana, sans-serif; 
+            transition: background 0.4s ease; /* Smooth color transition */
+            line-height: 1.6;
+        }
+        
+        /* Fixed: Removed the stray <imag> tag that was inside the CSS block */
+        header, nav, main, footer { 
+            border: 1px solid #333; 
+            padding: 20px; 
+            margin: 10px; 
+            text-align: center;
+            background: white;
+            border-radius: 8px;
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: maroon; }
+
+        /* Header Layout */
+        header { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 20px;
+        }
+
+        /* Profile & Banner placeholders */
+        #col1 { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; 
+            background: #ddd; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #333;
+            overflow: hidden;
+        }
+
+        .profile-img { width: 100%; height: 100%; object-fit: cover; }
+
+        #col2 { 
+            flex: 1; 
+            min-width: 300px;
+            height: 150px; 
+            background: #eee; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        /* --- 2. Media Queries (Breakpoints) --- */
+
+        /* [MOBILE] - 600px and down */
+        @media only screen and (max-width: 600px) {
+            body { background-color: #f8d7da; } /* Light Red */
+            #col2 { display: none; } /* Mobile par banner chupa diya */
+            nav ul { flex-direction: column; gap: 10px; }
+            main { display: block; }
+        }
+
+        /* [TABLET] - 601px to 768px */
+        @media only screen and (min-width: 601px) {
+            body { background-color: #fff3cd; } /* Light Yellow */
+            #col1 { width: 100px; height: 100px; }
+            #col2 { height: 120px; }
+        }
+
+        /* [LAPTOP] - 769px to 1200px */
+        @media only screen and (min-width: 769px) {
+            body { background-color: #d1ecf1; } /* Light Blue */
+            main { display: flex; gap: 20px; }
+            section { flex: 3; text-align: left; padding: 20px; border: 1px solid #ccc; }
+            aside { flex: 1; padding: 20px; border: 1px solid #ccc; background: #f9f9f9; }
+            #col2 { height: 200px; }
+        }
+
+        /* [DESKTOP] - Above 1200px */
+        @media only screen and (min-width: 1201px) {
+            body { background-color: #d4edda; } /* Light Green */
+            .container { max-width: 1200px; margin: 0 auto; }
+            #col2 { height: 300px; font-size: 24px; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div id="col1">
+                <strong>Profile</strong>
+            </div>
+            
+            <div id="col2">
+                <strong>Main Banner Area</strong>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h3>Main Portfolio Content</h3>
+                <p>I am a Digital Content Creation student at Arena GTB Nagar. So far, I have learned professional design tools including:</p>
+                <ul style="margin: 20px; text-align: left;">
+                    <li>Adobe Photoshop & Illustrator</li>
+                    <li>Adobe Premiere Pro & After Effects</li>
+                    <li>Adobe InDesign & CorelDRAW</li>
+                </ul>
+            </section>
+            
+            <aside>
+                <h3>Skills Sidebar</h3>
+                <p>Graphic Design, Video Editing, and Motion Graphics.</p> 
+            </aside>
+        </main>
+
+        <footer>
+            <p>&copy;Ruchika Singh | Responsive Web Practice</p>
+        </footer>
+    </div>
+
+</body>
+</html>
