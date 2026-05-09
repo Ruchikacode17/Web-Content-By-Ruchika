@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Animation Website Task</title>
+
+<style>
+
+      *{
+         margin:0;
+         padding:0;
+         box-sizing:border-box;
+        }
+
+    body{
+       
+       margin:0;
+       font-family:Arial;
+       background:#0f172a;
+    }
+
+ .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px 60px;
+        background:#111827ee;
+
+  }
+
+  .logo{
+       color:white;
+       font-size:28px;
+       font-weight:bold;
+  }
+
+  ul{
+    display:flex;
+    list-style:none;
+}
+
+ul li{
+     color:white;
+     margin-left:30px;
+     font-size:18px;
+     
+}
+
+ul li:hover{
+    color:#ff5b2e;
+}
+
+.banner{
+       display:flex;
+       justify-content:space-between;
+       align-items:center;
+       padding:80px 60px;
+       min-height:80vh;
+
+}
+
+.text{
+     width:50%;
+}
+
+.text h1{
+        color:white;
+        font-size:60px;
+        margin-bottom:20px;
+}
+
+.text p{
+       color:#cbd5e1;
+       font-size:20px;
+       line-height:30px;
+       margin-bottom:30px;
+ }
+
+button{
+      padding:15px 35px;
+      background:#ff5b2e;
+      color:white;
+      border:none;
+      font-size:18px;
+      border-radius:8px;
+      transition:0.3s;
+      cursor:pointer;
+}
+
+.image img{
+         width:100%;
+         max-width:550px;
+         margin-top:5px;
+}
+
+button:hover{
+            background:#ff784e;
+}
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    padding:20px;
+}
+
+ul{
+    margin-top:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+ul li{
+      margin:10px;
+}
+
+.banner{
+    flex-direction:column;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.text{
+    width:100%;
+}
+
+.text h1{
+    font-size:40px;
+}
+
+.image img{
+    width:100%;
+    max-width:400px;
+    margin-top:40px;
+}
+
+}
+    
+</style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+ 
+    <div class="logo">
+          ARENA
+    </div>
+
+    <ul>
+
+        <li><a href="Root/index.html">Home</a></li>
+        <li>About</li>
+        <li>Courses</li>
+        <li>Contact</li>
+    </ul>
+
+    </div>
+
+<div class="banner">
+       
+    <div class="text">
+
+       <h1>
+           Design Your Creative Future
+       </h1>
+
+       <p>
+           Start your journey in design,
+           animation and web development.
+        </p>
+    
+     <button>
+          Explore Courses
+     </button>
+
+</div>
+
+
+<div class="image">
+
+    <img src="arenaimages/banner.png">
+
+</div>
+
+</div>  
+     
+
+
+
+</body>
+
+</html>
