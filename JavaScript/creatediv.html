@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.box{
+    border-radius:10px;
+    transition:0.50s;
+    width:300px;
+    border:2px black solid;
+    position:absolute;
+    top:100px;
+    left:100px;
+    text-align: center;
+
+}
+
+.mystyle{
+        //background:grey;
+}
+
+</style>
+
+<body>
+
+    <script>
+        document.title="Create Element"
+
+    var d = document.createElement("div");
+            document.body.appendChild(d);
+
+            d.className = "box mystyle";
+
+            d.innerHTML="<button style='margin-top:10px";
+            margin-left:210px;'onclick'='closedilog()'>'X'</button>";
+
+            d.innerHTML+="<h1>Amazone</h1>";
+            d.innerHTML+="<hr color='green'size='3'/>";
+            d.innerHTML+="<img src='images/v1.mp4'style='width:100%:height:100%'>";
+
+            function closedilog()
+            {
+              document.body.removeChild(d)
+            }
+
+    </script>
+    
+</body>
+</html>
