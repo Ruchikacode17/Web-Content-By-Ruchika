@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
-</head>
+
 <style>
 
 .box{
@@ -15,39 +18,45 @@
     position:absolute;
     top:100px;
     left:100px;
-    text-align: center;
-
+    text-align:center;
+    background:#fff4e6;
+    
 }
 
 .mystyle{
-        //background:grey;
+    /* background:grey; */
 }
 
 </style>
 
+</head>
+
 <body>
 
-    <script>
-        document.title="Create Element"
+<script>
 
-    var d = document.createElement("div");
-            document.body.appendChild(d);
+document.title = "Create Element"
 
-            d.className = "box mystyle";
+var d = document.createElement("div");
 
-            d.innerHTML="<button style='margin-top:10px";
-            margin-left:210px;'onclick'='closedilog()'>'X'</button>";
+document.body.appendChild(d);
 
-            d.innerHTML+="<h1>Amazone</h1>";
-            d.innerHTML+="<hr color='green'size='3'/>";
-            d.innerHTML+="<img src='images/v1.mp4'style='width:100%:height:100%'>";
+d.className = "box mystyle";
 
-            function closedilog()
-            {
-              document.body.removeChild(d)
-            }
+d.innerHTML = "<button style='margin-top:10px; margin-left:210px;' onclick='closedilog()'>X</button>";
 
-    </script>
-    
+d.innerHTML += "<h1>Amazon</h1>";
+
+d.innerHTML += "<hr color='green' size='3'/>";
+
+d.innerHTML += "<img src='images/g2.gif' style='width:100%; height:100%'>";
+
+function closedilog()
+{
+    document.body.removeChild(d)
+}
+
+</script>
+
 </body>
 </html>

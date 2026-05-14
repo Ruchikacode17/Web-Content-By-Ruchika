@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="myheading">Using External JavaScript</h1>
+
+    <script src="mylib.js"></script>
+
+    <button id="b1">Sum</button>
+
+<script>
+
+    var b = document.createElement("button")
+    document.body.appendChild(b)
+
+    b.innerHTML = "Click"
+
+    var h = document.getElementById("myheading")
+
+    h.style.color = "green"
+    h.style.cursor = "pointer"
+
+    h.onclick = wel
+    b.onclick = wel
+
+    var n1, n2
+    var t = 0
+
+    function sum()
+    {
+        n1 = prompt("Enter No 1", "0")
+        n2 = prompt("Enter No 2", "0")
+
+        t = parseInt(n1) + parseInt(n2)
+
+        alert(t)
+    }
+
+    var mybutton = document.getElementById("b1")
+
+    mybutton.onclick = sum
+
+    document.title = "No Error"
+
+    document.bgColor = "pink"
+
+</script>
+
+</body>
+</html>
