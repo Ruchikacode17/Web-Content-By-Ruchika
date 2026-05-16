@@ -16,14 +16,12 @@
     <h1>
         No 1<input type="number" id="t1" value="0"><br>
         No 2<input type="number" value="0" id="t2"><br/><br/>
-        Result<input id="r" type="number" value="0" id="t2"><br/>
+        Result<input id="r" type="number" value="0">
 
         <button onclick="f1()">+</button>
         <button onclick="f2()">--</button>
         <button onclick="f3()">*</button>
         <button onclick="f4()">/</button>
-
-        </div>
 
         <br/><br/>
 
@@ -56,14 +54,14 @@
             function f3()
             {
                 //alert(It's Working Now)
-                var sum = parseInst(n1.value)-parseInst(n2.value)
+                var sum = parseInt(n1.value)*parseInt(n2.value)
                 n3.value=sum
             }
 
             function f4()
             {
                 //alert(It's Working Now)
-                var sum = parseInst(n1.value)-parseInst(n2.value)
+                var sum = parseInt(n1.value)/parseInt(n2.value)
                 n3.value=sum
             }
         </script>
