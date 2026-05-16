@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Simple Calculator</h1>
+    </header>
+
+    <br/>
+
+    <h1>
+        No 1<input type="number" id="t1" value="0"><br>
+        No 2<input type="number" value="0" id="t2"><br/><br/>
+        Result<input id="r" type="number" value="0" id="t2"><br/>
+
+        <button onclick="f1()">+</button>
+        <button onclick="f2()">--</button>
+        <button onclick="f3()">*</button>
+        <button onclick="f4()">/</button>
+
+        </div>
+
+        <br/><br/>
+
+    <!-- Footer -->
+    <footer>
+        Created By Ruchika
+    </footer>
+
+        <script>
+            var n1 = document.getElementById("t1")
+            var n2 = document.getElementById("t2")
+            var n3 = document.getElementById("r")
+
+            document.body.style.backgroundColor = "#BDEDE0"
+
+            function f1()
+            {
+                //alert(It's Working Now)
+                var sum = parseInt(n1.value)+parseInt(n2.value)
+                n3.value=sum
+            }
+
+            function f2()
+            {
+                //alert(It's Working Now)
+                var sum = parseInt(n1.value)-parseInt(n2.value)
+                n3.value=sum
+            }
+
+            function f3()
+            {
+                //alert(It's Working Now)
+                var sum = parseInst(n1.value)-parseInst(n2.value)
+                n3.value=sum
+            }
+
+            function f4()
+            {
+                //alert(It's Working Now)
+                var sum = parseInst(n1.value)-parseInst(n2.value)
+                n3.value=sum
+            }
+        </script>
+
+    </h1>
+    
+</body>
+</html>
