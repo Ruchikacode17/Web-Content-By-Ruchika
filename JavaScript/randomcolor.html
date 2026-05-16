@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var b = document.createElement("button")
+        b.innerHTML="Create Random Color Of Background"
+        document.body.appendChild(b)
+        function randomcolor()
+        {
+            document.title = "Working"
+            var red = Math.round(Math.random()*255)
+            var green = Math.round(Math.random()*255)
+            var blue = Math.round(Math.random()*255)
+            var c = "rgb("+red+","+green+","+blue+")"
+            //alert (c)
+            document.body.style.background = c
+        }
+
+        b.onclick = randomcolor
+    </script>
+</body>
+</html>
