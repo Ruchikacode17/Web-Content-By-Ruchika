@@ -1,227 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AOTM Website (Arena Animation)</title>
+    <title>Arena Animation Project Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
         }
-
-        html {
-            overflow-y: scroll; 
-            scroll-behavior: smooth;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        .container {
-            max-width: 1300px; 
-            margin: 0 auto;
-            padding: 0 20px;
-            width: 100%;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-       
-        .navbar {
-            background: #ffffff;
-            padding: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            width: 100%;
-        }
-
-        .nav-flex {
+            font-family: 'Poppins', sans-serif;
+            background: #0f172a;
+            color: white;
+            min-height: 100vh;
             display: flex;
-            justify-content: space-between; 
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
         }
-
-        .logo {
-            flex: 1;
-            text-align: left;
+        .project-dashboard {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 1000px;
+            width: 100%;
+            margin: auto;
         }
-
-        .logo a {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color:#8F2D56;
-            cursor: default;
-            white-space: nowrap;
+        .project-dashboard h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 8px;
         }
-
-       
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            justify-content: flex-end; 
-        }
-
-        .nav-menu li {
-            margin-left: 2.5rem; 
-        }
-
-        .nav-menu a {
-            font-weight: 500;
-            color: #333;
-            outline: none;
-            padding: 5px 0; 
-            transition: color 0.2s ease;
-            white-space: nowrap;
-        }
-
-        .nav-menu a:hover, 
-        .nav-menu a:active, 
-        .nav-menu a:focus,
-        .nav-menu a.active {
-            color: #d32f2f;
-        }
-
-        
-        #check-menu {
-            display: none; 
-        }
-
-        .dropdown-btn {
-            display: none; 
-            cursor: pointer;
-            padding: 5px;
-        }
-
-       
-        .dropdown-btn span,
-        .dropdown-btn span::before,
-        .dropdown-btn span::after {
-            display: block;
-            background:Beige;
-            height: 3px;
-            width: 25px;
-            position: relative;
-        }
-
-        .dropdown-btn span::before { content: ""; position: absolute; top: -8px; }
-        .dropdown-btn span::after { content: ""; position: absolute; top: 8px; }
-
-       
-        .hero {
-            background:#A5978B;
-            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1500x800');
-            background-size: cover;
-            background-position: center;
-            height: 60vh; 
+        .title-divider {
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 10px;
+            margin-top: 12px;
+            margin-bottom: 40px;
+        }
+        .title-divider .line {
+            width: 60px;
+            height: 2px;
+            background: #ff5b2e;
+        }
+        .title-divider .dot {
+            width: 8px;
+            height: 8px;
+            background: #ff5b2e;
+            border-radius: 50%;
+        }
+        .project-desc {
+            color: #cbd5e1;
+            font-size: 18px;
+            line-height: 28px;
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+        }
+        .portal-grid {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .portal-card {
+            background: #111827;
+            border: 1px solid #1e293b;
+            padding: 40px 30px;
+            border-radius: 20px;
+            width: 45%;
+            min-width: 300px;
             text-align: center;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .portal-card:hover {
+            transform: translateY(-8px);
+            border-color: #ff5b2e;
+            box-shadow: 0 15px 35px rgba(255, 91, 46, 0.15);
+        }
+        .portal-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .portal-card p {
+            color: #94a3b8;
+            font-size: 15px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+        .launch-btn {
+            display: inline-block;
+            padding: 14px 28px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: 0.3s;
+            width: 100%;
+        }
+        .btn-orange {
+            background: #ff5b2e;
             color: white;
         }
-
-        .hero h1 {
-            font-size: 3.5rem;
+        .btn-orange:hover {
+            background: #ff784e;
         }
-
-        .main-content {
-            padding: 100px 0;
+        .btn-yellow {
+            background: #ffb703;
+            color: #0f172a;
+        }
+        .btn-yellow:hover {
+            background: #ffc93c;
+        }
+        .footer {
+            width: 100%;
+            padding: 25px;
             text-align: center;
+            border-top: 1px solid #1e293b;
+            background: #111827;
         }
-
-       
-        @media (max-width: 768px) {
-            .dropdown-btn {
-                display: block; 
-            }
-
-            .nav-menu {
-                display: none; 
-                position: absolute;
-                top: 100%;
-                left: 0;
+        .footer p {
+            color: #cbd5e1;
+        }
+        @media(max-width: 768px) {
+            .portal-card {
                 width: 100%;
-                background: #ffffff;
-                flex-direction: column;
-                padding: 0;
-                border-bottom: 2px solid #ccc;
-                text-align: center; 
-            }
-
-            .nav-menu li {
-                margin-left: 0;
-            }
-
-            .nav-menu a {
-                display: block;
-                padding: 15px 25px;
-                border-bottom: 1px solid #eee;
-            }
-
-          
-            #check-menu:checked ~ .nav-menu {
-                display: flex;
-            }
-
-           
-            #check-menu:checked ~ .dropdown-btn span { background: transparent; }
-            #check-menu:checked ~ .dropdown-btn span::before { transform: rotate(45deg); top: 0; }
-            #check-menu:checked ~ .dropdown-btn span::after { transform: rotate(-45deg); top: 0; }
-
-            .hero h1 {
-                font-size: 2.2rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container nav-flex">
-            <div class="logo">
-                <a>ARENA GTB NAGAR</a>
+    <div class="project-dashboard">
+        <h1>Arena Animation Web Portal</h1>
+        <div class="title-divider">
+            <span class="line"></span>
+            <span class="dot"></span>
+            <span class="line"></span>
+        </div>
+        <p class="project-desc">
+            Welcome to the official responsive website showcase for Arena Animation GTB Nagar. Explore our training systems, corporate infrastructure, and professional student productions.
+        </p>
+
+        <div class="portal-grid">
+            <div class="portal-card">
+                <div>
+                    <h3>Main Institute Website</h3>
+                    <p>Features our Hero Banner, 2-column Animated About Story, 7 Core Professional Courses Grid, Visual Art Gallery, and Live Contact Map with Query Intake Panel.</p>
+                </div>
+                <a href="Arena-Animation/index.html" class="launch-btn btn-orange">Launch Home Page</a>
             </div>
-            
-            <input type="checkbox" id="check-menu">
-            
-            <label for="check-menu" class="dropdown-btn">
-                <span></span>
-            </label>
 
-            <ul class="nav-menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="portal-card">
+                <div>
+                    <h3>Student Assignment Showcase</h3>
+                    <p>Displays verified multi-disciplinary digital files including Broadcast Virtual News Studio, 3D kinetic text tracking layouts, 2D vector locomotion cycles, and advanced After Effects sand disintegrations.</p>
+                </div>
+                <a href="Arena-Animation/studentwork.html" class="launch-btn btn-yellow">Launch Video Portfolio</a>
+            </div>
         </div>
-    </nav>
+    </div>
 
-    <header class="hero">
-        <div class="container">
-            <h1>This Website is in Development...</h1>
-        </div>
-    </header>
-
-    <section class="main-content">
-        <div class="container">
-            <div style="height: 600px;"></div> 
-        </div>
-    </section>
+    <footer class="footer">
+        <p>© 2026 Ruchika | Arena Animation Website Project Portfolio</p>
+    </footer>
 
 </body>
 </html>
