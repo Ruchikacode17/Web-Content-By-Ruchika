@@ -1,265 +1,365 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="myclass.css "/>
-    <title>Ruchika Singh - Web Content</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruchika Singh - Portfolio</title>
 
-<style>
-  *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
-   }
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
 
- body
-    {
-     background:#f5f7fa;
-     color:#333;
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
     }
 
- nav
-   {
-    background:#111;
-    padding:15px 0;
-   }
+    body{
+      background:
+      linear-gradient(
+      135deg,
+      #FFF7F2,
+      #F7F3FF,
+      #EEF7FF,
+      #F4FFF8
+      );
 
-.nav__content
-       {
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        width:90%;
-        margin:auto;
-        }
+      color:#4B5563;
+    }
 
- .logo 
-    
-     a{
-        color:#fff;
-        font-size:24px;
-        font-weight:bold;
-        text-decoration:none;
-      }
-
- .nav-links
-       {
-        list-style:none;
-        display:flex;
-        gap:25px;
-       }
-
- .nav-links li 
-        a{
-           color:#fff;
-           text-decoration:none;
-           font-size:16px;
-           transition:0.3s;
-        }
-
- .nav-links li 
-    a:hover{color:#00bcd4;}
-
-        
- .section
-   {
-    padding:60px 0;
-   }
-
- .section__container
-
-     {
+    nav{
       width:90%;
-      margin:auto;
+      margin:25px auto;
+
+      background:#ffffffc4;
+
+      backdrop-filter:blur(8px);
+
+      border-radius:18px;
+
+      padding:18px 30px;
+
+      box-shadow:
+      0 5px 18px rgba(0,0,0,0.06);
+    }
+
+    .nav__content{
       display:flex;
       justify-content:space-between;
       align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .logo a{
+      text-decoration:none;
+      font-size:28px;
+      font-weight:600;
+      color:#6D5BD0;
+    }
+
+    .nav-links{
+      list-style:none;
+      display:flex;
+      gap:25px;
+      flex-wrap:wrap;
+    }
+
+    .nav-links li a{
+      text-decoration:none;
+      color:#5B6475;
+      font-size:15px;
+      transition:0.3s;
+    }
+
+    .nav-links li a:hover{
+      color:#8B5CF6;
+    }
+
+
+    .section{
+      width:90%;
+      margin:auto;
+      margin-top:50px;
+      margin-bottom:70px;
+    }
+
+    .section__container{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:50px;
+      flex-wrap:wrap;
+    }
+
+    .content{
+      flex:1;
+      min-width:300px;
+    }
+
+    .subtitle{
+      color:#8B5CF6;
+      font-size:16px;
+      margin-bottom:12px;
+      letter-spacing:1px;
+    }
+
+    .title{
+      font-size:48px;
+      line-height:65px;
+      margin-bottom:20px;
+      color:#374151;
+    }
+
+    .title span{
+      color:#7C6CF2;
+    }
+
+    .Bio{
+      line-height:30px;
+      font-size:16px;
+      color:#6B7280;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+
+      text-decoration:none;
+
+      padding:12px 22px;
+
+      border-radius:12px;
+
+      background:
+      linear-gradient(
+      to right,
+      #B8D8FF,
+      #D8C4FF
+      );
+
+      color:#374151;
+
+      font-weight:500;
+
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+    }
+
+    .image{
+      flex:1;
+      text-align:center;
+      min-width:280px;
+    }
+
+    .profile{
+      width:320px;
+      max-width:100%;
+
+      border-radius:25px;
+
+      box-shadow:
+      0 10px 30px rgba(0,0,0,0.10);
+
+      border:6px solid rgba(255,255,255,0.5);
+    }
+
+
+    footer{
+      width:100%;
+
+      background:#ffffffa8;
+
+      backdrop-filter:blur(5px);
+
+      margin-top:50px;
+
+      padding:40px 20px 20px;
+
+      box-shadow:
+      0 -2px 10px rgba(0,0,0,0.03);
+    }
+
+    .footer-content{
+      width:90%;
+      margin:auto;
+
+      display:flex;
+      justify-content:space-between;
       gap:40px;
-     }
-
- .content
-     {
-      max-width:600px;
-        }
-
- .subtitle
-     {
-      color:#00bcd4;
-      font-weight:bold;
-      margin-bottom:10px;
-     }
-
- .title
-   {
-    font-size:40px;
-    margin-bottom:20px;
-   }
-
- .title span
-   {
-    color:#00bcd4;
-   }
-
- .Bio
-    {
-     line-height:1.6;
-     color:#555;
+      flex-wrap:wrap;
     }
 
- .profile
-    {
-     width:280px;
-     border-radius:20px;
-     box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    .footer-box h4{
+      margin-bottom:15px;
+      color:#7C6CF2;
+      font-size:18px;
     }
 
- .footer
-    {
-      background:#111;
-      color:#fff;
-      padding:40px 20px 10px;
+    .footer-box ul{
+      list-style:none;
     }
 
- .footer-center, .footer-right
-     {
-       margin-bottom:20px;
-     }
+    .footer-box ul li{
+      margin:8px 0;
+    }
 
- .footer 
-       h4{
-           margin-bottom:10px;
-            color:#00bcd4;
-         }
+    .footer-box ul li a{
+      text-decoration:none;
+      color:#5B6475;
+      transition:0.3s;
+    }
 
- .footer 
-    
-       ul{
-           list-style:none;
-         }
+    .footer-box ul li a:hover{
+      color:#8B5CF6;
+    }
 
- .footer 
-    
-       ul li
-          {
-            margin:5px 0;
-          }
+    .footer-box p{
+      color:#6B7280;
+      line-height:28px;
+    }
 
- .footer ul li 
-
-      a{
-        color:#fff;
-        text-decoration:none;
-       }
-
- .footer ul li 
- 
-      a:hover{
-            color:#00bcd4;
-             }
-
- .footer-bottom
-           {
-            text-align:center;
-            border-top:1px solid #444;
-            padding-top:10px;
-            font-size:14px;
-           }
-
-  @media(max-width:768px)
-{
- .section__container
-{
- flex-direction:column;
- text-align:center;
-}
+    .footer-bottom{
+      text-align:center;
+      margin-top:30px;
+      padding-top:15px;
+      border-top:1px solid rgba(0,0,0,0.06);
+      color:#6B7280;
+      font-size:14px;
+    }
 
 
-.nav-links
-{
- flex-direction:column;
- gap:10px;
- }
+    @media(max-width:768px){
 
- .profile
-{
-  width:200px;
-}
+      .section__container{
+        flex-direction:column-reverse;
+        text-align:center;
+      }
 
-}
+      .title{
+        font-size:35px;
+        line-height:50px;
+      }
 
-</style>
+      .nav__content{
+        flex-direction:column;
+        gap:20px;
+      }
 
+      .nav-links{
+        justify-content:center;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
-    <nav>
-      <div class="nav__content">
-          <div class="logo">
-          <a href="#">Ruchika</a>
+
+  <nav>
+
+    <div class="nav__content">
+
+      <div class="logo">
+        <a href="#">Ruchika</a>
       </div>
-
-
 
       <ul class="nav-links">
-           <li><a href="index.html">Home</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="Practice Page.html">Practice Work</a></li>
-           <li><a href="JavaScript/first.html">JavaScript Work</a></li>
-           <li><a href="Project.html">Project</a></li>
-           <li><a href="#">Contact</a></li>
-           
-      </ul>
-     </div> 
-</nav>
- <section class="section">
-   <div class="section__container">
-     <div class="content">
-       <p class="subtitle">HELLO Professionals</p>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li> <!-- # ki jagah about.html likha -->
+  <li><a href="Practice Page.html">Practice Work</a></li>
+  <li><a href="JavaScript/first.html">Javascript</a></li>
+  <li><a href="Project.html">Project</a></li>
+  <li><a href="contact.html">Contact</a></li> <!-- # ki jagah contact.html likha -->
+</ul>
+
+    </div>
+
+  </nav>
+
+  <section class="section">
+
+    <div class="section__container">
+
+      <div class="content">
+
+        <p class="subtitle">HELLO PROFESSIONALS</p>
+
         <h1 class="title">
-         I'm <span>Ruchika Singh<br>a </span>UI/UX Designer
-  </h1>
-  <p class="Bio">
-                    
-Welcome! I’m a UI/UX design enthusiast who loves turning ideas into clean, user-friendly, and visually appealing experiences. Always learning, always creating.
+          I'm <span>Ruchika Singh</span><br>
+          UI/UX Design Learner
+        </h1>
 
-This is just the beginning of my journey, and I’m excited to keep learning and growing always!
+        <p class="Bio">
 
-</p>
-</div>
-<div>
-<img src="images/mypic4.jpg" class="profile" alt="profile">
-</div>
-</div>
-        
-</section>
+          Welcome! I’m a UI/UX design enthusiast who enjoys creating clean,
+          user-friendly and visually appealing designs.
+
+          I love exploring new ideas, learning modern web designing techniques
+          and improving my creativity through practice projects.
+
+          This portfolio represents my learning journey and continuous growth
+          in web design and front-end development.
+
+        </p>
+
+        <a href="Practice Page.html" class="btn">
+          View Practice Work
+        </a>
+
+      </div>
+
+      <div class="image">
+        <img src="images/mypic7.png" class="profile">
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <div class="footer-content">
+
+      <div class="footer-box">
+
+        <h4>Quick Links</h4>
+
+<ul class="nav-links">
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="about.html" class="active">About</a></li> 
+  <li><a href="Practice Page.html">Practice Work</a></li>
+  <li><a href="JavaScript/first.html">Javascript</a></li>
+  <li><a href="Project.html">Project</a></li>
+  <li><a href="contact.html" class="active">Contact</a></li> 
+</ul>
+
+      </div>
+
+      <div class="footer-box">
+
+        <h4>Contact</h4>
+
+        <p>Email : sruchi1993@gmail.com</p>
+        <p>Location : Delhi, India</p>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 | Ruchika | A Passionate Learner
+    </div>
+
+  </footer>
+
 </body>
-<footer class="footer">
 
-  <div class="footer-center">
-    <h4>Quick Links</h4>
-     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="practice.html">Practice Page</a></li>
-        <li><a href="JavaScript/first.html">JavaScript Work</a></li>
-        <li><a href="Project.html">Project</a></li>
-        <li><a href="#">Contact</a></li>
-        
-     </ul>
-
-     </div>
-          <div class="footer-right">
-          <h4>Contact</h4>
-          <p>Email:sruchi1993@gmail.com</p>
-          <p>Location:Delhi,India</p>
-          </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Ruchika| A Passionate Learner</p>
-      </div>
-        </footer>
 </html>

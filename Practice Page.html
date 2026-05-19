@@ -29,6 +29,8 @@
             );
 
             min-height:100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         header{
@@ -66,7 +68,7 @@
             letter-spacing:1px;
         }
 
-        section{
+        .cards-section{
             width:90%;
             margin:auto;
 
@@ -78,6 +80,7 @@
             gap:25px;
 
             padding-bottom:60px;
+            flex: 1;
         }
 
         .card{
@@ -148,23 +151,62 @@
             transform:scale(1.05);
         }
 
+        /* Modern Aesthetic Footer Settings */
         footer{
             width:100%;
-
-            background:#ffffff8e;
-
-            text-align:center;
-
-            padding:20px;
-
-            color:#6B7280;
-
-            font-size:14px;
-
+            background:#ffffffa8;
             backdrop-filter:blur(5px);
+            margin-top:50px;
+            padding:40px 20px 20px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.03);
+        }
 
-            border-top:
-            1px solid rgba(0,0,0,0.05);
+        .footer-content{
+            width:90%;
+            margin:auto;
+            display:flex;
+            justify-content:space-between;
+            gap:40px;
+            flex-wrap:wrap;
+            text-align: left;
+        }
+
+        .footer-box h4{
+            margin-bottom:15px;
+            color:#7C6CF2;
+            font-size:18px;
+        }
+
+        .footer-box ul{
+            list-style:none;
+        }
+
+        .footer-box ul li{
+            margin:8px 0;
+        }
+
+        .footer-box ul li a{
+            text-decoration:none;
+            color:#5B6475;
+            transition:0.3s;
+        }
+
+        .footer-box ul li a:hover{
+            color:#8B5CF6;
+        }
+
+        .footer-box p{
+            color:#6B7280;
+            line-height:28px;
+        }
+
+        .footer-bottom{
+            text-align:center;
+            margin-top:30px;
+            padding-top:15px;
+            border-top:1px solid rgba(0,0,0,0.06);
+            color:#6B7280;
+            font-size:14px;
         }
 
         @media(max-width:768px){
@@ -177,6 +219,10 @@
                 font-size:14px;
             }
 
+            .footer-content {
+                flex-direction: column;
+                gap: 25px;
+            }
         }
 
     </style>
@@ -189,7 +235,7 @@
         <p>HTML5 • CSS3 • JavaScript Practice Projects</p>
     </header>
 
-    <section>
+    <section class="cards-section">
 
         <div class="card">
             <h2>Home Page</h2>
@@ -336,9 +382,9 @@
         </div>
 
         <div class="card">
-            <h2>Calculation App</h2>
+            <h2>Calculation</h2>
             <p>Calculation functionality using input elements.</p>
-            <a href="input_calculation.html" class="btn">View Project</a>
+            <a href="calculation.html" class="btn">View Project</a>
         </div>
 
         <div class="card">
@@ -356,9 +402,30 @@
     </section>
 
     <footer>
-        © 2026 | Practice Work By Ruchika
+        <div class="footer-content">
+            <div class="footer-box">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Practice Page.html">Practice Page</a></li>
+                    <li><a href="JavaScript/first.html">JavaScript</a></li>
+                    <li><a href="Project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Contact</h4>
+                <p>Email : sruchi1993@gmail.com</p>
+                <p>Location : Delhi, India</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 | Designed & Developed By Ruchika
+        </div>
     </footer>
 
 </body>
-
 </html>
