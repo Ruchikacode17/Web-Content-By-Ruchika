@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document</title>
+
+<style>
+
+body{
+    padding:0;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#EDF7D2;
+}
+
+header{
+    font-size:30px;
+    text-transform:uppercase;
+    font-family:Arial black;
+    background:#5B5B5B;
+    color:white;
+    text-align:center;
+    box-sizing:border-box;
+    padding:20px;
+    box-shadow:10px 10px 10px gray;
+    width:50%;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+footer{
+    background:#7D7C7A;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+img{
+    display:block;
+    margin:auto;
+}
+
+</style>
 </head>
+
 <body>
-    
-    <h1>Creating Tag By JavaScript</h1>
 
-    <script>
+<header>
+    Creating Tag by JavaScript
+</header>
 
-        var p = document.createElement("img");
+<script>
 
-        document.body.style.background = "pink";
-        document.body.appendChild();
-           p.src="images/a13.jpg"
-           p.style="transition:0.50s;margin:20px;border-radius:10px;cursor:pointer;"
-           
-           document.title = "No Error"
-             p.style.width="30%"
-             p.style.boxShadow="10px 10px 10px gray"
+var p = document.createElement("img");
 
-             p.onclick = function()
-             {
-                p.src="images/a18.jpg"
-             }
+document.body.appendChild(p);
 
-             p.onmouseout = function()
-             {
-                p.src="images/pfp.jpg"
-             }
+p.src = "images/p3.jpg";
 
-             p.onmouseover = function()
-             {
-                this.style.transform="scale{1.30}"
-             }
+p.style.width = "40%";
+p.style.borderRadius = "10px";
+p.style.cursor = "pointer";
+p.style.transition = "0.5s";
+p.style.boxShadow = "10px 10px 10px gray";
 
+document.title = "No Error";
 
-    </script>
+p.onclick = function()
+{
+    p.src = "images/p2.jpg";
+}
+
+p.onmouseover = function()
+{
+    p.style.transform = "scale(1.1)";
+}
+
+p.onmouseout = function()
+{
+    p.style.transform = "scale(1)";
+    p.src = "images/p3.jpg";
+}
+
+</script>
+
+<footer>
+    <p>© 2026 | Practice Work By Ruchika</p>
+</footer>
+
 </body>
 </html>
