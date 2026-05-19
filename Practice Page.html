@@ -1,225 +1,364 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creative Practice Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Page</title>
 
-    body {
-      background: linear-gradient(135deg, #0d1a53, #0d1a53);
-      color: white;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
-    header {
-      text-align: center;
-      padding: 40px 20px;
-    }
+    <style>
 
-    header h1 {
-      font-size: 3rem;
-    }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
 
-    header p {
-      opacity: 0.8;
-    }
+        body{
+            background:
+            linear-gradient(
+            135deg,
+            #FDF6F0,
+            #F8F4FF,
+            #EEF7FF,
+            #F4FFF8
+            );
 
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
+            min-height:100vh;
+        }
 
-    .card {
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(10px);
-      padding: 20px;
-      border-radius: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        header{
+            width:90%;
+            margin:auto;
+            margin-top:40px;
+            margin-bottom:50px;
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
+            background:
+            linear-gradient(
+            to right,
+            #CDE7FF,
+            #E7D9FF
+            );
 
-    .card h2 {
-      margin-bottom: 10px;
-    }
+            padding:40px 20px;
 
-    .card p {
-      font-size: 0.9rem;
-      opacity: 0.9;
-    }
+            border-radius:25px;
 
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 15px;
-      border-radius: 10px;
-      background: white;
-      color: #333;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+            text-align:center;
 
-    .btn:hover {
-      background: #ddd;
-    }
+            box-shadow:
+            0 8px 25px rgba(0,0,0,0.08);
+        }
 
+        header h1{
+            font-size:42px;
+            color:#4B5563;
+            margin-bottom:10px;
+        }
 
-  </style>
+        header p{
+            color:#6B7280;
+            font-size:16px;
+            letter-spacing:1px;
+        }
+
+        section{
+            width:90%;
+            margin:auto;
+
+            display:grid;
+
+            grid-template-columns:
+            repeat(auto-fit,minmax(260px,1fr));
+
+            gap:25px;
+
+            padding-bottom:60px;
+        }
+
+        .card{
+            background:#ffffffc7;
+
+            backdrop-filter:blur(8px);
+
+            padding:25px;
+
+            border-radius:20px;
+
+            transition:0.4s;
+
+            box-shadow:
+            0 5px 18px rgba(0,0,0,0.06);
+
+            border:
+            1px solid rgba(255,255,255,0.5);
+        }
+
+        .card:hover{
+            transform:
+            translateY(-8px);
+
+            box-shadow:
+            0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .card h2{
+            color:#4B5563;
+            font-size:22px;
+            margin-bottom:12px;
+        }
+
+        .card p{
+            color:#6B7280;
+            font-size:14px;
+            line-height:24px;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            display:inline-block;
+
+            text-decoration:none;
+
+            padding:10px 18px;
+
+            border-radius:10px;
+
+            background:
+            linear-gradient(
+            to right,
+            #A5D8FF,
+            #D8B4FE
+            );
+
+            color:#374151;
+
+            font-size:14px;
+
+            font-weight:500;
+
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.05);
+        }
+
+        footer{
+            width:100%;
+
+            background:#ffffff8e;
+
+            text-align:center;
+
+            padding:20px;
+
+            color:#6B7280;
+
+            font-size:14px;
+
+            backdrop-filter:blur(5px);
+
+            border-top:
+            1px solid rgba(0,0,0,0.05);
+        }
+
+        @media(max-width:768px){
+
+            header h1{
+                font-size:30px;
+            }
+
+            header p{
+                font-size:14px;
+            }
+
+        }
+
+    </style>
 </head>
+
 <body>
 
-         <header>
-    <h1>Practice Page</h1>
-  </header>
+    <header>
+        <h1>Practice Page</h1>
+        <p>HTML5 • CSS3 • JavaScript Practice Projects</p>
+    </header>
 
-  <section class="container">
-    <div class="card">
-      <h2>Home page</h2>
-      <a href="index.html" class="btn">view project</a>
-    </div>
+    <section>
 
-    <div class="card">
-      <h2>Profile</h2>
-      <a href="Personal Profile.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Home Page</h2>
+            <p>Main homepage design practice project.</p>
+            <a href="index.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Responsive profile</h2>
-      <a href="Ruchika Responsive Design.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Personal Profile</h2>
+            <p>Creative personal profile webpage design.</p>
+            <a href="Personal Profile.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Photo Gallery</h2>
-      <a href="Photo Gallery.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Responsive Design</h2>
+            <p>Responsive webpage for mobile and desktop screens.</p>
+            <a href="Ruchika Responsive Design.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Bookmark</h2>
-      <a href="BookMark.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Photo Gallery</h2>
+            <p>Gallery layout and image styling practice.</p>
+            <a href="Photo Gallery.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>List</h2>
-      <a href="List.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Bookmark</h2>
+            <p>Bookmark linking and navigation practice.</p>
+            <a href="BookMark.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Table</h2>
-      <a href="Table.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>List Design</h2>
+            <p>Ordered and unordered list styling practice.</p>
+            <a href="List.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Navigation</h2>
-      <a href="Navigation.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Table Design</h2>
+            <p>Creative table formatting and design practice.</p>
+            <a href="Table.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Profile & Banner Webstyle</h2>
-      <a href="Profile & Banner WebStyle.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Navigation Bar</h2>
+            <p>Navigation menu and hover effect design.</p>
+            <a href="Navigation.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Login Form</h2>
-      <a href="Login Form.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Profile & Banner</h2>
+            <p>Creative banner and profile layout practice.</p>
+            <a href="Profile & Banner WebStyle.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Registration Form</h2>
-      <a href="Registration.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Login Form</h2>
+            <p>Simple login form interface design project.</p>
+            <a href="Login Form.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Banner</h2>
-      <a href="Banner.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Registration Form</h2>
+            <p>User registration form practice project.</p>
+            <a href="Registration.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Run Banner</h2>
-      <a href="Sliding Banner.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Banner Design</h2>
+            <p>Banner layout and typography styling practice.</p>
+            <a href="Banner.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>I Frame</h2>
-      <a href="Iframe.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Sliding Banner</h2>
+            <p>Animated sliding banner design project.</p>
+            <a href="Sliding Banner.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Audio&Video</h2>
-      <a href="media.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>I Frame</h2>
+            <p>Iframe integration and webpage embedding practice.</p>
+            <a href="Iframe.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Video Media</h2>
-      <a href="VideoBackground media.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Audio & Video</h2>
+            <p>HTML media integration and styling project.</p>
+            <a href="media.html" class="btn">View Project</a>
+        </div>
 
-<div class="card">
-      <h2>Div Styling</h2>
-      <a href="Div Styling.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Video Background</h2>
+            <p>Video background webpage design practice.</p>
+            <a href="VideoBackground media.html" class="btn">View Project</a>
+        </div>
 
-<div class="card">
-      <h2>Menu Flyout</h2>
-      <a href="Menu Flyout.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Div Styling</h2>
+            <p>Creative div styling and layout design.</p>
+            <a href="Div Styling.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>3D</h2>
-      <a href="3D.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Menu Flyout</h2>
+            <p>Interactive flyout menu design project.</p>
+            <a href="Menu Flyout.html" class="btn">View Project</a>
+        </div>
 
-     <div class="card">
-       <h2>First JS</h2>
-       <a href="JavaScript/first.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>3D Design</h2>
+            <p>3D transform and animation practice work.</p>
+            <a href="3D.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-       <h2>Second JS</h2>
-       <a href="javascript/second.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>First JavaScript</h2>
+            <p>Basic JavaScript implementation project.</p>
+            <a href="JavaScript/first.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Create Element</h2>
-      <a href="JavaScript/createElement.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Second JavaScript</h2>
+            <p>JavaScript interaction and functionality practice.</p>
+            <a href="javascript/second.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Created Div</h2>
-      <a href="JavaScript/creatediv.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Create Element</h2>
+            <p>DOM element creation using JavaScript.</p>
+            <a href="JavaScript/createElement.html" class="btn">View Project</a>
+        </div>
 
-<div class="card">
-      <h2>Using Lib</h2>
-      <a href="JavaScript/usinglib.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Create Div</h2>
+            <p>Dynamic div creation and styling project.</p>
+            <a href="JavaScript/creatediv.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Calculation</h2>
-      <a href="using_input_element.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Using Library</h2>
+            <p>External JavaScript library implementation.</p>
+            <a href="JavaScript/usinglib.html" class="btn">View Project</a>
+        </div>
 
-    <div class="card">
-      <h2>Click & Change the Color</h2>
-      <a href="color.html" class="btn">view project</a>
-    </div>
+        <div class="card">
+            <h2>Calculation App</h2>
+            <p>Calculation functionality using input elements.</p>
+            <a href="input_calculation.html" class="btn">View Project</a>
+        </div>
 
+        <div class="card">
+            <h2>Random Color</h2>
+            <p>Random background color generation project.</p>
+            <a href="randomcolor.html" class="btn">View Project</a>
+        </div>
 
-  </section>
+        <div class="card">
+            <h2>Date & Time</h2>
+            <p>Live date and time display using JavaScript.</p>
+            <a href="date&time.html" class="btn">View Project</a>
+        </div>
 
-  
+    </section>
+
+    <footer>
+        © 2026 | Practice Work By Ruchika
+    </footer>
+
 </body>
+
 </html>
