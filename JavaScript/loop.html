@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin:0%;
+        padding:0%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    body{
+        background:rgb(250, 250, 207);
+        text-align:center;   
+    }
+   
+
+    header{
+        background:maroon;
+        color:white;
+        padding:20px;
+        font-size:clamp(22px,5vw,30px);
+        font-weight:bold;
+        text-align:center;
+        width:90%;
+        max-width:700px;
+        margin:auto;
+        margin-top:30px;
+        
+        border-radius:10px;
+        box-shadow:5px 5px 5px gray;  
+
+    }
+
+    h1{
+        font-size:clamp(25px,6vw,55px);
+    }
+
+    footer{
+        text-align: center;
+        color:white;
+        background:maroon;
+        margin:auto;
+        margin-bottom:20px;
+        padding:15px;
+        width:90%;
+        max-width:700px;
+        font-size:20px;
+        box-shadow:5px 5px 5px gray;
+
+    }
+</style>
+
+<body>
+    <header>Table Creation</header>
+    <script>
+        // for loop
+        // break
+        // continue
+
+        var n = prompt("Enter a Number to Create Table","2")
+
+        document.write("<h1>Table of = "+n+"</h1>")
+
+        for(var i = 1;i<=10;i++)
+    {
+
+        document.write("<h1>"+n+" * "+i+" = "+n*i+"</h1>")
+    }
+
+    document.write("Loop End")
+    </script>
+    
+</body>
+
+<footer>
+   © 2026 | Practice Work By Ruchika
+</footer>
+</html>
