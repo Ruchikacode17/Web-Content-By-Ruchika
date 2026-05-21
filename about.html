@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Ruchika Singh</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #FFF7F2, #F7F3FF, #EEF7FF, #F4FFF8);
+      color: #4B5563;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    nav {
+      width: 90%;
+      margin: 25px auto;
+      background: #ffffffc4;
+      backdrop-filter: blur(8px);
+      border-radius: 18px;
+      padding: 18px 30px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    .nav__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo a {
+      text-decoration: none;
+      font-size: 28px;
+      font-weight: 600;
+      color: #6D5BD0;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #5B6475;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .nav-links li a:hover, .nav-links li a.active {
+      color: #8B5CF6;
+      font-weight: 500;
+    }
+
+
+
+    .section {
+      width: 90%;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 70px;
+      flex: 1;
+    }
+
+    .section__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .content {
+      flex: 1.2;
+      min-width: 300px;
+    }
+
+    .subtitle {
+      color: #8B5CF6;
+      font-size: 16px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    .title {
+      font-size: 44px;
+      line-height: 58px;
+      margin-bottom: 25px;
+      color: #374151;
+    }
+
+    .title span {
+      color: #7C6CF2;
+    }
+
+    .about-text {
+      line-height: 30px;
+      font-size: 16px;
+      color: #6B7280;
+      margin-bottom: 20px;
+    }
+
+
+    .skills-container {
+      flex: 0.8;
+      min-width: 280px;
+      background: #ffffff9e;
+      backdrop-filter: blur(5px);
+      padding: 30px;
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+    }
+
+    .skills-container h3 {
+      color: #374151;
+      margin-bottom: 25px;
+      font-size: 22px;
+      font-weight: 600;
+      border-left: 4px solid #7C6CF2;
+      padding-left: 10px;
+    }
+
+    .skill-card {
+      margin-bottom: 20px;
+    }
+
+    .skill-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #4B5563;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: #E5E7EB;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      background: linear-gradient(to right, #B8D8FF, #D8C4FF);
+      border-radius: 10px;
+    }
+
+  
+    footer {
+      width: 100%;
+      background: #ffffffa8;
+      backdrop-filter: blur(5px);
+      padding: 40px 20px 20px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.03);
+    }
+
+    .footer-content {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .footer-box h4 {
+      margin-bottom: 15px;
+      color: #7C6CF2;
+      font-size: 18px;
+    }
+
+    .footer-box ul {
+      list-style: none;
+    }
+
+    .footer-box ul li {
+      margin: 8px 0;
+    }
+
+    .footer-box ul li a {
+      text-decoration: none;
+      color: #5B6475;
+      transition: 0.3s;
+    }
+
+    .footer-box ul li a:hover {
+      color: #8B5CF6;
+    }
+
+    .footer-box p {
+      color: #6B7280;
+      line-height: 28px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(0,0,0,0.06);
+      color: #6B7280;
+      font-size: 14px;
+    }
+
+    @media(max-width:768px){
+      .section__container {
+        flex-direction: column;
+        gap: 40px;
+      }
+      .title {
+        font-size: 35px;
+        line-height: 48px;
+      }
+      .nav__content {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .nav-links {
+        justify-content: center;
+      }
+      .skills-container {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav__content">
+      <div class="logo">
+        <a href="index.html">Ruchika</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" class="active">About</a></li>
+        <li><a href="Practice Page.html">Practice Work</a></li>
+        <li><a href="JavaScript/first.html">Javascript</a></li>
+        <li><a href="Project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="section__container">
+      
+      <div class="content">
+        <p class="subtitle">MY STORY</p>
+        <h1 class="title">Designing with <span>Purpose</span> & Curiosity</h1>
+        
+        <p class="about-text">
+          Hello! I am a passionate UI/UX Design Learner based in Delhi, India. My journey into the world of design began with a curiosity about how people interact with digital products and a desire to make those experiences seamless and beautiful.
+        </p>
+        
+        <p class="about-text">
+          Currently, I am focusing on sharpening my front-end development skills alongside core UI/UX concepts. I believe that understanding HTML, CSS, and basic JavaScript makes me a better designer, as it helps me bridge the gap between imagination and execution.
+        </p>
+
+        <p class="about-text">
+          When I'm not designing or practicing code, you'll find me exploring modern layouts, breaking down complex websites to study their wireframes, or looking for innovative visual styles to implement in my upcoming projects.
+        </p>
+      </div>
+
+      <div class="skills-container">
+        <h3>My Learning Kit</h3>
+        
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>UI/UX & Wireframing</span>
+            <span>75%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>HTML5 & CSS3</span>
+            <span>80%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>JavaScript (Learning)</span>
+            <span>50%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>Figma / Canva</span>
+            <span>85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%;"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="Practice Page.html">Practice Page</a></li>
+          <li><a href="JavaScript/first.html">JavaScript</a></li>
+          <li><a href="Project.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h4>Contact</h4>
+        <p>Email : sruchi1993@gmail.com</p>
+        <p>Location : Delhi, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 | Ruchika | A Passionate Learner
+    </div>
+  </footer>
+
+</body>
+</html>
