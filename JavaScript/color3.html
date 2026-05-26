@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Using Color Object to Change Color</h1>
+    <input type="color" id="mycolor">
+    <br/>
+
+    <input type="range" min="20" max="255" value="50" id="red"><br/>
+    <input type="range" min="20" max="255" value="50" id="green"><br/>
+    <input type="range" min="20" max="255" value="50" id="blue"><br/>
+
+    <script>
+        var t
+        var r,g,b,c
+        var d = document.getElementById("mycolor")
+        var red = document.getElementById("red")
+        var green = document.getElementById("green")
+        var blue = document.getElementById("blue")
+
+        r = Math.round(Math.random()*255)
+        g = Math.round(Math.random()*255)
+        b = Math.round(Math.random()*255)
+        c = `rgb(${r},${g},${b})`
+
+    d.onchange = function()
+    {
+        //alert(this.value)
+        document.body.style.background=this.value
+          //document.body.style.background=this.value
+    }
+
+        red.onchange = function()
+          {
+            document.title = this.value
+        c2=`rgb(${red.value},${green.value},${blue.value})`
+             document.body.style.background=c2
+          }
+
+        green.onchange = function()
+          {
+            document.title = this.value
+        c2=`rgb(${red.value},${gree.value},${blue.value})`
+            document.body.style.background=c2
+        }
+
+        blue.onchnage = function()
+        {
+           document.title = this.value
+        c2=`rgb(${red.value},${gree.value},${blue.value})`
+            document.body.style.background=c2
+        }
+
+        document.title="No Error"
+        
+
+</script>
+
+    
+</body>
+</html>

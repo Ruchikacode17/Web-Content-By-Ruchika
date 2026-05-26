@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Using Random and SetInterval</h1>
+
+    <script>
+        var t
+        var r,g,b,c
+        function show()
+        {
+            r = Math.round(Math.random()*255)
+            g = Math.round(Math.random()*255)
+            b = Math.round(Math.random()*255)
+            c = `rgb(${r},${g},${b})`
+    
+        document.body.style.background=c
+        document.title = c
+
+        }
+
+        t = setInterval("show()",100)
+        document.body.onclick = function()
+        {
+            clearInterval(t)
+            alert("Set Interval is sto now")
+        }
+
+        document.title="No Error"
+</script>
+    
+</body>
+</html>
