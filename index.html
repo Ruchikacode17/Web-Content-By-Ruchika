@@ -258,6 +258,71 @@
 
     }
 
+    /* DROPDOWN */
+
+.dropdown{
+    position:relative;
+}
+
+.dropbtn{
+
+    background:none;
+    border:none;
+
+    font-size:15px;
+
+    color:#5B6475;
+
+    cursor:pointer;
+
+    font-family:'Poppins',sans-serif;
+}
+
+.dropdown-content{
+
+    display:none;
+
+    position:absolute;
+
+    background:white;
+
+    min-width:220px;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+
+    top:35px;
+
+    z-index:100;
+}
+
+.dropdown-content a{
+
+    display:block;
+
+    padding:12px 18px;
+
+    text-decoration:none;
+
+    color:#5B6475;
+
+    transition:0.3s;
+}
+
+.dropdown-content a:hover{
+
+    background:#f3f4f6;
+
+    color:#8B5CF6;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
   </style>
 </head>
 
@@ -273,11 +338,10 @@
 
       <ul class="nav-links">
   <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li> <!-- # ki jagah about.html likha -->
+  <li><a href="about.html">About</a></li> 
   <li><a href="Practice Page.html">Practice Work</a></li>
-  <li><a href="JavaScript/first.html">Javascript</a></li>
   <li><a href="Project.html">Project</a></li>
-  <li><a href="contact.html">Contact</a></li> <!-- # ki jagah contact.html likha -->
+  <li><a href="contact.html">Contact</a></li>
 </ul>
 
     </div>
@@ -336,7 +400,33 @@
   <li><a href="index.html" class="active">Home</a></li>
   <li><a href="about.html" class="active">About</a></li> 
   <li><a href="Practice Page.html">Practice Work</a></li>
-  <li><a href="JavaScript/first.html">Javascript</a></li>
+  <div class="dropdown">
+
+    <button class="dropbtn">Javascript</button>
+
+    <div class="dropdown-content">
+
+        <a href="javascript/first.html">First</a>
+
+        <a href="javascript/second.html">Second</a>
+
+        <a href="javascript/createElement.html">Create Element</a>
+
+        <a href="javascript/creatediv.html">Create Div</a>
+
+        <a href="javascript/usinglib.html">Using Library</a>
+
+        <a href="javascript/calculation.html">Calculation</a>
+
+        <a href="javascript/randomcolor.html">Random Color</a>
+
+        <a href="javascript/date&time.html">Date & Time</a>
+
+        <a href="javascript/loop.html">Loop</a>
+
+    </div>
+
+</div>
   <li><a href="Project.html">Project</a></li>
   <li><a href="contact.html" class="active">Contact</a></li> 
 </ul>
