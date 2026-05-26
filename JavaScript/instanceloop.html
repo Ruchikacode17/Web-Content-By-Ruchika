@@ -3,50 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aesthetic Gallery Loop</title>
 </head>
 <style>
-    .pic{
-        width:30%;
-        box-shadow:10px 10px 10px gray;
-        margin:20px;
-        transition:0.50s;
-        cursor:pointer;
-    }
+    body {
+            background-color: #fe8d82;
+            margin: 0;
+            padding: 40px 20px;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .gallery-container {
+            background: rgb(249, 197, 197);
+        
+            padding: 40px 40px 100px 40px; 
+            border-radius: 24px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+            max-width: 1100px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .pic {
+            width: 280px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+            transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            cursor: pointer;
+        }
 
 </style>
 <body>
-    <h1>Loop in HTML (for loop)</h1>
+     <div class="gallery-container">
+        <h1>Landscapes Gallery</h1>
+        <div class="gallery-grid" id="container"></div>
+    </div>
 
     <script>
         //Creating instance of image class
 
         function preload()
         {
+            document.title = "No Error"
+            var grid = document.getElementById("container")
 
-            document.title="No Error"
-            for(var i = 1;i<=10;i++)
-        {
-            var p = new image()
-            document.body.appendChild(p)
-            p."className"="pic"
-            p.src="images/p"+i+".jpg"
-
-            p.onmouseover = function()
+            for(var i = 3; i <= 7; i++) 
             {
-                this.style.width="35%"
+                var p = new Image()
+                grid.appendChild(p)
+                p.className = "pic"
+                p.src = "images/p" + i + ".jpg"
+
+                p.onmouseover = function()
+                {
+                    this.style.transform = "scale(1.06) translateY(-5px)"
+                    this.style.boxShadow = "0px 12px 24px rgba(0,0,0,0.15)"
+                }
+
+                p.onmouseout = function()
+                {
+                    this.style.transform = "scale(1) translateY(0)"
+                    this.style.boxShadow = "0px 4px 12px rgba(0,0,0,0.05)"
+                }
             }
-
-            p.onmouseover = function()
-            {
-                this.style.width="30%"
-            }
-
-
-        }
         }
 
-        document.addEventListener("load",preload())
+        document.addEventListener("load", preload())
         
     </script>
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,31 +8,31 @@
 </head>
 <body>
     <h1>Using Random and SetInterval</h1>
-
     <script>
         var t
-        var r,g,b,c
+        var r, g, b, c
+        
         function show()
         {
-            r = Math.round(Math.random()*255)
-            g = Math.round(Math.random()*255)
-            b = Math.round(Math.random()*255)
+            r = Math.round(Math.random() * 255)
+            g = Math.round(Math.random() * 255)
+            b = Math.round(Math.random() * 255)
+            
             c = `rgb(${r},${g},${b})`
-    
-        document.body.style.background=c
-        document.title = c
-
+            
+            document.body.style.background = c
+            document.title = c
         }
 
-        t = setInterval("show()",100)
+        t = setInterval("show()", 2000)
+        
         document.body.onclick = function()
         {
             clearInterval(t)
-            alert("Set Interval is sto now")
+            alert("Set interval is stopped now")
         }
 
-        document.title="No Error"
-</script>
-    
+        document.title = "No Error"
+    </script>
 </body>
 </html>
