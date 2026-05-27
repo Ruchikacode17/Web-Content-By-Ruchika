@@ -5,9 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        background:rgb(118, 103, 81);
+        font-family:Arial, sans-serif;
+    }
+
+    header{
+        background:rgb(5, 5, 5);
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+        padding:20px;
+        font-size:30px;
+        font-weight:bold;
+        text-align:center;
+        letter-spacing:2px;
+
+    }
+
+    main{
+        flex:1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:30px;
+    }
+
+.color-container{
+    width:875px;
+    min-height:500px;
+    background:rgb(250, 252, 225);
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    transition:0.5s;
+}
+
+.color-container h1{
+    margin-bottom:20px;
+    color:#111827;
+}
+
+
+button
+    {
+        width:25px;
+        height:25px;
+        border-radius:100px;
+        box-shadow:10px 10px 10px gray;
+        cursor:pointer;
+        margin:3px;
+        border:2px;
+
+    }
+
+footer{
+    background:rgb(5, 5, 5);
+    color:white;
+    padding:15px;
+    font-size:18px;
+    text-align:center;
+    border-radius:10px;
+}
+
+</style>
 <body>
-    <h1>Working With While Loop In JavaScript</h1>
+
+    <header> While Looping </header>
+
+    <main>
+
+        <div class="color-container" id="box">
+            <h1>Working With While Loop In JavaScript</h1>
         <table border="1" cellpadding="10">
+
+    
 
             <script>
                 var row = prompt("Enter Row Number to Create Table..","5")
@@ -29,6 +111,12 @@
             }
             </script>
         </table>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 | Practice Work By Ruchika</p>
+</footer>
     
 </body>
 </html>
