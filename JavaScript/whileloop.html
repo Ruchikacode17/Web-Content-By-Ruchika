@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Working With While Loop In JavaScript</h1>
+        <table border="1" cellpadding="10">
+
+            <script>
+                var row = prompt("Enter Row Number to Create Table..","5")
+                var col = prompt("Enter Column Number to Create Table..","5")
+
+                             var c = 1
+                while(c<=row)
+            {
+                document.write("<tr>")
+                           for(var i = 1;i<=col;i++)
+                              {
+                                       document.write("<td><input> type='text'></td>")
+                              }
+
+                document.write("</tr>")
+
+                c++
+
+            }
+            </script>
+        </table>
+    
+</body>
+</html>

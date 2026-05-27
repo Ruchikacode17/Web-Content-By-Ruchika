@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    button
+    {
+        width:25px;
+        height:25px;
+        border-radius:100px;
+        box-shadow:10px 10px 10px gray;
+        cursor:pointer;
+    }
+
+
+
+
+</style>
+<body>
+
+    <h1>COLOR BOX</h1>
+        <table border="0" cellpadding="1">
+
+            <script>
+                var row = 10
+                var col = 10
+            var c = 1
+            while(c<=row)
+            {
+
+
+
+                document.write("<tr>")
+                           for(var i = 1;i<=col;i++)
+                               {
+
+
+                                var red = Math.round(Math.random()*255)
+            var green = Math.round(Math.random()*255)
+            var blue = Math.round(Math.random()*255)
+            var mycolor=`rgb(${red},${green},${blue})`
+
+                               document.write("<td><button onclick='setcolor(this)'style='color:red;background:"+mycolor+"'></button>")
+                            
+                               }
+
+            document.write("</tr>")
+
+
+            c++
+
+            function setcolor(d)
+            {
+                //alert(d.style.background)
+                document.body.style.background = d.style.background
+            }
+
+             }
+            document.title = "Ready"
+          
+            </script>
+        </table>
+    
+</body>
+</html>
