@@ -6,24 +6,98 @@
     <title>Document</title>
 </head>
 <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
 
-    button
+body{
+        font-family:Arial, sans-serif;
+        background:#ddbdf8;
+        min-height:100vh;
+        display:flex;
+        flex-direction:column;
+    }
+
+header{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+
+.color-container{
+    width:500px;
+    min-height:500px;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    transition:0.5s;
+}
+
+.color-container h2{
+    margin-bottom:20px;
+    color:#111827;
+}
+
+
+button
     {
         width:25px;
         height:25px;
         border-radius:100px;
         box-shadow:10px 10px 10px gray;
         cursor:pointer;
+        margin:3px;
+        border:2px;
+
     }
 
-
+footer{
+    background:#111827;
+    color:white;
+    padding:15px;
+    font-size:18px;
+    text-align:center;
+    border-radius:10px;
+}
 
 
 </style>
-<body>
+</head>
 
-    <h1>COLOR BOX</h1>
-        <table border="0" cellpadding="1">
+<body>
+     <header>
+        COLOR BOX
+     </header>
+   
+
+    <main>
+
+        <div class="color-container" id="box"
+
+         <h1>Click Any Color</h1>
+         <table border="0" cellpadding="2">
+    </main>
+        
 
             <script>
                 var row = 10
@@ -64,6 +138,12 @@
           
             </script>
         </table>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 | Practice Work By Ruchika</p>
+</footer>
     
 </body>
 </html>
