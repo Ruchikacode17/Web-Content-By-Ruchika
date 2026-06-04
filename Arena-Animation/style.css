@@ -520,17 +520,23 @@ ul li a:hover {
     transform: translateY(-5px);
 }
 
+
 .video-wrapper {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
-    background: #000;
+    background-color: #000000;
+    aspect-ratio: 16 / 9; 
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
 }
 
 .video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
 }
 
 .video-card h3 {
@@ -608,9 +614,4 @@ ul li a:hover {
         grid-template-columns: 1fr;
     }
 
-    .video-wrapper video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Video responsive wrapper se bahar na nikle */
-}
 }
