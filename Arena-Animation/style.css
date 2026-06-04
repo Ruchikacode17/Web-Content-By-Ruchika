@@ -22,14 +22,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 60px;
+    padding: 20px 60px; 
     background: #111827;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
 }
 
 .logo-img {
-    height: 70px;
+    height: 60px; 
     width: auto;
     display: block;
+    transition: transform 0.3s ease;
+}
+.logo-img:hover {
+    transform: scale(1.05); 
 }
 
 ul {
@@ -54,11 +61,23 @@ ul li a:hover {
 
 
 
-.banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px;
+.banner-btn {
+    background: #ff5b2e;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px; 
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(255, 91, 46, 0.3); 
+    transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+    background: #e04a20; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 20px rgba(255, 91, 46, 0.5);
 }
 
 .text h1 {
@@ -545,9 +564,9 @@ ul li a:hover {
 }
 
 .video-card p {
-    padding: 0 20px 20px 20px;
+    color: #cbd5e1; 
     font-size: 14px;
-    color: #9ca3af;
+    line-height: 1.6;
 }
 
 
@@ -611,7 +630,13 @@ ul li a:hover {
         margin: 10px;
     }
     .courses-box, .gallery-box, .video-grid, .footer-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 
+    
+    .video-wrapper {
+        aspect-ratio: 16 / 9 !important; 
+        width: 100% !important;
+        height: auto !important;
+    }
 }
