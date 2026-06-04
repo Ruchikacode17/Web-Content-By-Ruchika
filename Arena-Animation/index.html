@@ -11,13 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-<nav class="navbar">
+<nav class="navbar" id="navbar-top">
     <div class="logo">
+        <a href="#footer-section" style="display: block;">
         <img src="arenaimages/logo.png" class="logo-img" alt="Arena Animation Logo">
+        </a>
     </div>
     <ul>
         <li><a href="#home">Home</a></li>
@@ -98,13 +101,13 @@
         <div class="card">
             <img src="arenaimages/web.png" alt="Graphic Web Design Course">
             <h3>Graphic Web Design</h3>
-            <p>Design responsive web layouts, cross-platform layouts, and front-end web systems.</p>
+            <p>Design responsive websites, modern UI layouts, and interactive front-end interfaces.</p>
         </div>
 
         <div class="card">
             <img src="arenaimages/anivfx.jpg" alt="Animation, VFX & Gaming Course">
             <h3>Animation, VFX & Gaming</h3>
-            <p>Explore cinematic visual effects, 3D character modeling, and asset asset pipelines.</p>
+            <p>Explore cinematic visual effects, 3D character modeling, and asset pipelines.</p>
         </div>
 
         <div class="card">
@@ -165,7 +168,7 @@
                 <p><strong>Phone:</strong> +91 9811398844</p>
             </div>
 
-            <form class="custom-vertical-form">
+            <form class="custom-vertical-form" onsubmit="alert('Message Sent Successfully')">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" rows="4" required></textarea>
@@ -174,12 +177,71 @@
         </div>
     </div>
 </section>
-   <footer class="footer">
-    <p>© 2026 Ruchika | Arena Animation Website Project</p>
+
+<footer class="main-footer" id="footer-section">
+    <div class="footer-container">
+   
+        
+      
+        <div class="footer-col brand-info">
+    <img src="arenaimages/logo.png" class="footer-logo" alt="Arena Animation Logo">
+    <p>
+        Arena Animation GTB Nagar is a premier media & entertainment training institute offering industry-driven courses in Animation, VFX, Gaming, and Web Design.
+    </p>
+</div>
+
+       
+        <div class="footer-col quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                 <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="studentwork.html">Student Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col contact-us">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@arenagtbnagar.com">info@arenagtbnagar.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+919811398844">+91 9811398844</a>
+            </div>
+        </div>
+
+        
+        <div class="footer-col social-media">
+            <h4>Connect With Us</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/p/Arena-Animation-GTB-Nagar-100065126006158/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/arenadelhi/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@arenaanimation-delhi" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://in.linkedin.com/company/arenaanimationdelhi" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            Crafted with Creativity by
+            <span class="author-name">Ruchika</span>
+            | Arena Animation Project © 2026
+        </p>
+    </div>
+
 </footer>
 
-</body>
-</html>
+
+<a href="#navbar-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+   
+
 
 </body>
 </html>
