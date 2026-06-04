@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Array Loop Gallery</title>
+
+<style>
+
+body
+{
+    margin:0;
+    background:#FFF5F8;
+    font-family:Arial, sans-serif;
+}
+
+#header
+{
+    width:50%;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:30px;
+    padding:20px;
+    text-align:center;
+    font-size:30px;
+    font-family:Arial Black;
+    text-transform:uppercase;
+    background:#E4B4C2;
+    box-shadow:5px 5px 10px gray;
+    border-radius:10px;
+}
+
+.gallery
+{
+    text-align:center;
+}
+
+.mystyle
+{
+    width:300px;
+    height:220px;
+    margin:15px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:5px 5px 10px gray;
+    transition:0.4s;
+}
+
+.mystyle:hover
+{
+    transform:scale(1.05);
+}
+
+#footer
+{
+    width:50%;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:20px;
+    padding:15px;
+    text-align:center;
+    background:#E4B4C2;
+    box-shadow:5px 5px 10px gray;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="header">
+    Array Loop Gallery
+</div>
+
+<div class="gallery">
+
+<script>
+
+var pic = [
+
+"https://cdn.zeebiz.com/sites/default/files/2022/08/17/195507-untitled-design-2022-08-17t174238331.jpg?im=Resize=(1200,900)",
+
+"https://st1.latestly.com/wp-content/uploads/2022/08/Dahi-Handi-Images-784x436.jpg",
+
+"https://akm-img-a-in.tosshub.com/aajtak/images/video/202108/janmashtmi_0-sixteen_nine.jpg?size=950:536",
+
+"https://english.cdn.zeenews.com/sites/default/files/2022/08/16/1078137-krishna-janmashtami.jpg",
+
+"https://i.pinimg.com/564x/e9/05/24/e905242a78e0547cf5f53e8a265b6038.jpg",
+
+"https://cdn.pixabay.com/video/2024/02/03/199081-909564668_tiny.jpg"
+
+];
+
+for(var i=0; i<pic.length; i++)
+{
+    document.write(
+        "<img class='mystyle' src='"+pic[i]+"'>"
+    );
+}
+
+document.title="Array Gallery";
+
+</script>
+
+</div>
+
+<div id="footer">
+    © 2026 | Practice Work By Ruchika
+</div>
+
+</body>
+</html>

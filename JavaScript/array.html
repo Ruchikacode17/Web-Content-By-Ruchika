@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Example</title>
+
+    <style>
+
+       body {
+            margin: 0;
+            background: #49110b;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #header {
+            width: 50%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial Black;
+            color: #64051a;
+            text-transform: uppercase;
+            background: #d7a4a4;
+            box-shadow: 5px 5px 10px gray;
+            border-radius: 10px;
+        }
+
+        #box {
+            width: 700px;
+            margin: auto;
+            padding: 40px;
+            text-align: center;
+            background: #d7a4a4;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px lightpink;
+        }
+
+        h1 {
+            color: #64051a;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+        }
+
+        #days {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        button {
+            width: 140px;
+            height: 60px;
+            border: none;
+            border-radius: 15px;
+            background: white;
+            color: #64051a;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: #64051a;
+            color: white;
+        }
+
+        #footer {
+            width: 50%;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 15px;
+            text-align: center;
+            background: #d7a4a4;
+            color: #64051a;
+            box-shadow: 5px 5px 10px gray;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+   <div id="header">
+        Array Days Gallery
+    </div>
+
+    <div id="box">
+        <h1>Array In HTML</h1>
+        <div id="days"></div>
+    </div>
+
+    <script>
+
+        var weekname = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ];
+
+        var output = "";
+
+        for(var i = 0; i < weekname.length; i++)
+        {
+            output += "<button>" + weekname[i] + "</button>";
+        }
+
+        document.getElementById("days").innerHTML = output;
+
+    </script>
+    <div id="footer">
+        © 2026 | Practice Work By Ruchika
+    </div>
+
+</body>
+</html>
