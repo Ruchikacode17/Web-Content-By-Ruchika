@@ -31,43 +31,22 @@
       color:#4B5563;
     }
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 50px;
-      background: #111827; 
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      width: 100%;
+    nav{
+      width:90%;
+      margin:25px auto;
+
+      background:#ffffffc4;
+
+      backdrop-filter:blur(8px);
+
+      border-radius:18px;
+
+      padding:18px 30px;
+
+      box-shadow:
+      0 5px 18px rgba(0,0,0,0.06);
     }
 
-    .nav__logo h2 {
-      color: #ff5b2e; 
-      font-weight: 700;
-      font-size: 24px;
-    }
-
-    .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .nav-links li a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links li a:hover {
-      color: #ff5b2e; 
-    }
-    
     .nav__content{
       display:flex;
       justify-content:space-between;
@@ -80,6 +59,24 @@
       font-size:28px;
       font-weight:600;
       color:#6D5BD0;
+    }
+
+    .nav-links{
+      list-style:none;
+      display:flex;
+      gap:25px;
+      flex-wrap:wrap;
+    }
+
+    .nav-links li a{
+      text-decoration:none;
+      color:#5B6475;
+      font-size:15px;
+      transition:0.3s;
+    }
+
+    .nav-links li a:hover{
+      color:#8B5CF6;
     }
 
 
@@ -341,9 +338,9 @@
 
       <ul class="nav-links">
   <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
+  <li><a href="about.html">About</a></li> 
   <li><a href="Practice Page.html">Practice Work</a></li>
-  <li><a href="Project.html" target="_blank">Project</a></li>
+  <li><a href="Project.html">Project</a></li>
   <li><a href="contact.html">Contact</a></li>
 </ul>
 
@@ -397,13 +394,14 @@
 
       <div class="footer-box">
 
-<h4>Quick Links</h4>
+        <h4>Quick Links</h4>
+
 <ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li> 
-  <li><a href="Practice Page.html">Practice Work</a></li>
-  <li><a href="Project.html" target="_blank">Project</a></li>
-  <li><a href="contact.html">Contact</a></li> 
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="about.html" class="active">About</a></li> 
+  <li><a href="Practice Page.html" class="active">Practice Work</a></li>
+  <li><a href="Project.html" class="active">Project</a></li>
+  <li><a href="contact.html" class="active">Contact</a></li> 
 </ul>
 
       </div>
