@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .mystyle
+    {
+          width:150px;
+          height:150px;
+          box-shadow:10px 10px 10px gray;
+          border:1px black solid;
+          padding:5px;
+          position:absolute;
+          top:10px;
+          left:10px;
+          border-radius:10px;
+
+    }
+</style>
+
+<body>
+    <script>
+        var p = document.createElement("div")
+        function show()
+        {
+            document.body.appendChild(p)
+            p.className="mystyle"
+            p.innerHTML = "<button onclick='body.removeChild(p)'STYLE='margin-left:80%;FONT-SIZE:8px;BORDER:0;'>❌</button>"
+            p.innerHTML+="</br><img style='width:100%' src = 'images/v7.mp4'>"
+            setTimeout("closeadd()",10000)
+        }
+
+        document.title ="Ready"
+
+        var t = stTimeout("show()",2000)
+        function closeadd()
+        {
+            document.body.removeChild(p)
+        }
+    </script>
+    
+</body>
+</html>

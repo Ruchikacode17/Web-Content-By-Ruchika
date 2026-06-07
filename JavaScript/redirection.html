@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .pic{
+        width:10%;
+    }
+
+</style>
+<body>
+    onLoad="showadd()">
+    <button id="b1">open window</button>
+
+    <script>
+        //Using Window Class Open Function
+
+        var b = document.getElementById("b1")
+
+        function show_window()
+        {
+            var w = open("first.html", "mywindow", "left=600, top=300, width=320, height=320")
+
+        }
+
+        b1.onclick = show_window;
+        /*
+        function showadd()
+        {
+            var d = open("images/v7.mp4")
+        }
+        */
+
+        var myw = open("", "w", "width=300 height=300")
+        myw.document.write("<h1>Welcome to My Window</h1>")
+        myw.document.write("<img class='pic' src='images/pfp.jpg'>")
+
+    </script>
+    
+</body>
+</html>
