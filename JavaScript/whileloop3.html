@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    header{
+        width:70%;
+        height:500px;
+        margin:auto;
+        box-shadow:10px 10px 10px gray;
+    }
+
+    header img{
+        width:100%;
+        height:100%;
+    }
+</style>
+<h1 id="m">Image of the day</h1>
+<header>
+    <img id="pic" src="">
+
+</header>
+<body>
+
+    <script>
+        //Using Switch Statement
+        //Syntax
+        var d = new Date();
+        var m = document.getElementById("m")
+        var pic = document.getElementById("pic")
+        pic.src="images/p10.jpg"
+        var today = d.getDay()
+
+        Switch(today)
+        {
+            case 1:
+            m.innerHTML+="Monday"
+            pic.src="images/p1.jpg"
+
+            break;
+
+            
+            case 2:
+            m.innerHTML+="Tuesday"
+            pic.src="images/p2.jpg"
+
+            break;
+
+            
+            case 3:
+            m.innerHTML+="Wednesday"
+            pic.src="images/p3.jpg"
+
+            break;
+
+            
+            case 4:
+            m.innerHTML+="Thursday"
+            pic.src="images/p4.jpg"
+
+            break;
+
+            
+            case 5:
+            m.innerHTML+="Friday"
+            pic.src="images/p5.jpg"
+
+            break;
+
+            
+            case 6:
+            m.innerHTML+="Saturday"
+            pic.src="images/p6.jpg"
+
+            break;
+
+            
+            case 0:
+            m.innerHTML+="Sunday"
+            break;
+                pic.src="images/p7.jpg"
+                
+            default:
+                pic.src="images/p8.jpg"
+
+        }
+
+        document.title="Rwady"
+    </script>
+    
+</body>
+</html>
