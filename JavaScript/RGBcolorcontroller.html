@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color 3</title>
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:system-ui;
+}
+
+body{
+    background:#72BAA9;
+    
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    background:#7BD389;
+    color:#002206;
+    padding:20px;
+    text-align:center;
+    box-shadow:0px 0px 15px #AD5C71;
+}
+
+.box{
+    width:80%;
+    height:500px;
+    margin:auto;
+    margin-top:20px;
+    background:#D5E7B5;
+    border-radius:15px;
+    box-shadow:0px 0px 15px #AD5C71;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin:20px;
+}
+
+.button{
+    background:#AD5C71;
+    color:#E7E1B1;
+    padding:12px 30px;
+    border-radius:8px;
+    cursor:pointer;
+    text-decoration:none;
+    box-shadow:0px 0px 15px #AD5C71;
+    transition:0.5s;
+}
+
+.button:hover
+{
+    transform:scale(1.05);
+}
+
+.controls
+{
+    width:50%;
+    height:200px;
+    background:#D5E7B5;
+    text-align:center;
+    margin:auto;
+    margin-top:20px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 0px 15px #AD5C71;
+}
+
+
+footer{
+   background:#7BD389;
+    color:#002206;
+    text-align:center;
+    padding:18px;
+}
+
+@media(max-width:480px)
+{
+    header h1{
+        font-size:20px;
+    }
+    .controls{
+        width:95%;
+        padding:20;
+    }
+    .box{
+        width:95%;
+        height:250;
+    }
+     .button{
+        width:80%;
+        text-align:center;
+    }
+     .mycolor{
+        width:100%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+   
+<header>
+    <h1>RGB Color Controller </h1>
+   
+</header>
+
+<div class="controls">
+
+  <input type="color" id="mycolor">
+  <br/>
+  <input type="range" min="20" max="255" value="50" id="red"><br/>
+  <input type="range" min="20" max="255" value="50" id="green"><br/>
+  <input type="range" min="20" max="255" value="50" id="blue"><br/>
+
+ </div>
+
+<div class="box" id="box"></div>
+
+<div class="buttons">
+    
+  <a href="java practice.html" class="button">Back</a>
+</div>
+</body>
+<script>
+    var t
+    var r,g,b,c
+    var d = document.getElementById("mycolor")
+    var red = document.getElementById("red")
+    var green = document.getElementById("green")
+    var blue = document.getElementById("blue")
+
+  d.onchange = function()
+    {
+        alert(this.value)
+        document.getElementById("box").style.background = this.value
+
+    }
+    red.onchange = function()
+    {
+        document.title = this.value
+        c2= `rgb(${red.value},${green.value},${blue.value})`;
+        document.getElementById("box").style.background = c2
+    }
+    
+    green.onchange = function()
+    {
+        document.title = this.value
+        c2= `rgb(${red.value},${green.value},${blue.value})`;
+        document.getElementById("box").style.background = c2
+    }
+
+    blue.onchange = function()
+    {
+        document.title = this.value
+        c2= `rgb(${red.value},${green.value},${blue.value})`;
+        document.getElementById("box").style.background = c2
+    }
+    
+</script>
+
+
+
+
+<footer>
+    © 2026 All Rights Reserved
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Paint Brush Color Picker</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#FDFCDC;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    transition:0.5s;
+}
+
+header{
+    background:#949b9b;
+    color:#012d2f;
+    padding:20px;
+}
+
+header h1{
+    font-size:32px;
+}
+
+
+main{
+    flex:1;
+    padding:40px 20px;
+}
+
+
+table{
+    margin:auto;
+    border-radius:20px;
+    background:white;
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+td{
+    padding:6px;
+}
+
+
+.color-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    box-shadow:2px 2px 8px rgba(0,0,0,0.3);
+    transition:0.3s;
+    cursor:url('images/bruch.png'), pointer;
+}
+
+.color-btn:hover{
+    transform:scale(1.2);
+}
+
+
+.back-btn{
+    margin-top:25px;
+    display:inline-block;
+    padding:12px 25px;
+    background:#a79689;
+    color:#311601;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#e68900;
+    transform:scale(1.05);
+}
+
+
+footer{
+    background:#949b9b;
+    color:#012d2f;
+    padding:15px;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Paint Brush Color Picker</h1>
+</header>
+
+<main>
+
+<table border="1" cellpadding="5">
+
+<script>
+
+var row = 10;
+var col = 10;
+var c = 1;
+
+while(c <= row)
+{
+    document.write("<tr>")
+
+    for(var i = 1; i <= col; i++)
+    {
+        var red = Math.round(Math.random() * 255)
+        var green = Math.round(Math.random() * 255)
+        var blue = Math.round(Math.random() * 255)
+
+        var mycolor = `rgb(${red},${green},${blue})`
+
+        document.write(
+            "<td><button class='color-btn' onclick='setcolor(this)' style='background:"
+            + mycolor +"'></button></td>"
+        )
+    }
+
+    document.write("</tr>")
+
+    c++
+}
+
+function setcolor(d)
+{
+    document.body.style.background = d.style.background
+}
+
+document.title = "Ready"
+
+</script>
+
+</table>
+
+<a href="java practice.html" class="back-btn">Back</a>
+
+</main>
+
+<footer>
+    <p>© 2026 | All Rights Reserved |</p>
+</footer>
+
+</body>
+</html>

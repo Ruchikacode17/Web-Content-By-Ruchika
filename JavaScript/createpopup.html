@@ -3,45 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ready</title>
 </head>
 <style>
 
-    .mystyle
-    {
-          width:150px;
-          height:150px;
-          box-shadow:10px 10px 10px gray;
-          border:1px black solid;
-          padding:5px;
-          position:absolute;
-          top:10px;
-          left:10px;
-          border-radius:10px;
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:#bdc3cd;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+
+header{
+    font-size:30px;
+    font-family:Arial Black;
+    background:#00C49A;
+    color:#002019;
+    text-align:center;
+    padding:15px;
+    box-shadow:2px 5px 8px black;
+    margin-bottom:25px;
+    border-radius:12px;
+    letter-spacing:2px;
+}
+
+
+.mystyle{
+    width:500px;
+    height:360px;
+    background:#fff;
+    border-radius:15px;
+    padding:12px;
+    border:none;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    overflow:hidden;
+    z-index:999;
+}
+
+
+.close-btn{
+    float:right;
+    font-size:16px;
+    border:none;
+    background:none;
+    cursor:pointer;
+    color:#111844;
+    font-weight:bold;
+}
+
+
+.buttons{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin:20px 0;
+}
+
+.button{
+    display:inline-block;
+    background:#111844;
+    color:#EEEEEE;
+    padding:12px 30px;
+    border-radius:8px;
+    cursor:pointer;
+    text-decoration:none;
+    box-shadow:0px 0px 10px gray;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.button:hover{
+    transform:scale(1.05);
+   }
+
+
+
+footer{
+    margin-top:auto;
+    background:#00C49A;
+    color:#002019;
+    text-align:center;
+    padding:25px;
+    font-size:15px;
+    border-radius:12px;
+}
+
+
+
+@media(max-width:768px){
+
+    header{
+        font-size:20px;
+        padding:12px;
     }
+
+    .mystyle{
+        width:95%;
+        height:280px;
+    }
+
+    footer{
+        padding:20px;
+        font-size:12px;
+    }
+}
+
+   
 </style>
 
 <body>
+    <header>Pop-Up By Using Div</header>
+
+    <div class="buttons">
+  <a href="Practice Page.html" class="button"> Back</a>
+</div>
+
     <script>
         var p = document.createElement("div")
+
         function show()
         {
             document.body.appendChild(p)
             p.className="mystyle"
-            p.innerHTML = "<button onclick='body.removeChild(p)'STYLE='margin-left:80%;FONT-SIZE:8px;BORDER:0;'>❌</button>"
-            p.innerHTML+="</br><img style='width:100%' src = 'images/v7.mp4'>"
+            p.innerHTML = "<button onclick='document.body.removeChild(p)'style='margin-left:95%;font-size:16px;border:0;background:none;'>❌</button>";
+            p.innerHTML += "<br><video width='100%' height='300' controls autoplay muted><source src='images/v7.mp4' type='video/mp4'></video>";
             setTimeout("closeadd()",10000)
         }
 
         document.title ="Ready"
 
-        var t = stTimeout("show()",2000)
+        var t = setTimeout("show()",2000)
         function closeadd()
         {
             document.body.removeChild(p)
         }
     </script>
+
+    <footer>
+    <p>© 2026 | Practice Work By Ruchika</p>
+ 
+        </footer>
     
 </body>
 </html>

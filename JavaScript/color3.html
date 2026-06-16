@@ -17,8 +17,8 @@
             background-color: #a87671; 
         }
 
-        .glass-card {
-            background: rgba(240, 239, 239, 0.7);
+        .glass-card {   
+            background:#FED9B7;
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
             padding: 40px;
@@ -29,7 +29,8 @@
         }
 
         h1 {
-            color: #353434;
+            background:#552a02;
+            color: #00AFB9;
             font-size: 24px;
             margin-top: 0;
             margin-bottom: 30px;
@@ -67,6 +68,25 @@
         #red { accent-color: #ff4d4d; }
         #green { accent-color: #00cc66; }
         #blue { accent-color: #3385ff; }
+
+        .back-btn{
+                margin-top:25px;
+                display:inline-block;
+                padding:12px 25px;
+                background:#978F66;
+                color:#995F2F;
+                text-decoration:none;
+                border-radius:30px;
+                font-weight:bold;
+                transition:0.3s;
+
+          }
+
+        .back-btn:hover{
+                background:#e68900;
+                transform:scale(1.05);
+          }
+
     </style>
 </head>
 <body>
@@ -109,23 +129,25 @@
         red.oninput = function()
         {
             document.title = "R: " + this.value
-            c2 = `rgb(${red.value},${green.value},${blue.value})`
+            var c2 = `rgb(${red.value},${green.value},${blue.value})`
             document.body.style.background = c2
         }
 
         green.oninput = function()
         {
             document.title = "G: " + this.value
-            c2 = `rgb(${red.value},${green.value},${blue.value})`
+            var c2 = `rgb(${red.value},${green.value},${blue.value})`
             document.body.style.background = c2
         }
 
         blue.oninput = function()
         {
             document.title = "B: " + this.value
-            c2 = `rgb(${red.value},${green.value},${blue.value})`
+            var c2 = `rgb(${red.value},${green.value},${blue.value})`
             document.body.style.background = c2
         }
     </script>
+
+    <a href="Practice Page.html" class="back-btn">Back</a>
 </body>
 </html>
