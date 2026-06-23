@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#edcef6;
+}
+        .banner {
+            width: 850px;
+            height: 400px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner img.active {
+            display: block;
+        }
+
+        .radios{
+            text-align: center;
+            margin-top: 10px;
+        }
+
+header
+
+{
+    font-size:30px;
+    text-transform:uppercase;
+    font-family:Arial black;
+    background:#654597;
+    color:#efe5f7;
+    text-align:center;
+    box-sizing:border-box;
+    padding:20px;
+    box-shadow:5px 5px 5px rgb(158, 158, 158);
+    width:100%;
+    margin:auto;
+    margin-bottom:50px;
+    margin-top:20px;
+ 
+}
+
+footer{
+    background:#654597;
+    color:#efe5f7;
+    text-align:center;
+    padding:20px;
+    margin-top: 30px;
+}
+
+
+</style>
+<header>
+        Radio BUTTON BANNER</Button>
+</header>
+
+<body onLoad="show()">
+        <div class="banner">
+               <img src="images/k1.jpg" id="p" class="active">
+        </div>
+
+        <div class="radios">
+
+            <input type="radio" name="slide">
+            <input type="radio" name="slide">
+
+            <input type="radio" name="slide">
+            
+            <input type="radio" name="slide">
+
+        </div>
+
+        <script>
+            var p = document.getElementById("p");
+             var s = document.getElementsByName("slide");
+             var c = 0;
+
+             s[c].checked = true;
+
+             var t ;
+
+             function show()
+             {
+                if(c<=s.length-1)
+             {
+                c++
+             }
+             else
+             {
+                c=1;
+
+             }
+             p.src="images/k"+c+".jpg";
+             s[c-1].checked = true;
+
+            document.title = c
+            t = setTimeout(show,7000);
+
+            s[0].onclick = function(){
+                clearTimeout(t);
+                  p.src = "images/k2.jpg";
+                c=1
+               t = setTimeout(show,7000);
+
+            }
+          
+
+            s[1].onclick = function(){
+                clearTimeout(t);
+                 p.src = "images/k3.jpg";
+                c=2
+                 t = setTimeout(show,7000);
+
+            }
+
+            
+            s[2].onclick = function(){
+                clearTimeout(t);
+                  p.src = "images/k4.jpg";
+                c=3
+                t = setTimeout(show,7000);
+
+            }
+            
+            s[3].onclick = function(){
+                clearTimeout(t);
+                 p.src = "images/k5.jpg";
+                c=4
+                 t= setTimeout(show,7000);
+
+            }
+
+        }
+
+        </script>
+
+        <footer>
+    <p> © 2026 | Practice Work By Ruchika</p>
+   
+        </footer>
+
+
+</body>
+</html>

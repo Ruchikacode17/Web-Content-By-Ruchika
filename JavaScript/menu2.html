@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+     #nav
+     {
+        display:flex;
+        justify-content:space-evenly
+     }
+
+     #m, #m2, #m3 {
+           width:80px;
+           margin-top:2px;
+           background:lightgreen;
+           color:black;
+           padding:0px;
+     }
+
+     li{
+
+        list-style-type:none;
+        padding:10px;
+        cursor:pointer;
+     }
+
+     li:hover{
+          background:black;
+          color:lightgreen;
+     }
+
+     .toggle{
+          display:none;
+     }
+ 
+</style>
+<header>
+        Show Hide Menu</Button>
+</header>
+
+<body>
+    <div id="nav">
+
+        <div>
+            <button onclick="show_hide_menu(event)" id="menu1"> Main </button>
+
+            <ol id="m" class="toggle">
+                <li>Main</li>
+                <li>Project</li>
+                <li>Practice</li>
+            </ol>
+        </div>
+
+    </div>
+    <div>
+    <button onclick="show_hide_menu(event)" id="menu2">>
+        Project
+    </button>
+
+    <ol id="m2" class="toggle">
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+    </ol>
+    </div>
+
+    <div>
+        <button onclick="show_hide_menu(event)" id="menu3">
+            Social Media
+        </button>
+
+        <ol id="m3" class="toggle">
+            <li>YouTube</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+        </ol>
+    </div>      
+    </div>
+
+           <script>
+                var menu_visible = false;
+            var m1 = document.getElementById("m");
+
+            function show_hide_menu(event)
+            {
+                //alert(event.target.id)
+
+                var mid = event.target.id
+
+                m1.classList.add("toggle");
+                m2.classList.add("toggle");
+                m3.classList.add("toggle");
+
+                Switch(mid)
+                     {
+                        case "Menu1":
+                            m1.classList.remove("toggle");
+                            document.title ="Menu1"
+                            break;
+
+                        case "Menu2":
+                            m2.classList.remove("toggle");
+                            document.title ="Menu2"
+                            break;
+
+                        case "Menu3":
+                            m3.classList.remove("toggle");
+                            document.title ="Menu3"
+                            break;
+
+                     }
+            }
+
+            window.onclick = function(event)
+              {
+
+                //alert(event.target)
+            if((event.target == "[object HTMLHtmlElement]")||(event.target == "[object HTMLUnknownElement]"))
+                 {
+                    m1.classList.add("toggle");
+                    m1.classList.add("toggle");
+                    m1.classList.add("toggle");
+
+                 }
+              }
+           </script>
+     
+        <footer>
+    <p> © 2026 | Practice Work By Ruchika</p>
+
+        </footer>
+    
+</body>
+</html>
