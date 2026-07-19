@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLYING GAME</title>
+    <script>
+        var b = new Image()
+        b.src="https://i.pinimg.com/originals/8d/b9/f4/8db9f4c6d18772506bc3f717de4aac25.gif"
+        b.className="box"
+
+
+    </script>
+</head>
+<style>
+    .box
+    {
+        width: 250px;
+        position: absolute;
+        top: 45px;
+        left: 5px;
+        z-index: 100;
+
+    }
+
+    #back
+    {
+ position: absolute;
+        top: 80px;
+        left:0px;
+        width: 1550px;
+    }
+    body
+    {
+        overflow: hidden;
+        background:  #f4f2d0; 
+    }
+
+    header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:#A93F55;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:10px;
+box-shadow:2px 2px 2px gray;
+width:30%;
+margin:auto;
+margin-bottom:50px;
+margin-top:1px;
+border-radius: 5px;
+
+}
+
+footer{
+
+    background:#A93F55;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top: 50px;
+}
+
+</style>
+
+<header>
+FLYING BIRD GAME  
+</header>
+
+<body>
+
+    <img src="https://pin.it/2assjQ5UQ" id="back">
+    <div id ="box"></div>
+    
+    <script>
+
+        
+        var L = 10
+        var U = 10
+        var speed = 15
+
+        document.body.appendChild(b);
+        document.title="ready"
+        var back = document.getElementById("back")
+
+        function f1 (event)
+        {
+            var k = event.key
+            document.title = k
+            switch(k)
+            {
+                case "ArrowLeft":
+                    b.style.transform="rotateY(180deg)"
+                    if(L>10)
+                    {
+                        L-=speed
+                        b.style.left = L+"px"
+                        back.style.left=`-${L}px`
+                    }
+
+
+              break;
+              case "ArrowRight":
+                
+              
+
+              if(L<=window.innerWidth-130)
+              {
+                b.style.transform="rotate(0deg)"
+                L+=speed
+                b.style.Left = L+"px"
+                back.style.left=`${-L}px`
+              }
+
+
+              break;
+              case "ArrowUp":
+
+              if(U>0)
+            {
+                
+                U-=speed
+                b.style.top = U+"px"
+                back.style.top=`-${U}px`
+            }
+
+
+
+              break;
+              case "ArrowDown":
+                
+              if(U<=window.innerHeight-100)
+              {
+                   U+=speed
+                b.style.top = U+"px"
+                back.style.top=`-${U}px`
+         
+              }
+
+              break;
+
+              case "+":
+
+
+              speed=(speed<20)?speed+=2:speed
+              document.title = speed
+              break;
+
+                 case "-":
+
+                 
+              speed=(speed>2)?speed-=2:speed
+              document.title = speed
+              break;
+
+            }
+document.title = L+" "+R
+        }
+
+        document.addEventListener("keydown",f1)
+
+
+    </script>
+    
+</body>
+</html>

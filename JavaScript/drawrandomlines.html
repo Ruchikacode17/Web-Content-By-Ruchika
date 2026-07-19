@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+</head>
+
+<style>
+
+    body{
+
+    background-color: #EFD6AC;
+}
+
+header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:#04151F;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:40%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+
+}
+
+h2{
+ font-family: sans-serif;
+   background: #C44900;
+   color: white;
+   width: 200px;
+   text-align: center;
+   border-radius: 5px;
+   margin-left: 80px;
+   padding: 5px;
+   
+  
+}
+
+#pickcolor{
+    width:100px;
+    height:40px;
+    margin-left: 140px;
+    border-radius: 5px;
+       
+}
+.instructions{
+    width: 280px;
+    background: #f5f9d3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-left: 30px;
+    margin-top: -380px;
+}
+
+.instructions h3{
+    color:#690e04;
+    margin-bottom:15px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.instructions ul{
+    padding-left:20px;
+}
+
+.instructions li{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+
+footer{
+    background:#04151F;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top: 50px;
+}
+
+</style>
+
+<body>
+
+    <header>
+DRAW RANDOM LINES
+</header>
+
+
+
+<h2>Color Palatte</h2>
+
+<input type="color" id="pickcolor" value="#000000">
+    <canvas id="mycan" style="background: #183A37;" width="600" height="600"></canvas>
+
+<div class="instructions">
+    <h3>Instructions</h3>
+    <ul>
+        <li>Press 'r' Key for Increase the size of lines.</li>
+        <li>Press 't' Key for decrease the size of lines.</li>
+        <li>Press 's' Key for clear the Canvas.</li>
+        <li>Draw the Lines for mouse move. </li>
+        <li>Start and Stop for mouse left click.</li>
+    </ul>
+</div>
+
+    <script>
+        var c = document.getElementById("mycan");
+        var picker = document.getElementById("pickcolor");
+        var k;
+        var r = 10
+        var d = c.getContext("2d");
+         c.width = 650;
+        c.height = 480;
+        c.style.display = "block";
+        c.style.margin = "20px auto";
+        c.style.marginTop = "-75px";
+     
+        var drawmode = false
+
+        function f1(event)
+        {
+            //alert(event.keycode)
+            k = event.key
+            switch(k)
+            {
+                case "r":
+                    if(r<100)
+                    {
+                        r=r+1
+                            document.title = r
+                    }
+                    break;
+                    case "t":
+                        if(r>10)
+                    {
+                        r=r-1
+                        document.title = r
+                    }
+                    break;
+
+                    case "s":
+                       d.clearRect(0,0,window.innerWidth,window.innerHeight);
+
+                    break;    
+            }
+        }
+
+        function draw(event)
+{
+    if(drawmode==false)
+    {
+        return;
+    }
+
+    var x = event.pageX;
+    var y = event.pageY;
+
+    d.beginPath();
+     d.moveTo(x,y)
+    d.lineTo(Math.random()*1200,Math.random()*1200);
+
+    d.fillStyle = picker.value;
+
+    d.fill();
+        d.stroke();
+}
+
+        function f2()
+        {
+            drawmode = (!drawmode)?true:false
+
+            //document.title = drawmode
+        }
+
+        document.addEventListener("keydown",f1)
+        document.addEventListener("click",f2)
+       document.addEventListener("mousemove",draw)
+
+    </script>
+
+
+    <footer> 
+           <div id="footer"> © 2026 | Practice Work By Ruchika</div>
+    </footer>
+</body>
+</html>

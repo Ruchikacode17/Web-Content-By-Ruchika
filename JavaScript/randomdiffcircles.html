@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+        body{
+    background: #F4F1DE;
+  
+}
+
+header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:#3D405B;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px gray;
+width:50%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+
+}
+
+
+footer{
+    background:#3D405B;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top: 50px;
+}
+
+
+    </style>
+
+    <header>
+        GENERATE RANDOM CIRCLES
+    </header>
+    
+    <canvas id = "mycan" style="background:rgb(7, 7, 7)" width="600" height="600"></canvas>
+     
+    <script>
+        var c = document.getElementById("mycan");
+        var k;
+        var r = 10
+        var d = c.getContext("2d");
+        c.width = 650;
+        c.height = 480;
+        c.style.display = "block";
+        c.style.margin = "20px auto";
+        var red,green,blue,drawcolor
+        var drawmode = false
+        drawcolor = "red"
+        function pixel()
+        {
+            var x = Math.round(Math.random()*window.innerWidth)
+              var y = Math.round(Math.random()*window.innerHeight)
+
+
+              red = Math.round(Math.random()*255)
+                  green = Math.round(Math.random()*255)
+                      blue = Math.round(Math.random()*255)
+
+                      drawcolor = "rgb("+red+","+green+","+blue+")"
+                      d.beginPath();
+
+                      d.arc(x,y,Math.random()*50, 0 , 3 *Math.PI);
+                       d.fillStyle = drawcolor
+
+                       d.fill()
+                       document.title = x
+        }
+
+        setInterval("pixel()",10)
+    </script>
+
+    
+
+        <footer>
+        <div id="footer"> © 2026 | Practice Work By Ruchika</div>
+
+    </footer>
+</body>
+
+</html>
