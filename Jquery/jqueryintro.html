@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Introduction</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#f1e7f4,#f7eef9,#f8f0f9);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+header{
+    background:linear-gradient(to right,#510069,#009688);
+    color:white;
+    text-align:center;
+    font-size:32px;
+    font-family:Arial Black;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    padding:22px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
+main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+
+.box{
+    width:100%;
+    max-width:700px;
+    background:white;
+    border-radius:15px;
+    border-left:8px solid #5a0269;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:.3s;
+}
+
+.box:hover{
+    transform:translateY(-5px);
+}
+
+.box h2{
+    color:#5a0269;
+    margin-bottom:20px;
+    text-align:center;
+    text-decoration:underline;
+    font-size:30px;
+}
+
+.box p{
+    font-size:17px;
+    color:#444;
+    line-height:1.8;
+    text-align:justify;
+}
+
+.highlight{
+    color:#0d47a1;
+    font-weight:bold;
+    font-size:19px;
+}
+
+.box ul{
+    margin-top:20px;
+    padding-left:25px;
+}
+
+.box li{
+    margin-bottom:12px;
+    font-size:17px;
+    color:#333;
+}
+
+
+
+footer{
+    background:linear-gradient(to right,#510069,#009688);
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:16px;
+    margin-top:30px;
+}
+
+
+
+@media(max-width:768px){
+
+header{
+    font-size:24px;
+    padding:18px;
+}
+
+.box{
+    padding:20px;
+}
+
+.box h2{
+    font-size:24px;
+}
+
+.box p,
+.box li{
+    font-size:16px;
+}
+
+.highlight{
+    font-size:17px;
+}
+
+footer{
+    font-size:14px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    JQuery Introduction
+</header>
+
+<main>
+
+<div class="box">
+
+<h2>JQuery Introduction</h2>
+
+<p>
+<span class="highlight">jQuery</span> is a fast, lightweight and powerful JavaScript library that makes writing JavaScript much easier. It is one of the most popular JavaScript libraries because it simplifies complex tasks with less code. Many well-known companies such as Google, IBM, Netflix and Microsoft have used jQuery in different projects. The main purpose of jQuery is to make JavaScript development easier by following the principle <b>"Write Less, Do More."</b>
+</p>
+
+<ul>
+    <li>HTML / DOM Manipulation</li>
+    <li>CSS Manipulation</li>
+    <li>HTML Event Methods</li>
+    <li>Effects and Animations</li>
+</ul>
+
+</div>
+
+</main>
+
+<footer>
+    © 2026 | JQuery Introduction by Ruchika.
+</footer>
+
+</body>
+</html>
