@@ -111,38 +111,68 @@
         }
 
         .page-header{
-            width:90%;
-            margin:auto;
-            margin-top:20px;
-            margin-bottom:40px;
-            padding:25px;
-            text-align:center;
-            background:transparent;
-            box-shadow:none;
+                  width:100%;
+                  text-align:center;
+                  margin:70px 0 40px;
+                  padding:0;
+                  background:none;
+                  box-shadow:none;
         }
 
-        .page-header h2{
-            color:#4B5563;
-            font-size:32px;
-        }
+       .page-header h2{
+              color:#4B5563;
+              font-size:38px;
+              font-weight:600;
+               }
 
-        .cards-section{
-            width:90%;
-            margin:auto;
 
-            display:grid;
+        .page-header{
+    width:100%;
+    text-align:center;
+    margin:70px 0 40px;
+}
 
-            grid-template-columns:
-            repeat(auto-fit,minmax(260px,1fr));
+.page-header .line{
+    width:80px;
+    height:5px;
+    margin:0 auto 18px;
+    border-radius:20px;
+    background:linear-gradient(to right,#7DD3FC,#C084FC);
+}
 
-            gap:25px;
+.page-header h2{
+    color:#4B5563;
+    font-size:38px;
+    font-weight:600;
+}
+.cards-section{
+    width:90%;
+    margin:auto;
 
-            padding-bottom:60px;
-            flex: 1;
-        }
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+    padding-bottom:60px;
+    flex:1;
+}
+
+.jquery-section{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fill,260px);
+    gap:25px;
+}
 
         .card{
             background:#ffffffc7;
+           
+            max-width:370px;
+        width:260px;
+
 
             backdrop-filter:blur(8px);
 
@@ -460,9 +490,12 @@
 
 
     <header class="page-header">
-        <h2>Java Script Assignments</h2>
-        
-    </header>
+
+    <div class="line"></div>
+
+    <h2>JavaScript Assignments</h2>
+
+</header>
 
      <section class="cards-section">
 
@@ -475,7 +508,7 @@
         <div class="card">
             <h2>Second JavaScript</h2>
             <p>JavaScript interaction and functionality practice.</p>
-            <a href="javaScript/second.html" class="btn">View Project</a>
+            <a href="JavaScript/second.html" class="btn">View Project</a>
         </div>
 
         <div class="card">
@@ -568,6 +601,7 @@
             <a href="JavaScript/array2.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Redirection</h2>
             <p>Window object practice using JavaScript to open a new browser window and dynamically display custom content.</p>
@@ -622,7 +656,7 @@
     <h2>RGB Dynamic Colors</h2>
     <p>A time-based project using setInterval() to automatically cycle through random background colors.</p>
     <a href="JavaScript/RGBdynamiccolors.html" class="btn">View Project</a>
-</div>
+</div> 
 
 <div class="card">
     <h2>Change Days</h2>
@@ -689,22 +723,61 @@
     <p>In JS where each circle is filled with a randomly genreated color.</p>
     <a href="JavaScript/randomdiffcircles.html" class="btn">View Project</a>
 </div>
+</section>
+
+
 
 
 <header class="page-header">
-        <h2>Jquery Assignments</h2>
-        
-    </header>
 
-     <section class="cards-section">
+    <div class="line"></div>
+
+    <h2>JQuery Assignments</h2>
+
+</header>
+
+     <section class="jquery-section">
 
         <div class="card">
-            <h2>Jquery Inroduction</h2>
-            <p>Basic Jquery implementation project.</p>
-            <a href="Jqueryintro.html" class="btn">View Project</a>
+            <h2>JQuery Inroduction</h2>
+            <p>Learn the fundamentals of jQuery, including syntax, setup, and basic DOM interactions.</p>
+            <a href="Jquery/Jqueryintro.html" class="btn">View Project</a>
         </div>
 
     </section>
+
+
+    <section class="jquery-section">
+
+        <div class="card">
+            <h2>Event(Selector) Function</h2>
+            <p>Learn the basic functions of jQuery, including ready(), hide(), show(), toggle()</p>
+            <a href="Jquery/selectoreventfunction.html" class="btn">View Project</a>
+        </div>
+
+    </section>
+
+    <section class="jquery-section">
+
+        <div class="card">
+            <h2>Pull Down Menu</h2>
+            <p>Practice creating interactive navigation menus using jQuery slideToggle().</p>
+            <a href="Jquery/pulldownmenu.html" class="btn">View Project</a>
+        </div>
+
+    </section>
+
+    <section class="jquery-section">
+
+        <div class="card">
+            <h2>Accordion</h2>
+            <p>Build a responsive accordion using HTML, CSS, and jQuery with smooth collapsible content panels.</p>
+            <a href="Jquery/accordion.html" class="btn">View Project</a>
+        </div>
+
+    </section>
+
+    
 
     <footer>
         <div class="footer-content">
@@ -727,7 +800,7 @@
         </div>
 
         <div class="footer-bottom">
-            © 2026 | Designed & Developed By Ruchika
+            © 2026 | Designed & Developed By Ruchika.
         </div>
     </footer>
 
