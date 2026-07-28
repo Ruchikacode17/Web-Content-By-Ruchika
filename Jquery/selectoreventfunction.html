@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery function</title>
+    
+</head>
+  <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+<style>
+
+    body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdefca;
+}
+
+img{
+    width:500px;
+    height: 500px;
+    position: relative;
+    left: 565px;
+    border-radius: 10px;
+       transition:.5s;
+       cursor: pointer;
+       margin:auto;
+       text-align:center;
+}
+
+
+    header
+{
+font-size:30px;
+font-family: sans-serif;
+background:#DB5461;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px gray;
+width:55%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+border-radius: 3px;
+
+}
+
+
+#my{
+text-align: center;
+font-size: 25px;
+box-sizing: border-box;
+background: #3D5467;
+color: #ffffff;
+width: 20%;
+margin: auto;
+border-radius: 4px;
+font-family: serif;
+}
+
+h2{
+    text-align: center;
+font-size: 26px;
+text-decoration: underline;
+}
+
+#b1{
+    border-radius: 5px;
+       display: block;
+    margin: 20px auto;
+    padding: 8px 15px;
+    font-size: 20px;
+    background: #686963;
+    color: white;
+    border:none;
+    cursor: pointer;
+    transition: 2s;
+}
+.text{
+    font-size: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #8AA29E;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 8px gainsboro;
+    margin: 30px;
+}
+
+footer{
+    background: #DB5461;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
+
+<header>
+Selector Event Function In JQuery
+</header>  
+
+
+<body>
+<img src="https://i.pinimg.com/vwebp/736x/0c/b2/f5/0cb2f5706af4862d933df22e8ba3f1ad.webp">
+
+<button id = "b1" >hide button</button>
+<h1 id = "my">About National Animal</h1>
+<h2>Royal Bengal Tiger (Panthera tigris tigris)</h2>
+<p class="text">
+  National Animal of India - Tiger - Panthera tigris (Linnaeus) or the Tiger has been known long for his royal grace, strength, agility and enormous majesty and power. India hosts more than half the population of the tigers in the entire world and there are eight native species of tigers found in India. Especially the Royal Bengal Tiger can be seen in all the regions of India and its neighboring countries such as Nepal, Bhutan and Bangladesh, except the north-western Indian region. Due to the dwindling numbers of the tigers who enjoy one of the topmost positions of the food chain, the royal sport of game hunting was banned by the Indian government. In April 1973, 'Project Tiger' was launched to provide protection to this National Animal of India.
+</p>
+
+<script>
+   $(document).ready(function()
+{
+    $("#b1").click(function(){
+        $("#my").toggle("fast")
+    })
+
+
+     $(".text").mouseover(function()
+     {
+        $(this).css({"transition":"4s","color":"rgb(21, 35, 71)","background":"rgb(117, 244, 86)"})
+     })
+  })
+
+
+  $(".text").mouseout(function(){
+    $(this).css({
+        "transition":"2s",
+        "color":"white",
+        "background":" rgb(31, 64, 22)",
+        
+        
+    });
+});
+    
+
+</script>
+
+
+
+        <footer>
+        <div id="footer"> © 2026 | JQuery Content by Ruchika.</div>
+
+    </footer>
+</body>
+</html>>

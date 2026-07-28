@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore India Accordion</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0b3056,#032a52,#0b3056);
+    background-attachment:fixed;
+    padding:20px;
+}
+
+header{
+
+    padding:40px;
+    margin:auto;
+    text-align: center;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #00E8FC;
+    color: #012528;
+    width:55%;
+    margin-top:3%;
+    margin-bottom:2%;
+    box-shadow: 5px 5px 5px rgb(100, 100, 100);
+    border-radius: 3px;
+
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0px 10px 30px rgba(0,0,0,.4);
+}
+
+h1{
+    text-align:center;
+    padding:25px;
+    background:#545863;
+    color:#F9C846;
+    font-size:40px;
+    letter-spacing:2px;
+}
+
+.subtitle{
+    text-align:center;
+    padding:15px 25px;
+    font-size:18px;
+    color:#555;
+    background:#dac1ba;
+}
+
+.box{
+    margin:18px;
+}
+
+.head{
+    background:#F96E46;
+    color:#fcfbfa;
+    padding:18px;
+    font-size:24px;
+    cursor:pointer;
+    border-radius:10px;
+    margin-bottom:6px;
+    transition:.4s;
+}
+
+.head:hover{
+   background:#545863;
+}
+
+.content{
+    display:none;
+    padding:25px;
+    font-size:18px;
+    line-height:32px;
+    border-radius:0 0 10px 10px;
+}
+
+.content p{
+    text-align:justify;
+    margin-bottom:20px;
+}
+
+img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+footer{
+    background: #00E8FC;
+    color: #012528;
+    text-align:center;
+    padding:20px;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:10px;
+    box-shadow: 5px 5px 5px rgb(100, 100, 100);
+    border-radius: 3px;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.container{
+    width:95%;
+}
+
+h1{
+    font-size:28px;
+}
+
+.subtitle{
+    font-size:16px;
+}
+
+.head{
+    font-size:20px;
+    padding:15px;
+}
+
+.content{
+    font-size:16px;
+    line-height:28px;
+}
+
+img{
+    height:250px;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+    <header>
+    Explore Incredible Digital India
+</header>
+
+<div class="container">
+
+<h1> Digital India </h1>
+
+
+<!-- UPI (Unified Payments Interface) -->
+
+<div class="box">
+<div class="head" id="col1">
+💸UPI (Unified Payments Interface)
+</div>
+<div class="content" id="UPIsub">
+<p>
+India's Unified Payments Interface <b>"Most widely used payment method"</b>
+UPI accounts for nearly 49% of the world's real-time digital payments, processing over 660 million transactions daily.
+Launched on April 11, 2016, it is the largest instant payment network globally.
+UPI Leads the World in Real Time Payments. India's Unified Payments Interface is also now the world's number one real-time payment system.
+It's the most widely used payment method in India, having even surpassed traditional cash transactions for everyday retail and merchant payments.
+<br/>
+Instant Transfers: Transfers funds directly and immediately between bank accounts 24/7.
+Ease of Use: Operates through simple smartphone applications using QR code scanning or a unique UPI ID.
+Security: Protected by two-factor authentication and a secure personal UPI PIN.
+
+</p>
+<img src="https://nomadgao.com/wp-content/uploads/2023/09/UPI-Payments-in-India.jpg" alt="UPI-Payments-in-India">
+</div>
+</div>
+
+<!-- DigiLocker App -->
+
+<div class="box">
+<div class="head" id="col2">
+🔒 DigiLocker
+</div>
+<div class="content" id="DigiLockersub">
+<p>
+Government Official Digital Account 
+<b>Secure all you original id's</b> DigiLocker is a secure, 
+cloud-based platform launched by the Ministry of Electronics and Information Technology (MeitY) under India's Digital India program. 
+It allows users to store, share, and verify authentic official documents and certificates that are legally recognized at par with originals.
+<br>
+Legal Validity: Documents fetched directly from issuers carry the same legal weight as original physical documents under the Information Technology Act, 2000.
+Accessibility: View and present important IDs like Aadhaar, PAN, driving licenses, and mark sheets anytime and anywhere via mobile app or web.
+User Consent: Secure sharing system via OAuth 2.0 protocol ensuring data is shared only with explicit user permission.
+Paperless Governance: Minimizes physical paperwork and streamlines verification for education, healthcare, and financial services.
+</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLm_pqboIynvoEawgzABjUlHkSRjWbxHs8zF2ymWGrO7mTvIjvrsGDW_OE&s=10" alt="DigiLocker">
+</div>
+</div>
+
+<!-- eSanjeevani App -->
+
+<div class="box">
+<div class="head" id="col3">
+🩺 eSanjeevani
+</div>
+<div class="content" id="eSanjeevanisub">
+<p>
+eSanjeevani is India's flagship national telemedicine service and the world's largest government-owned primary healthcare teleconsultation platform. 
+It has served around 250 million patients across the country entirely free of cost.
+<br/>
+Digital Integration: Linked directly with the Ayushman Bharat Digital Mission (ABDM) to generate ABHA IDs and maintain electronic health records.
+Accessibility: Generates instant digital e-prescriptions after a consultation, reducing travel expenses and overcrowding at secondary or tertiary hospitals.
+</p>
+<img src="https://i0.wp.com/www.ictworks.org/wp-content/uploads/2025/10/esanjeevani.png?fit=640%2C442&ssl=1" alt="eSanjeevani">
+</div>
+</div>
+
+<!-- UMANG App -->
+
+<div class="box">
+<div class="head" id="col4">
+📲 UMANG
+</div>
+<div class="content" id="UMANGsub">
+<p>
+UMANG (Unified Mobile Application for New-age Governance)  <b>"Combine Platform"</b>
+UMANG (Unified Mobile Application for New-age Governance) is a key Digital India platform developed by the Ministry of Electronics and Information Technology (MeitY) and the National e-Governance Division (NeGD).
+It provides single-window access to thousands of central, state, and local government services.
+<br/>
+Unified Access: Combines services from multiple ministries, departments, and states into one app.
+Multilingual Support: Operates in 23 Indian languages.
+Cross-Platform: Available on Android, iOS, and via the UMANG Web Portal.
+Integrated Services: Direct connection to utilities like DigiLocker and Aadhaar.
+</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH_KDl-xsPhfSgAVkKXiQRXE45fwueuULQH7nH3baZu219sYNGNVa9sRJp&s=10" alt="UMANG">
+</div>
+</div>
+</div>
+
+
+
+<script>
+
+$("#UPIsub").hide();
+$("#DigiLockersub").hide();
+$("#eSanjeevanisub").hide();
+$("#UMANGsub").hide();
+
+$(document).ready(function(){
+
+    $("#col1").click(function(){
+
+        $("#UPIsub").slideUp(500);
+        $("#DigiLockersub").slideUp(500);
+        $("#eSanjeevanisub").slideUp(500);
+
+        $("#UPIsub").slideToggle(500);
+
+        $("#UPIsub").css({
+            "background":"#0B8457",
+            "color":"white",
+            "width":"100%"
+        });
+
+    });
+
+    $("#col2").click(function(){
+
+        $("#DigiLockersub").slideUp(500);
+        $("#eSanjeevanisub").slideUp(500);
+        $("#UMANGsub").slideUp(500);
+
+        $("#DigiLockersub").slideToggle(500);
+
+        $("#DigiLockersub").css({
+            "background":"#8B4513",
+            "color":"white",
+            "width":"100%"
+        });
+
+    });
+
+    $("#col3").click(function(){
+
+        $("#eSanjeevanisub").slideUp(500);
+        $("#UPIsub").slideUp(500);
+        $("#UMANGsub").slideUp(500);
+
+        $("#eSanjeevanisub").slideToggle(500);
+
+        $("#eSanjeevanisub").css({
+            "background":"#0077B6",
+            "color":"white",
+            "width":"100%"
+        });
+
+    });
+
+    $("#col4").click(function(){
+
+        $("#UMANGsub").slideUp(500);
+        $("#UPIsub").slideUp(500);
+        $("#UMANGsub").slideUp(500);
+
+        $("#UMANGsub").slideToggle(500);
+
+        $("#UMANGsub").css({
+            "background":"#2D6A4F",
+            "color":"white",
+            "width":"100%"
+        });
+
+    });
+
+});
+
+</script>
+
+<footer>
+        <div id="footer"> © 2026 | JQuery Content by Ruchika. </div>
+
+    </footer>
+
+</body>
+</html>

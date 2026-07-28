@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pull Down Menu</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<style>
+
+ header
+{
+font-size:30px;
+font-family: sans-serif;
+background: #573D1C;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px gray;
+width:55%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+border-radius: 3px;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #E3C567;
+}
+
+.menu{
+width:320px;
+margin:40px auto;
+background:#D1462F;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 5px rgba(0,0,0,.2);
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.menu h3{
+background:#D1462F;
+color: white;
+padding:15px;
+cursor:pointer;
+transition:.3s;
+}
+
+.menu h3:hover{
+background:#611002
+;
+}
+
+.menu ul{
+display:none;
+list-style:none;
+background: #f9bcb1;
+}
+
+.menu ul li a{
+display:block;
+padding:14px;
+text-decoration:none;
+color:#806161;
+transition:.3s;
+}
+
+.menu ul li a:hover{
+background:#cd5c48;
+color:rgb(251, 249, 249);
+padding-left:25px;
+}
+
+
+footer{
+    background: #573D1C;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    PULL DOWN MENU (jQuery)
+</header>
+
+
+<div class="menu">
+
+<h3 id="main">Main</h3>
+
+<ul id="mainMenu">
+     <li><a href="index.html">Profile</a></li>
+    <li><a href="Practice Page.html">Practice Page</a></li>
+    <li><a href="project.html">Project</a></li>
+     <li><a href="Photo Gallery.html">Photo Gallery</a></li>
+</ul>
+
+<h3 id="project">Projects</h3>
+
+<ul id="projectMenu">
+   <li><a href="Practice Page.html">HTML</a></li>
+    <li><a href="Practice Page.html">JAVASCRIPT</a></li>
+    <li><a href="Practice Page.html">jQuery</a></li>
+
+</ul>
+
+<h3 id="social">Social Media</h3>
+
+<ul id="socialMenu">
+  <li><a href="https://www.youtube.com">YouTube</a></li>
+    <li><a href="https://www.instagram.com">Instagram</a></li>
+    <li><a href="https://www.facebook.com">Facebook</a></li>
+
+</ul>
+
+</div>
+
+<script>
+
+$(document).ready(function(){
+
+$("#main").click(function(){
+
+$("#mainMenu").slideToggle(400);
+
+});
+
+$("#project").click(function(){
+
+$("#projectMenu").slideToggle(400);
+
+});
+
+$("#social").click(function(){
+
+$("#socialMenu").slideToggle(400);
+
+});
+
+});
+
+</script>
+
+       <footer>
+        <div id="footer"> © 2026 | JQuery Content by Ruchika. </div>
+
+    </footer>
+
+</body>
+</html>
