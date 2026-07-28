@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub Of Stories</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+}
+
+header{
+    text-align: center;
+    padding: 30px 20px;
+    background: #01262c;
+    border-bottom: 5px solid gold;
+}
+
+header h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: gold;
+}
+
+/* Container */
+.container{
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+/* Cards */
+.card{
+    background: white;
+    color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+    transition: 1s;
+}
+
+.card:hover{
+    transform: translateY(-3px);
+}
+
+.card h2{
+    background: #111111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.card img{
+    width: 100%;
+    height:500px;
+    object-fit: cover;
+}
+
+.card p{
+    padding: 20px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Table */
+
+.tableSection{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.tableSection h2{
+    text-align: center;
+    margin-bottom:20px;
+    color:gold;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background:#f9f0d3;
+    color: #5e4803;
+}
+
+table th{
+    background: #111;
+    color: white;
+    padding: 15px;
+}
+
+table td{
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table tr:hover{
+    background:#ffeaa7;
+}
+
+/* Footer */
+
+footer{
+    background:#01262c;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+footer h3{
+    color:gold;
+    margin-bottom:10px;
+    
+}
+
+/* Mobile Screen */
+
+@media(max-width:600px){
+
+header h1{
+    font-size:30px;
+}
+
+.container{
+    grid-template-columns:1fr;
+}
+
+.card img{
+    height:300px;
+}
+
+table{
+    font-size:14px;
+}
+
+table th,
+table td{
+    padding:10px;
+}
+
+}
+</style>
+
+<body>
+<header id="head">
+    <h1>🏛️ Hub Of Books 🏛️</h1>
+    <p>"Welcome to Hub Of Books — A Digital Space for Book Lovers to Discover, Explore, and Celebrate the Magic of Reading."</p>
+</header>
+
+<div class="container">
+
+<!-- Musafir Cafe -->
+<div class="card">
+    <h2 id="musafircafeHead">🧳Musafir Cafe</h2>
+    <img id="musafircafeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8oo7kg8XwBy97jzmVFXf9Jwh6OZ3XF0YwVAqsg7l4hp59oNvtGEvJ4vQ&s=10" alt="Musafir Cafe">
+
+<p id="musafirText">
+
+Musafir Café by Divya Prakash Dubey is a modern romance about Sudha, an ambitious divorce lawyer, and Chander, a techie with dreams of writing. 
+Defying societal pressures, they choose an unconventional live-in relationship over marriage. 
+The book explores urban struggles, personal freedom, and the balance between chasing individual dreams and nurturing love.
+</p>
+</div>
+
+<!-- October Junction -->
+ <div class="card">
+    <h2 id="octoberjunctionHead"> 🍂October Junction</h2>
+    <img id="octoberjunctionImg" src="https://ganam.in/cdn/shop/products/htls7gyoxw.jpg?v=1665511396&width=1445" alt="October Junction">
+
+<p id="OctoberJunctionText">
+   October Junction is a contemporary Hindi novel by Divya Prakash Dubey that explores an unconventional bond between two people, 
+   Chitra and Sudeep, who agree to meet for just one day a year over the span of a decade. 
+</p>
+</div>
+
+<!-- Gunaho Ka Devta -->
+
+<div class="card">
+
+<h2 id="gunahokadevtaHead">🪶Gunaho Ka Devta</h2>
+
+<img id="gunahokadevtaImg"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmdwnJbXYrE4SSThnrr-aogKG222O3IzvyVDUaAkmnm3DJBExdEKaMivN6&s=10"alt="Gunaho Ka Devta">
+
+<p id="gunahokadevtaText">
+Gunahon Ka Devta (The God of Sins) is a tragic 1949 Hindi novel by Dharamvir Bharati that explores the painful conflict between pure love, social duty, and caste boundaries in Allahabad. 
+It centers on the unspoken romance between Chander, a bright student, and Sudha, his college professor's daughter. 
+
+</p>
+
+</div>
+
+<!-- Personality Plus -->
+
+<div class="card">
+
+<h2 id="personalityplusHead">📘Personality Plus</h2>
+
+<img id="personalityplusImg"
+src="https://rezised-images.knhbt.cz/1920x1920/84199415.jpg"alt="Pesonality Plus">
+
+<p id="personalityplusText">
+
+Explores four basic personality types - Sanguine, Choleric, Melancholy, and Phlegmatic ----
+helping readers understand their own temperament and better interact with different personalities.
+
+</p>
+
+</div>
+
+</div>
+
+<section class="tableSection">
+
+<h2 id="tableHeading">Book Hub Information</h2>
+
+<table id="bookTable">
+
+<tr>
+<th>Book Name</th>
+<th>Author</th>
+<th>Genre</th>
+</tr>
+
+<tr>
+<td>Musafir Cafe</td>
+<td>Divya Prakash Dubey</td>
+<td>Fiction / Romance</td>
+</tr>
+
+<tr>
+<td>October Junction</td>
+<td>Divya Prakash Dubey</td>
+<td>Romantic Fiction</td>
+</tr>
+
+<tr>
+<td>Gunaho Ke Devta</td>
+<td>Dharamvir Bharati</td>
+<td>Classic Romance / Drama</td>
+</tr>
+
+<tr>
+<td>Personality Plus</td>
+<td>Florence Littauer</td>
+<td>Self Improvement</td>
+</tr>
+
+</table>
+
+</section>
+
+<footer id="foot">
+
+<h3>📚 Read. Explore. Imagine. Grow. 📚</h3>
+
+<p>Designed using HTML, CSS & jQuery</p>
+
+</footer>
+
+<!-- External JavaScript -->
+
+<script src="script.js"></script>
+
+    
+</body>
+</html>
