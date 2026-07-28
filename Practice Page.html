@@ -147,32 +147,25 @@
 }
 .cards-section{
     width:90%;
-    margin:auto;
+    margin:0 auto 60px;
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns:repeat(auto-fit,260px);
 
-    gap:25px;
+    justify-content:center;
 
-    padding-bottom:60px;
-    flex:1;
+    column-gap:55px;
+
+    row-gap:40px;
 }
 
-.jquery-section{
-    width:90%;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fill,260px);
-    gap:25px;
-}
 
         .card{
             background:#ffffffc7;
            
             max-width:370px;
-        width:260px;
-
+            width:260px;
 
             backdrop-filter:blur(8px);
 
@@ -191,6 +184,15 @@
             display:flex;
             flex-direction:column;
         }
+
+        .card-container{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
 
         .card:hover{
             transform:
@@ -727,7 +729,6 @@
 
 
 
-
 <header class="page-header">
 
     <div class="line"></div>
@@ -736,7 +737,7 @@
 
 </header>
 
-     <section class="jquery-section">
+     <section class="cards-section">
 
         <div class="card">
             <h2>JQuery Inroduction</h2>
@@ -744,10 +745,6 @@
             <a href="Jquery/Jqueryintro.html" class="btn">View Project</a>
         </div>
 
-    </section>
-
-
-    <section class="jquery-section">
 
         <div class="card">
             <h2>Event(Selector) Function</h2>
@@ -755,9 +752,6 @@
             <a href="Jquery/selectoreventfunction.html" class="btn">View Project</a>
         </div>
 
-    </section>
-
-    <section class="jquery-section">
 
         <div class="card">
             <h2>Pull Down Menu</h2>
@@ -765,9 +759,6 @@
             <a href="Jquery/pulldownmenu.html" class="btn">View Project</a>
         </div>
 
-    </section>
-
-    <section class="jquery-section">
 
         <div class="card">
             <h2>Accordion</h2>
