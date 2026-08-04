@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>bounce demo</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css">
+  <style>
+ 
+  body{
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #c3c7b2;
+}
+
+
+  header
+{
+font-size:32px;
+font-family: sans-serif;
+background: #838b5b;
+color:#e9edd9;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px gray;
+width:55%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+
+}
+
+
+.pic img{
+    width: 320px;
+    margin-left: 620px;
+    margin-top: 25px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 4px gray;
+}
+
+footer{
+    background: #838b5b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top: 55px;
+}
+
+</style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+</head>
+<body>
+ 
+<header>
+BOUNCE FUNCTION
+</header>
+
+<div id="pic1" class="pic">
+    <img src = "https://i.pinimg.com/736x/12/cc/5b/12cc5bda5331e377250f97e496dfaf18.jpg">
+</div>
+ 
+<script>
+$( document ).click(function() {
+  $( "#pic1" ).toggle( "bounce", { times: 3 }, "slow" );
+});
+</script>
+
+
+
+        <footer>
+        <div id="footer"> © 2026 | JQuery Content by Ruchika. </div>
+
+    </footer>
+ 
+</body>
+</html>
