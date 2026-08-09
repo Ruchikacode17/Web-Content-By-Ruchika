@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
     
     <style>
         * {
@@ -75,37 +76,64 @@
             max-width: 700px;
             margin: 0 auto 50px auto;
         }
-        .portal-grid {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            width: 100%;
-            flex-wrap: wrap;
-        }
+
+
+       .portal-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
 
         .portal-card {
-           background:#ffffffc7;
-           backdrop-filter:blur(8px);
-           border:1px solid rgba(255,255,255,0.5);
-           box-shadow:0 5px 18px rgba(0,0,0,0.06);
-            padding: 40px 30px;
-             border-radius: 20px;
+    position: relative;
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 
-             flex:1;
-             min-width:300px;
-             max-width:450px;
+    border: 1px solid rgba(255,255,255,0.75);
 
-             text-align:center;
-             transition:0.3s ease-in-out;
-        }
+    box-shadow:
+        0 10px 30px rgba(31,41,55,0.08),
+        0 2px 8px rgba(31,41,55,0.04);
 
+    padding: 38px 30px;
+    border-radius: 22px;
+
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+
+    min-height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: left;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+
+    overflow: hidden;
+}
 
         .portal-card:hover {
-            transform: translateY(-8px);
-            border-color: #ff5b2e;
-            box-shadow: 0 15px 35px rgba(255, 91, 46, 0.15);
-        }
+    transform: translateY(-10px);
+
+    border-color: rgba(109,91,208,0.35);
+
+    box-shadow:
+        0 22px 45px rgba(31,41,55,0.12),
+        0 5px 15px rgba(109,91,208,0.08);
+}
+
+
         .portal-card h3 {
             font-size: 24px;
             color:#374151;
@@ -117,30 +145,41 @@
             line-height: 24px;
             margin-bottom: 30px;
         }
+
+
         .launch-btn {
-            display: inline-block;
-            padding: 14px 28px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-            border-radius: 8px;
-            transition: 0.3s;
-            width: 100%;
-        }
+    display: inline-block;
+    padding: 13px 20px;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+
+    width: 100%;
+    text-align: center;
+}
+
+
         .btn-orange {
             background: #ff5b2e;
             color: white;
         }
-        .btn-orange:hover {
-            background: #ff784e;
-        }
+
+        .btn-orange:hover,
+.btn-yellow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+}
+        
         .btn-yellow {
             background: #ffb703;
             color: #0f172a;
         }
-        .btn-yellow:hover {
-            background: #ffc93c;
-        }
+       
 
         .home-btn{
              display:inline-block;
@@ -163,6 +202,15 @@
       .home-btn:hover{
              transform:translateY(-3px);
       }
+
+      .project-number {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #6D5BD0;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
 
 
       .section-title{
@@ -199,51 +247,95 @@
 <body>
 
     <div class="project-dashboard">
-        <h1>Project Portfolio Dashboard</h1>
+        <h1>My Creative Projects</h1>
         <div class="title-divider">
             <span class="line"></span>
             <span class="dot"></span>
             <span class="line"></span>
         </div>
         <p class="project-desc">
-            Welcome to my project portfolio dashboard. Explore website projects, student showcases, and future development work.
-        </p>
+    A curated collection of websites, creative assignments,
+    and digital experiences crafted through design and development.
+</p>
 
         <a href="index.html" class="home-btn">
             ← Back To Portfolio Home
         </a>
 
         <h2 class="section-title">
-             Website Projects
-        </h2>
+    Selected Works
+</h2>
 
-        <div class="portal-grid">
+  <div class="portal-grid">
 
-      <div class="portal-card">
-    <div>
-        <h3>Arena Animation Website</h3>
-        <p>
-            Features our Hero Banner, 2-column Animated About Story,
-            7 Core Professional Courses Grid, Visual Art Gallery,
-            and Live Contact Map with Query Intake Panel.
-        </p>
+    <!-- Arena Animation & Student Assignments -->
+    <div class="portal-card">
+        <div>
+
+            <div class="project-number">
+    01 / CREATIVE LEARNING
+</div>
+            <h3>Arena Animation & Student Assignments</h3>
+
+            <p>
+                A complete creative learning showcase featuring Arena Animation
+                website design, student assignments, digital artwork,
+                motion graphics, visual experiments, and creative projects.
+            </p>
+        </div>
+
+        <a href="Arena-Animation/index.html"
+           class="launch-btn btn-orange">
+            Explore Project
+        </a>
     </div>
 
-    <a href="Arena-Animation/index.html"
-       class="launch-btn btn-orange">
-       Launch Home Page
-    </a>
-</div>
-        
+    <!-- Travel Host Website -->
+    <div class="portal-card">
+        <div>
 
-            <div class="portal-card">
-                <div>
-                    <h3>Student Assignment Showcase</h3>
-                    <p>Displays verified multi-disciplinary digital files including Broadcast Virtual News Studio, 3D kinetic text tracking layouts, 2D vector locomotion cycles, and advanced After Effects sand disintegrations.</p>
-                </div>
-                <a href="Arena-Animation/studentwork.html" class="launch-btn btn-yellow">Launch Video Portfolio</a>
-            </div>
+            <div class="project-number">
+    02 / TRAVEL & EXPERIENCE
+</div>
+            <h3>Travel Host Website</h3>
+
+            <p>
+                A travel-focused website concept featuring destinations,
+                travel services, beautiful visual sections, and a responsive
+                user-friendly experience.
+            </p>
         </div>
+
+        <a href="Travel Host/indextravel.html"
+           class="launch-btn btn-yellow">
+            Explore Project
+        </a>
+    </div>
+
+    <!-- India's Commonwealth Games 2026 -->
+    <div class="portal-card">
+        <div>
+
+            <div class="project-number">
+    03 / SPORTS & EVENT
+</div>
+            <h3>India's Commonwealth Games 2026</h3>
+
+            <p>
+                A premium sports website concept created around India's
+                Commonwealth Games 2026, combining modern visual design,
+                event information, sports presentation, and interactive
+                sections.
+            </p>
+        </div>
+
+        <a href="Commonwealth-2026/index.html"
+           class="launch-btn btn-orange">
+            Explore Project
+        </a>
+    </div>
+
+</div>
     </div>
 
     <footer class="footer">
