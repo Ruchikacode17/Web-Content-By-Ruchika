@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<title>About | Travel Host</title>
+
+<style>
+html{
+    scroll-behavior:smooth;
+}
+
+*{margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+    color:#555;
+    line-height:1.7;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#333;
+color:white;
+padding:10px 40px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+box-sizing:border-box;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+z-index:1000;
+}
+
+.right a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    padding:5px 10px;
+}
+
+.right a:hover{
+   color:#ff7a18;
+    border-bottom:2px solid #ff7a18;
+    transition:.3s;
+}
+
+.active{
+   background:#ff7a18;
+border-radius:5px;
+color:white !important;
+}
+
+
+.top{
+    height:350px;
+    margin-top:60px;
+    background:url(images/banner1.webp) center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+.top::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.45);
+
+}
+
+.top h1{
+
+position:relative;
+
+z-index:2;
+
+font-size:50px;
+
+text-shadow:2px 2px 10px rgba(0,0,0,.5);
+
+}
+
+
+.section{
+  padding:60px 40px;
+
+text-align:center;
+
+background:white;
+}
+
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.team-title{
+
+text-align:center;
+
+font-size:32px;
+
+margin-top:40px;
+
+margin-bottom:20px;
+
+color:#333;
+
+}
+
+.box{
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+    flex-wrap:wrap;
+}
+
+.item{
+
+width:260px;
+
+background:white;
+
+padding:20px;
+
+margin:20px;
+
+border-radius:12px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+transition:.3s ease;
+
+}
+
+.item img{
+    width:100%;
+    border-radius:10px;
+    height:260px;
+    object-fit:cover;
+    display:block;
+}
+
+
+.item:hover{
+    transform:translateY(-10px);
+    transition:.3s;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.box{
+    background:#f8f9fa;
+}
+
+.why-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-bottom:40px;
+
+}
+
+.why-box div{
+
+background:#fff;
+
+padding:20px;
+
+border-radius:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+font-weight:bold;
+
+}
+
+.social{
+    padding:30px;
+    text-align:center;
+    background:white;
+}
+
+.social h3{
+    margin-bottom:20px;
+    color:#333;
+}
+
+.social a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:50px;
+    height:50px;
+    margin:10px;
+    border-radius:50%;
+    background:#f4f4f4;
+    color:#333;
+    text-decoration:none;
+    font-size:22px;
+    transition:.3s;
+    box-shadow:0 5px 10px rgba(0,0,0,.15);
+}
+
+.social a:hover{
+    background:#ff7a18;
+    color:white;
+    transform:translateY(-5px);
+}
+
+.footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:0;
+}
+
+.footer p{
+    color:white;
+}
+
+p{
+      color:#555;
+    line-height:1.7;
+}
+
+@media (max-width:768px)
+
+{
+
+.nav{
+flex-direction:column;
+align-items:center;
+padding:15px;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+z-index:1000;
+}
+
+.right{
+
+display:flex;
+flex-direction:column;
+margin-top:15px;
+gap:10px;
+text-align:center;
+align-items:center;
+
+}
+
+.top{
+
+height:auto;
+padding:70px 20px;
+
+}
+
+.top h1{
+
+font-size:36px;
+
+}
+
+.section{
+
+padding:20px;
+
+font-size:16px;
+
+}
+
+.box{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+.item{
+
+width:90%;
+
+}
+
+.item img{
+
+height:auto;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+    <div>Travel Host</div>
+    <div class="right">
+        <a href="indextravel.html">Home</a>
+        <a href="abouttravel.html" class="active">About</a>
+        <a href="placestravel.html">Places</a>
+        <a href="servicestravel.html">Services</a>
+    </div>
+</div>
+
+<div class="top"><h1>About Us</h1></div>
+
+<div class="section">
+    <h2 class="team-title">Who We Are</h2>
+
+<p>Travel Host is a modern travel website created to help travelers explore India's most beautiful destinations with ease.</p>
+<br>
+
+<p>Our goal is to provide destination details, travel guidance, seasonal recommendations, and useful information that makes trip planning simple and enjoyable.</p>
+<br>
+
+<p>Whether you're looking for adventure, nature, or cultural experiences, Travel Host helps you discover the perfect place for your next journey.</p>
+</div>
+
+
+
+
+<h2 class="team-title">
+    Why Choose Travel Host?
+</h2>
+
+<div class="why-box">
+    <div>✔ Trusted Information</div>
+    <div>✔ Easy Trip Planning</div>
+    <div>✔ Popular Destinations</div>
+    <div>✔ User-Friendly Experience</div>
+</div>
+
+<h2 class="team-title">
+    Meet Our Team
+</h2>
+
+<div class="box">
+
+    <div class="item">
+        <img src="images/r1.jpg" alt="Founder">
+        <h3>Ruchika</h3>
+        <p>Founder • Front-End Developer & UI Designer</p>
+    </div>
+
+    <div class="item">
+        <img src="images/guide.jpeg" alt="Travel Guide">
+        <h3>Guide</h3>
+        <p>Travel Guide Expert</p>
+    </div>
+
+</div>
+
+
+
+<div class="social">
+
+<h3>Follow Us</h3>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+<div class="footer">
+    <p>Copyright © 2026 by Ruchika | Travel Host</p>
+</div>
+
+</body>
+</html>

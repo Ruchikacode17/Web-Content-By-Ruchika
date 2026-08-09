@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Travel Host</title>
+
+<style>
+
+html {
+    scroll-behavior: smooth;
+}
+  body {
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f8f9fa;
+    color:#555;
+line-height:1.7;
+  }
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#333;
+    color:white;
+    padding:10px 40px;   /* 15px se 10px */
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    box-sizing:border-box;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+    z-index:1000;
+}
+
+nav h3{
+    font-size:28px;
+    margin:0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+
+}
+.nav-links a{
+     text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+
+nav a:hover {
+    color:yellow;
+    text-decoration:none;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+    transition: 0.3s;
+     
+}
+
+#Home {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    min-height:100vh;
+    padding-top:90px;
+
+    background-image:url("images/Banner.png");
+    color:white;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    text-align:center;
+}
+
+#Home h1{
+
+font-size:60px;
+line-height:1.2;
+margin-bottom:15px;
+
+}
+
+#Home p{
+
+font-size:22px;
+margin-bottom:25px;
+
+}
+
+#Home::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.35);
+
+}
+
+#Home>*{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.search-box{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+margin-top:20px;
+
+}
+
+.search-box input{
+
+width:280px;
+height:48px;
+
+padding:0 15px;
+
+border:none;
+
+border-radius:5px;
+
+outline:none;
+
+font-size:16px;
+
+box-sizing:border-box;
+
+}
+
+.search-box button{
+
+height:48px;
+
+padding:0 25px;
+
+background:#ff7a18;
+
+border:none;
+
+color:white;
+
+border-radius:5px;
+
+cursor:pointer;
+
+font-size:16px;
+}
+
+.search-box button:hover{
+
+background:#333;
+
+}
+
+.btn{
+margin-top:15px;
+padding:10px 20px;
+border:none;
+background:#ff7a18;
+color:white;
+cursor:pointer;
+border-radius:5px;
+
+text-decoration:none;
+display:inline-block;
+}
+
+
+.btn:hover{
+
+background:#333;
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.counter{
+
+display:flex;
+
+justify-content:space-evenly;
+
+padding:30px;
+
+background:white;
+
+text-align:center;
+
+}
+
+.counter h2{
+
+color:#ff7a18;
+
+font-size:35px;
+
+}
+
+.counter p{
+
+color:#555;
+
+}
+
+#Places {
+    background: #e2fefb;  
+    padding: 20px;
+}
+
+
+
+.Places-box{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  
+}
+
+.Place {
+    
+    background:#eee;
+    padding:20px;
+    flex:1;
+    margin-top:20px;
+    transition: 0.3s;
+    width:250px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.Place:hover {
+    transform:translateY(-10px);
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.Place img{
+
+width:100%;
+height:180px;
+object-fit:cover;
+display:block;
+border-radius:10px;
+
+}
+
+.why-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-bottom:40px;
+
+}
+
+.why-box div{
+
+background:white;
+
+padding:20px;
+
+border-radius:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+font-weight:bold;
+
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:28px;
+    color:#333;
+    text-align:center;
+    margin-top:20px;
+}
+
+#Services{
+    padding:40px 20px;
+    background:#fce7ad;
+    text-align:center;
+}
+
+#Contact{
+    padding:20px;
+    text-align:center;
+    background:#c8dff8;
+
+}
+
+
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+}
+
+
+#topBtn:hover {
+    background: #ff7a18;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+
+.social a{
+
+margin:15px;
+
+text-decoration:none;
+
+color:#333;
+
+font-weight:bold;
+
+}
+
+.social a:hover{
+
+color:#ff7a18;
+
+}
+
+.social{
+
+padding:30px;
+
+text-align:center;
+
+background:white;
+
+}
+
+.social a{
+
+margin:15px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+color:#333;
+
+}
+
+.social a:hover{
+
+color:#ff7a18;
+
+}
+
+footer {
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+p{
+   
+    line-height:1.7;
+}
+
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+padding:15px;
+}
+
+.nav-links{
+flex-direction:column;
+gap:15px;
+margin-top:15px;
+text-align:center;
+}
+
+#Home{
+height:auto;
+padding:120px 20px 80px;
+}
+
+#Home h1{
+font-size:35px;
+}
+
+#Home p{
+font-size:18px;
+}
+
+.search-box{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.counter{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.Place{
+width:90%;
+}
+
+.section-title{
+font-size:24px;
+}
+
+}
+
+
+</style>
+</head>
+<body>
+    <nav>
+    <h3>Travel Host</h3>
+
+    <div class="nav-links">
+        <a href="indextravel.html">Home</a>
+        <a href="abouttravel.html">About</a>
+        <a href="placestravel.html">Places</a>
+        <a href="servicestravel.html">Services</a>
+    </div>
+</nav>
+
+    <div id="Home">
+        <h1>Explore the World</h1>
+        <p>Create unforgettable memories with Travel Host.</p>
+        
+        <div class="search-box">
+            <input type="text" placeholder="Where do you want to go?"> 
+            <a href="places.html" class="btn">Search</a>
+
+     </div>
+        <a href="places.html" class="btn">Start Your Journey</a>
+        </div>
+
+    <div class="counter">
+
+<div>
+   <h2>🌍10+</h2>
+   <p>Destinations</p>
+</div>
+
+<div>
+   <h2>😊500+</h2>
+   <p>Happy Travelers</p>
+</div>
+
+<div>
+   <h2>🛎️24/7</h2>
+   <p>Support</p>
+</div>
+
+</div>
+
+
+<div id="Places">
+
+    <h2 class="section-title">
+        Why Choose Us
+   </h2>
+
+<div class="why-box">
+
+<div>
+   ✔ 🧭Trusted Guides
+</div>
+
+<div>
+   ✔ 💰Affordable Packages
+</div>
+
+<div>
+   ✔ 📞24/7 Support
+</div>
+
+<div>
+   ✔ 🛡Safe Travel
+</div>
+
+</div>
+
+
+    <h2 class="section-title">Popular Destinations</h2>
+
+    <div class="Places-box">
+
+
+    <div class="Place">
+       <h3>📍 Location : Ladakh</h3>
+       <img src="images/ladakh.jpg" alt="Ladakh" loading="lazy">
+       <p>Land of high mountain passes.</p>
+       <p>📅 Best Time: May – September</p>
+       <p>🏍 Activities: Bike Ride, Camping</p>
+       <a href="places.html" class="btn">For More Details</a>
+    </div>
+
+
+    <div class="Place">
+       <h3>📍 Location : Himachal Pradesh</h3>
+       <img src="images/HP.jpg" alt="Himachal Pradesh" loading="lazy">
+       <p>Himachal Pradesh is famous for its breathtaking Himalayan landscapes.</p>
+       <p><strong>📅 Best Time:</strong> March – June</p>
+       <p><strong>🚗 Activities:</strong> Bike Ride, Camping, Trekking</p>
+       <a href="places.html" class="btn">For More Details</a>
+    </div>
+
+
+    <div class="Place">
+        <h3>📍 Location : Uttarakhand</h3>
+        <img src="images/UK.jpg"alt="Uttarakhand" loading="lazy">
+        <p>Devbhoomi:Land of the Gods.</p>
+        <p>📅 Best Time: April – June</p>
+        <p>🛕 Activities: Temple Visit, Hiking</p>
+        <a href="places.html" class="btn">For More Details</a>
+        </div>
+
+    </div>
+
+    <div id="Services">
+        <h2>Our Services</h2>
+        <p>We provide travel guides, booking help, and tour plans, guidance for each destination.</p>
+    </div>
+
+    <div id="Contact">
+         <h2>Contact Us</h2>
+         <p>📧Email: ruchika.design@gmail.com</p>
+          <p>📍 Delhi, India</p>
+    </div>
+
+<div class="social">
+
+    <h3>Follow Us</h3>
+         <a href="#">Instagram</a>
+         <a href="#">Facebook</a>
+         <a href="#">YouTube</a>
+         <a href="#">Pinterest</a>
+         <a href="#">LinkedIn</a>
+</div>
+
+
+
+    <footer>
+        <p>Copyright © 2026 by Ruchika | Travel Host</p>
+    </footer>
+    
+
+    <a href="#Home" id="topBtn">Back to top</a>
+</body>
+</html>

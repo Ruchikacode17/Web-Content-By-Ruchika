@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<title>Places | Travel Host</title>
+
+<style>
+
+    html{
+    scroll-behavior:smooth;
+}
+
+*{margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+    color:#555;
+    line-height:1.7;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#333;
+    color:white;
+    padding:10px 40px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    box-sizing:border-box;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+    z-index:1000;
+}
+
+.right a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    padding:5px 10px;
+}
+
+.right a:hover{
+  color:#ff7a18;
+    border-bottom:2px solid #ff7a18;
+    transition:.3s;
+}
+
+.active{
+     background:#ff7a18;
+    border-radius:5px;
+    color:white !important;
+}
+
+.section img
+{
+    width:100%;
+    max-height:420px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+.section{
+    padding:100px 40px 50px;
+    text-align:center;
+    background:white;
+}
+
+.section h2{
+
+    margin-top:25px;
+    margin-bottom:15px;
+    font-size:34px;
+    color:#333;
+    text-decoration:none;
+
+}
+
+.section p{
+       max-width:850px;
+    margin:auto;
+    font-size:18px;
+    color:#555;
+}
+
+.box{
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+    flex-wrap:wrap;
+}
+
+
+.item{
+    width:320px;
+    margin:20px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    overflow:hidden;
+    transition:.3s ease;
+}
+
+.item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.item img{
+  width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+
+.item:hover img{
+    transform:scale(1.05);
+}
+
+.item h3{
+    margin-top:10px;
+}
+
+.item p{
+    font-size:14px;
+    padding:10px;
+    color:#444;
+    line-height:1.4;
+}
+
+.item .btn{
+
+display:inline-block;
+margin-top:20px;
+padding:10px 15px;
+background:orange;
+color:white;
+text-decoration:none;
+border-radius:5px;
+transition:0.3s;
+
+}
+
+.btn:hover{
+
+background:#333;
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.box{
+     background:#f8f9fa;
+}
+
+
+.social{
+    padding:30px;
+    text-align:center;
+    background:white;
+}
+
+.social h3{
+    margin-bottom:20px;
+    color:#333;
+}
+
+.social a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:50px;
+    height:50px;
+    margin:10px;
+    border-radius:50%;
+    background:#f4f4f4;
+    color:#333;
+    text-decoration:none;
+    font-size:22px;
+    transition:.3s;
+    box-shadow:0 5px 10px rgba(0,0,0,.15);
+}
+
+.social a:hover{
+    background:#ff7a18;
+    color:white;
+    transform:translateY(-5px);
+}
+
+
+.footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:0;
+}
+
+.footer p{
+    color:white;
+}
+
+p{
+    
+    line-height:1.7;
+}
+
+@media(max-width:768px)
+
+{
+
+.nav{
+    flex-direction:column;
+    align-items:center;
+    padding:15px;
+}
+
+.right{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-top:15px;
+}
+
+.section{
+
+padding:100px 20px 30px;
+
+}
+
+.section img{
+
+height:auto;
+
+}
+
+.box{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+.item{
+
+width:90%;
+
+}
+
+.item img{
+
+height:auto;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+    <div>Travel Host</div>
+    <div class="right">
+        <a href="indextravel.html">Home</a>
+        <a href="abouttravel.html">About</a>
+        <a href="placestravel.html" class="active">Places</a>
+        <a href="servicestravel.html">Services</a>
+    </div>
+</div>
+
+<div class="section">
+    <img src="images/Banner.png" alt="Popular Places">
+    <h2>🌍 Top Tourist Choice</h2>
+    <p>India ke kuch sabse beautiful aur must-visit destinations jaha nature, adventure aur peace sab kuch milta hai.</p>
+</div>
+
+<div class="box">
+
+  
+<div class="item">
+    <img src="images/ladakh1.jpg" alt="Ladakh">
+    <h3>Ladakh</h3>
+
+     <p>Ladakh apni surreal beauty aur high-altitude deserts ke liye jaana jata hai. Yahan ki Pangong Lake, Nubra Valley aur 
+     snow-covered mountains tourist ko ek alag hi duniya ka experience dete hain. 
+     Clear blue skies, peaceful monasteries aur rugged terrain is place ko India ka most breathtaking travel destination banate hain. 
+     Adventure lovers ke liye yeh trekking, biking aur camping ka paradise hai.</p>                                    
+    
+     <p>📅 Best Time: May – September</p>
+     <p>🏍 Activities: Bike Ride, Camping</p>
+     <a href="services.html" class="btn">Book Your Trip</a>
+
+</div>
+
+
+<div class="item">
+    <img src="images/hp1.jpg" alt="Himachal Pradesh">
+    <h3>Himachal</h3>
+
+    <p>Himachal Pradesh apni lush green valleys, snow-capped peaks aur charming hill stations ke liye famous hai. Manali, 
+    Shimla aur Dharamshala jaise places yahan ki natural beauty ko aur bhi special banate hain. 
+    Yeh state nature lovers aur honeymoon couples ke liye perfect escape hai jahan har season ek naya scenic view deta hain.</p>
+    
+    <p>📅 Best Time: March – June</p>
+    <p>🚗 Activities: Trekking, Camping</p>
+    <a href="services.html" class="btn">Book Your Trip</a>
+
+</div>
+
+
+<div class="item">
+    <img src="images/uk1.jpg" alt="Uttarakhand">
+   <h3>Uttarakhand</h3>
+
+    <p>Uttarakhand ko “Devbhoomi” bhi kaha jata hai kyunki yeh spiritual aur natural beauty ka perfect blend hai. Kedarnath,
+    Rishikesh aur Nainital jaise places yahan ko both pilgrimage aur adventure destination banate hain. Ganga river, 
+    Himalayan ranges aur peaceful environment is jagah ko soul-refreshing experience dete hain.</p>
+    
+    <p>📅 Best Time: April – June</p>
+    <p>🛕 Activities: Temple Visit, Hiking</p>
+    <a href="services.html" class="btn">Book Your Trip</a>
+
+</div>
+
+</div>
+
+<div class="social">
+
+<h3>Follow Us</h3>
+
+       <a href="#"><i class="fab fa-instagram"></i></a>
+       <a href="#"><i class="fab fa-facebook-f"></i></a>
+       <a href="#"><i class="fab fa-youtube"></i></a>
+       <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+</div>
+
+<div class="footer">
+    <p>Copyright © 2026 by Ruchika | Travel Host</p>
+</div>
+
+</body>
+</html>
