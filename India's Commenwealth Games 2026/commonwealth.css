@@ -1,3 +1,5 @@
+
+
 :root {
 
     --midnight-navy: #071A2B;
@@ -22,31 +24,54 @@
 
     --text-dark: #18232D;
 
+    --muted-text: #64717D;
+
     --border-light: rgba(255, 255, 255, 0.15);
 
+    --border-dark: #D9D5CC;
+
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+/* 
+   2. RESET
+ */
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
 }
 
-html{
-    scroll-behaviour:smooth;
+
+html {
+
+    scroll-behavior: smooth;
+
 }
+
 
 body {
 
     font-family: 'Roboto', sans-serif;
 
-    background-color: var(--ivory);
+    background: var(--ivory);
 
     color: var(--text-dark);
 
     line-height: 1.6;
 
 }
+
+
+/* 
+   3. NAVIGATION
+*/
 
 .nav {
 
@@ -60,23 +85,24 @@ body {
 
     z-index: 1000;
 
-    background: rgba(7, 26, 43, 0.92);
+    background: rgba(7, 26, 43, 0.94);
 
     border-bottom: 1px solid var(--border-light);
 
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
 
 }
+
 
 .nav-container {
 
     width: 90%;
 
-    max-width: 1200px;
-
-    margin: auto;
+    max-width: 1250px;
 
     min-height: 78px;
+
+    margin: auto;
 
     display: flex;
 
@@ -84,7 +110,14 @@ body {
 
     justify-content: space-between;
 
+    gap: 30px;
+
 }
+
+
+/* 
+   4. LOGO
+*/
 
 .logo {
 
@@ -98,7 +131,10 @@ body {
 
     line-height: 1;
 
+    flex-shrink: 0;
+
 }
+
 
 .logo-main {
 
@@ -112,6 +148,7 @@ body {
 
 }
 
+
 .logo-sub {
 
     margin-top: 6px;
@@ -124,13 +161,20 @@ body {
 
 }
 
+
+/* 
+   5. NAVIGATION LINKS
+ */
+
 .nav-links {
 
     display: flex;
 
     align-items: center;
 
-    gap: 32px;
+    justify-content: flex-end;
+
+    gap: 25px;
 
 }
 
@@ -145,9 +189,11 @@ body {
 
     font-family: 'Poppins', sans-serif;
 
-    font-size: 13px;
+    font-size: 11px;
 
     font-weight: 500;
+
+    white-space: nowrap;
 
     transition: color 0.3s ease;
 
@@ -174,6 +220,7 @@ body {
 
 }
 
+
 .nav-links a:hover {
 
     color: var(--white);
@@ -187,6 +234,11 @@ body {
 
 }
 
+
+/* 
+   6. HERO
+ */
+
 .home {
 
     min-height: 100vh;
@@ -199,7 +251,7 @@ body {
 
     overflow: hidden;
 
-    background-image: url("images/hero/hero.jpg");
+    background-image: url("India's Commenwealth Games 2026/images/hero/hero.jpg");
 
     background-size: cover;
 
@@ -217,12 +269,19 @@ body {
     inset: 0;
 
     background:
+
         linear-gradient(
+
             90deg,
-            rgba(4, 17, 29, 0.96) 0%,
-            rgba(4, 17, 29, 0.82) 38%,
-            rgba(4, 17, 29, 0.35) 72%,
-            rgba(4, 17, 29, 0.15) 100%
+
+            rgba(4, 17, 29, 0.97) 0%,
+
+            rgba(4, 17, 29, 0.88) 35%,
+
+            rgba(4, 17, 29, 0.52) 65%,
+
+            rgba(4, 17, 29, 0.20) 100%
+
         );
 
 }
@@ -236,7 +295,7 @@ body {
 
     width: 90%;
 
-    max-width: 1200px;
+    max-width: 1250px;
 
     margin: auto;
 
@@ -244,11 +303,12 @@ body {
 
 }
 
+
 .small-heading {
 
     font-family: 'Poppins', sans-serif;
 
-    font-size: 12px;
+    font-size: 11px;
 
     font-weight: 600;
 
@@ -265,7 +325,7 @@ body {
 
 .home h1 {
 
-    max-width: 720px;
+    max-width: 750px;
 
     font-family: 'Poppins', sans-serif;
 
@@ -291,13 +351,13 @@ body {
 
 .home-text {
 
-    max-width: 560px;
+    max-width: 570px;
 
     margin-top: 28px;
 
     color: var(--text-light);
 
-    font-size: 17px;
+    font-size: 16px;
 
     font-weight: 300;
 
@@ -326,16 +386,13 @@ body {
 
     font-family: 'Poppins', sans-serif;
 
-    font-size: 13px;
+    font-size: 12px;
 
     font-weight: 600;
 
     border: 1px solid var(--ivory);
 
-    transition:
-        background 0.3s ease,
-        color 0.3s ease,
-        transform 0.3s ease;
+    transition: all 0.3s ease;
 
 }
 
@@ -360,6 +417,10 @@ body {
 }
 
 
+/* 
+   7. TRICOLOR ACCENT
+ */
+
 .home::before {
 
     content: "";
@@ -377,22 +438,113 @@ body {
     z-index: 5;
 
     background:
+
         linear-gradient(
+
             90deg,
+
             var(--saffron) 0%,
+
             var(--saffron) 33.33%,
+
             var(--white) 33.33%,
+
             var(--white) 66.66%,
+
             var(--india-green) 66.66%,
+
             var(--india-green) 100%
+
         );
 
 }
 
 
+/* 
+   8. QUICK STATS
+ */
+
+.quick-stats {
+
+    background: var(--deep-navy);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+
+.stats-container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.stat-item {
+
+    flex: 1;
+
+    text-align: center;
+
+    padding: 32px 15px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.10);
+
+}
+
+
+.stat-item:last-child {
+
+    border-right: none;
+
+}
+
+
+.stat-number {
+
+    display: block;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: var(--gold);
+
+}
+
+
+.stat-label {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #AAB6C0;
+
+}
+
+
+/* 
+   9. COMMON SECTION
+*/
+
 section {
 
-    padding: 100px 0;
+    padding: 110px 0;
 
 }
 
@@ -410,7 +562,7 @@ section {
 
 .section-heading {
 
-    max-width: 700px;
+    max-width: 720px;
 
     margin-bottom: 60px;
 
@@ -434,12 +586,16 @@ section {
 
 .section-heading > p:last-child {
 
-    color: #64717D;
+    color: var(--muted-text);
 
     font-size: 16px;
 
 }
 
+
+/* 
+   10. OVERVIEW
+ */
 
 .overview {
 
@@ -454,7 +610,7 @@ section {
 
     align-items: stretch;
 
-    gap: 50px;
+    gap: 60px;
 
 }
 
@@ -481,11 +637,35 @@ section {
 
 .overview-text p {
 
-    color: #596672;
+    color: var(--muted-text);
 
     margin-bottom: 18px;
 
 }
+
+
+.text-link {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: var(--midnight-navy);
+
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    border-bottom: 1px solid var(--gold);
+
+    padding-bottom: 4px;
+
+}
+
 
 .overview-highlight {
 
@@ -500,13 +680,32 @@ section {
 
     width: 100%;
 
-    padding: 45px;
+    padding: 50px;
 
     background: var(--midnight-navy);
 
     color: var(--white);
 
     border-left: 5px solid var(--saffron);
+
+}
+
+
+.highlight-number {
+
+    display: block;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 58px;
+
+    font-weight: 800;
+
+    color: var(--gold);
+
+    line-height: 1;
+
+    margin-bottom: 25px;
 
 }
 
@@ -529,27 +728,32 @@ section {
 }
 
 
-.achievements {
+/* 
+   11. ACHIEVEMENT PREVIEW
+*/
+
+.achievements-preview {
 
     background: var(--midnight-navy);
 
 }
 
 
-.achievements .section-heading h2 {
+.achievements-preview .section-heading h2 {
 
     color: var(--white);
 
 }
 
 
-.achievements .section-heading > p:last-child {
+.achievements-preview .section-heading > p:last-child {
 
     color: #B9C5CF;
 
 }
 
-.achievement-container {
+
+.achievement-stats {
 
     display: flex;
 
@@ -558,74 +762,141 @@ section {
 }
 
 
-.achievement-box {
+.big-stat {
 
     flex: 1;
 
-    padding: 35px;
+    padding: 40px;
 
     border: 1px solid var(--border-light);
 
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.025);
 
 }
 
 
-.achievement-box h3 {
+.big-number {
 
-    color: var(--gold);
+    display: block;
 
     font-family: 'Poppins', sans-serif;
 
-    font-size: 18px;
+    font-size: clamp(50px, 6vw, 78px);
 
-    margin-bottom: 20px;
+    line-height: 1;
+
+    font-weight: 800;
+
+    color: var(--gold);
 
 }
 
 
-.achievement-box h4 {
+.big-label {
+
+    display: block;
+
+    margin-top: 12px;
 
     color: var(--white);
 
     font-family: 'Poppins', sans-serif;
 
-    font-size: 20px;
+    font-size: 13px;
 
-    margin-bottom: 12px;
+    letter-spacing: 2px;
 
-}
-
-.achievement-box p {
-
-    color: #B9C5CF;
+    font-weight: 600;
 
 }
 
 
-.gallery {
+.big-stat p {
+
+    margin-top: 18px;
+
+    color: #AEBBC5;
+
+    font-size: 14px;
+
+}
+
+
+.center-button {
+
+    text-align: center;
+
+    margin-top: 45px;
+
+}
+
+
+.outline-button {
+
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    border: 1px solid var(--gold);
+
+    color: var(--gold);
+
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.outline-button:hover {
+
+    background: var(--gold);
+
+    color: var(--deep-navy);
+
+}
+
+
+/*
+   12. ATHLETES PREVIEW
+ */
+
+.athletes-preview {
 
     background: #F1EEE7;
 
 }
 
 
-.gallery-container {
+.athlete-preview-grid {
 
     display: flex;
-
-    flex-wrap: wrap;
 
     gap: 20px;
 
 }
 
 
-.gallery-box {
+.athlete-preview-card {
 
-    flex: 1 1 calc(50% - 20px);
+    flex: 1;
 
-    min-height: 250px;
+    background: var(--white);
+
+    overflow: hidden;
+
+}
+
+
+.athlete-image-placeholder {
+
+    min-height: 320px;
 
     display: flex;
 
@@ -639,59 +910,360 @@ section {
 
     font-family: 'Poppins', sans-serif;
 
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
 }
 
 
-.contact {
+.athlete-info {
+
+    padding: 25px;
+
+}
+
+
+.athlete-info > span {
+
+    color: #8C6F2D;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    font-weight: 600;
+
+}
+
+
+.athlete-info h3 {
+
+    margin-top: 8px;
+
+    color: var(--midnight-navy);
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 20px;
+
+}
+
+
+.athlete-info p {
+
+    margin-top: 8px;
+
+    color: var(--muted-text);
+
+    font-size: 14px;
+
+}
+
+
+/* 
+   13. GLASGOW 2026
+ */
+
+.glasgow-preview {
+
+    position: relative;
+
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    background-image:
+
+        url("images/glasgow/glasgow.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+
+}
+
+
+.glasgow-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            rgba(4, 17, 29, 0.95),
+
+            rgba(4, 17, 29, 0.65),
+
+            rgba(4, 17, 29, 0.25)
+
+        );
+
+}
+
+
+.glasgow-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 650px;
+
+}
+
+
+.glasgow-content h2 {
+
+    color: var(--white);
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 1;
+
+}
+
+
+.glasgow-content > p:not(.small-heading) {
+
+    max-width: 550px;
+
+    margin-top: 22px;
+
+    color: var(--text-light);
+
+    font-size: 16px;
+
+}
+
+
+/* 
+   14. GALLERY
+*/
+
+.gallery-preview {
 
     background: var(--ivory);
 
 }
 
 
-.contact-content {
+.gallery-preview-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.4fr 1fr;
+
+    grid-template-rows: 250px 250px;
+
+    gap: 15px;
+
+}
+
+
+.gallery-preview-item {
 
     display: flex;
 
-    gap: 30px;
+    align-items: center;
 
-}
+    justify-content: center;
 
+    background: var(--royal-navy);
 
-.contact-box {
-
-    flex: 1;
-
-    padding: 35px;
-
-    border: 1px solid #D9D5CC;
-
-}
-
-
-.contact-box h3 {
+    color: var(--soft-gold);
 
     font-family: 'Poppins', sans-serif;
 
-    color: var(--midnight-navy);
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.gallery-preview-item:first-child {
+
+    grid-row: span 2;
+
+}
+
+
+/*
+   15. AMDAVAD 2030
+ */
+
+.amdavad-preview {
+
+    background: var(--deep-navy);
+
+    color: var(--white);
+
+}
+
+
+.amdavad-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+}
+
+
+.amdavad-text {
+
+    max-width: 700px;
+
+}
+
+
+.amdavad-text h2 {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    color: var(--white);
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+}
+
+
+.amdavad-text p:not(.small-heading) {
+
+    color: #B9C5CF;
 
     margin-bottom: 15px;
 
 }
 
 
-.contact-box p {
+.amdavad-text .text-link {
 
-    color: #64717D;
+    color: var(--gold);
 
-    margin-bottom: 8px;
+    margin-top: 15px;
 
 }
 
 
+.amdavad-year {
+
+    min-width: 250px;
+
+    min-height: 250px;
+
+    border: 1px solid rgba(217, 182, 93, 0.5);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.amdavad-year span {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 65px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    color: var(--gold);
+
+}
+
+
+.amdavad-year small {
+
+    margin-top: 15px;
+
+    color: var(--soft-gold);
+
+    text-align: center;
+
+    letter-spacing: 2px;
+
+}
+
+
+/*
+   16. FINAL CTA
+*/
+
+.final-cta {
+
+    background: var(--ivory);
+
+    text-align: center;
+
+}
+
+
+.final-cta .section-container {
+
+    max-width: 850px;
+
+}
+
+
+.final-cta h2 {
+
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--midnight-navy);
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1.1;
+
+}
+
+
+.final-cta p:not(.small-heading) {
+
+    margin-top: 15px;
+
+    color: var(--muted-text);
+
+}
+
+
+/*
+   17. FOOTER
+*/
+
 .footer {
 
-    padding: 50px 0;
+    padding: 55px 0;
 
     background: var(--deep-navy);
 
@@ -708,10 +1280,12 @@ section {
 
     letter-spacing: 2px;
 
+    font-size: 16px;
+
 }
 
 
-.footer p {
+.footer-brand p {
 
     color: #AAB6C0;
 
@@ -720,24 +1294,302 @@ section {
 }
 
 
-.footer .copyright {
+.footer-links {
 
-    margin-top: 25px;
+    display: flex;
 
-    font-size: 12px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-top: 30px;
 
 }
 
 
-@media (max-width: 768px) {
+.footer-links a {
+
+    color: #B9C5CF;
+
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+
+}
+
+
+.footer-links a:hover {
+
+    color: var(--gold);
+
+}
+
+
+.footer .copyright {
+
+    margin-top: 30px;
+
+    color: #6F7D88;
+
+    font-size: 11px;
+
+}
+
+
+/* 
+   18. TABLET RESPONSIVE
+*/
+
+@media (max-width: 1000px) {
 
     .nav-container {
 
         width: 92%;
 
-        min-height: 70px;
+    }
+
+
+    .nav-links {
+
+        gap: 14px;
 
     }
+
+
+    .nav-links a {
+
+        font-size: 9px;
+
+    }
+
+
+    .achievement-stats {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .big-stat {
+
+        min-width: calc(50% - 10px);
+
+    }
+
+}
+
+
+/* 
+   19. MOBILE RESPONSIVE
+*/
+
+@media (max-width: 768px) {
+
+
+    /* Navigation */
+
+    .nav-container {
+
+        width: 92%;
+
+        min-height: auto;
+
+        padding: 14px 0;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .nav-links {
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px 18px;
+
+    }
+
+
+    .nav-links a {
+
+        font-size: 10px;
+
+    }
+
+
+    /* Hero */
+
+    .home {
+
+        min-height: 100vh;
+
+        background-position: 60% center;
+
+    }
+
+
+    .home-content {
+
+        width: 92%;
+
+        padding-top: 130px;
+
+    }
+
+
+    .home h1 {
+
+        font-size: clamp(42px, 11vw, 65px);
+
+    }
+
+
+    .home-text {
+
+        font-size: 14px;
+
+    }
+
+
+    /* Stats */
+
+    .stats-container {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .stat-item {
+
+        flex: 1 1 50%;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+
+    }
+
+
+    /* Sections */
+
+    section {
+
+        padding: 80px 0;
+
+    }
+
+
+    .section-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+
+    /* Overview */
+
+    .overview-content {
+
+        flex-direction: column;
+
+    }
+
+
+    /* Achievements */
+
+    .achievement-stats {
+
+        flex-direction: column;
+
+    }
+
+
+    .big-stat {
+
+        min-width: 100%;
+
+    }
+
+
+    /* Athletes */
+
+    .athlete-preview-grid {
+
+        flex-direction: column;
+
+    }
+
+
+    .athlete-image-placeholder {
+
+        min-height: 280px;
+
+    }
+
+
+    /* Gallery */
+
+    .gallery-preview-grid {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+
+    .gallery-preview-item {
+
+        min-height: 250px;
+
+    }
+
+
+    /* Glasgow */
+
+    .glasgow-preview {
+
+        min-height: 500px;
+
+    }
+
+
+    /* Amdavad */
+
+    .amdavad-content {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .amdavad-year {
+
+        min-width: 200px;
+
+        min-height: 200px;
+
+    }
+
+}
+
+
+/* 
+   20. SMALL MOBILE
+*/
+
+@media (max-width: 500px) {
 
 
     .logo-main {
@@ -753,118 +1605,17 @@ section {
 
     }
 
+
     .nav-links {
 
-        gap: 14px;
+        gap: 10px 12px;
 
     }
 
 
     .nav-links a {
 
-        font-size: 11px;
-
-    }
-
-
-    .home {
-
-        min-height: 90vh;
-
-        background-position: 60% center;
-
-    }
-
-    .home-content {
-
-        width: 92%;
-
-        padding-top: 80px;
-
-    }
-
-
-    .home h1 {
-
-        font-size: clamp(42px, 11vw, 65px);
-
-    }
-
-
-    .home-text {
-
-        font-size: 15px;
-
-    }
-
-
-    .overview-content {
-
-        flex-direction: column;
-
-    }
-
-
-    .achievement-container {
-
-        flex-direction: column;
-
-    }
-
-
-    .contact-content {
-
-        flex-direction: column;
-
-    }
-
-
-    .gallery-box {
-
-        flex-basis: 100%;
-
-    }
-
-}
-
-
-@media (max-width: 500px) {
-
-    .nav-container {
-
-        flex-direction: column;
-
-        justify-content: center;
-
-        gap: 12px;
-
-        padding: 15px 0;
-
-    }
-
-
-    .nav-links {
-
-        gap: 12px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-    }
-
-
-
-    .home {
-
-        min-height: 100vh;
-
-    }
-
-
-    .home-content {
-
-        padding-top: 130px;
+        font-size: 9px;
 
     }
 
@@ -879,6 +1630,7 @@ section {
 
 
     .home h1 {
+
         font-size: 43px;
 
         letter-spacing: -1px;
@@ -888,33 +1640,36 @@ section {
 
     .home-text {
 
-        font-size: 14px;
-
-        line-height: 1.7;
-
-    }
-
-    section {
-
-        padding: 70px 0;
-
-    }
-
-
-    .section-heading {
-
-        margin-bottom: 40px;
+        font-size: 13px;
 
     }
 
 
     .highlight-box {
 
-        padding: 30px;
+        padding: 35px;
+
+    }
+
+
+    .highlight-number {
+
+        font-size: 48px;
+
+    }
+
+
+    .big-number {
+
+        font-size: 55px;
+
+    }
+
+
+    .amdavad-year span {
+
+        font-size: 50px;
 
     }
 
 }
-
-
-

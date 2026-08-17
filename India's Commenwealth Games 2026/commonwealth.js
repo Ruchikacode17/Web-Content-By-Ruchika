@@ -1,0 +1,1 @@
+console.log("India in Commonwealth 2026 website loaded successfully.");
