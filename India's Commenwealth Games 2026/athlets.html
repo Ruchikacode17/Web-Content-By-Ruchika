@@ -3,911 +3,1249 @@
 
 <head>
 
+    <!-- =====================================================
+         BASIC META
+    ====================================================== -->
+
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-        content="Meet Team India at the Commonwealth Games 2026. Explore India's athletes, sporting disciplines and journey.">
+    <meta
+        name="description"
+        content="Meet Team India — athletes carrying India's sporting spirit at the Commonwealth Games 2026."
+    >
 
-    <title>Team India | Commonwealth Games 2026</title>
+    <meta
+        name="author"
+        content="Ruchika"
+    >
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="commonwealth.css">
+    <meta
+        name="theme-color"
+        content="#071A2B"
+    >
 
-    <!-- Google Fonts -->
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    <title>
+        Athletes | India in Commonwealth 2026
+    </title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet">
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="commonwealth.css"
+    >
 
 </head>
 
 
-<body>
+<body id="top">
 
 
-    <!-- ==================================================
-         NAVIGATION
-    ================================================== -->
+    <!-- =====================================================
+         HEADER / NAVIGATION
+    ====================================================== -->
 
-    <header class="main-nav">
+    <header class="header">
 
-        <div class="nav-container">
+        <nav class="navbar">
 
-            <a href="indexcommenwealth.html"
-                class="logo">
+            <div class="nav-container">
 
-                INDIA
 
-                <span>
-                    COMMONWEALTH 2026
-                </span>
+                <!-- ================= BRAND ================= -->
 
+                <a
+                    href="indexcommonwealth.html"
+                    class="brand-logo"
+                    aria-label="India in Commonwealth 2026 Home"
+                >
+
+                    <span class="brand-india">
+                        INDIA
+                    </span>
+
+                    <span class="brand-title">
+                        IN COMMONWEALTH
+                    </span>
+
+                    <span class="brand-year">
+                        2026
+                    </span>
+
+                </a>
+
+
+                <!-- ================= MOBILE MENU BUTTON ================= -->
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <!-- ================= DESKTOP NAV ================= -->
+
+                <ul
+                    class="nav-links"
+                    id="navLinks"
+                >
+
+                    <li>
+                        <a href="indexcommonwealth.html">
+                            HOME
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="journey.html">
+                            JOURNEY
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="athlets.html"
+                            class="active"
+                            aria-current="page"
+                        >
+                            ATHLETES
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="achievements.html">
+                            ACHIEVEMENTS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="glasgow2026.html">
+                            GLASGOW 2026
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            GALLERY
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="amdavad2030.html">
+                            AMDAVAD 2030
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+        <!-- =================================================
+             MOBILE NAVIGATION
+        ================================================== -->
+
+        <div
+            class="mobile-menu"
+            id="mobileMenu"
+        >
+
+            <a href="indexcommonwealth.html">
+                Home
             </a>
 
+            <a href="journey.html">
+                Journey
+            </a>
 
-            <nav class="nav-links">
+            <a
+                href="athlets.html"
+                class="active"
+                aria-current="page"
+            >
+                Athletes
+            </a>
 
-                <a href="indexcommenwealth.html">
-                    Home
-                </a>
+            <a href="achievements.html">
+                Achievements
+            </a>
 
-                <a href="journey.html">
-                    Journey
-                </a>
+            <a href="glasgow2026.html">
+                Glasgow 2026
+            </a>
 
-                <a href="athlets.html"
-                    class="active">
-                    Athletes
-                </a>
+            <a href="gallery.html">
+                Gallery
+            </a>
 
-                <a href="#sports">
-                    Sports
-                </a>
-
-                <a href="#contact">
-                    Contact
-                </a>
-
-            </nav>
+            <a href="amdavad2030.html">
+                Amdavad 2030
+            </a>
 
         </div>
 
     </header>
 
 
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
 
-    <!-- ==================================================
-         HERO SECTION
-    ================================================== -->
+    <main>
 
-    <section class="athletes-hero">
 
-        <div class="athletes-hero-overlay"></div>
+        <!-- =================================================
+             01. ATHLETES HERO
+        ================================================== -->
 
+        <section class="athletes-page-hero">
 
-        <div class="athletes-hero-content">
+            <div class="athletes-hero-overlay"></div>
 
-            <p class="small-label">
-                TEAM INDIA • COMMONWEALTH 2026
-            </p>
+            <div class="container">
 
+                <div class="athletes-hero-content">
 
-            <h1>
+                    <p class="eyebrow">
+                        TEAM INDIA • COMMONWEALTH 2026
+                    </p>
 
-                Meet
+                    <h1>
 
-                <span>
-                    Team India
-                </span>
+                        THE FACES
+                        <br>
 
-            </h1>
+                        BEHIND THE
+                        <span>GLORY.</span>
 
+                    </h1>
 
-            <p>
-                Meet the athletes carrying India's
-                ambition, discipline and sporting spirit
-                onto the Commonwealth stage.
-            </p>
+                    <p class="athletes-hero-text">
 
+                        Meet the athletes carrying India's
+                        ambition, discipline and sporting spirit
+                        onto the Commonwealth stage.
 
-            <a href="#featured-athletes"
-                class="gold-btn">
+                    </p>
 
-                Explore Athletes
+                    <div class="hero-buttons">
 
-            </a>
+                        <a
+                            href="#athlete-roster"
+                            class="btn btn-primary"
+                        >
+                            MEET TEAM INDIA
+                        </a>
 
-        </div>
+                        <a
+                            href="achievements.html"
+                            class="btn btn-secondary"
+                        >
+                            VIEW ACHIEVEMENTS
+                        </a>
 
-    </section>
+                    </div>
 
+                </div>
 
 
-    <!-- ==================================================
-         INTRODUCTION
-    ================================================== -->
+                <div class="hero-bottom">
 
-    <section class="athletes-intro section-padding">
+                    <span>
+                        TEAM INDIA
+                    </span>
 
-
-        <div class="section-heading">
-
-            <p class="section-tag">
-                THE ATHLETES
-            </p>
-
-
-            <h2>
-
-                More Than
-
-                <span>
-                    Medals
-                </span>
-
-            </h2>
-
-        </div>
-
-
-
-        <div class="intro-content">
-
-            <p>
-                India's Commonwealth journey is shaped
-                by athletes who turn years of discipline,
-                training and sacrifice into moments of
-                sporting excellence.
-            </p>
-
-
-            <p>
-                From experienced champions to emerging
-                talents, every athlete represents the
-                determination and sporting spirit of India.
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ==================================================
-         FEATURED ATHLETES
-    ================================================== -->
-
-    <section id="featured-athletes"
-        class="featured-athletes section-padding">
-
-
-        <div class="section-heading centered">
-
-            <p class="section-tag">
-                FEATURED ATHLETES
-            </p>
-
-
-            <h2>
-
-                Faces Behind
-
-                <span>
-                    The Journey
-                </span>
-
-            </h2>
-
-
-            <p class="heading-description">
-
-                Meet some of the Indian sporting talents
-                whose dedication continues to inspire
-                a new generation.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="athlete-grid">
-
-
-
-            <!-- ================= ATHLETE 01 ================= -->
-
-            <article class="athlete-card">
-
-                <div class="athlete-image">
-
-                    <img
-                        src="images/athlets/mirabai.jpg"
-                        alt="Mirabai Chanu">
-
-                    <span class="athlete-number">
-                        01
+                    <span>
+                        GLASGOW • 2026
                     </span>
 
                 </div>
-
-
-                <div class="athlete-info">
-
-                    <p class="athlete-sport">
-                        WEIGHTLIFTING
-                    </p>
-
-
-                    <h3>
-                        Mirabai Chanu
-                    </h3>
-
-
-                    <p>
-                        One of India's most celebrated
-                        weightlifters, known for her
-                        remarkable consistency, strength
-                        and determination.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ================= ATHLETE 02 ================= -->
-
-            <article class="athlete-card">
-
-                <div class="athlete-image">
-
-                    <img
-                        src="images/athlets/jaismine.jpg"
-                        alt="Jaismine Lamboria">
-
-                    <span class="athlete-number">
-                        02
-                    </span>
-
-                </div>
-
-
-                <div class="athlete-info">
-
-                    <p class="athlete-sport">
-                        BOXING
-                    </p>
-
-
-                    <h3>
-                        Jaismine Lamboria
-                    </h3>
-
-
-                    <p>
-                        A talented Indian boxer bringing
-                        speed, discipline and determination
-                        to the international boxing arena.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ================= ATHLETE 03 ================= -->
-
-            <article class="athlete-card">
-
-                <div class="athlete-image">
-
-                    <img
-                        src="images/athlets/sreeshankar.jpg"
-                        alt="Murali Sreeshankar">
-
-                    <span class="athlete-number">
-                        03
-                    </span>
-
-                </div>
-
-
-                <div class="athlete-info">
-
-                    <p class="athlete-sport">
-                        ATHLETICS
-                    </p>
-
-
-                    <h3>
-                        Murali Sreeshankar
-                    </h3>
-
-
-                    <p>
-                        An accomplished Indian long jumper
-                        recognised for his international
-                        performances and competitive spirit.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ================= ATHLETE 04 ================= -->
-
-            <article class="athlete-card">
-
-                <div class="athlete-image">
-
-                    <img
-                        src="images/athlets/preeti.jpg"
-                        alt="Preeti Pawar">
-
-                    <span class="athlete-number">
-                        04
-                    </span>
-
-                </div>
-
-
-                <div class="athlete-info">
-
-                    <p class="athlete-sport">
-                        BOXING
-                    </p>
-
-
-                    <h3>
-                        Preeti Pawar
-                    </h3>
-
-
-                    <p>
-                        An emerging Indian boxing talent
-                        representing the strength and
-                        determination of India's new
-                        sporting generation.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ================= ATHLETE 05 ================= -->
-
-            <article class="athlete-card">
-
-                <div class="athlete-image">
-
-                    <img
-                        src="images/athlets/sakshi.jpg"
-                        alt="Sakshi Chaudhary">
-
-                    <span class="athlete-number">
-                        05
-                    </span>
-
-                </div>
-
-
-                <div class="athlete-info">
-
-                    <p class="athlete-sport">
-                        BOXING
-                    </p>
-
-
-                    <h3>
-                        Sakshi Chaudhary
-                    </h3>
-
-
-                    <p>
-                        A determined Indian boxer adding
-                        strength and depth to India's
-                        growing women's boxing talent.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ================= ATHLETE 06 ================= -->
-
-            <article class="athlete-card">
-
-                <div class="athlete-image">
-
-                    <img
-                        src="images/athlets/priya.jpg"
-                        alt="Priya Ghanghas">
-
-                    <span class="athlete-number">
-                        06
-                    </span>
-
-                </div>
-
-
-                <div class="athlete-info">
-
-                    <p class="athlete-sport">
-                        BOXING
-                    </p>
-
-
-                    <h3>
-                        Priya Ghanghas
-                    </h3>
-
-
-                    <p>
-                        An upcoming Indian boxing talent
-                        bringing fresh energy and ambition
-                        to the country's competitive
-                        sporting scene.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ================= ATHLETE 07 ================= -->
-
-            <article class="athlete-card">
-
-                <div class="athlete-image">
-
-                    <img
-                        src="images/athlets/arundhati.jpg"
-                        alt="Arundhati Choudhary">
-
-                    <span class="athlete-number">
-                        07
-                    </span>
-
-                </div>
-
-
-                <div class="athlete-info">
-
-                    <p class="athlete-sport">
-                        BOXING
-                    </p>
-
-
-                    <h3>
-                        Arundhati Choudhary
-                    </h3>
-
-
-                    <p>
-                        A promising Indian boxer continuing
-                        the country's strong tradition of
-                        competitive boxing.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ================= ATHLETE 08 ================= -->
-
-            <article class="athlete-card">
-
-                <div class="athlete-image">
-
-                    <img
-                        src="images/athlets/sachin.jpg"
-                        alt="Sachin Siwach">
-
-                    <span class="athlete-number">
-                        08
-                    </span>
-
-                </div>
-
-
-                <div class="athlete-info">
-
-                    <p class="athlete-sport">
-                        BOXING
-                    </p>
-
-
-                    <h3>
-                        Sachin Siwach
-                    </h3>
-
-
-                    <p>
-                        A young Indian boxing talent focused
-                        on making his mark on the
-                        international sporting stage.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ================= ATHLETE 09 ================= -->
-
-            <article class="athlete-card">
-
-                <div class="athlete-image">
-
-                    <img
-                        src="images/athlets/ankush.jpg"
-                        alt="Ankush">
-
-                    <span class="athlete-number">
-                        09
-                    </span>
-
-                </div>
-
-
-                <div class="athlete-info">
-
-                    <p class="athlete-sport">
-                        BOXING
-                    </p>
-
-
-                    <h3>
-                        Ankush
-                    </h3>
-
-
-                    <p>
-                        Representing India's emerging
-                        generation of athletes with ambition,
-                        discipline and competitive spirit.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ==================================================
-         SPORTS SECTION
-    ================================================== -->
-
-    <section id="sports"
-        class="sports-section section-padding">
-
-
-        <div class="section-heading centered">
-
-            <p class="section-tag">
-                SPORTING DISCIPLINES
-            </p>
-
-
-            <h2>
-
-                India's
-
-                <span>
-                    Strength
-                </span>
-
-                Across Sports
-
-            </h2>
-
-        </div>
-
-
-
-        <div class="sports-grid">
-
-
-            <!-- SPORT 01 -->
-
-            <div class="sport-box">
-
-                <span class="sport-icon">
-                    01
-                </span>
-
-                <h3>
-                    Athletics
-                </h3>
-
-                <p>
-                    Speed, endurance and field excellence.
-                </p>
 
             </div>
 
+        </section>
 
 
-            <!-- SPORT 02 -->
+        <!-- =================================================
+             02. INTRODUCTION
+        ================================================== -->
 
-            <div class="sport-box">
+        <section class="athletes-intro section">
 
-                <span class="sport-icon">
-                    02
-                </span>
+            <div class="container">
 
-                <h3>
-                    Boxing
-                </h3>
+                <div class="section-intro">
 
-                <p>
-                    Courage, precision and relentless
-                    competition.
-                </p>
+                    <p class="eyebrow">
+                        THE CHAMPIONS
+                    </p>
 
-            </div>
+                    <h2>
 
+                        More Than
+                        <span>Athletes.</span>
 
+                    </h2>
 
-            <!-- SPORT 03 -->
+                    <p class="large-text">
 
-            <div class="sport-box">
+                        Every athlete represents years of
+                        preparation, sacrifice and an unwavering
+                        belief in going further.
 
-                <span class="sport-icon">
-                    03
-                </span>
+                    </p>
 
-                <h3>
-                    Weightlifting
-                </h3>
+                    <p>
 
-                <p>
-                    Power, technique and mental strength.
-                </p>
+                        From weightlifting and boxing to athletics
+                        and wrestling, India's sporting story is
+                        shaped by individuals who carry the
+                        tricolour with pride.
 
-            </div>
+                    </p>
 
-
-
-            <!-- SPORT 04 -->
-
-            <div class="sport-box">
-
-                <span class="sport-icon">
-                    04
-                </span>
-
-                <h3>
-                    Shooting
-                </h3>
-
-                <p>
-                    Focus, control and extraordinary
-                    consistency.
-                </p>
+                </div>
 
             </div>
 
+        </section>
 
 
-            <!-- SPORT 05 -->
+        <!-- =================================================
+             03. TEAM INDIA FEATURE
+        ================================================== -->
 
-            <div class="sport-box">
+        <section class="athlete-feature section">
 
-                <span class="sport-icon">
-                    05
-                </span>
+            <div class="container">
 
-                <h3>
-                    Badminton
-                </h3>
+                <div class="athlete-feature-grid">
 
-                <p>
-                    Agility, precision and tactical
-                    intelligence.
-                </p>
+
+                    <!-- ================= IMAGE ================= -->
+
+                    <div class="athlete-feature-image">
+
+                        <img
+                            src="images/athlets/athlets.jpg"
+                            alt="Team India athletes representing India"
+                            loading="lazy"
+                        >
+
+                        <span class="athlete-feature-label">
+                            TEAM INDIA • 2026
+                        </span>
+
+                    </div>
+
+
+                    <!-- ================= CONTENT ================= -->
+
+                    <div class="athlete-feature-content">
+
+                        <p class="eyebrow">
+                            ONE NATION • ONE SPIRIT
+                        </p>
+
+                        <h2>
+
+                            Carrying the
+                            <span>Tricolour.</span>
+
+                        </h2>
+
+                        <p>
+
+                            Behind every competition is a story
+                            of preparation, pressure and
+                            perseverance.
+
+                        </p>
+
+                        <p>
+
+                            These athletes represent the
+                            determination of a nation that continues
+                            to dream bigger on the international
+                            sporting stage.
+
+                        </p>
+
+                        <a
+                            href="journey.html"
+                            class="gold-link"
+                        >
+
+                            Explore India's Journey
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
+        </section>
 
 
-            <!-- SPORT 06 -->
+        <!-- =================================================
+             04. ATHLETE ROSTER
+        ================================================== -->
 
-            <div class="sport-box">
+        <section
+            class="athlete-roster section"
+            id="athlete-roster"
+        >
 
-                <span class="sport-icon">
-                    06
-                </span>
+            <div class="container">
 
-                <h3>
-                    Table Tennis
-                </h3>
 
-                <p>
-                    Reflexes, strategy and speed.
-                </p>
+                <!-- ================= SECTION HEADING ================= -->
+
+                <div class="section-heading-row">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            MEET TEAM INDIA
+                        </p>
+
+                        <h2>
+
+                            The
+                            <span>Champions.</span>
+
+                        </h2>
+
+                    </div>
+
+                    <div class="gallery-heading-note">
+
+                        <span>
+                            12
+                        </span>
+
+                        <p>
+                            TEAM MEMBERS
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= ATHLETE GRID ================= -->
+
+                <div class="athlete-grid">
+
+
+                    <!-- =================================================
+                         01. MIRABAI
+                    ================================================== -->
+
+                    <article class="athlete-card">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/mirabai.jpg"
+                                alt="Mirabai Chanu Saikhom"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                01
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                WEIGHTLIFTING
+                            </span>
+
+                            <h3>
+                                Mirabai Chanu Saikhom
+                            </h3>
+
+                            <p>
+                                Strength, precision and
+                                consistency on the world stage.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         02. JAISMINE
+                    ================================================== -->
+
+                    <article class="athlete-card">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/jaismine.jpg"
+                                alt="Jaismine representing India in boxing"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                02
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                BOXING
+                            </span>
+
+                            <h3>
+                                Jaismine
+                            </h3>
+
+                            <p>
+                                Focus, courage and determination
+                                inside the ring.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         03. SREESHANKAR
+                    ================================================== -->
+
+                    <article class="athlete-card">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/sreeshankar.jpg"
+                                alt="Murali Sreeshankar"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                03
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                ATHLETICS
+                            </span>
+
+                            <h3>
+                                Murali Sreeshankar
+                            </h3>
+
+                            <p>
+                                Precision, power and the pursuit
+                                of greater distances.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         04. PREETI
+                    ================================================== -->
+
+                    <article class="athlete-card">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/preeti.jpg"
+                                alt="Preeti representing India"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                04
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                BOXING
+                            </span>
+
+                            <h3>
+                                Preeti
+                            </h3>
+
+                            <p>
+                                Resilience and fearless
+                                competition.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         05. SAKSHI
+                    ================================================== -->
+
+                    <article class="athlete-card">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/sakshi.jpg"
+                                alt="Sakshi representing India"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                05
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                WRESTLING
+                            </span>
+
+                            <h3>
+                                Sakshi
+                            </h3>
+
+                            <p>
+                                Strength of character and
+                                competitive spirit.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         06. PRIYA
+                    ================================================== -->
+
+                    <article class="athlete-card">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/priya.jpg"
+                                alt="Priya representing India"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                06
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                WRESTLING
+                            </span>
+
+                            <h3>
+                                Priya
+                            </h3>
+
+                            <p>
+                                Determination, discipline and
+                                the hunger to improve.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         07. ARUNDHATI
+                    ================================================== -->
+
+                    <article class="athlete-card">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/arundhati.jpg"
+                                alt="Arundhati representing India"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                07
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                BOXING
+                            </span>
+
+                            <h3>
+                                Arundhati
+                            </h3>
+
+                            <p>
+                                Composure, ambition and
+                                competitive strength.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         08. SACHIN
+                    ================================================== -->
+
+                    <article class="athlete-card">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/sachin.jpg"
+                                alt="Sachin representing India"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                08
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                BOXING
+                            </span>
+
+                            <h3>
+                                Sachin
+                            </h3>
+
+                            <p>
+                                Speed, discipline and
+                                determination to compete.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         09. ANKUSH
+                    ================================================== -->
+
+                    <article class="athlete-card">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/ankush.jpg"
+                                alt="Ankush representing India"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                09
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                WRESTLING
+                            </span>
+
+                            <h3>
+                                Ankush
+                            </h3>
+
+                            <p>
+                                Power, persistence and
+                                fighting spirit.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         10. Asmita Dey
+                    ================================================== -->
+
+                    <article class="athlete-card athlete-card-featured">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/asmita-dey-judo.jpg"
+                                alt="Team India at Commonwealth Games"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                10
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                Judo
+                            </span>
+
+                            <h3>
+                                Asmita
+                            </h3>
+
+                            <p>
+                                Strength, discipline and
+                                fighting spirit.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         11. Parul Chaudhary
+                    ================================================== -->
+
+                    <article class="athlete-card athlete-card-featured">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/parul-chaudhary.jpg"
+                                alt="Team India at Commonwealth Games"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                11
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                Runner
+                            </span>
+
+                            <h3>
+                                Parul
+                            </h3>
+
+                            <p>
+                                Speed, strength and
+                                unstoppable determination.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                     <!-- =================================================
+                         12. Team India
+                    ================================================== -->
+
+                    <article class="athlete-card athlete-card-featured">
+
+                        <div class="athlete-image">
+
+                            <img
+                                src="images/athlets/india-medals.jpg"
+                                alt="Team India at Commonwealth Games"
+                                loading="lazy"
+                            >
+
+                            <span class="card-number">
+                                10
+                            </span>
+
+                        </div>
+
+                        <div class="athlete-info">
+
+                            <span>
+                                TEAM INDIA
+                            </span>
+
+                            <h3>
+                                One Team. One Dream.
+                            </h3>
+
+                            <p>
+                                United by the tricolour and
+                                driven by infinite glory.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
 
             </div>
 
+        </section>
 
-        </div>
 
-    </section>
+        <!-- =================================================
+             05. ATHLETE VALUES
+        ================================================== -->
 
+        <section class="athlete-values-section">
 
+            <div class="container">
 
-    <!-- ==================================================
-         TEAM INDIA BANNER / HIGHLIGHT
-    ================================================== -->
 
-    <section class="athlete-highlight">
+                <div class="section-heading">
+                    <br>
 
 
-        <div class="highlight-overlay"></div>
+                    <span>
+                        WHAT DRIVES THEM
+                    </span>
 
+                    <h2>
 
-        <div class="highlight-content">
+                        BUILT ON
+                        <strong>DETERMINATION</strong>
 
-            <p class="section-tag">
-                THE SPIRIT OF INDIA
-            </p>
+                    </h2>
 
+                    <p>
+                        Behind every performance are values that
+                        define the journey of an athlete.
+                    </p>
 
-            <h2>
+                </div>
 
-                Every Athlete.
 
-                <br>
+                <div class="athlete-values-grid">
 
-                One
 
-                <span>
-                    Dream.
-                </span>
+                    <!-- ================= VALUE 01 ================= -->
 
-            </h2>
+                    <article class="athlete-value-card">
 
+                        <span class="value-number">
+                            01
+                        </span>
 
-            <p>
-                To compete with courage,
-                represent with pride,
-                and create unforgettable moments
-                on the Commonwealth stage.
-            </p>
+                        <div class="value-icon">
 
-        </div>
+                            <i class="fa-solid fa-bullseye"></i>
 
-    </section>
+                        </div>
 
+                        <h3>
+                            Focus
+                        </h3>
 
+                        <p>
+                            Staying committed to the goal,
+                            even when the pressure rises.
+                        </p>
 
-    <!-- ==================================================
-         FUTURE SECTION
-    ================================================== -->
+                    </article>
 
-    <section class="future-athletes section-padding">
 
+                    <!-- ================= VALUE 02 ================= -->
 
-        <div class="future-content">
+                    <article class="athlete-value-card">
 
-            <p class="section-tag">
-                LOOKING AHEAD
-            </p>
+                        <span class="value-number">
+                            02
+                        </span>
 
+                        <div class="value-icon">
 
-            <h2>
+                            <i class="fa-solid fa-fire"></i>
 
-                The Next Chapter
+                        </div>
 
-                <span>
-                    Starts Now.
-                </span>
+                        <h3>
+                            Passion
+                        </h3>
 
-            </h2>
+                        <p>
+                            The energy and belief that turn
+                            ambition into action.
+                        </p>
 
+                    </article>
 
-            <p>
-                Commonwealth 2026 is not only about
-                today's champions. It is also about
-                inspiring India's next generation of
-                sporting stars.
-            </p>
 
+                    <!-- ================= VALUE 03 ================= -->
 
-            <a href="journey.html"
-                class="outline-btn">
+                    <article class="athlete-value-card">
 
-                Explore India's Journey
+                        <span class="value-number">
+                            03
+                        </span>
 
-            </a>
+                        <div class="value-icon">
 
-        </div>
+                            <i class="fa-solid fa-dumbbell"></i>
 
-    </section>
+                        </div>
 
+                        <h3>
+                            Discipline
+                        </h3>
 
+                        <p>
+                            Years of training and consistency
+                            behind every moment.
+                        </p>
 
-    <!-- ==================================================
-         CONTACT
-    ================================================== -->
+                    </article>
 
-    <section id="contact"
-        class="contact-section">
 
+                    <!-- ================= VALUE 04 ================= -->
 
-        <div class="contact-inner">
+                    <article class="athlete-value-card">
 
-            <p class="section-tag">
-                INDIA • COMMONWEALTH 2026
-            </p>
+                        <span class="value-number">
+                            04
+                        </span>
 
+                        <div class="value-icon">
 
-            <h2>
+                            <i class="fa-solid fa-flag"></i>
 
-                Follow
+                        </div>
 
-                <span>
-                    The Journey
-                </span>
+                        <h3>
+                            Pride
+                        </h3>
 
-            </h2>
+                        <p>
+                            Carrying the Indian flag with
+                            honour onto the world stage.
+                        </p>
 
+                    </article>
 
-            <p>
-                Explore India's athletes, achievements
-                and Commonwealth story.
-            </p>
+                </div>
 
+            </div>
 
-            <a href="indexcommenwealth.html"
-                class="gold-btn">
+        </section>
 
-                Back to Home
 
-            </a>
+        <br/>
+        <br/>
+        <br/>
 
-        </div>
 
-    </section>
+        <!-- =================================================
+             06. ACHIEVEMENT CONNECTION
+        ================================================== -->
 
+        <section class="athlete-achievement-section">
 
+            <div class="athlete-achievement-overlay"></div>
 
-    <!-- ==================================================
+            <div class="container">
+
+                <div class="athlete-achievement-content">
+
+                    <p class="eyebrow">
+                        FROM ATHLETES TO ACHIEVEMENTS
+                    </p>
+
+                    <h2>
+
+                        Every Champion
+                        <span>Leaves A Mark.</span>
+
+                    </h2>
+
+                    <p>
+
+                        The athletes are at the heart of India's
+                        Commonwealth story. Their performances,
+                        victories and defining moments become
+                        part of a legacy that inspires the next
+                        generation.
+
+                    </p>
+
+                    <a
+                        href="achievements.html"
+                        class="btn btn-primary"
+                    >
+                        EXPLORE ACHIEVEMENTS
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             07. FINAL CTA
+        ================================================== -->
+
+        <section class="athletes-final section">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <p class="eyebrow">
+                        ONE NATION • ONE SPIRIT
+                    </p>
+
+                    <h2>
+
+                        The Champions
+                        <br>
+
+                        <span>
+                            Keep The Story Moving.
+                        </span>
+
+                    </h2>
+
+                    <p>
+
+                        Explore the achievements, moments and
+                        journey that make India's Commonwealth
+                        story unforgettable.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="achievements.html"
+                            class="btn btn-primary"
+                        >
+                            VIEW ACHIEVEMENTS
+                        </a>
+
+                        <a
+                            href="gallery.html"
+                            class="btn btn-secondary"
+                        >
+                            VIEW GALLERY
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
          FOOTER
-    ================================================== -->
+    ====================================================== -->
 
-    <footer class="main-footer">
+    <footer class="footer">
+
+        <div class="container footer-content">
 
 
-        <div class="footer-content">
-
+            <!-- ================= FOOTER BRAND ================= -->
 
             <div class="footer-brand">
 
@@ -916,38 +1254,92 @@
                 </h3>
 
                 <p>
-                    Commonwealth Games 2026
+                    COMMONWEALTH 2026
                 </p>
+
+                <span>
+                    One Nation. One Spirit. Infinite Glory.
+                </span>
 
             </div>
 
 
+            <!-- ================= EXPLORE ================= -->
 
             <div class="footer-links">
 
-                <a href="indexcommenwealth.html">
-                    Home
+                <h4>
+                    EXPLORE
+                </h4>
+
+                <a href="athlets.html">
+                    Athletes
+                </a>
+
+                <a href="achievements.html">
+                    Achievements
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
                 </a>
 
                 <a href="journey.html">
                     Journey
                 </a>
 
-                <a href="athlets.html">
-                    Athletes
+            </div>
+
+
+            <!-- ================= GAMES ================= -->
+
+            <div class="footer-links">
+
+                <h4>
+                    GAMES
+                </h4>
+
+                <a href="glasgow2026.html">
+                    Glasgow 2026
                 </a>
+
+                <a href="amdavad2030.html">
+                    Amdavad 2030
+                </a>
+
+            </div>
+
+
+            <!-- ================= FOOTER MESSAGE ================= -->
+
+            <div class="footer-message">
+
+                <span class="india-mark">
+                    🇮🇳
+                </span>
+
+                <p>
+                    Celebrating India's sporting spirit
+                    and the athletes who carry it forward.
+                </p>
 
             </div>
 
         </div>
 
 
+        <!-- ================= FOOTER BOTTOM ================= -->
 
         <div class="footer-bottom">
 
             <p>
-                © 2026 India in Commonwealth Games.
-                Student Creative Project.
+                © 2026 India in Commonwealth.
+                AOTM Student Project.
+            </p>
+
+            <p>
+                An independent student project created for
+                educational and portfolio purposes.
             </p>
 
         </div>
@@ -955,11 +1347,28 @@
     </footer>
 
 
+    <!-- =====================================================
+         SCROLL TOP BUTTON
+    ====================================================== -->
 
-    <!-- Main JavaScript -->
+    <button
+        id="scrollTopBtn"
+        class="scroll-top-btn"
+        type="button"
+        aria-label="Scroll to top"
+        title="Back to top"
+    >
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
 
     <script src="commonwealth.js"></script>
-
 
 </body>
 

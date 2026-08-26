@@ -3,82 +3,202 @@
 
 <head>
 
-    <!-- BASIC HTML5 -->
+    <!-- =====================================================
+         BASIC META
+    ====================================================== -->
+
     <meta charset="UTF-8">
 
-    <!-- RESPONSIVE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <!-- SEO -->
-    <meta name="description"
-        content="Explore India's Commonwealth Games journey from 1934 to Glasgow 2026 and the road to Amdavad 2030.">
+    <meta
+        name="description"
+        content="Discover India's Commonwealth journey — from sporting heritage to Glasgow 2026 and the road ahead."
+    >
 
-    <meta name="keywords"
-        content="India Commonwealth Games history, India Commonwealth journey, Delhi 2010, Birmingham 2022, Glasgow 2026, Amdavad 2030">
+    <meta
+        name="author"
+        content="Ruchika"
+    >
 
-    <meta name="author"
-        content="Ruchika Singh">
+    <meta
+        name="theme-color"
+        content="#071A2B"
+    >
 
     <title>
-        India's Commonwealth Journey | India in Commonwealth 2026
+        Journey | India in Commonwealth 2026
     </title>
 
 
-    <!-- GOOGLE FONTS -->
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
 
-    <link rel="preconnect"
+    <link
+        rel="preconnect"
         href="https://fonts.gstatic.com"
-        crossorigin>
+        crossorigin
+    >
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+    >
 
 
-    <!-- COMMON CSS -->
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
 
-    <link rel="stylesheet"
-        href="commonwealth.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="commonwealth.css"
+    >
 
 </head>
 
 
-<body>
+<body id="top">
 
 
-<!-- =====================================================
-     NAVBAR
-===================================================== -->
+    <!-- =====================================================
+         HEADER / NAVIGATION
+    ====================================================== -->
 
-<nav class="nav">
+    <header class="header">
 
-    <div class="nav-container">
+        <nav class="navbar">
+
+            <div class="nav-container">
+
+                <!-- BRAND -->
+
+                <a
+                    href="indexcommonwealth.html"
+                    class="brand-logo"
+                    aria-label="India in Commonwealth 2026 Home"
+                >
+
+                    <span class="brand-india">
+                        INDIA
+                    </span>
+
+                    <span class="brand-title">
+                        IN COMMONWEALTH
+                    </span>
+
+                    <span class="brand-year">
+                        2026
+                    </span>
+
+                </a>
 
 
-        <a href="indexcommonwealth.html"
-           class="logo">
+                <!-- MOBILE MENU BUTTON -->
 
-            <span class="logo-main">
-                INDIA
-            </span>
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
 
-            <span class="logo-sub">
-                COMMONWEALTH 2026
-            </span>
 
-        </a>
+                <!-- DESKTOP NAV -->
+
+                <ul
+                    class="nav-links"
+                    id="navLinks"
+                >
+
+                    <li>
+                        <a href="indexcommonwealth.html">
+                            HOME
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="journey.html"
+                            class="active"
+                        >
+                            JOURNEY
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="athlets.html">
+                            ATHLETES
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="achievements.html">
+                            ACHIEVEMENTS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="glasgow2026.html">
+                            GLASGOW 2026
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            GALLERY
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="amdavad2030.html">
+                            AMDAVAD 2030
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
 
 
-        <div class="nav-links">
+        <!-- =================================================
+             MOBILE NAVIGATION
+        ================================================== -->
+
+        <div class="mobile-menu">
 
             <a href="indexcommonwealth.html">
                 Home
             </a>
 
-            <a href="journey.html"
-               class="active">
+            <a
+                href="journey.html"
+                class="active"
+            >
                 Journey
             </a>
 
@@ -104,804 +224,918 @@
 
         </div>
 
-    </div>
+    </header>
 
-</nav>
 
 
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
 
-<!-- =====================================================
-     JOURNEY HERO
-===================================================== -->
+    <main>
 
-<header class="journey-hero">
 
-    <div class="journey-hero-overlay"></div>
+        <!-- =================================================
+             JOURNEY HERO
+        ================================================== -->
 
+        <section class="journey-page-hero">
 
-    <div class="journey-hero-content">
+            <div class="journey-hero-overlay"></div>
 
-        <p class="small-heading">
-            THE LEGACY
-        </p>
+            <div class="container">
 
+                <div class="journey-hero-content">
 
-        <h1>
+                    <p class="eyebrow">
+                        INDIA • COMMONWEALTH JOURNEY
+                    </p>
 
-            India's
-            <br>
+                    <h1>
 
-            Commonwealth
-            <br>
+                        FROM
+                        <br>
 
-            <span>Journey</span>
+                        <span>HERITAGE</span>
+                        TO
+                        <br>
 
-        </h1>
+                        GLORY.
 
+                    </h1>
 
-        <p>
+                    <p class="journey-hero-text">
 
-            From a historic debut in 1934
-            to a new chapter in Amdavad 2030.
+                        A journey shaped by generations of
+                        athletes, unforgettable performances
+                        and a sporting spirit that continues
+                        to move forward.
 
-        </p>
+                    </p>
 
-    </div>
+                    <div class="hero-buttons">
 
-</header>
+                        <a
+                            href="#journey-story"
+                            class="btn btn-primary"
+                        >
+                            EXPLORE THE JOURNEY
+                        </a>
 
-
-
-<!-- =====================================================
-     INTRODUCTION
-===================================================== -->
-
-<section class="journey-intro">
-
-    <div class="section-container">
-
-
-        <div class="section-heading">
-
-            <p class="small-heading">
-                MORE THAN A CENTURY OF SPORT
-            </p>
-
-
-            <h2>
-                A Journey Built on
-                <span>Determination</span>
-            </h2>
-
-
-            <p>
-
-                India's Commonwealth story is not simply
-                about medals. It is about generations of
-                athletes who carried the nation's hopes,
-                competed with courage and created moments
-                that became part of sporting history.
-
-            </p>
-
-        </div>
-
-
-        <div class="journey-intro-line">
-
-            <span></span>
-
-            <p>
-                1934 — 2030
-            </p>
-
-            <span></span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     TIMELINE
-===================================================== -->
-
-<section class="journey-timeline-section">
-
-    <div class="section-container">
-
-
-        <div class="journey-timeline">
-
-
-            <!-- =================================================
-                 1934
-            ================================================== -->
-
-            <article class="timeline-item">
-
-                <div class="timeline-year">
-
-                    <span>
-                        1934
-                    </span>
-
-                    <small>
-                        THE BEGINNING
-                    </small>
-
-                </div>
-
-
-                <div class="timeline-dot">
-                </div>
-
-
-                <div class="timeline-card">
-
-
-                    <div class="timeline-image">
-
-                        <img
-                            src="images/journey/india-1934.jpg"
-                            alt="India at the 1934 Commonwealth Games">
+                        <a
+                            href="athlets.html"
+                            class="btn btn-secondary"
+                        >
+                            MEET TEAM INDIA
+                        </a>
 
                     </div>
 
-
-                    <div class="timeline-content">
-
-                        <p class="timeline-label">
-                            INDIA'S DEBUT
-                        </p>
+                </div>
 
 
-                        <h2>
-                            The First Step
-                        </h2>
+                <div class="hero-bottom">
+
+                    <span>
+                        INDIA'S SPORTING STORY
+                    </span>
+
+                    <span>
+                        PAST • PRESENT • FUTURE
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-                        <p>
 
-                            India made its Commonwealth Games
-                            debut in 1934, marking the beginning
-                            of a sporting journey that would span
-                            generations.
+        <!-- =================================================
+             INTRO
+        ================================================== -->
 
-                        </p>
+        <section
+            class="journey-intro section"
+            id="journey-story"
+        >
+
+            <div class="container">
+
+                <div class="section-intro">
+
+                    <p class="eyebrow">
+                        THE STORY
+                    </p>
+
+                    <h2>
+
+                        A Journey
+                        <span>Worth Remembering.</span>
+
+                    </h2>
+
+                    <p class="large-text">
+
+                        India's Commonwealth story is more than
+                        medals and records. It is a story of
+                        perseverance, preparation and people
+                        who continue to raise the flag higher.
+
+                    </p>
+
+                    <p>
+
+                        Across generations, Indian athletes have
+                        transformed dedication into performances
+                        that inspire millions. Every edition of
+                        the Games adds another chapter to this
+                        evolving sporting legacy.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-                        <p>
 
-                            Since that first appearance, Indian
-                            athletes have continued to compete
-                            across generations and disciplines.
+        <!-- =================================================
+             JOURNEY HIGHLIGHT
+        ================================================== -->
 
-                        </p>
+        <section class="journey-feature section">
+
+            <div class="container">
+
+                <div class="journey-feature-grid">
 
 
-                        <span class="timeline-tag">
-                            1934
+                    <!-- IMAGE -->
+
+                    <div class="journey-feature-image">
+
+                        <img
+                            src="images/hero/glasgow.jpg"
+                            alt="Commonwealth Games sporting atmosphere"
+                        >
+
+                        <span class="journey-feature-label">
+                            THE JOURNEY • 2026
                         </span>
 
                     </div>
 
-                </div>
 
-            </article>
+                    <!-- CONTENT -->
 
+                    <div class="journey-feature-content">
 
-
-            <!-- =================================================
-                 2010
-            ================================================== -->
-
-            <article class="timeline-item timeline-reverse">
-
-                <div class="timeline-year">
-
-                    <span>
-                        2010
-                    </span>
-
-                    <small>
-                        DELHI
-                    </small>
-
-                </div>
-
-
-                <div class="timeline-dot">
-                </div>
-
-
-                <div class="timeline-card">
-
-
-                    <div class="timeline-image">
-
-                        <img
-                            src="Images/journey/delhi-2010.jpg"
-                            alt="Delhi 2010 Commonwealth Games">
-
-                    </div>
-
-
-                    <div class="timeline-content">
-
-                        <p class="timeline-label">
-                            INDIA HOSTS
+                        <p class="eyebrow">
+                            MORE THAN A COMPETITION
                         </p>
-
 
                         <h2>
-                            Delhi Takes Centre Stage
+
+                            Every Chapter
+                            <span>Matters.</span>
+
                         </h2>
 
-
                         <p>
 
-                            The 2010 Commonwealth Games brought
-                            the sporting world to New Delhi from
-                            3 to 14 October.
+                            From the first steps onto the
+                            Commonwealth stage to today's
+                            generation of champions, India's
+                            journey has been built one
+                            performance at a time.
 
                         </p>
 
-
                         <p>
 
-                            India produced its biggest medal haul
-                            in Commonwealth Games history at that
-                            time, winning an incredible 101 medals.
+                            The road to Glasgow 2026 carries
+                            this legacy forward while creating
+                            new opportunities for athletes to
+                            write their own stories.
 
                         </p>
 
+                        <a
+                            href="athlets.html"
+                            class="gold-link"
+                        >
 
-                        <div class="timeline-number">
-
-                            <strong>
-                                101
-                            </strong>
+                            Meet The Athletes
 
                             <span>
-                                MEDALS
+                                →
                             </span>
 
-                        </div>
-
-
-                        <span class="timeline-tag">
-                            DELHI 2010
-                        </span>
+                        </a>
 
                     </div>
 
                 </div>
 
-            </article>
+            </div>
+
+        </section>
 
 
 
-            <!-- =================================================
-                 2022
-            ================================================== -->
+        <!-- =================================================
+             JOURNEY TIMELINE
+        ================================================== -->
 
-            <article class="timeline-item">
+        <section class="journey-timeline section">
 
-                <div class="timeline-year">
-
-                    <span>
-                        2022
-                    </span>
-
-                    <small>
-                        BIRMINGHAM
-                    </small>
-
-                </div>
+            <div class="container">
 
 
-                <div class="timeline-dot">
-                </div>
+                <div class="section-heading-row">
 
+                    <div>
 
-                <div class="timeline-card">
-
-
-                    <div class="timeline-image">
-
-                        <img
-                            src="Images/journey/birmingham-2022.jpg"
-                            alt="India at Birmingham 2022 Commonwealth Games">
-
-                    </div>
-
-
-                    <div class="timeline-content">
-
-                        <p class="timeline-label">
-                            THE LEGACY CONTINUES
+                        <p class="eyebrow">
+                            THE ROAD SO FAR
                         </p>
 
-
                         <h2>
-                            Birmingham 2022
+
+                            Chapters Of
+                            <span>Progress.</span>
+
                         </h2>
 
+                    </div>
 
-                        <p>
+                    <div class="journey-heading-note">
 
-                            Birmingham brought another chapter
-                            in India's Commonwealth story.
-
-                        </p>
-
-
-                        <p>
-
-                            Indian athletes continued to shine
-                            across weightlifting, wrestling,
-                            boxing, badminton, table tennis and
-                            athletics.
-
-                        </p>
-
-
-                        <span class="timeline-tag">
-                            BIRMINGHAM 2022
+                        <span>
+                            04
                         </span>
 
-                    </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- =================================================
-                 2026
-            ================================================== -->
-
-            <article class="timeline-item timeline-featured">
-
-                <div class="timeline-year">
-
-                    <span>
-                        2026
-                    </span>
-
-                    <small>
-                        GLASGOW
-                    </small>
-
-                </div>
-
-
-                <div class="timeline-dot featured-dot">
-                </div>
-
-
-                <div class="timeline-card">
-
-
-                    <div class="timeline-image">
-
-                        <img
-                            src="Images/journey/glasgow-2026.jpg"
-                            alt="India at Glasgow 2026 Commonwealth Games">
-
-                    </div>
-
-
-                    <div class="timeline-content">
-
-                        <p class="timeline-label">
-                            THE LATEST CHAPTER
+                        <p>
+                            KEY CHAPTERS
                         </p>
 
+                    </div>
 
-                        <h2>
+                </div>
+
+
+                <div class="journey-timeline-grid">
+
+
+                    <!-- 01 -->
+
+                    <article class="journey-card">
+
+                        <div class="journey-card-number">
+                            01
+                        </div>
+
+                        <div class="journey-card-icon">
+                            <i class="fa-solid fa-flag"></i>
+                        </div>
+
+                        <h3>
+                            The Beginning
+                        </h3>
+
+                        <p>
+
+                            India's Commonwealth journey began
+                            with athletes stepping onto an
+                            international stage determined to
+                            represent the nation with pride.
+
+                        </p>
+
+                        <span class="journey-card-tag">
+                            HERITAGE
+                        </span>
+
+                    </article>
+
+
+                    <!-- 02 -->
+
+                    <article class="journey-card">
+
+                        <div class="journey-card-number">
+                            02
+                        </div>
+
+                        <div class="journey-card-icon">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+
+                        <h3>
+                            Rising Stronger
+                        </h3>
+
+                        <p>
+
+                            With every edition, Indian athletes
+                            continued to build experience,
+                            confidence and a stronger medal
+                            presence.
+
+                        </p>
+
+                        <span class="journey-card-tag">
+                            PROGRESS
+                        </span>
+
+                    </article>
+
+
+                    <!-- 03 -->
+
+                    <article class="journey-card">
+
+                        <div class="journey-card-number">
+                            03
+                        </div>
+
+                        <div class="journey-card-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <h3>
+                            New Generation
+                        </h3>
+
+                        <p>
+
+                            A new generation of athletes brings
+                            fresh ambition, new techniques and
+                            the confidence to compete at the
+                            highest level.
+
+                        </p>
+
+                        <span class="journey-card-tag">
+                            PRESENT
+                        </span>
+
+                    </article>
+
+
+                    <!-- 04 -->
+
+                    <article class="journey-card">
+
+                        <div class="journey-card-number">
+                            04
+                        </div>
+
+                        <div class="journey-card-icon">
+                            <i class="fa-solid fa-arrow-up-right-dots"></i>
+                        </div>
+
+                        <h3>
                             Glasgow 2026
-                        </h2>
-
-
-                        <p>
-
-                            Glasgow hosted the 2026 Commonwealth
-                            Games from 23 July to 2 August.
-
-                        </p>
-
+                        </h3>
 
                         <p>
 
-                            India finished fourth on the final
-                            medal table with a total of
-                            <strong>39 medals</strong>.
+                            The next chapter brings Team India
+                            to Glasgow with the opportunity to
+                            create new memories and inspire the
+                            future.
 
                         </p>
 
+                        <span class="journey-card-tag">
+                            2026
+                        </span>
 
-                        <div class="medal-row">
-
-
-                            <div>
-
-                                <strong>
-                                    13
-                                </strong>
-
-                                <span>
-                                    GOLD
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <strong>
-                                    17
-                                </strong>
-
-                                <span>
-                                    SILVER
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <strong>
-                                    9
-                                </strong>
-
-                                <span>
-                                    BRONZE
-                                </span>
-
-                            </div>
-
-
-                        </div>
-
-
-                        <a href="glasgow2026.html"
-                           class="text-link">
-
-                            Explore Glasgow 2026 →
-
-                        </a>
-
-
-                    </div>
+                    </article>
 
                 </div>
 
-            </article>
+            </div>
+
+        </section>
 
 
 
-            <!-- =================================================
-                 2030
-            ================================================== -->
+        <!-- =================================================
+             VALUES
+        ================================================== -->
 
-            <article class="timeline-item timeline-reverse timeline-future">
+        <section class="journey-values-section">
 
-                <div class="timeline-year">
+            <div class="container">
+
+
+                <div class="section-heading">
 
                     <span>
-                        2030
+                        WHAT DEFINES THE JOURNEY
                     </span>
 
-                    <small>
-                        AMDAVAD
-                    </small>
+                    <h2>
+
+                        BUILT THROUGH
+                        <strong>EVERY MOMENT.</strong>
+
+                    </h2>
+
+                    <p>
+
+                        The journey forward is shaped by
+                        discipline, courage and the belief
+                        that every performance can inspire
+                        something greater.
+
+                    </p>
 
                 </div>
 
 
-                <div class="timeline-dot future-dot">
+                <div class="journey-values-grid">
+
+
+                    <!-- VALUE 01 -->
+
+                    <article class="journey-value-card">
+
+                        <span class="value-number">
+                            01
+                        </span>
+
+                        <div class="value-icon">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+
+                        <h3>
+                            Perseverance
+                        </h3>
+
+                        <p>
+
+                            Progress comes from continuing
+                            even when the road becomes
+                            challenging.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- VALUE 02 -->
+
+                    <article class="journey-value-card">
+
+                        <span class="value-number">
+                            02
+                        </span>
+
+                        <div class="value-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+
+                        <h3>
+                            Ambition
+                        </h3>
+
+                        <p>
+
+                            Every generation dreams of
+                            reaching further and achieving
+                            something bigger.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- VALUE 03 -->
+
+                    <article class="journey-value-card">
+
+                        <span class="value-number">
+                            03
+                        </span>
+
+                        <div class="value-icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <h3>
+                            Unity
+                        </h3>
+
+                        <p>
+
+                            Different athletes, different
+                            disciplines, one nation and one
+                            shared purpose.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- VALUE 04 -->
+
+                    <article class="journey-value-card">
+
+                        <span class="value-number">
+                            04
+                        </span>
+
+                        <div class="value-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <h3>
+                            Inspiration
+                        </h3>
+
+                        <p>
+
+                            Every achievement creates
+                            possibilities for the generation
+                            that follows.
+
+                        </p>
+
+                    </article>
+
                 </div>
 
+            </div>
 
-                <div class="timeline-card">
+        </section>
 
 
-                    <div class="timeline-image">
 
-                        <img
-                            src="Images/journey/amdavad-2030.jpg"
-                            alt="Amdavad 2030 Commonwealth Games">
+        <!-- =================================================
+             GLASGOW CONNECTION
+        ================================================== -->
+
+        <section class="journey-glasgow">
+
+            <div class="journey-glasgow-overlay"></div>
+
+            <div class="container">
+
+                <div class="journey-glasgow-content">
+
+                    <p class="eyebrow">
+                        THE NEXT CHAPTER
+                    </p>
+
+                    <h2>
+
+                        The Road
+                        <span>Leads To Glasgow.</span>
+
+                    </h2>
+
+                    <p>
+
+                        Glasgow 2026 represents another
+                        opportunity for India's athletes to
+                        compete, connect and create moments
+                        that become part of the nation's
+                        sporting memory.
+
+                    </p>
+
+                    <a
+                        href="glasgow2026.html"
+                        class="btn btn-primary"
+                    >
+                        DISCOVER GLASGOW 2026
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             JOURNEY CONNECTION CARDS
+        ================================================== -->
+
+        <section class="journey-links section">
+
+            <div class="container">
+
+
+                <div class="section-heading-row">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            CONTINUE EXPLORING
+                        </p>
+
+                        <h2>
+
+                            Follow The
+                            <span>Story.</span>
+
+                        </h2>
 
                     </div>
 
-
-                    <div class="timeline-content">
-
-                        <p class="timeline-label">
-                            THE NEXT CHAPTER
-                        </p>
+                </div>
 
 
-                        <h2>
-                            Amdavad 2030
-                        </h2>
+                <div class="journey-links-grid">
 
 
-                        <p>
+                    <a
+                        href="athlets.html"
+                        class="journey-link-card"
+                    >
 
-                            The Commonwealth Sport General Assembly
-                            formally confirmed Amdavad as host of
-                            the 2030 Centenary Commonwealth Games.
+                        <span>
+                            01
+                        </span>
 
-                        </p>
-
+                        <h3>
+                            Meet The Athletes
+                        </h3>
 
                         <p>
-
-                            The Games will return to India twenty
-                            years after Delhi 2010, opening a new
-                            chapter for Commonwealth Sport.
-
+                            Discover the people carrying
+                            India's sporting ambition.
                         </p>
 
+                        <strong>
+                            EXPLORE ATHLETES →
+                        </strong>
 
-                        <div class="timeline-number future-number">
-
-                            <strong>
-                                2030
-                            </strong>
-
-                            <span>
-                                CENTENARY GAMES
-                            </span>
-
-                        </div>
+                    </a>
 
 
-                        <a href="amdavad2030.html"
-                           class="text-link">
+                    <a
+                        href="achievements.html"
+                        class="journey-link-card"
+                    >
 
-                            Discover Amdavad 2030 →
+                        <span>
+                            02
+                        </span>
 
+                        <h3>
+                            Explore Achievements
+                        </h3>
+
+                        <p>
+                            Revisit performances and
+                            milestones that made history.
+                        </p>
+
+                        <strong>
+                            VIEW ACHIEVEMENTS →
+                        </strong>
+
+                    </a>
+
+
+                    <a
+                        href="gallery.html"
+                        class="journey-link-card"
+                    >
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            See The Moments
+                        </h3>
+
+                        <p>
+                            Experience the energy and
+                            emotion through the gallery.
+                        </p>
+
+                        <strong>
+                            VIEW GALLERY →
+                        </strong>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FINAL CTA
+        ================================================== -->
+
+        <section class="journey-final section">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <p class="eyebrow">
+                        ONE NATION • ONE SPIRIT
+                    </p>
+
+                    <h2>
+
+                        The Journey
+                        <br>
+
+                        <span>Continues.</span>
+
+                    </h2>
+
+                    <p>
+
+                        The next chapter belongs to the athletes
+                        who step forward, the moments they
+                        create and the generations they inspire.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="athlets.html"
+                            class="btn btn-primary"
+                        >
+                            MEET TEAM INDIA
+                        </a>
+
+                        <a
+                            href="glasgow2026.html"
+                            class="btn btn-secondary"
+                        >
+                            GLASGOW 2026
                         </a>
 
                     </div>
 
                 </div>
 
-            </article>
+            </div>
 
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <h3>
+                    INDIA
+                </h3>
+
+                <p>
+                    COMMONWEALTH 2026
+                </p>
+
+                <span>
+                    One Nation. One Spirit. Infinite Glory.
+                </span>
+
+            </div>
+
+
+            <!-- EXPLORE -->
+
+            <div class="footer-links">
+
+                <h4>
+                    EXPLORE
+                </h4>
+
+                <a href="athlets.html">
+                    Athletes
+                </a>
+
+                <a href="achievements.html">
+                    Achievements
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+                <a href="journey.html">
+                    Journey
+                </a>
+
+            </div>
+
+
+            <!-- GAMES -->
+
+            <div class="footer-links">
+
+                <h4>
+                    GAMES
+                </h4>
+
+                <a href="glasgow2026.html">
+                    Glasgow 2026
+                </a>
+
+                <a href="amdavad2030.html">
+                    Amdavad 2030
+                </a>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div class="footer-message">
+
+                <span class="india-mark">
+                    🇮🇳
+                </span>
+
+                <p>
+
+                    Celebrating India's sporting spirit
+                    and the athletes who carry it forward.
+
+                </p>
+
+            </div>
 
         </div>
 
-    </div>
 
-</section>
+        <!-- FOOTER BOTTOM -->
 
-
-
-<!-- =====================================================
-     JOURNEY STATS
-===================================================== -->
-
-<section class="journey-stats">
-
-    <div class="section-container">
-
-
-        <div class="section-heading">
-
-            <p class="small-heading">
-                THE NUMBERS
-            </p>
-
-
-            <h2>
-                A Legacy Measured in Milestones
-            </h2>
-
-        </div>
-
-
-        <div class="journey-stat-grid">
-
-
-            <div class="journey-stat-box">
-
-                <strong>
-                    1934
-                </strong>
-
-                <span>
-                    INDIA'S FIRST
-                    <br>
-                    COMMONWEALTH APPEARANCE
-                </span>
-
-            </div>
-
-
-            <div class="journey-stat-box">
-
-                <strong>
-                    101
-                </strong>
-
-                <span>
-                    MEDALS
-                    <br>
-                    DELHI 2010
-                </span>
-
-            </div>
-
-
-            <div class="journey-stat-box">
-
-                <strong>
-                    39
-                </strong>
-
-                <span>
-                    MEDALS
-                    <br>
-                    GLASGOW 2026
-                </span>
-
-            </div>
-
-
-            <div class="journey-stat-box">
-
-                <strong>
-                    2030
-                </strong>
-
-                <span>
-                    CENTENARY GAMES
-                    <br>
-                    AMDAVAD
-                </span>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CLOSING SECTION
-===================================================== -->
-
-<section class="journey-closing">
-
-    <div class="journey-closing-overlay"></div>
-
-
-    <div class="section-container">
-
-
-        <div class="journey-closing-content">
-
-
-            <p class="small-heading">
-                FROM THEN TO NOW
-            </p>
-
-
-            <h2>
-
-                The Journey
-                <br>
-                <span>Continues.</span>
-
-            </h2>
-
+        <div class="footer-bottom">
 
             <p>
-
-                Every generation adds another chapter.
-                Every athlete carries the story forward.
-
+                © 2026 India in Commonwealth.
+                AOTM Student Project.
             </p>
-
-
-            <a href="athlets.html"
-               class="main-button">
-
-                Meet Team India →
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="footer">
-
-    <div class="footer-content">
-
-
-        <div class="footer-brand">
-
-            <h3>
-                INDIA IN COMMONWEALTH 2026
-            </h3>
 
             <p>
-                One Nation. One Spirit. Infinite Glory.
+                An independent student project created for
+                educational and portfolio purposes.
             </p>
 
         </div>
 
-
-        <div class="footer-links">
-
-            <a href="indexcommonwealth.html">
-                Home
-            </a>
-
-            <a href="journey.html">
-                Journey
-            </a>
-
-            <a href="athlets.html">
-                Athletes
-            </a>
-
-            <a href="achievements.html">
-                Achievements
-            </a>
-
-            <a href="gallery.html">
-                Gallery
-            </a>
-
-            <a href="amdavad2030.html">
-                Amdavad 2030
-            </a>
-
-        </div>
-
-
-        <p class="copyright">
-
-            © 2026 India in Commonwealth.
-            Student Portfolio Project.
-
-        </p>
-
-
-    </div>
-
-</footer>
+    </footer>
 
 
 
-<!-- JAVASCRIPT -->
+    <!-- =====================================================
+         SCROLL TOP BUTTON
+    ====================================================== -->
 
-<script src="commonwealth.js"></script>
+    <button
+        id="scrollTopBtn"
+        class="scroll-top-btn"
+        type="button"
+        aria-label="Scroll to top"
+        title="Back to top"
+    >
 
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="commonwealth.js"></script>
 
 </body>
 
