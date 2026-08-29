@@ -1,99 +1,87 @@
 /* =========================================================
    INDIA IN COMMONWEALTH 2026
    COMMON JAVASCRIPT
-   ---------------------------------------------------------
-   Works with:
-   01. indexcommonwealth.html
-   02. journey.html
-   03. athlets.html
-   04. achievements.html
-   05. gallery.html
-   06. glasgow2026.html
-   07. amdavad2030.html
-
-   FEATURES
-   1. Mobile navigation
-   2. Active navigation state
-   3. Navbar scroll effect
-   4. Smooth scrolling
-   5. Scroll reveal animation
-   6. Image loading effect
-   7. Scroll-to-top button
-   8. Current year
-   9. Safe fallback for missing elements
    ========================================================= */
-
 
 $(document).ready(function () {
 
 
     /* =====================================================
-   01. MOBILE MENU
-   ===================================================== */
+       01. MOBILE MENU
+       ===================================================== */
 
-const menuToggle = $("#menuToggle");
-const mobileMenu = $(".mobile-menu");
+    const menuToggle = $("#menuToggle");
+    const mobileMenu = $(".mobile-menu");
 
-if (menuToggle.length && mobileMenu.length) {
 
-    menuToggle.on("click", function () {
+    if (menuToggle.length && mobileMenu.length) {
 
-        mobileMenu.toggleClass("open");
+        menuToggle.on("click", function () {
 
-        const isOpen = mobileMenu.hasClass("open");
+            mobileMenu.toggleClass("open");
 
-        menuToggle.attr("aria-expanded", isOpen);
-
-        if (isOpen) {
+            const isOpen =
+                mobileMenu.hasClass("open");
 
             menuToggle.attr(
-                "aria-label",
-                "Close navigation menu"
+                "aria-expanded",
+                isOpen ? "true" : "false"
             );
 
-            menuToggle.html(
-                '<i class="fa-solid fa-xmark"></i>'
-            );
 
-        } else {
+            if (isOpen) {
 
-            menuToggle.attr(
-                "aria-label",
-                "Open navigation menu"
-            );
+                menuToggle.attr(
+                    "aria-label",
+                    "Close navigation menu"
+                );
 
-            menuToggle.html(
-                '<i class="fa-solid fa-bars"></i>'
-            );
+                menuToggle.html(
+                    '<i class="fa-solid fa-xmark"></i>'
+                );
 
-        }
+            } else {
 
-    });
+                menuToggle.attr(
+                    "aria-label",
+                    "Open navigation menu"
+                );
+
+                menuToggle.html(
+                    '<i class="fa-solid fa-bars"></i>'
+                );
+
+            }
+
+        });
 
 
-    /* Close menu after clicking a link */
+        /* CLOSE MENU AFTER CLICKING A LINK */
 
-    mobileMenu.find("a").on("click", function () {
+        mobileMenu.find("a").on(
+            "click",
+            function () {
 
-        mobileMenu.removeClass("open");
+                mobileMenu.removeClass("open");
 
-        menuToggle.attr(
-            "aria-expanded",
-            "false"
+                menuToggle.attr(
+                    "aria-expanded",
+                    "false"
+                );
+
+                menuToggle.attr(
+                    "aria-label",
+                    "Open navigation menu"
+                );
+
+                menuToggle.html(
+                    '<i class="fa-solid fa-bars"></i>'
+                );
+
+            }
         );
 
-        menuToggle.attr(
-            "aria-label",
-            "Open navigation menu"
-        );
-
-        menuToggle.html(
-            '<i class="fa-solid fa-bars"></i>'
-        );
-
-    });
-
-}
+    }
 
 
     /* =====================================================
@@ -112,17 +100,21 @@ if (menuToggle.length && mobileMenu.length) {
         $(".nav-links a, .mobile-menu a").each(
             function () {
 
+                const href =
+                    $(this).attr("href");
+
+                if (!href) {
+                    return;
+                }
+
                 const linkPage =
-                    $(this)
-                        .attr("href")
+                    href
                         .split("/")
                         .pop()
                         .toLowerCase();
 
 
-                if (
-                    linkPage === currentPage
-                ) {
+                if (linkPage === currentPage) {
 
                     $(this).addClass("active");
 
@@ -134,13 +126,11 @@ if (menuToggle.length && mobileMenu.length) {
     }
 
 
-
     /* =====================================================
        03. NAVBAR SCROLL EFFECT
        ===================================================== */
 
-    const header =
-        $(".header");
+    const header = $(".header");
 
 
     function updateHeader() {
@@ -165,7 +155,6 @@ if (menuToggle.length && mobileMenu.length) {
         "scroll",
         updateHeader
     );
-
 
 
     /* =====================================================
@@ -200,7 +189,6 @@ if (menuToggle.length && mobileMenu.length) {
 
         }
     );
-
 
 
     /* =====================================================
@@ -293,7 +281,6 @@ if (menuToggle.length && mobileMenu.length) {
     );
 
 
-
     /* =====================================================
        06. IMAGE LOADING EFFECT
        ===================================================== */
@@ -359,7 +346,6 @@ if (menuToggle.length && mobileMenu.length) {
     );
 
 
-
     /* =====================================================
        07. SCROLL TOP BUTTON
        ===================================================== */
@@ -375,20 +361,13 @@ if (menuToggle.length && mobileMenu.length) {
         }
 
 
-        if (
-            $(window).scrollTop() >
-            500
-        ) {
+        if ($(window).scrollTop() > 500) {
 
-            scrollTopBtn.addClass(
-                "show"
-            );
+            scrollTopBtn.addClass("show");
 
         } else {
 
-            scrollTopBtn.removeClass(
-                "show"
-            );
+            scrollTopBtn.removeClass("show");
 
         }
 
@@ -423,7 +402,6 @@ if (menuToggle.length && mobileMenu.length) {
     }
 
 
-
     /* =====================================================
        08. CLOSE MOBILE MENU ON RESIZE
        ===================================================== */
@@ -432,27 +410,19 @@ if (menuToggle.length && mobileMenu.length) {
         "resize",
         function () {
 
-            if (
-                $(window).width() >
-                900
-            ) {
+            if ($(window).width() > 900) {
 
-                mobileMenu.removeClass(
-                    "open"
-                );
-
+                mobileMenu.removeClass("open");
 
                 menuToggle.attr(
                     "aria-expanded",
                     "false"
                 );
 
-
                 menuToggle.attr(
                     "aria-label",
                     "Open navigation menu"
                 );
-
 
                 menuToggle.html(
                     '<i class="fa-solid fa-bars"></i>'
@@ -464,12 +434,16 @@ if (menuToggle.length && mobileMenu.length) {
     );
 
 
-
     /* =====================================================
        09. HERO IMAGE SAFETY
        ===================================================== */
 
-    $(".hero img, .athletes-page-hero img, .gallery-hero img, .amdavad-hero img").each(
+    $(
+        ".hero img, " +
+        ".athletes-page-hero img, " +
+        ".gallery-hero img, " +
+        ".amdavad-hero img"
+    ).each(
         function () {
 
             $(this).css({
@@ -479,7 +453,6 @@ if (menuToggle.length && mobileMenu.length) {
 
         }
     );
-
 
 
     /* =====================================================
@@ -498,7 +471,6 @@ if (menuToggle.length && mobileMenu.length) {
     );
 
 
-
     /* =====================================================
        11. FOOTER CURRENT YEAR
        ===================================================== */
@@ -512,7 +484,6 @@ if (menuToggle.length && mobileMenu.length) {
     );
 
 
-
     /* =====================================================
        12. ESC KEY
        CLOSE MOBILE MENU
@@ -522,26 +493,21 @@ if (menuToggle.length && mobileMenu.length) {
         "keydown",
         function (event) {
 
-            if (
-                event.key === "Escape"
-            ) {
+            if (event.key === "Escape") {
 
                 mobileMenu.removeClass(
                     "open"
                 );
-
 
                 menuToggle.attr(
                     "aria-expanded",
                     "false"
                 );
 
-
                 menuToggle.attr(
                     "aria-label",
                     "Open navigation menu"
                 );
-
 
                 menuToggle.html(
                     '<i class="fa-solid fa-bars"></i>'
@@ -551,7 +517,6 @@ if (menuToggle.length && mobileMenu.length) {
 
         }
     );
-
 
 
     /* =====================================================
@@ -580,7 +545,6 @@ if (menuToggle.length && mobileMenu.length) {
 
         }
     );
-
 
 
     /* =====================================================
