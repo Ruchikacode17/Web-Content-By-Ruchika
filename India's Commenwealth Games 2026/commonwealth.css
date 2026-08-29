@@ -12033,3 +12033,260 @@ h1,h2,h3,h4,h5,h6,.nav-links a,.brand-title,.brand-india,.brand-year,.logo-main,
 }
 
 
+/* =========================================================
+   FINAL MOBILE HAMBURGER MENU
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* Hide desktop navigation */
+    .nav-links {
+        display: none !important;
+    }
+
+    /* Show hamburger */
+    .menu-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        color: #FAF8F3 !important;
+        background: transparent !important;
+        border: none !important;
+
+        cursor: pointer;
+        font-size: 1.7rem;
+        line-height: 1;
+
+        position: relative;
+        z-index: 1002;
+    }
+
+
+    /* MOBILE MENU */
+
+    .mobile-menu {
+        display: none !important;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+
+        background: #071A2B !important;
+
+        padding: 18px 24px 25px;
+
+        flex-direction: column;
+
+        z-index: 1001;
+
+        border-top: 1px solid rgba(217,182,93,0.35);
+
+        box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+    }
+
+
+    /* OPEN MENU */
+
+    .mobile-menu.open {
+        display: flex !important;
+    }
+
+
+    /* MENU LINKS */
+
+    .mobile-menu a {
+        display: block !important;
+
+        width: 100%;
+
+        padding: 15px 8px;
+
+        color: #FAF8F3 !important;
+
+        background: transparent !important;
+
+        text-decoration: none !important;
+
+        font-family: "Poppins", sans-serif;
+
+        font-size: 0.85rem;
+
+        font-weight: 600;
+
+        letter-spacing: 0.08em;
+
+        text-transform: uppercase;
+
+        border-bottom: 1px solid rgba(250,248,243,0.12);
+
+        transition:
+            color 0.25s ease,
+            padding-left 0.25s ease,
+            background 0.25s ease;
+    }
+
+
+    /* LAST LINK */
+
+    .mobile-menu a:last-child {
+        border-bottom: none;
+    }
+
+
+    /* HOVER / ACTIVE */
+
+    .mobile-menu a:hover,
+    .mobile-menu a.active {
+        color: #FF9933 !important;
+
+        background: rgba(255,153,51,0.06) !important;
+
+        padding-left: 14px;
+    }
+
+}
+
+/* =========================================================
+   FINAL MOBILE NAVIGATION
+   ========================================================= */
+
+.menu-toggle {
+    display: none;
+}
+
+
+.mobile-menu {
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+
+    /* DESKTOP NAV HIDE */
+
+    .nav-links {
+        display: none !important;
+    }
+
+
+    /* HAMBURGER SHOW */
+
+    .menu-toggle {
+        display: flex !important;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        padding: 0;
+
+        background: transparent !important;
+
+        border: none !important;
+
+        color: #FAF8F3 !important;
+
+        font-size: 1.6rem;
+
+        cursor: pointer;
+
+        position: relative;
+
+        z-index: 1002;
+    }
+
+
+    /* MOBILE MENU */
+
+    .mobile-menu {
+
+        display: none !important;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        padding: 15px 25px 25px;
+
+        background: #071A2B !important;
+
+        flex-direction: column;
+
+        z-index: 1001;
+
+        border-top:
+            1px solid
+            rgba(217,182,93,0.35);
+
+        box-shadow:
+            0 15px 35px
+            rgba(0,0,0,0.35);
+    }
+
+
+    /* OPEN */
+
+    .mobile-menu.open {
+
+        display: flex !important;
+    }
+
+
+    /* LINKS */
+
+    .mobile-menu a {
+
+        display: block !important;
+
+        width: 100%;
+
+        padding: 15px 8px;
+
+        color: #FAF8F3 !important;
+
+        background: transparent !important;
+
+        font-family: "Poppins", sans-serif;
+
+        font-size: 0.85rem;
+
+        font-weight: 600;
+
+        letter-spacing: 0.08em;
+
+        text-transform: uppercase;
+
+        text-decoration: none !important;
+
+        border-bottom:
+            1px solid
+            rgba(250,248,243,0.12);
+
+        transition:
+            0.25s ease;
+    }
+
+
+    /* ACTIVE + HOVER */
+
+    .mobile-menu a:hover,
+    .mobile-menu a.active {
+
+        color: #FF9933 !important;
+
+        background:
+            rgba(255,153,51,0.08) !important;
+
+        padding-left: 15px;
+    }
+
+}
