@@ -28,66 +28,34 @@ $(document).ready(function () {
 
 
     /* =====================================================
-       01. MOBILE MENU
-       ===================================================== */
+   01. MOBILE MENU
+   ===================================================== */
 
-    const menuToggle = $("#menuToggle");
-    const mobileMenu = $(".mobile-menu");
+const menuToggle = $("#menuToggle");
+const mobileMenu = $(".mobile-menu");
 
+if (menuToggle.length && mobileMenu.length) {
 
-    if (menuToggle.length && mobileMenu.length) {
+    menuToggle.on("click", function () {
 
-        menuToggle.on("click", function () {
+        mobileMenu.toggleClass("open");
 
-            mobileMenu.toggleClass("open");
+        const isOpen = mobileMenu.hasClass("open");
 
-            const isOpen =
-                mobileMenu.hasClass("open");
+        menuToggle.attr("aria-expanded", isOpen);
 
-            menuToggle.attr(
-                "aria-expanded",
-                isOpen
-            );
+        if (isOpen) {
 
             menuToggle.attr(
                 "aria-label",
-                isOpen
-                    ? "Close navigation menu"
-                    : "Open navigation menu"
+                "Close navigation menu"
             );
 
-
-            /* Change hamburger icon */
-
-            if (isOpen) {
-
-                menuToggle.html(
-                    '<i class="fa-solid fa-xmark"></i>'
-                );
-
-            } else {
-
-                menuToggle.html(
-                    '<i class="fa-solid fa-bars"></i>'
-                );
-
-            }
-
-        });
-
-
-        /* =================================================
-           CLOSE MOBILE MENU AFTER CLICK
-           ================================================= */
-
-        $(".mobile-menu a").on("click", function () {
-
-            mobileMenu.removeClass("open");
-
-            menuToggle.attr(
-                "aria-expanded",
-                "false"
+            menuToggle.html(
+                '<i class="fa-solid fa-xmark"></i>'
             );
+
+        } else {
 
             menuToggle.attr(
                 "aria-label",
@@ -98,10 +66,34 @@ $(document).ready(function () {
                 '<i class="fa-solid fa-bars"></i>'
             );
 
-        });
+        }
 
-    }
+    });
 
+
+    /* Close menu after clicking a link */
+
+    mobileMenu.find("a").on("click", function () {
+
+        mobileMenu.removeClass("open");
+
+        menuToggle.attr(
+            "aria-expanded",
+            "false"
+        );
+
+        menuToggle.attr(
+            "aria-label",
+            "Open navigation menu"
+        );
+
+        menuToggle.html(
+            '<i class="fa-solid fa-bars"></i>'
+        );
+
+    });
+
+}
 
 
     /* =====================================================
