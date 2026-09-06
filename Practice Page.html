@@ -2,14 +2,30 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Practice Page</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+
+    <!-- Google Font -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
 
     <style>
+
+        /* =========================================
+           RESET
+        ========================================= */
 
         *{
             margin:0;
@@ -18,74 +34,121 @@
             font-family:'Poppins',sans-serif;
         }
 
+
+        /* =========================================
+           BODY
+        ========================================= */
+
         body{
+
             background:
             linear-gradient(
-            135deg,
-            #FDF6F0,
-            #F8F4FF,
-            #EEF7FF,
-            #F4FFF8
+                135deg,
+                #FDF6F0,
+                #F8F4FF,
+                #EEF7FF,
+                #F4FFF8
             );
 
             min-height:100vh;
-            display: flex;
-            flex-direction: column;
+
+            display:flex;
+            flex-direction:column;
         }
 
+
+        /* =========================================
+           NAVBAR
+        ========================================= */
+
         nav{
-      width:90%;
-      margin:25px auto;
-      background:#ffffffc4;
-      backdrop-filter:blur(8px);
-      border-radius:18px;
-      padding:18px 30px;
-      box-shadow:0 5px 18px rgba(0,0,0,0.06);
-}
 
-.nav__content{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      flex-wrap:wrap;
-}
-
-.logo a{
-      text-decoration:none;
-      font-size:28px;
-      font-weight:600;
-      color:#6D5BD0;
-}
-
-.nav-links{
-      list-style:none;
-      display:flex;
-      gap:25px;
-      flex-wrap:wrap;
-}
-
-.nav-links li a{
-      text-decoration:none;
-      color:#5B6475;
-      font-size:15px;
-      transition:0.3s;
-}
-
-.nav-links li a:hover{
-      color:#8B5CF6;
-}
-
-        header{
             width:90%;
-            margin:auto;
-            margin-top:40px;
-            margin-bottom:50px;
+
+            margin:25px auto;
+
+            background:#ffffffc4;
+
+            backdrop-filter:blur(8px);
+
+            border-radius:18px;
+
+            padding:18px 30px;
+
+            box-shadow:
+                0 5px 18px rgba(0,0,0,0.06);
+        }
+
+
+        .nav__content{
+
+            display:flex;
+
+            justify-content:space-between;
+
+            align-items:center;
+
+            flex-wrap:wrap;
+        }
+
+
+        .logo a{
+
+            text-decoration:none;
+
+            font-size:28px;
+
+            font-weight:600;
+
+            color:#6D5BD0;
+        }
+
+
+        .nav-links{
+
+            list-style:none;
+
+            display:flex;
+
+            gap:25px;
+
+            flex-wrap:wrap;
+        }
+
+
+        .nav-links li a{
+
+            text-decoration:none;
+
+            color:#5B6475;
+
+            font-size:15px;
+
+            transition:0.3s;
+        }
+
+
+        .nav-links li a:hover{
+
+            color:#8B5CF6;
+        }
+
+
+        /* =========================================
+           MAIN PAGE HEADER
+        ========================================= */
+
+        body > header{
+
+            width:90%;
+
+            margin:40px auto 50px;
 
             background:
             linear-gradient(
-            to right,
-            #CDE7FF,
-            #E7D9FF
+                to right,
+                #CDE7FF,
+                #E7D9FF
             );
 
             padding:40px 20px;
@@ -95,77 +158,115 @@
             text-align:center;
 
             box-shadow:
-            0 8px 25px rgba(0,0,0,0.08);
+                0 8px 25px rgba(0,0,0,0.08);
         }
 
-        header h1{
+
+        body > header h1{
+
             font-size:42px;
+
             color:#4B5563;
+
             margin-bottom:10px;
         }
 
-        header p{
+
+        body > header p{
+
             color:#6B7280;
+
             font-size:16px;
+
             letter-spacing:1px;
         }
 
+
+        /* =========================================
+           SECTION HEADINGS
+        ========================================= */
+
         .page-header{
-                  width:100%;
-                  text-align:center;
-                  margin:70px 0 40px;
-                  padding:0;
-                  background:none;
-                  box-shadow:none;
+
+            width:100%;
+
+            text-align:center;
+
+            margin:70px 0 40px;
+
+            padding:0;
+
+            background:none;
+
+            box-shadow:none;
         }
 
-       .page-header h2{
-              color:#4B5563;
-              font-size:38px;
-              font-weight:600;
-               }
+
+        .page-header .line{
+
+            width:80px;
+
+            height:5px;
+
+            margin:0 auto 18px;
+
+            border-radius:20px;
+
+            background:
+            linear-gradient(
+                to right,
+                #7DD3FC,
+                #C084FC
+            );
+        }
 
 
-        .page-header{
-    width:100%;
-    text-align:center;
-    margin:70px 0 40px;
-}
+        .page-header h2{
 
-.page-header .line{
-    width:80px;
-    height:5px;
-    margin:0 auto 18px;
-    border-radius:20px;
-    background:linear-gradient(to right,#7DD3FC,#C084FC);
-}
+            color:#4B5563;
 
-.page-header h2{
-    color:#4B5563;
-    font-size:38px;
-    font-weight:600;
-}
-.cards-section{
-    width:90%;
-    margin:0 auto 60px;
+            font-size:38px;
 
-    display:grid;
+            font-weight:600;
 
-    grid-template-columns:repeat(auto-fit,260px);
+            margin:0;
+        }
 
-    justify-content:center;
 
-    column-gap:55px;
+        /* =========================================
+           CARDS SECTION
+        ========================================= */
 
-    row-gap:40px;
-}
+        .cards-section{
 
+            width:90%;
+
+            margin:0 auto 60px;
+
+            display:grid;
+
+            grid-template-columns:
+                repeat(auto-fit,260px);
+
+            justify-content:center;
+
+            column-gap:55px;
+
+            row-gap:40px;
+        }
+
+
+        /* =========================================
+           CARD
+        ========================================= */
 
         .card{
+
             background:#ffffffc7;
-           
-            max-width:370px;
+
             width:260px;
+
+            min-height:250px;
 
             backdrop-filter:blur(8px);
 
@@ -176,48 +277,59 @@
             transition:0.4s;
 
             box-shadow:
-            0 5px 18px rgba(0,0,0,0.06);
+                0 5px 18px rgba(0,0,0,0.06);
 
             border:
-            1px solid rgba(255,255,255,0.5);
+                1px solid rgba(255,255,255,0.5);
 
             display:flex;
+
             flex-direction:column;
         }
 
-        .card-container{
-    width:90%;
-    margin:40px auto;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:30px;
-}
 
         .card:hover{
-            transform:
-            translateY(-8px);
+
+            transform:translateY(-8px);
 
             box-shadow:
-            0 10px 25px rgba(0,0,0,0.12);
+                0 10px 25px rgba(0,0,0,0.12);
         }
 
+
         .card h2{
+
             color:#4B5563;
+
             font-size:22px;
+
             margin-bottom:12px;
         }
 
+
         .card p{
+
             color:#6B7280;
+
             font-size:14px;
+
             line-height:24px;
+
             margin-bottom:20px;
+
             flex:1;
         }
 
+
+        /* =========================================
+           BUTTON
+        ========================================= */
+
         .btn{
-            display:inline-block;
+
+            display:block;
+
+            text-align:center;
 
             text-decoration:none;
 
@@ -227,9 +339,9 @@
 
             background:
             linear-gradient(
-            to right,
-            #A5D8FF,
-            #D8B4FE
+                to right,
+                #A5D8FF,
+                #D8B4FE
             );
 
             color:#374151;
@@ -241,265 +353,725 @@
             transition:0.3s;
         }
 
+
         .btn:hover{
+
             transform:scale(1.05);
         }
 
 
+        /* =========================================
+           FOOTER
+        ========================================= */
+
         footer{
+
             width:100%;
+
             background:#ffffffa8;
+
             backdrop-filter:blur(5px);
+
             margin-top:50px;
+
             padding:40px 20px 20px;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.03);
+
+            box-shadow:
+                0 -2px 10px rgba(0,0,0,0.03);
         }
+
 
         .footer-content{
+
             width:90%;
+
             margin:auto;
+
             display:flex;
+
             justify-content:space-between;
+
             gap:40px;
+
             flex-wrap:wrap;
-            text-align: left;
+
+            text-align:left;
         }
 
+
         .footer-box h4{
+
             margin-bottom:15px;
+
             color:#7C6CF2;
+
             font-size:18px;
         }
 
+
         .footer-box ul{
+
             list-style:none;
         }
 
+
         .footer-box ul li{
+
             margin:8px 0;
         }
 
+
         .footer-box ul li a{
+
             text-decoration:none;
+
             color:#5B6475;
+
             transition:0.3s;
         }
 
+
         .footer-box ul li a:hover{
+
             color:#8B5CF6;
         }
 
+
         .footer-box p{
+
             color:#6B7280;
+
             line-height:28px;
         }
 
+
         .footer-bottom{
+
             text-align:center;
+
             margin-top:30px;
+
             padding-top:15px;
-            border-top:1px solid rgba(0,0,0,0.06);
+
+            border-top:
+                1px solid rgba(0,0,0,0.06);
+
             color:#6B7280;
+
             font-size:14px;
         }
 
-        @media(max-width:768px)
-        {
+
+        /* =========================================
+           RESPONSIVE DESIGN
+        ========================================= */
+
+        @media(max-width:768px){
+
+            /* Navbar */
 
             .nav__content{
-    flex-direction:column;
-    gap:20px;
-}
 
-.nav-links{
-    justify-content:center;
-}
+                flex-direction:column;
 
-            header h1{
+                gap:20px;
+            }
+
+
+            .nav-links{
+
+                justify-content:center;
+
+                gap:15px;
+            }
+
+
+            /* Main Header */
+
+            body > header h1{
+
                 font-size:30px;
             }
 
-            header p{
+
+            body > header p{
+
                 font-size:14px;
             }
 
-            .footer-content {
-                flex-direction: column;
-                gap: 25px;
+
+            /* Section Heading */
+
+            .page-header h2{
+
+                font-size:30px;
             }
+
+
+            /* Cards */
+
+            .cards-section{
+
+                width:90%;
+
+                grid-template-columns:1fr;
+
+                gap:30px;
+            }
+
+
+            .card{
+
+                width:100%;
+
+                max-width:370px;
+
+                margin:auto;
+            }
+
+
+            /* Footer */
+
+            .footer-content{
+
+                flex-direction:column;
+
+                gap:25px;
+            }
+
         }
 
     </style>
+
 </head>
+
 
 <body>
 
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
     <nav>
 
-    <div class="nav__content">
+        <div class="nav__content">
 
-      <div class="logo">
-        <a href="index.html">Ruchika</a>
-      </div>
+            <div class="logo">
 
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="Practice Page.html">Practice Work</a></li>
-        <li><a href="Project.html">Project</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+                <a href="index.html">
+                    Ruchika
+                </a>
 
-    </div>
+            </div>
 
-</nav>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Practice Page.html">
+                        Practice Work
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Project.html">
+                        Project
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         PAGE INTRO
+    ========================================== -->
 
     <header>
-        <h1>Practice Page</h1>
-        <p>HTML5 • CSS3 • JavaScript Practice Projects</p>
+
+        <h1>
+            Practice Page
+        </h1>
+
+        <p>
+            HTML5 • CSS3 • JavaScript Practice Projects
+        </p>
+
     </header>
+
+
+
+    <!-- =========================================
+         HTML & CSS PRACTICE
+    ========================================== -->
 
     <section class="cards-section">
 
-        <div class="card">
-            <h2>Home Page</h2>
-            <p>Main homepage design practice project.</p>
-            <a href="index.html" class="btn">View Project</a>
-        </div>
 
         <div class="card">
-            <h2>About</h2>
-            <p>Main homepage design practice project.</p>
-            <a href="about.html" class="btn">View Project</a>
+
+            <h2>
+                Home Page
+            </h2>
+
+            <p>
+                Main homepage design practice project.
+            </p>
+
+            <a
+                href="index.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Contact</h2>
-            <p>Main homepage design practice project.</p>
-            <a href="contact.html" class="btn">View Project</a>
+
+            <h2>
+                About
+            </h2>
+
+            <p>
+                Main homepage design practice project.
+            </p>
+
+            <a
+                href="about.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Personal Profile</h2>
-            <p>Creative personal profile webpage design.</p>
-            <a href="Personal Profile.html" class="btn">View Project</a>
+
+            <h2>
+                Contact
+            </h2>
+
+            <p>
+                Main homepage design practice project.
+            </p>
+
+            <a
+                href="contact.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Responsive Design</h2>
-            <p>Responsive webpage for mobile and desktop screens.</p>
-            <a href="Ruchika Responsive Design.html" class="btn">View Project</a>
+
+            <h2>
+                Personal Profile
+            </h2>
+
+            <p>
+                Creative personal profile webpage design.
+            </p>
+
+            <a
+                href="Personal Profile.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Photo Gallery</h2>
-            <p>Gallery layout and image styling practice.</p>
-            <a href="Photo Gallery.html" class="btn">View Project</a>
+
+            <h2>
+                Responsive Design
+            </h2>
+
+            <p>
+                Responsive webpage for mobile and desktop screens.
+            </p>
+
+            <a
+                href="Ruchika Responsive Design.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Bookmark</h2>
-            <p>Bookmark linking and navigation practice.</p>
-            <a href="BookMark.html" class="btn">View Project</a>
+
+            <h2>
+                Photo Gallery
+            </h2>
+
+            <p>
+                Gallery layout and image styling practice.
+            </p>
+
+            <a
+                href="Photo Gallery.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>List Design</h2>
-            <p>Ordered and unordered list styling practice.</p>
-            <a href="List.html" class="btn">View Project</a>
+
+            <h2>
+                Bookmark
+            </h2>
+
+            <p>
+                Bookmark linking and navigation practice.
+            </p>
+
+            <a
+                href="BookMark.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Table Design</h2>
-            <p>Creative table formatting and design practice.</p>
-            <a href="Table.html" class="btn">View Project</a>
+
+            <h2>
+                List Design
+            </h2>
+
+            <p>
+                Ordered and unordered list styling practice.
+            </p>
+
+            <a
+                href="List.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Navigation Bar</h2>
-            <p>Navigation menu and hover effect design.</p>
-            <a href="Navigation.html" class="btn">View Project</a>
+
+            <h2>
+                Table Design
+            </h2>
+
+            <p>
+                Creative table formatting and design practice.
+            </p>
+
+            <a
+                href="Table.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Profile & Banner</h2>
-            <p>Creative banner and profile layout practice.</p>
-            <a href="Profile & Banner WebStyle.html" class="btn">View Project</a>
+
+            <h2>
+                Navigation Bar
+            </h2>
+
+            <p>
+                Navigation menu and hover effect design.
+            </p>
+
+            <a
+                href="Navigation.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Login Form</h2>
-            <p>Simple login form interface design project.</p>
-            <a href="Login Form.html" class="btn">View Project</a>
+
+            <h2>
+                Profile & Banner
+            </h2>
+
+            <p>
+                Creative banner and profile layout practice.
+            </p>
+
+            <a
+                href="Profile & Banner WebStyle.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Registration Form</h2>
-            <p>User registration form practice project.</p>
-            <a href="Registration.html" class="btn">View Project</a>
+
+            <h2>
+                Login Form
+            </h2>
+
+            <p>
+                Simple login form interface design project.
+            </p>
+
+            <a
+                href="Login Form.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Banner Design</h2>
-            <p>Banner layout and typography styling practice.</p>
-            <a href="Banner.html" class="btn">View Project</a>
+
+            <h2>
+                Registration Form
+            </h2>
+
+            <p>
+                User registration form practice project.
+            </p>
+
+            <a
+                href="Registration.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Sliding Banner</h2>
-            <p>Animated sliding banner design project.</p>
-            <a href="Sliding Banner.html" class="btn">View Project</a>
+
+            <h2>
+                Banner Design
+            </h2>
+
+            <p>
+                Banner layout and typography styling practice.
+            </p>
+
+            <a
+                href="Banner.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>I Frame</h2>
-            <p>Iframe integration and webpage embedding practice.</p>
-            <a href="Iframe.html" class="btn">View Project</a>
+
+            <h2>
+                Sliding Banner
+            </h2>
+
+            <p>
+                Animated sliding banner design project.
+            </p>
+
+            <a
+                href="Sliding Banner.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Audio & Video</h2>
-            <p>HTML media integration and styling project.</p>
-            <a href="media.html" class="btn">View Project</a>
+
+            <h2>
+                I Frame
+            </h2>
+
+            <p>
+                Iframe integration and webpage embedding practice.
+            </p>
+
+            <a
+                href="Iframe.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Video Background</h2>
-            <p>Video background webpage design practice.</p>
-            <a href="VideoBackground media.html" class="btn">View Project</a>
+
+            <h2>
+                Audio & Video
+            </h2>
+
+            <p>
+                HTML media integration and styling project.
+            </p>
+
+            <a
+                href="media.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Div Styling</h2>
-            <p>Creative div styling and layout design.</p>
-            <a href="Div Styling.html" class="btn">View Project</a>
+
+            <h2>
+                Video Background
+            </h2>
+
+            <p>
+                Video background webpage design practice.
+            </p>
+
+            <a
+                href="VideoBackground media.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>Menu Flyout</h2>
-            <p>Interactive flyout menu design project.</p>
-            <a href="Menu Flyout.html" class="btn">View Project</a>
+
+            <h2>
+                Div Styling
+            </h2>
+
+            <p>
+                Creative div styling and layout design.
+            </p>
+
+            <a
+                href="Div Styling.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
+
 
         <div class="card">
-            <h2>3D Design</h2>
-            <p>3D transform and animation practice work.</p>
-            <a href="3D.html" class="btn">View Project</a>
+
+            <h2>
+                Menu Flyout
+            </h2>
+
+            <p>
+                Interactive flyout menu design project.
+            </p>
+
+            <a
+                href="Menu Flyout.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
         </div>
-        </section>
+
+
+        <div class="card">
+
+            <h2>
+                3D Design
+            </h2>
+
+            <p>
+                3D transform and animation practice work.
+            </p>
+
+            <a
+                href="3D.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+    </section>
 
 
 
+    <!-- =========================================
+         JAVASCRIPT ASSIGNMENTS
+    ========================================== -->
 
     <header class="page-header">
 
-    <div class="line"></div>
+        <div class="line"></div>
 
-    <h2>JavaScript Assignments</h2>
+        <h2>
+            JavaScript Assignments
+        </h2>
 
-</header>
+    </header>
 
-     <section class="cards-section">
+
+    <section class="cards-section">
+
 
         <div class="card">
             <h2>First JavaScript</h2>
@@ -507,11 +1079,13 @@
             <a href="JavaScript/first.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Second JavaScript</h2>
             <p>JavaScript interaction and functionality practice.</p>
             <a href="JavaScript/second.html" class="btn">View Project</a>
         </div>
+
 
         <div class="card">
             <h2>Create Element</h2>
@@ -519,11 +1093,13 @@
             <a href="JavaScript/createElement.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Create Div</h2>
             <p>Dynamic div creation and styling project.</p>
             <a href="JavaScript/creatediv.html" class="btn">View Project</a>
         </div>
+
 
         <div class="card">
             <h2>Using Library</h2>
@@ -531,11 +1107,13 @@
             <a href="JavaScript/usinglib.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Calculation</h2>
             <p>Calculation functionality using input elements.</p>
             <a href="JavaScript/calculation.html" class="btn">View Project</a>
         </div>
+
 
         <div class="card">
             <h2>Random Color</h2>
@@ -543,301 +1121,684 @@
             <a href="JavaScript/randomcolor.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Date & Time</h2>
             <p>Live date and time display using JavaScript.</p>
             <a href="JavaScript/date&time.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Table Loop</h2>
-            <p>Generate multiplication tables dynamically using JavaScript for loop.</p>
+            <p>
+                Generate multiplication tables dynamically using
+                JavaScript for loop.
+            </p>
             <a href="JavaScript/loop.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Instance Loop</h2>
-            <p>Create and display image gallery dynamically using Image object and loop.</p>
+            <p>
+                Create and display image gallery dynamically using
+                Image object and loop.
+            </p>
             <a href="JavaScript/instanceloop.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Color2</h2>
-            <p>Random background color changer using JavaScript and setInterval.</p>
+            <p>
+                Random background color changer using JavaScript
+                and setInterval.
+            </p>
             <a href="JavaScript/color2.html" class="btn">View Project</a>
         </div>
 
-       <div class="card">
-    <h2>Color Studio</h2>
-    <p>Interactive RGB color mixer and color picker that creates custom background colors in real time.</p>
-    <a href="JavaScript/color3.html" class="btn">View Project</a>
-</div>
+
+        <div class="card">
+            <h2>Color Studio</h2>
+            <p>
+                Interactive RGB color mixer and color picker that
+                creates custom background colors in real time.
+            </p>
+            <a href="JavaScript/color3.html" class="btn">View Project</a>
+        </div>
+
 
         <div class="card">
             <h2>While Loop</h2>
-            <p>Number table creation using JavaScript loop concept.</p>
+            <p>
+                Number table creation using JavaScript loop concept.
+            </p>
             <a href="JavaScript/whileloop.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>While Loop2</h2>
-            <p>Interactive 10x10 color grid generator with random RGB background switcher.</p>
+            <p>
+                Interactive 10x10 color grid generator with random
+                RGB background switcher.
+            </p>
             <a href="JavaScript/whileloop2.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Slider</h2>
-            <p>Image gallery slider with horizontal scrolling animation and color picker.</p>
+            <p>
+                Image gallery slider with horizontal scrolling
+                animation and color picker.
+            </p>
             <a href="JavaScript/slider.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Array</h2>
-            <p>Dynamic day-of-the-week button generator rendering directly from a JavaScript array.</p>
+            <p>
+                Dynamic day-of-the-week button generator rendering
+                directly from a JavaScript array.
+            </p>
             <a href="JavaScript/array.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Array2</h2>
-            <p>Responsive festival image gallery built dynamically using loop iterations over image URLs.</p>
+            <p>
+                Responsive festival image gallery built dynamically
+                using loop iterations over image URLs.
+            </p>
             <a href="JavaScript/array2.html" class="btn">View Project</a>
         </div>
 
 
         <div class="card">
             <h2>Redirection</h2>
-            <p>Window object practice using JavaScript to open a new browser window and dynamically display custom content.</p>
+            <p>
+                Window object practice using JavaScript to open a
+                new browser window and dynamically display custom content.
+            </p>
             <a href="JavaScript/redirection.html" class="btn">View Project</a>
         </div>
 
+
         <div class="card">
             <h2>Create Pop-Up</h2>
-            <p>Dynamic popup creation using JavaScript DOM methods with automatic display and close functionality.</p>
+            <p>
+                Dynamic popup creation using JavaScript DOM methods
+                with automatic display and close functionality.
+            </p>
             <a href="JavaScript/createpopup.html" class="btn">View Project</a>
         </div>
 
 
         <div class="card">
             <h2>Whileloop 3</h2>
-            <p>Display a different image based on the current day using JavaScript Date object and Switch Case logic.</p>
+            <p>
+                Display a different image based on the current day
+                using JavaScript Date object and Switch Case logic.
+            </p>
             <a href="JavaScript/whileloop3.html" class="btn">View Project</a>
         </div>
 
-        <div class="card">
-    <h2>Color Box</h2>
-    <p>Random color palette generator with clickable color buttons to instantly change the webpage background.</p>
-    <a href="JavaScript/colorpicker.html" class="btn">View Project</a>
-</div>
-
-
-<div class="card">
-    <h2>Change Mode</h2>
-    <p>Light and dark mode toggle using JavaScript with dynamic theme switching and interactive controls.</p>
-    <a href="JavaScript/changemode.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Theme Switcher</h2>
-    <p>Light and dark mode toggle project implementing CSS variables and JavaScript class toggling.</p>
-    <a href="JavaScript/light&darktheme.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Table While Loop</h2>
-    <p>DOM manipulation project that generates custom table structures dynamically based on user input.</p>
-    <a href="JavaScript/tablewhileloop.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>RGB Color Controller</h2>
-    <p>An interactive tool using range sliders to precisely control and manipulate background colors in real-time.</p>
-    <a href="JavaScript/RGBcolorcontroller.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>RGB Dynamic Colors</h2>
-    <p>A time-based project using setInterval() to automatically cycle through random background colors.</p>
-    <a href="JavaScript/RGBdynamiccolors.html" class="btn">View Project</a>
-</div> 
-
-<div class="card">
-    <h2>Change Days</h2>
-    <p>JavaScript switch-case project that automatically displays the current day with a matching themed image.</p>
-    <a href="JavaScript/changedays.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Secure Download/Dowhileloop</h2>
-    <p>Password-protected file download system utilizing do-while loops and conditional logic.</p>
-    <a href="JavaScript/dowhileloop.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Froasting Banner</h2>
-    <p>Animated image banner with automatic slideshow effect using JavaScript DOM manipulation and opacity transitions.</p>
-    <a href="JavaScript/froastingbanner.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Rotating Img Banner</h2>
-    <p>Dynamic rotating image banner showcasing multiple images with smooth transition effects using JavaScript.</p>
-    <a href="JavaScript/rotatingimgbanner.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Radio Button Banner</h2>
-    <p>A Radio Button Banner that uses buttons to switch different images.</p>
-    <a href="JavaScript/radiobuttonbanner.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Drop Down Menu</h2>
-    <p>A drop-down menu is a menu that shows a list of options.</p>
-    <a href="JavaScript/dropdownmenu.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Canvas Drawing</h2>
-    <p>Interactive canvas drawing project using JavaScript and the HTML5 Canvas API.</p>
-    <a href="JavaScript/drawcanvas.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Draw Random Color Circles</h2>
-    <p>Drawing a circle in JS a circular shape on using the Canvas API.</p>
-    <a href="JavaScript/drawrandomcolorcircles.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Draw Random Color Rectangles</h2>
-    <p>Drawing a rectangle in JS a four-sided shape on using the Canvas API.</p>
-    <a href="JavaScript/drawrandomcolorrectangle.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Draw Random Lines</h2>
-    <p>Drawing a lines in JS means creating straight lines on a Canvas API.</p>
-    <a href="JavaScript/drawrandomlines.html" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Random Diff. Circles</h2>
-    <p>In JS where each circle is filled with a randomly genreated color.</p>
-    <a href="JavaScript/randomdiffcircles.html" class="btn">View Project</a>
-</div>
-</section>
-
-
-
-<header class="page-header">
-
-    <div class="line"></div>
-
-    <h2>JQuery Assignments</h2>
-
-</header>
-
-     <section class="cards-section">
 
         <div class="card">
-            <h2>JQuery Inroduction</h2>
-            <p>Learn the fundamentals of jQuery, including syntax, setup, and basic DOM interactions.</p>
-            <a href="Jquery/Jqueryintro.html" class="btn">View Project</a>
+            <h2>Color Box</h2>
+            <p>
+                Random color palette generator with clickable color
+                buttons to instantly change the webpage background.
+            </p>
+            <a href="JavaScript/colorpicker.html" class="btn">View Project</a>
         </div>
 
 
         <div class="card">
-            <h2>Event(Selector) Function</h2>
-            <p>Learn the basic functions of jQuery, including ready(), hide(), show(), toggle()</p>
-            <a href="Jquery/selectoreventfunction.html" class="btn">View Project</a>
+            <h2>Change Mode</h2>
+            <p>
+                Light and dark mode toggle using JavaScript with
+                dynamic theme switching and interactive controls.
+            </p>
+            <a href="JavaScript/changemode.html" class="btn">View Project</a>
         </div>
 
 
         <div class="card">
-            <h2>Pull Down Menu</h2>
-            <p>Practice creating interactive navigation menus using jQuery slideToggle().</p>
-            <a href="Jquery/pulldownmenu.html" class="btn">View Project</a>
+            <h2>Theme Switcher</h2>
+            <p>
+                Light and dark mode toggle project implementing CSS
+                variables and JavaScript class toggling.
+            </p>
+            <a href="JavaScript/light&darktheme.html" class="btn">View Project</a>
         </div>
 
 
         <div class="card">
-            <h2>Accordion</h2>
-            <p>Build a responsive accordion using HTML, CSS, and jQuery with smooth collapsible content panels.</p>
-            <a href="Jquery/accordion.html" class="btn">View Project</a>
+            <h2>Table While Loop</h2>
+            <p>
+                DOM manipulation project that generates custom table
+                structures dynamically based on user input.
+            </p>
+            <a href="JavaScript/tablewhileloop.html" class="btn">View Project</a>
         </div>
 
 
         <div class="card">
-            <h2>Class Application</h2>
-           <p>Create an interactive class application form using HTML, CSS, and jQuery with dynamic effects and smooth user experience.</p>
-            <a href="Jquery/classapplication(books).html" class="btn">View Project</a>
+            <h2>RGB Color Controller</h2>
+            <p>
+                An interactive tool using range sliders to precisely
+                control and manipulate background colors in real-time.
+            </p>
+            <a href="JavaScript/RGBcolorcontroller.html" class="btn">View Project</a>
         </div>
 
 
         <div class="card">
-            <h2>Fade Functions</h2>
-           <p>Fade functions create smooth fade-in and fade-out effects by changing an element's visibility and opacity.</p>
-            <a href="Jquery/fadefunctions.html" class="btn">View Project</a>
+            <h2>RGB Dynamic Colors</h2>
+            <p>
+                A time-based project using setInterval() to automatically
+                cycle through random background colors.
+            </p>
+            <a href="JavaScript/RGBdynamiccolors.html" class="btn">View Project</a>
         </div>
 
 
         <div class="card">
-            <h2>Bounce Effect</h2>
-           <p>The Bounce Effect in jQuery UI creates a lively animation by making elements move up and down.</p>
-            <a href="Jquery/bounceeffect.html" class="btn">View Project</a>
+            <h2>Change Days</h2>
+            <p>
+                JavaScript switch-case project that automatically displays
+                the current day with a matching themed image.
+            </p>
+            <a href="JavaScript/changedays.html" class="btn">View Project</a>
         </div>
 
 
         <div class="card">
-            <h2>Explode Effect</h2>
-           <p>The Explode Effect in jQuery UI breaks an element into small pieces before hiding or showing it.</p>
-            <a href="Jquery/explodeeffect.html" class="btn">View Project</a>
+            <h2>Secure Download/Dowhileloop</h2>
+            <p>
+                Password-protected file download system utilizing
+                do-while loops and conditional logic.
+            </p>
+            <a href="JavaScript/dowhileloop.html" class="btn">View Project</a>
         </div>
 
-
-         <div class="card">
-            <h2>Fold Function</h2>
-           <p>The Fold Effect in jQuery UI hides or reveals an element with a smooth folding and unfolding animation.</p>
-            <a href="Jquery/foldfunction.html" class="btn">View Project</a>
-        </div>
 
         <div class="card">
-            <h2>Scroll Event</h2>
-           <p>The scroll event in jQuery is used to perform an action to webpage.</p>
-            <a href="Jquery/scrollevent.html" class="btn">View Project</a>
+            <h2>Froasting Banner</h2>
+            <p>
+                Animated image banner with automatic slideshow effect
+                using JavaScript DOM manipulation and opacity transitions.
+            </p>
+            <a href="JavaScript/froastingbanner.html" class="btn">View Project</a>
         </div>
 
-        
-        
+
+        <div class="card">
+            <h2>Rotating Img Banner</h2>
+            <p>
+                Dynamic rotating image banner showcasing multiple images
+                with smooth transition effects using JavaScript.
+            </p>
+            <a href="JavaScript/rotatingimgbanner.html" class="btn">View Project</a>
+        </div>
+
+
+        <div class="card">
+            <h2>Radio Button Banner</h2>
+            <p>
+                A Radio Button Banner that uses buttons to switch
+                different images.
+            </p>
+            <a href="JavaScript/radiobuttonbanner.html" class="btn">View Project</a>
+        </div>
+
+
+        <div class="card">
+            <h2>Drop Down Menu</h2>
+            <p>
+                A drop-down menu is a menu that shows a list of options.
+            </p>
+            <a href="JavaScript/dropdownmenu.html" class="btn">View Project</a>
+        </div>
+
+
+        <div class="card">
+            <h2>Canvas Drawing</h2>
+            <p>
+                Interactive canvas drawing project using JavaScript
+                and the HTML5 Canvas API.
+            </p>
+            <a href="JavaScript/drawcanvas.html" class="btn">View Project</a>
+        </div>
+
+
+        <div class="card">
+            <h2>Draw Random Color Circles</h2>
+            <p>
+                Drawing a circle in JS means creating a circular shape
+                using the Canvas API.
+            </p>
+            <a href="JavaScript/drawrandomcolorcircles.html" class="btn">View Project</a>
+        </div>
+
+
+        <div class="card">
+            <h2>Draw Random Color Rectangles</h2>
+            <p>
+                Drawing a rectangle in JS means creating a four-sided
+                shape using the Canvas API.
+            </p>
+            <a href="JavaScript/drawrandomcolorrectangle.html" class="btn">View Project</a>
+        </div>
+
+
+        <div class="card">
+            <h2>Draw Random Lines</h2>
+            <p>
+                Drawing lines in JS means creating straight lines
+                using the Canvas API.
+            </p>
+            <a href="JavaScript/drawrandomlines.html" class="btn">View Project</a>
+        </div>
+
+
+        <div class="card">
+            <h2>Random Diff. Circles</h2>
+            <p>
+                In JS where each circle is filled with a randomly
+                generated color.
+            </p>
+            <a href="JavaScript/randomdiffcircles.html" class="btn">View Project</a>
+        </div>
+
 
     </section>
 
-    
+
+
+    <!-- =========================================
+         JQUERY ASSIGNMENTS
+    ========================================== -->
+
+    <header class="page-header">
+
+        <div class="line"></div>
+
+        <h2>
+            JQuery Assignments
+        </h2>
+
+    </header>
+
+
+    <section class="cards-section">
+
+
+        <div class="card">
+
+            <h2>
+                JQuery Introduction
+            </h2>
+
+            <p>
+                Learn the fundamentals of jQuery, including syntax,
+                setup, and basic DOM interactions.
+            </p>
+
+            <a
+                href="Jquery/Jqueryintro.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>
+                Event(Selector) Function
+            </h2>
+
+            <p>
+                Learn the basic functions of jQuery, including
+                ready(), hide(), show(), toggle().
+            </p>
+
+            <a
+                href="Jquery/selectoreventfunction.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>
+                Pull Down Menu
+            </h2>
+
+            <p>
+                Practice creating interactive navigation menus
+                using jQuery slideToggle().
+            </p>
+
+            <a
+                href="Jquery/pulldownmenu.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>
+                Accordion
+            </h2>
+
+            <p>
+                Build a responsive accordion using HTML, CSS,
+                and jQuery with smooth collapsible content panels.
+            </p>
+
+            <a
+                href="Jquery/accordion.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>
+                Class Application
+            </h2>
+
+            <p>
+                Create an interactive class application form using
+                HTML, CSS, and jQuery with dynamic effects.
+            </p>
+
+            <a
+                href="Jquery/classapplication(books).html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>
+                Fade Functions
+            </h2>
+
+            <p>
+                Fade functions create smooth fade-in and fade-out
+                effects by changing an element's visibility and opacity.
+            </p>
+
+            <a
+                href="Jquery/fadefunctions.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>
+                Bounce Effect
+            </h2>
+
+            <p>
+                The Bounce Effect in jQuery UI creates a lively
+                animation by making elements move up and down.
+            </p>
+
+            <a
+                href="Jquery/bounceeffect.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>
+                Explode Effect
+            </h2>
+
+            <p>
+                The Explode Effect in jQuery UI breaks an element
+                into small pieces before hiding or showing it.
+            </p>
+
+            <a
+                href="Jquery/explodeeffect.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>
+                Fold Function
+            </h2>
+
+            <p>
+                The Fold Effect in jQuery UI hides or reveals an
+                element with a smooth folding and unfolding animation.
+            </p>
+
+            <a
+                href="Jquery/foldfunction.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>
+                Scroll Event
+            </h2>
+
+            <p>
+                The scroll event in jQuery is used to perform
+                an action on a webpage.
+            </p>
+
+            <a
+                href="Jquery/scrollevent.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>
+                Intro Animation
+            </h2>
+
+            <p>
+                Intro animation effect used to make elements
+                appear attractively.
+            </p>
+
+            <a
+                href="Jquery/introanimation.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         BOOTSTRAP ASSIGNMENTS
+         SAME DESIGN AS OTHER ASSIGNMENTS
+    ========================================== -->
+
+    <header class="page-header">
+
+        <div class="line"></div>
+
+        <h2>
+            Bootstrap Assignments
+        </h2>
+
+    </header>
+
+
+    <section class="cards-section">
+
+
+        <div class="card">
+
+            <h2>
+                Intro Bootstrap
+            </h2>
+
+            <p>
+                Introduction to Bootstrap framework,
+                responsive layout and Bootstrap components.
+            </p>
+
+            <a
+                href="Bootstrap/introbootstrap.html"
+                class="btn"
+            >
+                View Project
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
 
     <footer>
+
         <div class="footer-content">
-            <div class="footer-box">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="Practice Page.html">Practice Page</a></li>
-                    <li><a href="Project.html">Project</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+
 
             <div class="footer-box">
-                <h4>Contact</h4>
-                <p>Email : sruchi1993@gmail.com</p>
-                <p>Location : Delhi, India</p>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Practice Page.html">
+                            Practice Page
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Project.html">
+                            Project
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
+
+
+            <div class="footer-box">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    Email : sruchi1993@gmail.com
+                </p>
+
+                <p>
+                    Location : Delhi, India
+                </p>
+
+            </div>
+
+
         </div>
+
 
         <div class="footer-bottom">
+
             © 2026 | Designed & Developed By Ruchika.
+
         </div>
+
     </footer>
 
+
 </body>
+
 </html>
