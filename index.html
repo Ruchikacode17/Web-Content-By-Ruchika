@@ -2,433 +2,1107 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ruchika Singh - Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-
-  <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Poppins',sans-serif;
-    }
-
-    body{
-      background:
-      linear-gradient(
-      135deg,
-      #FFF7F2,
-      #F7F3FF,
-      #EEF7FF,
-      #F4FFF8
-      );
-
-      color:#4B5563;
-    }
-
-    nav{
-      width:90%;
-      margin:25px auto;
-
-      background:#ffffffc4;
-
-      backdrop-filter:blur(8px);
-
-      border-radius:18px;
-
-      padding:18px 30px;
-
-      box-shadow:
-      0 5px 18px rgba(0,0,0,0.06);
-    }
-
-    .nav__content{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-
-    .logo a{
-      text-decoration:none;
-      font-size:28px;
-      font-weight:600;
-      color:#6D5BD0;
-    }
-
-    .nav-links{
-      list-style:none;
-      display:flex;
-      gap:25px;
-      flex-wrap:wrap;
-    }
-
-    .nav-links li a{
-      text-decoration:none;
-      color:#5B6475;
-      font-size:15px;
-      transition:0.3s;
-    }
-
-    .nav-links li a:hover{
-      color:#8B5CF6;
-    }
-
-
-    .section{
-      width:90%;
-      margin:auto;
-      margin-top:50px;
-      margin-bottom:70px;
-    }
-
-    .section__container{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:50px;
-      flex-wrap:wrap;
-    }
-
-    .content{
-      flex:1;
-      min-width:300px;
-    }
-
-    .subtitle{
-      color:#8B5CF6;
-      font-size:16px;
-      margin-bottom:12px;
-      letter-spacing:1px;
-    }
-
-    .title{
-      font-size:48px;
-      line-height:65px;
-      margin-bottom:20px;
-      color:#374151;
-    }
-
-    .title span{
-      color:#7C6CF2;
-    }
-
-    .Bio{
-      line-height:30px;
-      font-size:16px;
-      color:#6B7280;
-      margin-bottom:30px;
-    }
-
-    .btn{
-      display:inline-block;
-
-      text-decoration:none;
-
-      padding:12px 22px;
-
-      border-radius:12px;
-
-      background:
-      linear-gradient(
-      to right,
-      #B8D8FF,
-      #D8C4FF
-      );
-
-      color:#374151;
-
-      font-weight:500;
-
-      transition:0.3s;
-    }
-
-    .btn:hover{
-      transform:translateY(-3px);
-    }
-
-    .image{
-      flex:1;
-      text-align:center;
-      min-width:280px;
-    }
-
- .profile {
-    width: 360px;
-    height: 360px;
-    max-width: none;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    border: 8px solid rgba(255, 255, 255, 0.85);
-    box-shadow: 0 20px 50px rgba(70, 60, 120, 0.18);
-}
 
-
-    footer{
-      width:100%;
+    <!-- =====================================================
+         BASIC WEBSITE INFORMATION
+    ====================================================== -->
 
-      background:#ffffffa8;
+    <meta charset="UTF-8">
 
-      backdrop-filter:blur(5px);
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-      margin-top:50px;
+    <meta
+        name="description"
+        content="AERONIVA is an interactive educational website exploring sustainable energy, solar power, wind power and greener everyday living."
+    >
 
-      padding:40px 20px 20px;
+    <meta
+        name="author"
+        content="AERONIVA"
+    >
 
-      box-shadow:
-      0 -2px 10px rgba(0,0,0,0.03);
-    }
+    <meta
+        name="keywords"
+        content="sustainable energy, solar energy, wind power, green lifestyle, renewable energy, clean energy"
+    >
 
-    .footer-content{
-      width:90%;
-      margin:auto;
 
-      display:flex;
-      justify-content:space-between;
-      gap:40px;
-      flex-wrap:wrap;
-    }
+    <!-- =====================================================
+         WEBSITE TITLE
+    ====================================================== -->
 
-    .footer-box h4{
-      margin-bottom:15px;
-      color:#7C6CF2;
-      font-size:18px;
-    }
+    <title>
+        AERONIVA | Energy That Moves Tomorrow
+    </title>
 
-    .footer-box ul{
-      list-style:none;
-    }
 
-    .footer-box ul li{
-      margin:8px 0;
-    }
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
 
-    .footer-box ul li a{
-      text-decoration:none;
-      color:#5B6475;
-      transition:0.3s;
-    }
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
 
-    .footer-box ul li a:hover{
-      color:#8B5CF6;
-    }
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
-    .footer-box p{
-      color:#6B7280;
-      line-height:28px;
-    }
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
 
-    .footer-bottom{
-      text-align:center;
-      margin-top:30px;
-      padding-top:15px;
-      border-top:1px solid rgba(0,0,0,0.06);
-      color:#6B7280;
-      font-size:14px;
-    }
 
+    <!-- =====================================================
+         FONT AWESOME ICONS
+    ====================================================== -->
 
-    @media(max-width:768px){
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
-      .section__container{
-        flex-direction:column-reverse;
-        text-align:center;
-      }
 
-      .title{
-        font-size:35px;
-        line-height:50px;
-      }
+    <!-- =====================================================
+         MAIN CSS FILE
+    ====================================================== -->
 
-      .nav__content{
-        flex-direction:column;
-        gap:20px;
-      }
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 
-      .nav-links{
-        justify-content:center;
-      }
-
-    }
-
-    /* DROPDOWN */
-
-.dropdown{
-    position:relative;
-}
-
-.dropbtn{
-
-    background:none;
-    border:none;
-
-    font-size:15px;
-
-    color:#5B6475;
-
-    cursor:pointer;
-
-    font-family:'Poppins',sans-serif;
-}
-
-.dropdown-content{
-
-    display:none;
-
-    position:absolute;
-
-    background:white;
-
-    min-width:220px;
-
-    border-radius:12px;
-
-    overflow:hidden;
-
-    box-shadow:0 5px 18px rgba(0,0,0,0.08);
-
-    top:35px;
-
-    z-index:100;
-}
-
-.dropdown-content a{
-
-    display:block;
-
-    padding:12px 18px;
-
-    text-decoration:none;
-
-    color:#5B6475;
-
-    transition:0.3s;
-}
-
-.dropdown-content a:hover{
-
-    background:#f3f4f6;
-
-    color:#8B5CF6;
-}
-
-.dropdown:hover .dropdown-content{
-    display:block;
-}
-
-  </style>
 </head>
+
 
 <body>
 
-  <nav>
 
-    <div class="nav__content">
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
-      <div class="logo">
-        <a href="#">Ruchika</a>
-      </div>
+    <header class="site-header">
 
-      <ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li> 
-  <li><a href="Practice Page.html">Practice Work</a></li>
-  <li><a href="Project.html">Project</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
+        <div class="container nav-container">
+
+
+            <!-- =================================================
+                 WEBSITE LOGO
+            ================================================== -->
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="AERONIVA Home"
+            >
+
+                <span class="logo-mark">
+                    AN
+                </span>
+
+                <span class="logo-text">
+                    AERONIVA
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 MAIN NAVIGATION
+            ================================================== -->
+
+            <nav
+                class="main-nav"
+                aria-label="Main Navigation"
+            >
+
+                <a
+                    href="index.html"
+                    class="active"
+                >
+                    Home
+                </a>
+
+                <a href="solar.html">
+                    Solar
+                </a>
+
+                <a href="wind.html">
+                    Wind
+                </a>
+
+                <a href="green-living.html">
+                    Green Living
+                </a>
+
+                <a href="energy-lab.html">
+                    Energy Lab
+                </a>
+
+                <a href="impact.html">
+                    Impact
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- =================================================
+                 MOBILE MENU BUTTON
+            ================================================== -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN WEBSITE CONTENT
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO SECTION
+        ================================================== -->
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+
+                <!-- SMALL INTRODUCTION -->
+
+                <p class="eyebrow">
+                    SUSTAINABLE ENERGY • SMARTER LIVING
+                </p>
+
+
+                <!-- MAIN HERO HEADING -->
+
+                <h1>
+
+                    Energy That
+
+                    <span>
+                        Moves Tomorrow.
+                    </span>
+
+                </h1>
+
+
+                <!-- HERO DESCRIPTION -->
+
+                <p class="hero-text">
+
+                    Explore renewable energy, understand
+                    how clean technologies work and discover
+                    practical ways to build a more sustainable
+                    future.
+
+                </p>
+
+
+                <!-- HERO BUTTONS -->
+
+                <div class="hero-buttons">
+
+
+                    <a
+                        href="solar.html"
+                        class="btn btn-primary"
+                    >
+
+                        Explore Solar
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a
+                        href="energy-lab.html"
+                        class="btn btn-secondary"
+                    >
+
+                        Enter Energy Lab
+
+                        <i class="fa-solid fa-flask"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="section introduction">
+
+    <div class="container">
+
+        <div class="introduction-layout">
+
+            <!-- Left Content -->
+            <div class="introduction-content">
+
+                <p class="eyebrow">
+                    THE BIGGER PICTURE
+                </p>
+
+                <h2>
+                    Rethinking the way
+                    <span>we use energy.</span>
+                </h2>
+
+                <p class="introduction-text">
+                    Sustainable energy is more than a technology.
+                    It is a way of thinking about how we produce,
+                    consume and preserve the resources around us.
+                </p>
+
+            </div>
+
+
+            <!-- Right Energy Journey -->
+            <div class="energy-journey">
+
+                <div class="journey-item">
+
+                    <div class="journey-icon">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+
+                    <div class="journey-text">
+                        <span>01</span>
+                        <h3>Solar</h3>
+                        <p>
+                            Capture energy directly from sunlight.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="journey-line"></div>
+
+
+                <div class="journey-item">
+
+                    <div class="journey-icon">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+
+                    <div class="journey-text">
+                        <span>02</span>
+                        <h3>Wind</h3>
+                        <p>
+                            Harness the natural movement of air.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="journey-line"></div>
+
+
+                <div class="journey-item">
+
+                    <div class="journey-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <div class="journey-text">
+                        <span>03</span>
+                        <h3>Everyday</h3>
+                        <p>
+                            Turn sustainable ideas into daily choices.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
-  </nav>
+</section>
 
-  <section class="section">
 
-    <div class="section__container">
+      <!-- =====================================================
+     ENERGY JOURNEY SLIDER
+====================================================== -->
 
-      <div class="content">
+<section class="section energy-preview">
 
-        <p class="subtitle">HELLO PROFESSIONALS</p>
+    <div class="container">
 
-        <h1 class="title">
-          I'm <span>Ruchika Singh</span><br>
-          UI/UX Design Learner
-        </h1>
+        <div class="section-heading journey-heading">
 
-        <p class="Bio">
+            <p class="eyebrow">
+                THE ENERGY JOURNEY
+            </p>
 
-          Welcome! I’m a UI/UX design enthusiast who enjoys creating clean,
-          user-friendly and visually appealing designs.
+            <h2>
+                Three forces.
+                <span>One sustainable future.</span>
+            </h2>
 
-          I love exploring new ideas, learning modern web designing techniques
-          and improving my creativity through practice projects.
+            <p>
+                From the energy around us to the choices we make every day,
+                sustainability begins with understanding how everything connects.
+            </p>
 
-          This portfolio represents my learning journey and continuous growth
-          in web design and front-end development.
+        </div>
 
-        </p>
 
-        <a href="Practice Page.html" class="btn">
-          View Practice Work
-        </a>
+        <!-- Slider -->
+        <div class="energy-slider">
 
-      </div>
+            <!-- Slide 01 -->
+            <article class="energy-slide active">
 
-      <div class="image">
+                <div class="slide-number">
+                    01 / 03
+                </div>
 
-       <img src="images/mypic7.png"
-     class="profile"
-     loading="eager"
-     decoding="async"
-     alt="Ruchika Singh">
+                <div class="slide-icon">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
 
-      </div>
+                <p class="slide-label">
+                    SOLAR ENERGY
+                </p>
+
+                <h3>
+                    Capture the Sun.
+                </h3>
+
+                <p class="slide-text">
+                    Solar panels use photovoltaic cells to convert sunlight
+                    into electricity that can power homes, businesses and
+                    everyday systems.
+                </p>
+
+                <a href="solar.html" class="slide-link">
+                    Explore Solar
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- Slide 02 -->
+            <article class="energy-slide">
+
+                <div class="slide-number">
+                    02 / 03
+                </div>
+
+                <div class="slide-icon">
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+
+                <p class="slide-label">
+                    WIND POWER
+                </p>
+
+                <h3>
+                    Harness the Air.
+                </h3>
+
+                <p class="slide-text">
+                    Wind turbines transform the movement of air into
+                    mechanical energy and then into electricity.
+                </p>
+
+                <a href="wind.html" class="slide-link">
+                    Explore Wind
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- Slide 03 -->
+            <article class="energy-slide">
+
+                <div class="slide-number">
+                    03 / 03
+                </div>
+
+                <div class="slide-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <p class="slide-label">
+                    GREEN LIVING
+                </p>
+
+                <h3>
+                    Change the Everyday.
+                </h3>
+
+                <p class="slide-text">
+                    Sustainable living brings the energy conversation
+                    into everyday choices such as reducing waste,
+                    saving resources and consuming responsibly.
+                </p>
+
+                <a href="green-living.html" class="slide-link">
+                    Explore Green Living
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+
+                <button
+                    type="button"
+                    class="slider-button"
+                    id="previousSlide"
+                    aria-label="Previous slide"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+
+                <div class="slider-dots">
+
+                    <button
+                        type="button"
+                        class="slider-dot active"
+                        data-slide="0"
+                        aria-label="Go to slide 1"
+                    ></button>
+
+                    <button
+                        type="button"
+                        class="slider-dot"
+                        data-slide="1"
+                        aria-label="Go to slide 2"
+                    ></button>
+
+                    <button
+                        type="button"
+                        class="slider-dot"
+                        data-slide="2"
+                        aria-label="Go to slide 3"
+                    ></button>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="slider-button"
+                    id="nextSlide"
+                    aria-label="Next slide"
+                >
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
 
     </div>
 
-  </section>
+</section>
 
-  <footer>
 
-    <div class="footer-content">
 
-      <div class="footer-box">
+        <!-- =====================================================
+     ENERGY LAB PREVIEW
+====================================================== -->
 
-        <h4>Quick Links</h4>
+<section class="section lab-preview">
 
-<ul class="nav-links">
-  <li><a href="index.html" class="active">Home</a></li>
-  <li><a href="about.html" class="active">About</a></li> 
-  <li><a href="Practice Page.html" class="active">Practice Work</a></li>
-  <li><a href="Project.html" class="active">Project</a></li>
-  <li><a href="contact.html" class="active">Contact</a></li> 
-</ul>
+    <div class="container">
 
-      </div>
+        <div class="lab-layout">
 
-      <div class="footer-box">
+            <!-- Left Content -->
+            <div class="lab-content">
 
-        <h4>Contact</h4>
+                <p class="eyebrow">
+                    INTERACTIVE EXPERIENCE
+                </p>
 
-        <p>Email : sruchi1993@gmail.com</p>
-        <p>Location : Delhi, India</p>
+                <h2>
+                    Don't just learn.
+                    <span>Experiment.</span>
+                </h2>
 
-      </div>
+                <p>
+                    The AERONIVA Energy Lab turns sustainable energy
+                    concepts into interactive experiences. Adjust,
+                    compare and discover how different choices can
+                    influence energy and environmental outcomes.
+                </p>
+
+                <a href="energy-lab.html" class="btn btn-primary">
+                    Enter Energy Lab
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- Right Interactive Preview -->
+            <div class="lab-preview-panel">
+
+                <div class="lab-panel-header">
+
+                    <span>
+                        AERONIVA ENERGY LAB
+                    </span>
+
+                    <span class="lab-status">
+                        <i class="fa-solid fa-circle"></i>
+                        LIVE PREVIEW
+                    </span>
+
+                </div>
+
+
+                <div class="lab-metrics">
+
+                    <div class="lab-metric">
+
+                        <div class="lab-metric-icon">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+
+                        <div>
+                            <span>Solar</span>
+                            <strong>Clean Input</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="lab-metric">
+
+                        <div class="lab-metric-icon wind-icon">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+
+                        <div>
+                            <span>Wind</span>
+                            <strong>Natural Motion</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="lab-metric">
+
+                        <div class="lab-metric-icon green-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+
+                        <div>
+                            <span>Lifestyle</span>
+                            <strong>Daily Impact</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="lab-progress">
+
+                    <div class="progress-header">
+                        <span>SUSTAINABILITY POTENTIAL</span>
+                        <strong>Explore</strong>
+                    </div>
+
+                    <div class="progress-track">
+                        <span></span>
+                    </div>
+
+                </div>
+
+
+                <div class="lab-panel-footer">
+
+                    <span>
+                        <i class="fa-solid fa-sliders"></i>
+                        Adjust
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        Compare
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Discover
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
-    <div class="footer-bottom">
-      © 2026 | Ruchika | A Passionate Learner
+</section>
+
+
+
+  <!-- =====================================================
+     IMPACT PREVIEW
+====================================================== -->
+
+<section class="section impact-preview">
+
+    <div class="container">
+
+        <!-- Impact Introduction -->
+
+        <div class="impact-intro">
+
+            <div class="impact-heading">
+
+                <p class="eyebrow">
+                    FROM ENERGY TO IMPACT
+                </p>
+
+                <h2>
+                    Every energy choice
+                    <span>shapes tomorrow.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="impact-description">
+
+                <p>
+                    Sustainable change does not come from one
+                    solution alone. It grows when clean energy,
+                    responsible choices and everyday action
+                    move in the same direction.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Impact Journey -->
+
+        <div class="impact-journey">
+
+
+            <!-- Impact 01 -->
+
+            <article class="impact-card">
+
+                <div class="impact-card-top">
+
+                    <span class="impact-number">
+                        01
+                    </span>
+
+                    <i class="fa-solid fa-sun"></i>
+
+                </div>
+
+                <div class="impact-card-content">
+
+                    <p class="impact-label">
+                        CLEANER ENERGY
+                    </p>
+
+                    <h3>
+                        Power from nature.
+                    </h3>
+
+                    <p>
+                        Solar and wind energy use naturally
+                        replenished resources to create cleaner
+                        alternatives to conventional energy sources.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Impact 02 -->
+
+            <article class="impact-card">
+
+                <div class="impact-card-top">
+
+                    <span class="impact-number">
+                        02
+                    </span>
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                </div>
+
+                <div class="impact-card-content">
+
+                    <p class="impact-label">
+                        SMARTER CHOICES
+                    </p>
+
+                    <h3>
+                        Small actions matter.
+                    </h3>
+
+                    <p>
+                        Saving energy, reducing waste and using
+                        resources thoughtfully can turn sustainable
+                        ideas into everyday habits.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Impact 03 -->
+
+            <article class="impact-card">
+
+                <div class="impact-card-top">
+
+                    <span class="impact-number">
+                        03
+                    </span>
+
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                </div>
+
+                <div class="impact-card-content">
+
+                    <p class="impact-label">
+                        SHARED FUTURE
+                    </p>
+
+                    <h3>
+                        Change moves forward.
+                    </h3>
+
+                    <p>
+                        When technology and responsible living
+                        work together, today's choices can help
+                        shape a more resilient tomorrow.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- Impact Closing Line -->
+
+        <div class="impact-closing">
+
+            <span class="impact-line"></span>
+
+            <p>
+                ENERGY
+                <span>→</span>
+                CHOICE
+                <span>→</span>
+                IMPACT
+            </p>
+
+            <span class="impact-line"></span>
+
+        </div>
+
     </div>
 
-  </footer>
+</section>
+
+
+     <!-- =====================================================
+     FINAL CALL TO ACTION
+====================================================== -->
+
+<section class="section final-cta">
+
+    <div class="container">
+
+        <div class="final-cta-content">
+
+            <p class="eyebrow">
+                DISCOVER AERONIVA
+            </p>
+
+            <h2>
+                The future isn't somewhere ahead.
+                <span>It starts with what we understand today.</span>
+            </h2>
+
+            <p class="final-cta-text">
+                Explore the ideas, technologies and everyday
+                choices behind AERONIVA — and see how energy,
+                people and progress can move together.
+            </p>
+
+            <a
+                href="about.html"
+                class="btn btn-secondary"
+            >
+                Discover Our Story
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <!-- Decorative Energy Path -->
+
+        <div class="final-energy-path">
+
+            <span class="path-item">
+                <i class="fa-solid fa-sun"></i>
+                ENERGY
+            </span>
+
+            <span class="path-line"></span>
+
+            <span class="path-item">
+                <i class="fa-solid fa-leaf"></i>
+                CHOICE
+            </span>
+
+            <span class="path-line"></span>
+
+            <span class="path-item">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                IMPACT
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+
+            <!-- =============================================
+                 FOOTER BRAND
+            ============================================== -->
+
+            <div class="footer-brand">
+
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <span class="logo-mark">
+                        AN
+                    </span>
+
+                    <span class="logo-text">
+                        AERONIVA
+                    </span>
+
+                </a>
+
+
+                <p>
+
+                    Energy That Moves Tomorrow.
+
+                </p>
+
+
+                <p>
+
+                    An educational exploration of
+                    sustainable energy and greener living.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 FOOTER EXPLORE LINKS
+            ============================================== -->
+
+            <div class="footer-links">
+
+
+                <h3>
+                    Explore
+                </h3>
+
+
+                <a href="solar.html">
+                    Solar Energy
+                </a>
+
+
+                <a href="wind.html">
+                    Wind Power
+                </a>
+
+
+                <a href="green-living.html">
+                    Green Living
+                </a>
+
+
+                <a href="energy-lab.html">
+                    Energy Lab
+                </a>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 FOOTER DISCOVER LINKS
+            ============================================== -->
+
+            <div class="footer-links">
+
+
+                <h3>
+                    Discover
+                </h3>
+
+
+                <a href="impact.html">
+                    Impact
+                </a>
+
+
+                <a href="about.html">
+                    About AERONIVA
+                </a>
+
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =============================================
+             FOOTER BOTTOM
+        ============================================== -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+
+                <p>
+
+                    © 2026 AERONIVA.
+                    Educational Student Project.
+
+                </p>
+
+
+                <p>
+
+                    Built with HTML5, CSS3 and JavaScript.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         BACK TO TOP BUTTON
+    ====================================================== -->
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        type="button"
+        aria-label="Back to top"
+    >
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- =====================================================
+         MAIN JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/main.js"></script>
 
 </body>
 
