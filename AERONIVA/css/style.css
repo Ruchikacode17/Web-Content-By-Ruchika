@@ -6235,3 +6235,1075 @@ h2 span {
         padding-top: 16px;
     }
 }
+
+/* =========================================================
+   GREEN LIVING PAGE
+   AERONIVA
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.green-hero {
+    position: relative;
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7, 26, 43, 0.88) 0%,
+            rgba(7, 26, 43, 0.68) 42%,
+            rgba(7, 26, 43, 0.25) 75%,
+            rgba(7, 26, 43, 0.15) 100%
+        ),
+        url("../images/greenliving/green-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #ffffff;
+}
+
+.green-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+}
+
+.green-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1180px;
+
+    padding: 105px 0 115px;
+}
+
+.green-hero .eyebrow {
+    margin-bottom: 18px;
+    color: #F4B942 !important;
+}
+
+.green-hero h1 {
+    max-width: 760px;
+    margin: 0 0 25px;
+
+    color: #ffffff !important;
+
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(3rem, 6vw, 5.4rem);
+    line-height: 1.02;
+    font-weight: 700;
+
+    letter-spacing: -2px;
+}
+
+.green-hero h1 span {
+    display: block;
+    color: #ffffff !important;
+}
+
+.green-hero-text {
+    max-width: 650px;
+    margin: 0 0 32px;
+
+    color: rgba(255, 255, 255, 0.88) !important;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.green-hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.green-hero-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.green-hero-scroll {
+    position: absolute;
+    right: 36px;
+    bottom: 34px;
+
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ffffff;
+
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.green-hero-scroll i {
+    color: #F4B942;
+}
+
+
+/* =========================================================
+   COMMON GREEN SECTION HEADING
+========================================================= */
+
+.green-introduction .eyebrow,
+.green-choices .eyebrow,
+.green-habits .eyebrow,
+.green-footprint .eyebrow,
+.green-sustainable .eyebrow {
+    color: #3A9D5D;
+}
+
+.green-choices .section-heading,
+.green-habits .section-heading,
+.green-footprint .section-heading {
+    max-width: 780px;
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.green-choices .section-heading h2,
+.green-habits .section-heading h2,
+.green-footprint .section-heading h2 {
+    margin: 12px 0 18px;
+}
+
+.green-choices .section-heading > p:last-child,
+.green-footprint .section-heading > p:last-child {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.green-introduction {
+    padding: 110px 0;
+    background: #F7F5EF;
+}
+
+.green-intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.green-intro-content {
+    min-width: 0;
+}
+
+.green-intro-content h2 {
+    margin: 12px 0 24px;
+
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.5rem, 4vw, 3.7rem);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+}
+
+.green-intro-content h2 span {
+    display: block;
+    color: #1261A0;
+}
+
+.green-intro-content > p {
+    max-width: 600px;
+    margin-bottom: 18px;
+
+    color: #52606D;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.green-intro-highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    max-width: 600px;
+    margin-top: 28px;
+    padding: 20px 22px;
+
+    background: #ffffff;
+    border-left: 4px solid #3A9D5D;
+
+    box-shadow: 0 10px 30px rgba(7, 26, 43, 0.06);
+}
+
+.green-intro-highlight i {
+    flex-shrink: 0;
+    margin-top: 3px;
+
+    color: #3A9D5D;
+    font-size: 1.2rem;
+}
+
+.green-intro-highlight strong {
+    display: inline;
+    color: #071A2B;
+}
+
+.green-intro-highlight span {
+    color: #52606D;
+    line-height: 1.7;
+}
+
+.green-intro-image {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    overflow: hidden;
+}
+
+.green-intro-image img {
+    display: block;
+
+    width: 100%;
+    height: 520px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 6px;
+
+    transition: transform 0.5s ease;
+}
+
+.green-intro-image:hover img {
+    transform: scale(1.025);
+}
+
+.green-intro-image .image-caption {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 18px;
+
+    background: rgba(7, 26, 43, 0.88);
+
+    color: #ffffff;
+
+    font-size: 0.82rem;
+}
+
+.green-intro-image .image-caption i {
+    color: #F4B942;
+}
+
+
+/* =========================================================
+   GREEN CHOICES
+========================================================= */
+
+.green-choices {
+    padding: 110px 0;
+    background: #ffffff;
+}
+
+.green-choice-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.green-choice-card {
+    position: relative;
+
+    min-width: 0;
+    min-height: 300px;
+
+    padding: 32px 26px;
+
+    background: #F7F5EF;
+
+    border: 1px solid rgba(7, 26, 43, 0.08);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.green-choice-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(58, 157, 93, 0.35);
+
+    box-shadow: 0 18px 40px rgba(7, 26, 43, 0.10);
+}
+
+.choice-number {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+
+    color: rgba(7, 26, 43, 0.18);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.choice-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 56px;
+    height: 56px;
+    margin-bottom: 30px;
+
+    background: #E7F3EA;
+
+    border-radius: 50%;
+
+    color: #3A9D5D;
+    font-size: 1.2rem;
+}
+
+.green-choice-card h3 {
+    margin-bottom: 12px;
+
+    color: #071A2B;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+}
+
+.green-choice-card p {
+    margin: 0;
+
+    color: #64748B;
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   RECYCLING
+========================================================= */
+
+.green-recycling {
+    padding: 110px 0;
+
+    background: #071A2B;
+    color: #ffffff;
+}
+
+.green-recycling-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.green-recycling-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.green-recycling-image img {
+    display: block;
+
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 6px;
+
+    transition: transform 0.5s ease;
+}
+
+.green-recycling-image:hover img {
+    transform: scale(1.025);
+}
+
+.green-recycling-content {
+    min-width: 0;
+}
+
+.green-recycling-content .eyebrow {
+    color: #F4B942 !important;
+}
+
+.green-recycling-content h2 {
+    margin: 12px 0 22px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    line-height: 1.08;
+}
+
+.green-recycling-content h2 span {
+    display: block;
+    color: #3A9D5D;
+}
+
+.green-recycling-content > p {
+    max-width: 590px;
+    margin-bottom: 34px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    line-height: 1.8;
+}
+
+.green-recycle-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+.green-recycle-item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    min-width: 0;
+
+    padding: 22px 18px;
+
+    background: rgba(255, 255, 255, 0.055);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.green-list-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    background: rgba(58, 157, 93, 0.15);
+
+    border-radius: 50%;
+
+    color: #3A9D5D;
+}
+
+.green-recycle-item h3 {
+    margin-bottom: 7px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.98rem;
+}
+
+.green-recycle-item p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DAILY HABITS
+========================================================= */
+
+.green-habits {
+    padding: 110px 0;
+    background: #F7F5EF;
+}
+
+.green-habit-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.green-habit-card {
+    min-width: 0;
+
+    padding: 30px 20px;
+
+    background: #ffffff;
+
+    border-top: 3px solid #3A9D5D;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.green-habit-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 16px 35px rgba(7, 26, 43, 0.08);
+}
+
+.green-habit-card > span {
+    display: block;
+    margin-bottom: 18px;
+
+    color: rgba(7, 26, 43, 0.35);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.green-habit-card > i {
+    display: block;
+    margin-bottom: 18px;
+
+    color: #3A9D5D;
+    font-size: 1.5rem;
+}
+
+.green-habit-card h3 {
+    margin-bottom: 9px;
+
+    color: #071A2B;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.green-habit-card p {
+    margin: 0;
+
+    color: #64748B;
+
+    font-size: 0.82rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   SUSTAINABLE CHOICES
+========================================================= */
+
+.green-sustainable {
+    padding: 110px 0;
+    background: #ffffff;
+}
+
+.green-sustainable-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.green-sustainable-content {
+    min-width: 0;
+}
+
+.green-sustainable-content h2 {
+    margin: 12px 0 22px;
+
+    color: #071A2B;
+
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    line-height: 1.08;
+}
+
+.green-sustainable-content h2 span {
+    display: block;
+    color: #1261A0;
+}
+
+.green-sustainable-content > p {
+    max-width: 590px;
+
+    margin-bottom: 18px;
+
+    color: #64748B;
+    line-height: 1.8;
+}
+
+.green-choice-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    max-width: 590px;
+    margin-top: 28px;
+    padding: 18px 20px;
+
+    background: #E7F3EA;
+
+    color: #071A2B;
+
+    font-weight: 500;
+}
+
+.green-choice-note i {
+    color: #3A9D5D;
+}
+
+.green-sustainable-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.green-sustainable-image img {
+    display: block;
+
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 6px;
+
+    transition: transform 0.5s ease;
+}
+
+.green-sustainable-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   CARBON FOOTPRINT
+========================================================= */
+
+.green-footprint {
+    padding: 110px 0;
+    background: #F7F5EF;
+}
+
+.green-footprint-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+.green-footprint-card {
+    min-width: 0;
+
+    padding: 34px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(7, 26, 43, 0.07);
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.green-footprint-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #3A9D5D;
+}
+
+.green-footprint-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(7, 26, 43, 0.08);
+}
+
+.footprint-icon {
+    margin-bottom: 22px;
+
+    color: #3A9D5D;
+    font-size: 1.6rem;
+}
+
+.green-footprint-card h3 {
+    margin-bottom: 10px;
+
+    color: #071A2B;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+}
+
+.green-footprint-card p {
+    margin: 0;
+
+    color: #64748B;
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FUTURE SECTION
+========================================================= */
+
+.green-future {
+    padding: 110px 0;
+
+    background: #071A2B;
+    color: #ffffff;
+}
+
+.green-future-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.green-future-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.green-future-image img {
+    display: block;
+
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 6px;
+}
+
+.green-future-content {
+    min-width: 0;
+}
+
+.green-future-content .eyebrow {
+    color: #F4B942 !important;
+}
+
+.green-future-content h2 {
+    margin: 12px 0 22px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    line-height: 1.08;
+}
+
+.green-future-content h2 span {
+    display: block;
+    color: #3A9D5D;
+}
+
+.green-future-content > p {
+    max-width: 590px;
+    margin-bottom: 18px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    line-height: 1.8;
+}
+
+.future-statement {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    max-width: 590px;
+
+    margin-top: 28px;
+    padding: 18px 20px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border-left: 3px solid #3A9D5D;
+
+    color: rgba(255, 255, 255, 0.86);
+
+    line-height: 1.6;
+}
+
+.future-statement i {
+    margin-top: 4px;
+    color: #F4B942;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.green-cta {
+    padding: 90px 0;
+
+    background: #3A9D5D;
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.green-cta-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.green-cta .eyebrow {
+    color: #F4B942 !important;
+}
+
+.green-cta h2 {
+    margin: 12px 0 20px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.1rem, 4vw, 3.2rem);
+    line-height: 1.12;
+}
+
+.green-cta h2 span {
+    color: #ffffff !important;
+}
+
+.green-cta-content > p:not(.eyebrow) {
+    max-width: 650px;
+    margin: 0 auto 30px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    line-height: 1.8;
+}
+
+.green-cta .btn {
+    background: #ffffff;
+    color: #071A2B;
+}
+
+.green-cta .btn:hover {
+    background: #F4B942;
+    color: #071A2B;
+}
+
+
+/* =========================================================
+   GREEN LIVING RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .green-choice-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .green-habit-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .green-hero-content {
+        padding-right: 60px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .green-intro-grid,
+    .green-recycling-grid,
+    .green-sustainable-grid,
+    .green-future-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .green-recycling-content {
+        order: 1;
+    }
+
+    .green-recycling-image {
+        order: 2;
+    }
+
+    .green-sustainable-image {
+        order: 1;
+    }
+
+    .green-sustainable-content {
+        order: 2;
+    }
+
+    .green-future-image {
+        order: 1;
+    }
+
+    .green-future-content {
+        order: 2;
+    }
+
+    .green-intro-image img,
+    .green-recycling-image img,
+    .green-sustainable-image img,
+    .green-future-image img {
+        height: 430px;
+    }
+
+    .green-recycle-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .green-footprint-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .green-hero {
+        min-height: 620px;
+        background-position: 60% center;
+    }
+
+    .green-hero-content {
+        padding: 80px 0 100px;
+    }
+
+    .green-hero h1 {
+        font-size: clamp(2.6rem, 10vw, 4rem);
+        letter-spacing: -1px;
+    }
+
+    .green-hero-text {
+        font-size: 0.95rem;
+    }
+
+    .green-hero-scroll {
+        right: 20px;
+        bottom: 22px;
+    }
+
+    .green-introduction,
+    .green-choices,
+    .green-recycling,
+    .green-habits,
+    .green-sustainable,
+    .green-footprint,
+    .green-future {
+        padding: 80px 0;
+    }
+
+    .green-choice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .green-habit-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .green-recycle-list {
+        grid-template-columns: 1fr;
+    }
+
+    .green-intro-image img,
+    .green-recycling-image img,
+    .green-sustainable-image img,
+    .green-future-image img {
+        height: 360px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .green-hero {
+        min-height: 580px;
+    }
+
+    .green-hero-content {
+        padding: 70px 0 100px;
+    }
+
+    .green-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .green-hero-actions .btn {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .green-hero-scroll {
+        font-size: 0.7rem;
+    }
+
+    .green-habit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .green-intro-image img,
+    .green-recycling-image img,
+    .green-sustainable-image img,
+    .green-future-image img {
+        height: 300px;
+    }
+
+    .green-footprint-card {
+        padding: 28px 24px;
+    }
+}
