@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+         BASIC META INFORMATION
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="AERONIVA Energy Lab - Explore energy consumption, savings and renewable energy through interactive tools."
+    >
+
+    <meta
+        name="author"
+        content="Ruchika"
+    >
+
+    <!-- =====================================================
+         PAGE TITLE
+    ====================================================== -->
+
+    <title>Energy Lab | AERONIVA</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         MAIN WEBSITE CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <link
+    rel="stylesheet"
+    href="css/energylab.css"
+>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER / NAVIGATION
+====================================================== -->
+
+<!-- =====================================================
+     HEADER / NAVIGATION
+====================================================== -->
+
+<header class="site-header">
+
+    <div class="container nav-container">
+
+        <!-- AERONIVA Logo -->
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">AN</span>
+
+            <span class="logo-text">AERONIVA</span>
+
+        </a>
+
+
+        <!-- Main Navigation -->
+        <nav class="main-nav" aria-label="Main Navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="solar.html">Solar</a>
+
+            <a href="wind.html">Wind</a>
+
+            <a href="greenliving.html">Green Living</a>
+
+            <a href="energylab.html" class="active">Energy Lab</a>
+
+            <a href="impact.html">Impact</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+
+        <!-- Mobile Menu Button -->
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             ENERGY LAB HERO
+        ================================================== -->
+
+        <section class="energy-lab-hero">
+
+            <div class="container energy-lab-hero-inner">
+
+
+                <div class="energy-lab-hero-content">
+
+                    <p class="eyebrow">
+                        ENERGY LAB
+                    </p>
+
+                    <h1>
+                        Understand energy.
+                        <span>Change the way you use it.</span>
+                    </h1>
+
+                    <p class="energy-lab-hero-text">
+
+                        Explore how everyday appliances consume energy,
+                        estimate your usage and discover simple ways to
+                        make smarter energy choices.
+
+                    </p>
+
+
+                    <div class="energy-lab-hero-actions">
+
+                        <a
+                            href="#energy-calculator"
+                            class="btn btn-primary"
+                        >
+
+                            Try the Calculator
+
+                            <i class="fa-solid fa-arrow-down"></i>
+
+                        </a>
+
+                        <a
+                            href="#energy-mix"
+                            class="btn btn-outline"
+                        >
+
+                            Explore Energy Mix
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO VISUAL -->
+
+                <div class="energy-lab-hero-visual">
+
+                    <div class="energy-orbit energy-orbit-one"></div>
+
+                    <div class="energy-orbit energy-orbit-two"></div>
+
+
+                    <div class="energy-core">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                        <span>
+                            ENERGY
+                        </span>
+
+                    </div>
+
+
+                    <div class="energy-floating energy-floating-one">
+
+                        <i class="fa-solid fa-sun"></i>
+
+                        <span>
+                            Solar
+                        </span>
+
+                    </div>
+
+
+                    <div class="energy-floating energy-floating-two">
+
+                        <i class="fa-solid fa-wind"></i>
+
+                        <span>
+                            Wind
+                        </span>
+
+                    </div>
+
+
+                    <div class="energy-floating energy-floating-three">
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                        <span>
+                            Efficient
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ENERGY SNAPSHOT
+        ================================================== -->
+
+        <section class="energy-snapshot">
+
+            <div class="container">
+
+
+                <div class="section-heading energy-section-heading">
+
+                    <p class="eyebrow">
+                        ENERGY SNAPSHOT
+                    </p>
+
+                    <h2>
+                        Energy is more than a number.
+                    </h2>
+
+                    <p>
+                        Every unit of energy tells a story about how
+                        we power our homes, move through cities and
+                        shape tomorrow.
+                    </p>
+
+                </div>
+
+
+                <div class="energy-snapshot-grid">
+
+
+                    <!-- SOLAR -->
+
+                    <article class="energy-snapshot-card">
+
+                        <div class="energy-snapshot-icon">
+
+                            <i class="fa-solid fa-sun"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                RENEWABLE
+                            </span>
+
+                            <h3>
+                                Solar
+                            </h3>
+
+                            <p>
+                                Sunlight can be converted into
+                                electricity using photovoltaic
+                                solar panels.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- WIND -->
+
+                    <article class="energy-snapshot-card">
+
+                        <div class="energy-snapshot-icon">
+
+                            <i class="fa-solid fa-wind"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                RENEWABLE
+                            </span>
+
+                            <h3>
+                                Wind
+                            </h3>
+
+                            <p>
+                                Moving air can drive turbines and
+                                generate electricity without
+                                burning fuel.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EFFICIENCY -->
+
+                    <article class="energy-snapshot-card">
+
+                        <div class="energy-snapshot-icon">
+
+                            <i class="fa-solid fa-gauge-high"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                EVERYDAY
+                            </span>
+
+                            <h3>
+                                Efficiency
+                            </h3>
+
+                            <p>
+                                Using energy thoughtfully can help
+                                reduce unnecessary consumption.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ENERGY CALCULATOR
+        ================================================== -->
+
+        <section
+            class="energy-calculator"
+            id="energy-calculator"
+        >
+
+            <div class="container">
+
+
+                <div class="energy-calculator-intro">
+
+                    <p class="eyebrow">
+                        ENERGY CALCULATOR
+                    </p>
+
+                    <h2>
+                        What does your appliance really consume?
+                    </h2>
+
+                    <p>
+                        Enter an appliance's power rating and
+                        approximate daily usage. The calculator
+                        estimates daily and monthly electricity
+                        consumption.
+                    </p>
+
+                </div>
+
+
+                <div class="energy-calculator-grid">
+
+
+                    <!-- CALCULATOR FORM -->
+
+                    <div class="energy-calculator-box">
+
+
+                        <div class="energy-input-group">
+
+                            <label for="applianceName">
+                                Appliance
+                            </label>
+
+                            <input
+                                type="text"
+                                id="applianceName"
+                                placeholder="Example: Fan"
+                            >
+
+                        </div>
+
+
+                        <div class="energy-input-row">
+
+
+                            <div class="energy-input-group">
+
+                                <label for="powerInput">
+                                    Power
+                                    <span>(Watts)</span>
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="powerInput"
+                                    min="1"
+                                    placeholder="Example: 75"
+                                >
+
+                            </div>
+
+
+                            <div class="energy-input-group">
+
+                                <label for="hoursInput">
+                                    Daily Usage
+                                    <span>(Hours)</span>
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="hoursInput"
+                                    min="0"
+                                    max="24"
+                                    step="0.5"
+                                    placeholder="Example: 8"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="energy-input-group">
+
+                            <label for="daysInput">
+                                Days Used Per Month
+                            </label>
+
+                            <input
+                                type="number"
+                                id="daysInput"
+                                min="1"
+                                max="31"
+                                value="30"
+                            >
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="btn energy-calculate-btn"
+                            id="calculateEnergy"
+                        >
+
+                            Calculate Energy
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <p
+                            class="energy-form-message"
+                            id="energyFormMessage"
+                        ></p>
+
+                    </div>
+
+
+
+                    <!-- CALCULATOR RESULT -->
+
+                    <div class="energy-result-box">
+
+
+                        <div class="energy-result-top">
+
+                            <span>
+                                YOUR RESULT
+                            </span>
+
+                            <i class="fa-solid fa-chart-simple"></i>
+
+                        </div>
+
+
+                        <div class="energy-result-main">
+
+                            <strong id="dailyResult">
+                                0.00
+                            </strong>
+
+                            <span>
+                                kWh / day
+                            </span>
+
+                        </div>
+
+
+                        <div class="energy-result-divider"></div>
+
+
+                        <div class="energy-result-monthly">
+
+                            <div>
+
+                                <span>
+                                    Estimated Monthly
+                                </span>
+
+                                <strong id="monthlyResult">
+                                    0.00 kWh
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Appliance
+                                </span>
+
+                                <strong id="resultAppliance">
+                                    —
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="energy-result-note">
+
+                            <i class="fa-solid fa-circle-info"></i>
+
+                            <p>
+                                This is an educational estimate.
+                                Actual electricity consumption can
+                                vary depending on appliance efficiency,
+                                usage patterns and operating conditions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ENERGY MIX
+        ================================================== -->
+
+        <section
+            class="energy-mix"
+            id="energy-mix"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading energy-section-heading">
+
+                    <p class="eyebrow">
+                        ENERGY MIX
+                    </p>
+
+                    <h2>
+                        Build your own energy picture.
+                    </h2>
+
+                    <p>
+                        Adjust the renewable energy values and see
+                        how your energy mix changes.
+                    </p>
+
+                </div>
+
+
+                <div class="energy-mix-grid">
+
+
+                    <!-- MIX CONTROLS -->
+
+                    <div class="energy-mix-controls">
+
+
+                        <div class="mix-control">
+
+                            <div class="mix-control-header">
+
+                                <label for="solarMix">
+                                    <i class="fa-solid fa-sun"></i>
+                                    Solar
+                                </label>
+
+                                <strong id="solarMixValue">
+                                    50%
+                                </strong>
+
+                            </div>
+
+                            <input
+                                type="range"
+                                id="solarMix"
+                                min="0"
+                                max="100"
+                                value="50"
+                            >
+
+                        </div>
+
+
+                        <div class="mix-control">
+
+                            <div class="mix-control-header">
+
+                                <label for="windMix">
+                                    <i class="fa-solid fa-wind"></i>
+                                    Wind
+                                </label>
+
+                                <strong id="windMixValue">
+                                    30%
+                                </strong>
+
+                            </div>
+
+                            <input
+                                type="range"
+                                id="windMix"
+                                min="0"
+                                max="100"
+                                value="30"
+                            >
+
+                        </div>
+
+
+                        <div class="mix-control">
+
+                            <div class="mix-control-header">
+
+                                <label for="otherMix">
+                                    <i class="fa-solid fa-plug"></i>
+                                    Other Sources
+                                </label>
+
+                                <strong id="otherMixValue">
+                                    20%
+                                </strong>
+
+                            </div>
+
+                            <input
+                                type="range"
+                                id="otherMix"
+                                min="0"
+                                max="100"
+                                value="20"
+                            >
+
+                        </div>
+
+
+                        <div class="mix-total">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong id="mixTotal">
+                                100%
+                            </strong>
+
+                        </div>
+
+
+                        <p
+                            class="mix-message"
+                            id="mixMessage"
+                        >
+                            Your energy mix is balanced at 100%.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- MIX VISUAL -->
+
+                    <div class="energy-mix-visual">
+
+
+                        <div class="mix-ring">
+
+                            <div class="mix-ring-center">
+
+                                <strong id="renewableMix">
+                                    80%
+                                </strong>
+
+                                <span>
+                                    Renewable
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mix-legend">
+
+
+                            <div class="mix-legend-item">
+
+                                <span class="mix-dot solar-dot"></span>
+
+                                <span>
+                                    Solar
+                                </span>
+
+                                <strong id="solarLegend">
+                                    50%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="mix-legend-item">
+
+                                <span class="mix-dot wind-dot"></span>
+
+                                <span>
+                                    Wind
+                                </span>
+
+                                <strong id="windLegend">
+                                    30%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="mix-legend-item">
+
+                                <span class="mix-dot other-dot"></span>
+
+                                <span>
+                                    Other
+                                </span>
+
+                                <strong id="otherLegend">
+                                    20%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ENERGY EXPERIMENTS
+        ================================================== -->
+
+        <section class="energy-experiments">
+
+            <div class="container">
+
+
+                <div class="section-heading energy-section-heading">
+
+                    <p class="eyebrow">
+                        QUICK EXPERIMENTS
+                    </p>
+
+                    <h2>
+                        Think about energy differently.
+                    </h2>
+
+                    <p>
+                        Small observations can make invisible energy
+                        use easier to understand.
+                    </p>
+
+                </div>
+
+
+                <div class="energy-experiment-grid">
+
+
+                    <article class="energy-experiment-card">
+
+                        <span class="experiment-number">
+                            01
+                        </span>
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                        <h3>
+                            Switch Off
+                        </h3>
+
+                        <p>
+                            Look around your room and identify
+                            appliances or lights that are running
+                            without being actively used.
+                        </p>
+
+                    </article>
+
+
+                    <article class="energy-experiment-card">
+
+                        <span class="experiment-number">
+                            02
+                        </span>
+
+                        <i class="fa-solid fa-plug-circle-check"></i>
+
+                        <h3>
+                            Check the Rating
+                        </h3>
+
+                        <p>
+                            Find the wattage label on an appliance
+                            and compare how much power different
+                            devices require.
+                        </p>
+
+                    </article>
+
+
+                    <article class="energy-experiment-card">
+
+                        <span class="experiment-number">
+                            03
+                        </span>
+
+                        <i class="fa-solid fa-solar-panel"></i>
+
+                        <h3>
+                            Imagine Solar
+                        </h3>
+
+                        <p>
+                            Notice where sunlight reaches your home
+                            and think about how that space could
+                            support renewable energy.
+                        </p>
+
+                    </article>
+
+
+                    <article class="energy-experiment-card">
+
+                        <span class="experiment-number">
+                            04
+                        </span>
+
+                        <i class="fa-solid fa-wind"></i>
+
+                        <h3>
+                            Feel the Wind
+                        </h3>
+
+                        <p>
+                            Observe how moving air changes throughout
+                            the day and connect it to the basic idea
+                            behind wind power.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ENERGY INSIGHT
+        ================================================== -->
+
+        <section class="energy-insight">
+
+            <div class="container">
+
+
+                <div class="energy-insight-box">
+
+                    <div class="energy-insight-icon">
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="eyebrow">
+                            ENERGY INSIGHT
+                        </p>
+
+                        <h2>
+                            Efficiency starts with awareness.
+                        </h2>
+
+                        <p>
+                            Before changing how much energy we use,
+                            understanding where it goes gives us a
+                            clearer starting point.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="greenliving.html"
+                        class="btn energy-insight-btn"
+                    >
+
+                        Explore Green Living
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <section class="energy-lab-cta">
+
+            <div class="container">
+
+                <div class="energy-lab-cta-content">
+
+                    <p class="eyebrow">
+                        EXPLORE MORE
+                    </p>
+
+                    <h2>
+                        Energy knowledge can shape
+                        <span>everyday choices.</span>
+                    </h2>
+
+                    <p>
+                        Explore renewable energy, discover practical
+                        habits and see how small choices connect to
+                        a more sustainable future.
+                    </p>
+
+
+                    <div class="energy-lab-cta-actions">
+
+                        <a
+                            href="solar.html"
+                            class="btn"
+                        >
+
+                            Explore Solar
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                        <a
+                            href="wind.html"
+                            class="btn"
+                        >
+
+                            Explore Wind
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+<!-- =====================================================
+     COMMON AERONIVA FOOTER
+====================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="footer-logo"
+                >
+
+                    <span class="logo-mark">
+                        AN
+                    </span>
+
+                    <span class="logo-text">
+                        AERONIVA
+                    </span>
+
+                </a>
+
+                <p class="footer-tagline">
+                    Energy That Moves Tomorrow.
+                </p>
+
+                <p class="footer-description">
+                    Exploring renewable energy, sustainable choices
+                    and a better future.
+                </p>
+
+            </div>
+
+
+            <!-- EXPLORE -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="solar.html">
+                    Solar
+                </a>
+
+                <a href="wind.html">
+                    Wind
+                </a>
+
+                <a href="greenliving.html">
+                    Green Living
+                </a>
+
+            </div>
+
+
+            <!-- DISCOVER -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Discover
+                </h3>
+
+                <a href="energylab.html">
+                    Energy Lab
+                </a>
+
+                <a href="impact.html">
+                    Impact
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-inner">
+
+                <p>
+                    © 2026 AERONIVA. Educational project by Ruchika.
+                </p>
+
+                <p class="footer-journey">
+
+                    Energy
+
+                    <span>→</span>
+
+                    Choice
+
+                    <span>→</span>
+
+                    Impact
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        type="button"
+        aria-label="Back to top"
+    >
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/energylab.js"></script>
+
+
+</body>
+
+</html>

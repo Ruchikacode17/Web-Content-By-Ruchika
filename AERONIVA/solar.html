@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,93 +73,59 @@
 <body>
 
 
-    <!-- =====================================================
-         HEADER / NAVIGATION
-    ====================================================== -->
+ <!-- =====================================================
+     HEADER / NAVIGATION
+====================================================== -->
 
-    <header class="site-header">
+<header class="site-header">
 
-        <div class="container header-container">
+    <div class="container nav-container">
 
+        <!-- AERONIVA Logo -->
+        <a href="index.html" class="logo">
 
-            <!-- LOGO -->
+            <span class="logo-mark">AN</span>
 
-            <a
-                href="index.html"
-                class="logo"
-                aria-label="AERONIVA Home"
-            >
+            <span class="logo-text">AERONIVA</span>
 
-                <span class="logo-mark">
-                    AN
-                </span>
-
-                <span class="logo-text">
-                    AERONIVA
-                </span>
-
-            </a>
+        </a>
 
 
-            <!-- MOBILE MENU BUTTON -->
+        <!-- Main Navigation -->
+        <nav class="main-nav" aria-label="Main Navigation">
 
-            <button
-                class="menu-toggle"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-            >
+            <a href="index.html">Home</a>
 
-                <i class="fa-solid fa-bars"></i>
+            <a href="solar.html" class="active">Solar</a>
 
-            </button>
+            <a href="wind.html">Wind</a>
 
+            <a href="greenliving.html">Green Living</a>
 
-            <!-- NAVIGATION -->
+            <a href="energylab.html">Energy Lab</a>
 
-            <nav class="main-nav">
+            <a href="impact.html">Impact</a>
 
-                <a href="index.html">
-                    Home
-                </a>
+            <a href="about.html">About</a>
 
-                <a
-                    href="solar.html"
-                    class="active"
-                >
-                    Solar
-                </a>
+            <a href="contact.html">Contact</a>
 
-                <a href="wind.html">
-                    Wind
-                </a>
-
-                <a href="green-living.html">
-                    Green Living
-                </a>
-
-                <a href="energy-lab.html">
-                    Energy Lab
-                </a>
-
-                <a href="impact.html">
-                    Impact
-                </a>
-
-                <a href="about.html">
-                    About
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
-            </nav>
-
-        </div>
-
-    </header>
+        </nav>
 
 
+        <!-- Mobile Menu Button -->
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
 
     <!-- =====================================================
          SOLAR HERO
@@ -1217,13 +1184,8 @@
 
         </section>
 
-    </main>
+</main>
 
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
 
     <footer class="site-footer">
 
@@ -1231,15 +1193,9 @@
 
             <div class="footer-grid">
 
-
-                <!-- BRAND -->
-
                 <div class="footer-brand">
 
-                    <a
-                        href="index.html"
-                        class="footer-logo"
-                    >
+                    <a href="index.html" class="footer-logo">
 
                         <span class="logo-mark">
                             AN
@@ -1251,68 +1207,42 @@
 
                     </a>
 
-                    <p>
+                    <p class="footer-tagline">
                         Energy That Moves Tomorrow.
                     </p>
 
-                    <span>
-                        Exploring renewable energy,
-                        sustainable choices and a better future.
-                    </span>
+                    <p class="footer-description">
+                        Exploring renewable energy, sustainable choices
+                        and a better future.
+                    </p>
 
                 </div>
 
 
-                <!-- EXPLORE -->
-
-                <div class="footer-column">
+                <div class="footer-links">
 
                     <h3>
                         Explore
                     </h3>
 
-                    <a href="index.html">
-                        Home
-                    </a>
-
-                    <a href="solar.html">
-                        Solar
-                    </a>
-
-                    <a href="wind.html">
-                        Wind
-                    </a>
-
-                    <a href="green-living.html">
-                        Green Living
-                    </a>
+                    <a href="index.html">Home</a>
+                    <a href="solar.html">Solar</a>
+                    <a href="wind.html">Wind</a>
+                    <a href="greenliving.html">Green Living</a>
 
                 </div>
 
 
-                <!-- DISCOVER -->
-
-                <div class="footer-column">
+                <div class="footer-links">
 
                     <h3>
                         Discover
                     </h3>
 
-                    <a href="energy-lab.html">
-                        Energy Lab
-                    </a>
-
-                    <a href="impact.html">
-                        Impact
-                    </a>
-
-                    <a href="about.html">
-                        About
-                    </a>
-
-                    <a href="contact.html">
-                        Contact
-                    </a>
+                    <a href="energylab.html">Energy Lab</a>
+                    <a href="impact.html">Impact</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
 
                 </div>
 
@@ -1321,21 +1251,27 @@
 
             <div class="footer-bottom">
 
-                <p>
-                    © 2026 AERONIVA By Ruchika.
-                </p>
+                <div class="footer-bottom-inner">
 
-                <p>
-                    Energy <span>→</span> Choice <span>→</span> Impact
-                </p>
+                    <p>
+                        © 2026 AERONIVA. Educational project by Ruchika.
+                    </p>
+
+                    <p class="footer-journey">
+                        Energy
+                        <span>→</span>
+                        Choice
+                        <span>→</span>
+                        Impact
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
     </footer>
-
-
 
     <!-- =====================================================
          BACK TO TOP

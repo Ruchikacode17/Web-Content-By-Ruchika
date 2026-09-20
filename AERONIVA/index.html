@@ -88,99 +88,59 @@
     <!-- =====================================================
          HEADER
     ====================================================== -->
+<!-- =====================================================
+     HEADER / NAVIGATION
+====================================================== -->
 
-    <header class="site-header">
+<header class="site-header">
 
-        <div class="container nav-container">
+    <div class="container nav-container">
 
+        <!-- AERONIVA Logo -->
+        <a href="index.html" class="logo">
 
-            <!-- =================================================
-                 WEBSITE LOGO
-            ================================================== -->
+            <span class="logo-mark">AN</span>
 
-            <a
-                href="index.html"
-                class="logo"
-                aria-label="AERONIVA Home"
-            >
+            <span class="logo-text">AERONIVA</span>
 
-                <span class="logo-mark">
-                    AN
-                </span>
-
-                <span class="logo-text">
-                    AERONIVA
-                </span>
-
-            </a>
+        </a>
 
 
-            <!-- =================================================
-                 MAIN NAVIGATION
-            ================================================== -->
+        <!-- Main Navigation -->
+        <nav class="main-nav" aria-label="Main Navigation">
 
-            <nav
-                class="main-nav"
-                aria-label="Main Navigation"
-            >
+            <a href="index.html" class="active">Home</a>
 
-                <a
-                    href="index.html"
-                    class="active"
-                >
-                    Home
-                </a>
+            <a href="solar.html">Solar</a>
 
-                <a href="solar.html">
-                    Solar
-                </a>
+            <a href="wind.html">Wind</a>
 
-                <a href="wind.html">
-                    Wind
-                </a>
+            <a href="greenliving.html">Green Living</a>
 
-                <a href="green-living.html">
-                    Green Living
-                </a>
+            <a href="energylab.html">Energy Lab</a>
 
-                <a href="energy-lab.html">
-                    Energy Lab
-                </a>
+            <a href="impact.html">Impact</a>
 
-                <a href="impact.html">
-                    Impact
-                </a>
+            <a href="about.html">About</a>
 
-                <a href="about.html">
-                    About
-                </a>
+            <a href="contact.html">Contact</a>
 
-                <a href="contact.html">
-                    Contact
-                </a>
-
-            </nav>
+        </nav>
 
 
-            <!-- =================================================
-                 MOBILE MENU BUTTON
-            ================================================== -->
+        <!-- Mobile Menu Button -->
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-            >
+    </div>
 
-                <i class="fa-solid fa-bars"></i>
-
-            </button>
-
-        </div>
-
-    </header>
-
+</header>
 
 
     <!-- =====================================================
@@ -378,7 +338,7 @@
 
             <h2>
                 Three forces.
-                <span>One sustainable future.</span>
+                <span> One sustainable future. </span>
             </h2>
 
             <p>
@@ -870,60 +830,87 @@
      FINAL CALL TO ACTION
 ====================================================== -->
 
-<section class="section final-cta">
+<!-- =====================================================
+     FINAL CTA / CLOSING SECTION
+===================================================== -->
+
+<section class="final-cta">
+
+    <div class="final-cta-orbit final-cta-orbit-one"></div>
+    <div class="final-cta-orbit final-cta-orbit-two"></div>
+
 
     <div class="container">
 
         <div class="final-cta-content">
 
-            <p class="eyebrow">
+            <span class="final-cta-label">
                 DISCOVER AERONIVA
-            </p>
+            </span>
+
 
             <h2>
-                The future isn't somewhere ahead.
-                <span>It starts with what we understand today.</span>
+                The future isn't
+                <span>somewhere ahead.</span>
             </h2>
 
+
             <p class="final-cta-text">
-                Explore the ideas, technologies and everyday
-                choices behind AERONIVA — and see how energy,
-                people and progress can move together.
+                It starts with what we understand today.
+                Explore renewable energy, smarter choices and
+                practical ideas that can shape a more sustainable tomorrow.
             </p>
 
-            <a
-                href="about.html"
-                class="btn btn-secondary"
-            >
+
+            <a href="about.html" class="final-cta-button">
                 Discover Our Story
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-        </div>
+
+            <!-- ENERGY JOURNEY -->
+
+            <div class="final-energy-path">
+
+                <div class="path-item">
+                    <span class="path-icon">
+                        <i class="fa-solid fa-sun"></i>
+                    </span>
+
+                    <span>
+                        ENERGY
+                    </span>
+                </div>
 
 
-        <!-- Decorative Energy Path -->
+                <span class="path-line"></span>
 
-        <div class="final-energy-path">
 
-            <span class="path-item">
-                <i class="fa-solid fa-sun"></i>
-                ENERGY
-            </span>
+                <div class="path-item">
+                    <span class="path-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </span>
 
-            <span class="path-line"></span>
+                    <span>
+                        CHOICE
+                    </span>
+                </div>
 
-            <span class="path-item">
-                <i class="fa-solid fa-leaf"></i>
-                CHOICE
-            </span>
 
-            <span class="path-line"></span>
+                <span class="path-line"></span>
 
-            <span class="path-item">
-                <i class="fa-solid fa-arrow-trend-up"></i>
-                IMPACT
-            </span>
+
+                <div class="path-item">
+                    <span class="path-icon">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </span>
+
+                    <span>
+                        IMPACT
+                    </span>
+                </div>
+
+            </div>
 
         </div>
 
@@ -934,8 +921,8 @@
 
 
  <!-- =====================================================
-     FOOTER
-====================================================== -->
+     AERONIVA FOOTER
+===================================================== -->
 
 <footer class="site-footer">
 
@@ -943,15 +930,10 @@
 
         <div class="footer-grid">
 
-
             <!-- BRAND -->
-
             <div class="footer-brand">
 
-                <a
-                    href="index.html"
-                    class="footer-logo"
-                >
+                <a href="index.html" class="footer-logo">
 
                     <span class="logo-mark">
                         AN
@@ -963,21 +945,20 @@
 
                 </a>
 
-                <p>
+                <p class="footer-tagline">
                     Energy That Moves Tomorrow.
                 </p>
 
-                <span>
-                    Exploring renewable energy,
-                    sustainable choices and a better future.
-                </span>
+                <p class="footer-description">
+                    Exploring renewable energy, sustainable choices
+                    and a better future.
+                </p>
 
             </div>
 
 
             <!-- EXPLORE -->
-
-            <div class="footer-column">
+            <div class="footer-links">
 
                 <h3>
                     Explore
@@ -1003,8 +984,7 @@
 
 
             <!-- DISCOVER -->
-
-            <div class="footer-column">
+            <div class="footer-links">
 
                 <h3>
                     Discover
@@ -1031,35 +1011,31 @@
         </div>
 
 
+        <!-- FOOTER BOTTOM -->
+
         <div class="footer-bottom">
 
-            <p>
-                © 2026 AERONIVA By Ruchika.
-            </p>
+            <div class="footer-bottom-inner">
 
-            <p>
-                Energy <span>→</span> Choice <span>→</span> Impact
-            </p>
+                <p>
+                    © 2026 AERONIVA. Educational project by Ruchika.
+                </p>
+
+                <p class="footer-journey">
+                    Energy
+                    <span>→</span>
+                    Choice
+                    <span>→</span>
+                    Impact
+                </p>
+
+            </div>
 
         </div>
 
     </div>
 
 </footer>
-
-
-    <!-- Back To Top -->
-
-    <button
-        class="back-to-top"
-        id="backToTop"
-        aria-label="Back to top"
-    >
-        ↑
-    </button>
-
-</footer>
-
 
     <!-- =====================================================
          BACK TO TOP BUTTON
