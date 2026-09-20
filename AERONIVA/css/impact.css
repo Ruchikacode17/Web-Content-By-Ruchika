@@ -1,0 +1,1294 @@
+/* =====================================================
+   AERONIVA — IMPACT PAGE
+   Page-specific CSS
+   Load AFTER css/style.css
+===================================================== */
+
+
+/* =====================================================
+   IMPACT HERO
+===================================================== */
+
+.impact-story-hero {
+    position: relative;
+    min-height: calc(100vh - var(--header-height));
+    padding: 80px 0 90px;
+    background: #F7F5EF;
+    overflow: hidden;
+}
+
+.impact-hero-layout {
+    min-height: calc(100vh - var(--header-height) - 170px);
+    display: grid;
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    gap: 70px;
+    align-items: center;
+}
+
+.impact-hero-copy {
+    max-width: 590px;
+}
+
+.impact-label,
+.impact-small-label {
+    display: block;
+    margin-bottom: 18px;
+    color: #1261A0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    line-height: 1.4;
+}
+
+.impact-hero-copy h1 {
+    max-width: 580px;
+    margin: 0 0 25px;
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(3.3rem, 5.4vw, 5.6rem);
+    font-weight: 700;
+    line-height: 0.99;
+    letter-spacing: -3px;
+}
+
+.impact-hero-copy h1 span {
+    color: #1261A0;
+    display: block;
+}
+
+.impact-hero-copy > p {
+    max-width: 530px;
+    margin: 0 0 32px;
+    color: #5E7180;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.impact-hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.impact-main-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 50px;
+    padding: 13px 22px;
+    background: #F4B942;
+    border: 1px solid #F4B942;
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.impact-main-button:hover {
+    background: #071A2B;
+    border-color: #071A2B;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.impact-text-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.impact-text-button:hover {
+    color: #1261A0;
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.impact-hero-image {
+    position: relative;
+    min-height: 570px;
+    overflow: hidden;
+    background: #071A2B;
+    box-shadow: 0 20px 50px rgba(7, 26, 43, 0.13);
+}
+
+.impact-hero-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        transparent 48%,
+        rgba(7, 26, 43, 0.72) 100%
+    );
+    pointer-events: none;
+}
+
+.impact-hero-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 570px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.impact-hero-image:hover img {
+    transform: scale(1.025);
+}
+
+.impact-image-note {
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    bottom: 25px;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.impact-image-note span {
+    color: #F4B942;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.impact-image-note strong {
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   IMPACT KEYWORDS
+===================================================== */
+
+.impact-keywords {
+    padding: 0;
+    background: #071A2B;
+}
+
+.impact-keyword-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.impact-keyword {
+    min-height: 175px;
+    padding: 34px 28px;
+    border-right: 1px solid rgba(255, 255, 255, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.impact-keyword:last-child {
+    border-right: none;
+}
+
+.impact-keyword > span {
+    margin-bottom: 18px;
+    color: #F4B942;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.impact-keyword strong {
+    margin-bottom: 7px;
+    color: #F7F5EF;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.impact-keyword p {
+    margin: 0;
+    color: rgba(247, 245, 239, 0.52);
+    font-family: "Roboto", sans-serif;
+    font-size: 0.78rem;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   MAIN IMPACT STORY
+===================================================== */
+
+.impact-main-story {
+    padding: 110px 0;
+    background: #FFFFFF;
+}
+
+.impact-story-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
+    gap: 80px;
+    align-items: center;
+}
+
+.impact-story-image {
+    position: relative;
+    min-height: 590px;
+    overflow: hidden;
+    background: #071A2B;
+}
+
+.impact-story-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 590px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.impact-story-image:hover img {
+    transform: scale(1.025);
+}
+
+.impact-image-tag {
+    position: absolute;
+    left: 24px;
+    bottom: 23px;
+    z-index: 2;
+    padding: 9px 13px;
+    background: #071A2B;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.impact-story-content {
+    max-width: 590px;
+}
+
+.impact-story-content .impact-small-label {
+    margin-bottom: 17px;
+}
+
+.impact-story-content h2 {
+    max-width: 560px;
+    margin: 0 0 24px;
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.5rem, 4.3vw, 4.25rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.impact-story-content > p {
+    max-width: 520px;
+    margin: 0 0 35px;
+    color: #607080;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.96rem;
+    line-height: 1.8;
+}
+
+.impact-points {
+    border-top: 1px solid rgba(7, 26, 43, 0.12);
+}
+
+.impact-point {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 18px;
+    padding: 23px 0;
+    border-bottom: 1px solid rgba(7, 26, 43, 0.12);
+}
+
+.impact-point-number {
+    padding-top: 2px;
+    color: #1261A0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.impact-point h3 {
+    margin: 0 0 6px;
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.impact-point p {
+    max-width: 450px;
+    margin: 0;
+    color: #687888;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.83rem;
+    line-height: 1.65;
+}
+
+
+/* =====================================================
+   IMPACT AREAS
+===================================================== */
+
+.impact-areas {
+    padding: 110px 0;
+    background: #F7F5EF;
+}
+
+.impact-section-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.62fr);
+    gap: 80px;
+    align-items: end;
+    margin-bottom: 58px;
+}
+
+.impact-section-heading h2 {
+    max-width: 650px;
+    margin: 0;
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.5rem, 4.5vw, 4.35rem);
+    font-weight: 700;
+    line-height: 1.04;
+    letter-spacing: -2px;
+}
+
+.impact-section-heading > p {
+    max-width: 430px;
+    margin: 0 0 5px;
+    color: #607080;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.94rem;
+    line-height: 1.8;
+}
+
+.impact-area-row {
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr) 90px;
+    gap: 30px;
+    align-items: center;
+    padding: 31px 0;
+    border-top: 1px solid rgba(7, 26, 43, 0.14);
+    transition:
+        padding 0.25s ease,
+        background 0.25s ease;
+}
+
+.impact-area-row:last-child {
+    border-bottom: 1px solid rgba(7, 26, 43, 0.14);
+}
+
+.impact-area-row:hover {
+    padding-left: 12px;
+    padding-right: 12px;
+    background: rgba(255, 255, 255, 0.48);
+}
+
+.impact-area-number {
+    color: #1261A0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+
+.impact-area-content > span {
+    display: block;
+    margin-bottom: 8px;
+    color: #1261A0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.impact-area-content h3 {
+    margin: 0 0 9px;
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.impact-area-content p {
+    max-width: 650px;
+    margin: 0 0 13px;
+    color: #687888;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.86rem;
+    line-height: 1.7;
+}
+
+.impact-area-content a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.76rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.impact-area-content a:hover {
+    color: #1261A0;
+    transform: translateX(4px);
+}
+
+.impact-area-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.impact-area-side i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background: #071A2B;
+    color: #F4B942;
+    font-size: 1rem;
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.impact-area-row:hover .impact-area-side i {
+    background: #1261A0;
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   FULL WIDTH IMAGE BANNER
+===================================================== */
+
+.impact-image-banner {
+    position: relative;
+    min-height: 620px;
+    overflow: hidden;
+    background: #071A2B;
+}
+
+.impact-image-banner > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 620px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.impact-banner-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+        90deg,
+        rgba(7, 26, 43, 0.90) 0%,
+        rgba(7, 26, 43, 0.68) 43%,
+        rgba(7, 26, 43, 0.20) 100%
+    );
+}
+
+.impact-banner-overlay .container {
+    width: 100%;
+}
+
+.impact-banner-overlay span {
+    display: block;
+    margin-bottom: 18px;
+    color: #F4B942;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2.6px;
+}
+
+.impact-banner-overlay h2 {
+    max-width: 720px;
+    margin: 0 0 22px;
+    color: #F7F5EF;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.6rem, 5vw, 4.8rem);
+    font-weight: 700;
+    line-height: 1.03;
+    letter-spacing: -2px;
+}
+
+.impact-banner-overlay p {
+    max-width: 570px;
+    margin: 0;
+    color: rgba(247, 245, 239, 0.82);
+    font-family: "Roboto", sans-serif;
+    font-size: 0.96rem;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   FINAL MESSAGE
+===================================================== */
+
+.impact-final {
+    padding: 95px 0;
+    background: #EAF4EC;
+}
+
+.impact-final-box {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 50px;
+    align-items: center;
+}
+
+.impact-final-box .impact-small-label {
+    margin-bottom: 16px;
+    color: #1261A0;
+}
+
+.impact-final-box h2 {
+    max-width: 720px;
+    margin: 0;
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.3rem, 4vw, 4rem);
+    font-weight: 700;
+    line-height: 1.06;
+    letter-spacing: -2px;
+}
+
+.impact-final-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 17px;
+    min-width: 170px;
+}
+
+.impact-final-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: 100%;
+    min-height: 50px;
+    padding: 13px 20px;
+    background: #071A2B;
+    border: 1px solid #071A2B;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.impact-final-button:hover {
+    background: #1261A0;
+    border-color: #1261A0;
+    transform: translateY(-2px);
+}
+
+.impact-final-link {
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.impact-final-link:hover {
+    color: #1261A0;
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+#backToTop.back-to-top {
+    z-index: 1000;
+}
+
+
+/* =====================================================
+   RESPONSIVE — 1050px
+===================================================== */
+
+@media (max-width: 1050px) {
+
+    .impact-hero-layout {
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 45px;
+    }
+
+    .impact-hero-copy h1 {
+        font-size: clamp(3rem, 5.8vw, 4.8rem);
+    }
+
+    .impact-hero-image,
+    .impact-hero-image img {
+        min-height: 500px;
+    }
+
+    .impact-story-grid {
+        gap: 50px;
+    }
+
+    .impact-story-image,
+    .impact-story-image img {
+        min-height: 510px;
+    }
+
+    .impact-section-heading {
+        gap: 45px;
+    }
+
+    .impact-final-box {
+        gap: 35px;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE — 850px
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .impact-story-hero {
+        padding: 75px 0 80px;
+    }
+
+    .impact-hero-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        min-height: auto;
+    }
+
+    .impact-hero-copy {
+        max-width: 720px;
+    }
+
+    .impact-hero-copy h1 {
+        max-width: 680px;
+        font-size: clamp(3.1rem, 8vw, 5rem);
+    }
+
+    .impact-hero-copy > p {
+        max-width: 650px;
+    }
+
+    .impact-hero-image,
+    .impact-hero-image img {
+        min-height: 500px;
+    }
+
+    .impact-keyword-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .impact-keyword:nth-child(2) {
+        border-right: none;
+    }
+
+    .impact-keyword:nth-child(-n + 2) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .impact-main-story {
+        padding: 85px 0;
+    }
+
+    .impact-story-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .impact-story-content {
+        max-width: 700px;
+    }
+
+    .impact-story-image,
+    .impact-story-image img {
+        min-height: 470px;
+    }
+
+    .impact-section-heading {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 45px;
+    }
+
+    .impact-section-heading > p {
+        max-width: 650px;
+    }
+
+    .impact-area-row {
+        grid-template-columns: 55px minmax(0, 1fr) 70px;
+        gap: 20px;
+    }
+
+    .impact-image-banner,
+    .impact-image-banner > img {
+        min-height: 540px;
+    }
+
+    .impact-final-box {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .impact-final-links {
+        width: 220px;
+        align-items: stretch;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE — 600px
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .impact-story-hero {
+        padding: 60px 0 65px;
+    }
+
+    .impact-hero-layout {
+        gap: 35px;
+    }
+
+    .impact-label,
+    .impact-small-label {
+        margin-bottom: 14px;
+        font-size: 0.68rem;
+        letter-spacing: 2px;
+    }
+
+    .impact-hero-copy h1 {
+        margin-bottom: 20px;
+        font-size: clamp(2.65rem, 12vw, 4rem);
+        line-height: 1;
+        letter-spacing: -1.8px;
+    }
+
+    .impact-hero-copy > p {
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+
+    .impact-hero-buttons {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .impact-main-button {
+        min-height: 48px;
+    }
+
+    .impact-hero-image,
+    .impact-hero-image img {
+        min-height: 390px;
+    }
+
+    .impact-image-note {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .impact-keyword-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .impact-keyword {
+        min-height: 145px;
+        padding: 25px 18px;
+    }
+
+    .impact-keyword > span {
+        margin-bottom: 13px;
+    }
+
+    .impact-keyword strong {
+        font-size: 0.88rem;
+    }
+
+    .impact-keyword p {
+        font-size: 0.72rem;
+    }
+
+    .impact-main-story,
+    .impact-areas {
+        padding: 75px 0;
+    }
+
+    .impact-story-grid {
+        gap: 38px;
+    }
+
+    .impact-story-image,
+    .impact-story-image img {
+        min-height: 350px;
+    }
+
+    .impact-story-content h2 {
+        font-size: clamp(2.3rem, 10vw, 3.2rem);
+        letter-spacing: -1.5px;
+    }
+
+    .impact-point {
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 13px;
+        padding: 20px 0;
+    }
+
+    .impact-point p {
+        font-size: 0.8rem;
+    }
+
+    .impact-section-heading h2 {
+        font-size: clamp(2.3rem, 10vw, 3.2rem);
+        letter-spacing: -1.5px;
+    }
+
+    .impact-area-row {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 13px;
+        padding: 25px 0;
+    }
+
+    .impact-area-side {
+        display: none;
+    }
+
+    .impact-area-content h3 {
+        font-size: 1.08rem;
+    }
+
+    .impact-area-content p {
+        font-size: 0.81rem;
+    }
+
+    .impact-image-banner,
+    .impact-image-banner > img {
+        min-height: 500px;
+    }
+
+    .impact-banner-overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(7, 26, 43, 0.90) 0%,
+            rgba(7, 26, 43, 0.70) 100%
+        );
+    }
+
+    .impact-banner-overlay h2 {
+        font-size: clamp(2.35rem, 10vw, 3.35rem);
+        letter-spacing: -1.5px;
+    }
+
+    .impact-banner-overlay p {
+        font-size: 0.88rem;
+        line-height: 1.7;
+    }
+
+    .impact-final {
+        padding: 70px 0;
+    }
+
+    .impact-final-box h2 {
+        font-size: clamp(2.25rem, 9.5vw, 3.2rem);
+        letter-spacing: -1.5px;
+    }
+
+    .impact-final-links {
+        width: 100%;
+        max-width: 240px;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE — 380px
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .impact-hero-copy h1 {
+        font-size: 2.5rem;
+    }
+
+    .impact-keyword-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-keyword {
+        min-height: 125px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .impact-keyword:last-child {
+        border-bottom: none;
+    }
+
+    .impact-story-content h2,
+    .impact-section-heading h2,
+    .impact-banner-overlay h2,
+    .impact-final-box h2 {
+        font-size: 2.15rem;
+    }
+
+}
+
+
+/* =====================================================
+   IMPACT IMAGE BANNER
+===================================================== */
+
+.impact-image-banner {
+    position: relative;
+    min-height: 620px;
+    overflow: hidden;
+    background: #071A2B;
+}
+
+.impact-image-banner > img {
+    display: block;
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.impact-banner-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7, 26, 43, 0.88) 0%,
+            rgba(7, 26, 43, 0.68) 38%,
+            rgba(7, 26, 43, 0.30) 72%,
+            rgba(7, 26, 43, 0.15) 100%
+        );
+}
+
+.impact-banner-overlay .container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+.impact-banner-overlay .container > * {
+    margin-left: 35px;
+}
+
+.impact-banner-overlay span {
+    display: block;
+    margin-bottom: 20px;
+    color: #F4B942;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+}
+
+.impact-banner-overlay h2 {
+    max-width: 720px;
+    margin: 0 0 22px;
+    color: #F7F5EF;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-weight: 700;
+    line-height: 1.04;
+    letter-spacing: -2px;
+}
+
+.impact-banner-overlay p {
+    max-width: 620px;
+    margin: 0;
+    color: rgba(247, 245, 239, 0.82);
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   IMPACT HERO
+===================================================== */
+
+.impact-story-hero {
+    position: relative;
+    padding: 95px 0 105px;
+    background: #F7F5EF;
+    overflow: hidden;
+}
+
+.impact-story-hero .container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+.impact-hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    gap: 65px;
+    align-items: center;
+}
+
+.impact-hero-copy {
+    max-width: 590px;
+    padding-left: 15px;
+}
+
+.impact-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #1261A0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+}
+
+.impact-hero-copy h1 {
+    margin: 0 0 24px;
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(3rem, 5.5vw, 5.4rem);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -2.8px;
+}
+
+.impact-hero-copy h1 span {
+    display: block;
+    color: #1261A0;
+}
+
+.impact-hero-copy > p {
+    max-width: 540px;
+    margin: 0 0 30px;
+    color: #5F7180;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.impact-hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.impact-main-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 50px;
+    padding: 13px 23px;
+    background: #F4B942;
+    border: 1px solid #F4B942;
+    color: #071A2B;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.84rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.impact-main-button:hover {
+    background: #071A2B;
+    border-color: #071A2B;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.impact-text-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #1261A0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.84rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.25s ease;
+}
+
+.impact-text-button:hover {
+    transform: translateX(4px);
+}
+
+.impact-hero-image {
+    position: relative;
+    min-height: 540px;
+    overflow: hidden;
+    background: #071A2B;
+    box-shadow: 0 22px 55px rgba(7, 26, 43, 0.15);
+}
+
+.impact-hero-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(7, 26, 43, 0.02) 40%,
+            rgba(7, 26, 43, 0.65) 100%
+        );
+    pointer-events: none;
+}
+
+.impact-hero-image img {
+    display: block;
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.impact-hero-image:hover img {
+    transform: scale(1.025);
+}
+
+.impact-image-note {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 23px;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.impact-image-note span {
+    color: #F4B942;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.impact-image-note strong {
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+
+
+/* =====================================================
+   IMPACT KEYWORDS
+===================================================== */
+
+.impact-keywords {
+    padding: 0;
+    background: #071A2B;
+}
+
+.impact-keyword-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.impact-keyword {
+    min-height: 145px;
+    padding: 28px 25px;
+    border-right: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.impact-keyword:last-child {
+    border-right: none;
+}
+
+.impact-keyword > span {
+    display: block;
+    margin-bottom: 18px;
+    color: #F4B942;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.impact-keyword strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.impact-keyword p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.52);
+    font-family: "Roboto", sans-serif;
+    font-size: 0.78rem;
+}

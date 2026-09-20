@@ -1,0 +1,249 @@
+/* AERONIVA — WIND PAGE | Page-specific CSS
+   Load AFTER css/style.css
+*/
+
+.wind-hero{position:relative;min-height:calc(100vh - var(--header-height));display:flex;align-items:center;overflow:hidden;background:#071A2B}
+.wind-hero-image{position:absolute;inset:0;z-index:0;background-image:linear-gradient(90deg,rgba(7,26,43,.90) 0%,rgba(7,26,43,.72) 38%,rgba(7,26,43,.36) 70%,rgba(7,26,43,.16) 100%),url("../images/wind/wind-turbines.jpg");background-size:cover;background-position:center}
+.wind-hero .container{position:relative;z-index:2;width:100%}
+.wind-hero-content {
+    width: min(720px, 100%);
+    padding: 100px 0 120px;
+    margin-left: 45px;
+}
+
+.wind-hero-content h1 {
+    max-width: 760px;
+}
+
+.wind-hero-content .wind-hero-text {
+    max-width: 620px;
+}
+
+.wind-hero .eyebrow,.wind-introduction .eyebrow,.turbine-section .eyebrow,.wind-journey .eyebrow,.wind-interactive .eyebrow,.wind-chart-section .eyebrow,.wind-benefits .eyebrow,.wind-landscape-section .eyebrow,.wind-future .eyebrow,.wind-cta .eyebrow{margin:0 0 18px;color:#F4B942;font-family:"Poppins",sans-serif;font-size:.78rem;font-weight:700;letter-spacing:2.8px;line-height:1.4}
+.wind-hero h1{max-width:760px;margin:0 0 24px;color:#F7F5EF;font-family:"Poppins",sans-serif;font-size:clamp(3.5rem,7vw,6.4rem);font-weight:700;line-height:.98;letter-spacing:-3px;text-shadow:0 4px 20px rgba(0,0,0,.28)}
+.wind-hero h1 span{color:#F4B942}
+.wind-hero-text{max-width:620px;margin:0 0 32px;color:rgba(247,245,239,.92);font-family:"Roboto",sans-serif;font-size:1.08rem;line-height:1.75;text-shadow:0 2px 10px rgba(0,0,0,.30)}
+.wind-hero .btn-primary,.wind-cta .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 24px;background:#F4B942;border:1px solid #F4B942;color:#071A2B;font-family:"Poppins",sans-serif;font-size:.88rem;font-weight:700;text-decoration:none;transition:transform .25s ease,background .25s ease}
+.wind-hero .btn-primary{min-height:52px}
+.wind-hero .btn-primary:hover,.wind-cta .btn-primary:hover{background:#fff;border-color:#fff;transform:translateY(-2px)}
+.wind-hero-label {
+    position: absolute;
+    right: 45px;
+    bottom: 35px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #FFFFFF;
+    visibility: visible;
+    opacity: 1;
+}
+.wind-hero-label span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+.wind-hero-label p {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    white-space: nowrap;
+}
+
+.wind-intro-content h2,.turbine-section h2,.wind-journey h2,.wind-chart-section h2,.wind-benefits h2,.wind-future h2,.wind-cta h2{margin:0 0 24px;color:#071A2B;font-family:"Poppins",sans-serif;font-size:clamp(2.4rem,4.5vw,4.4rem);font-weight:700;line-height:1.04;letter-spacing:-2px}
+.wind-intro-content h2 span,.turbine-section h2 span,.wind-journey h2 span,.wind-chart-section h2 span,.wind-benefits h2 span,.wind-future h2 span,.wind-cta h2 span{color:#1261A0}
+.wind-intro-content .eyebrow,.turbine-section .eyebrow,.wind-journey .eyebrow,.wind-chart-section .eyebrow,.wind-benefits .eyebrow,.wind-future .eyebrow,.wind-cta .eyebrow{color:#1261A0}
+
+.wind-introduction{position:relative;padding:105px 0;background:#F7F5EF}
+.wind-intro-layout{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:72px;align-items:center}
+.wind-intro-content{max-width:610px}
+.wind-intro-content>p:not(.eyebrow){max-width:570px;margin:0 0 18px;color:#465B6D;font-family:"Roboto",sans-serif;font-size:.98rem;line-height:1.8}
+.wind-intro-highlight{display:flex;align-items:center;gap:17px;margin-top:30px;padding:20px 22px;border-left:4px solid #F4B942;background:#fff;box-shadow:0 8px 25px rgba(7,26,43,.07)}
+.wind-intro-highlight>i{display:inline-flex;align-items:center;justify-content:center;flex:0 0 46px;width:46px;height:46px;background:#071A2B;color:#F4B942}
+.wind-intro-highlight div{display:flex;flex-direction:column;gap:4px}
+.wind-intro-highlight strong{color:#071A2B;font-family:"Poppins",sans-serif;font-size:.92rem}
+.wind-intro-highlight span{color:#617181;font-family:"Roboto",sans-serif;font-size:.84rem;line-height:1.5}
+.wind-intro-image{position:relative;min-height:500px;overflow:hidden;background:#071A2B;box-shadow:0 18px 45px rgba(7,26,43,.13)}
+.wind-intro-image:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,transparent 45%,rgba(7,26,43,.62) 100%);pointer-events:none}
+.wind-intro-image img{display:block;width:100%;height:100%;min-height:500px;object-fit:cover;object-position:center;transition:transform .5s ease}
+.wind-intro-image:hover img{transform:scale(1.025)}
+.image-caption{position:absolute;left:24px;right:24px;bottom:22px;z-index:2;display:flex;justify-content:space-between;gap:20px}
+.image-caption span{color:#fff;font-family:"Poppins",sans-serif;font-size:.68rem;font-weight:600;letter-spacing:1.8px}
+
+.turbine-section{padding:105px 0 110px;background:#fff}
+.section-heading.centered{max-width:760px;margin:0 auto 62px;text-align:center}
+.section-heading.centered .eyebrow{margin-bottom:15px}
+.section-heading.centered>p:last-child{max-width:650px;margin:0 auto;color:#607080;font-family:"Roboto",sans-serif;font-size:.96rem;line-height:1.75}
+.turbine-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:58px;align-items:stretch}
+.turbine-image{position:relative;min-height:570px;overflow:hidden;background:#071A2B}
+.turbine-image img{display:block;width:100%;height:100%;min-height:570px;object-fit:cover}
+.turbine-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(7,26,43,.72) 100%);pointer-events:none}
+.turbine-image-label{position:absolute;left:25px;right:25px;bottom:24px;z-index:2;display:flex;align-items:center;justify-content:space-between}
+.turbine-image-label span{color:#fff;font-family:"Poppins",sans-serif;font-size:.72rem;font-weight:600;letter-spacing:2px}
+.turbine-image-label i{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(255,255,255,.55);color:#fff}
+.turbine-parts{display:flex;flex-direction:column;border-top:1px solid rgba(7,26,43,.12)}
+.turbine-part{display:grid;grid-template-columns:45px minmax(0,1fr) 42px;gap:18px;align-items:start;padding:25px 5px 25px 0;border-bottom:1px solid rgba(7,26,43,.12)}
+.turbine-number{padding-top:2px;color:#1261A0;font-family:"Poppins",sans-serif;font-size:.72rem;font-weight:700}
+.turbine-part h3{margin:0 0 7px;color:#071A2B;font-family:"Poppins",sans-serif;font-size:1.12rem}
+.turbine-part p{max-width:430px;margin:0;color:#687888;font-family:"Roboto",sans-serif;font-size:.88rem;line-height:1.65}
+.turbine-part>i{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;background:#F4B942;color:#071A2B}
+
+.wind-journey{padding:105px 0 110px;background:#EAF4EC}
+.wind-journey .section-heading{max-width:680px;margin-bottom:60px}
+.wind-flow{display:grid;grid-template-columns:1fr 70px 1fr 70px 1fr 70px 1fr;align-items:center}
+.wind-flow-item{min-width:0;text-align:center}
+.wind-flow-icon{display:flex;align-items:center;justify-content:center;width:68px;height:68px;margin:0 auto 18px;background:#071A2B;color:#F4B942}
+.flow-number{display:block;margin-bottom:7px;color:#1261A0;font-family:"Poppins",sans-serif;font-size:.68rem;font-weight:700;letter-spacing:1.8px}
+.wind-flow-item h3{margin:0 0 8px;color:#071A2B;font-family:"Poppins",sans-serif;font-size:1.02rem}
+.wind-flow-item p{max-width:180px;margin:0 auto;color:#5E7180;font-family:"Roboto",sans-serif;font-size:.82rem;line-height:1.6}
+.wind-flow-line{position:relative;height:1px;background:rgba(18,97,160,.35)}
+.wind-flow-line:after{content:"";position:absolute;top:50%;right:-1px;width:7px;height:7px;border-top:1px solid #1261A0;border-right:1px solid #1261A0;transform:translateY(-50%) rotate(45deg)}
+
+.wind-interactive{padding:110px 0;background:#071A2B}
+.wind-interactive-layout{display:grid;grid-template-columns:minmax(0,.95fr) minmax(380px,.85fr);gap:90px;align-items:center}
+.wind-interactive-content{max-width:620px}
+.wind-interactive .eyebrow{color:#F4B942}
+.wind-interactive h2{margin:0 0 22px;color:#F7F5EF;font-family:"Poppins",sans-serif;font-size:clamp(2.4rem,4.4vw,4.1rem);font-weight:700;line-height:1.05;letter-spacing:-2px}
+.wind-interactive h2 span{color:#F4B942}
+.wind-interactive-content>p:not(.eyebrow):not(.small-note){max-width:560px;margin:0 0 18px;color:rgba(247,245,239,.76);font-family:"Roboto",sans-serif;font-size:.98rem;line-height:1.8}
+.wind-interactive .small-note{max-width:500px;margin:24px 0 0;padding-left:16px;border-left:2px solid #F4B942;color:rgba(247,245,239,.48);font-size:.76rem;line-height:1.65}
+.wind-control-panel{padding:32px;background:#fff;color:#071A2B;box-shadow:0 20px 50px rgba(0,0,0,.20)}
+.wind-panel-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:21px;border-bottom:1px solid rgba(7,26,43,.10)}
+.wind-panel-header>span{color:#617181;font-family:"Poppins",sans-serif;font-size:.7rem;font-weight:700;letter-spacing:1.7px}
+.wind-panel-header strong{color:#1261A0;font-family:"Poppins",sans-serif;font-size:1.05rem}
+#windSpeed{width:100%;margin:31px 0 12px;accent-color:#F4B942;cursor:pointer}
+.wind-slider-labels{display:flex;justify-content:space-between;color:#8793A0;font-size:.72rem}
+.wind-output{margin-top:30px;padding:25px;background:#F7F5EF;border-left:4px solid #F4B942}
+.wind-output p{margin:0 0 8px;color:#1261A0;font-family:"Poppins",sans-serif;font-size:.66rem;font-weight:700;letter-spacing:1.6px}
+.wind-output strong{display:block;margin-bottom:4px;color:#071A2B;font-family:"Poppins",sans-serif;font-size:2.5rem}
+.wind-output>span{color:#71808E;font-size:.78rem}
+.wind-status{display:flex;align-items:center;gap:9px;margin-top:22px;color:#536473;font-size:.78rem}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#3A9D5D}
+
+.wind-chart-section{padding:110px 0;background:#F7F5EF}
+.wind-chart-section .section-heading{margin-bottom:50px}
+.wind-chart-card{max-width:1020px;margin:0 auto;padding:30px 32px 24px;background:#fff;border:1px solid rgba(7,26,43,.09);box-shadow:0 15px 40px rgba(7,26,43,.08)}
+.wind-chart-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:20px;border-bottom:1px solid rgba(7,26,43,.09)}
+.wind-chart-header span{display:block;margin-bottom:7px;color:#1261A0;font-family:"Poppins",sans-serif;font-size:.64rem;font-weight:700;letter-spacing:1.6px}
+.wind-chart-header h3{margin:0;color:#071A2B;font-family:"Poppins",sans-serif;font-size:1.15rem}
+.wind-chart-header>i{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:#071A2B;color:#F4B942}
+.wind-chart-wrapper{position:relative;height:360px;padding-top:22px}
+.wind-chart-wrapper canvas{display:block;width:100%!important;height:100%!important}
+.chart-note{margin:18px 0 0;color:#8A96A1;font-size:.72rem;line-height:1.55}
+
+.wind-benefits{padding:110px 0 115px;background:#fff}
+.wind-benefits-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.62fr);gap:80px;align-items:end;margin-bottom:55px}
+.wind-benefits-heading h2{max-width:700px;margin-bottom:0}
+.wind-benefits-heading>p{max-width:430px;margin:0 0 6px;color:#607080;font-size:.94rem;line-height:1.8}
+.wind-benefit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.wind-benefit-card{position:relative;min-height:285px;padding:27px 24px 25px;background:#F7F5EF;border-top:3px solid transparent;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.wind-benefit-card:hover{transform:translateY(-5px);border-top-color:#F4B942;box-shadow:0 14px 32px rgba(7,26,43,.09)}
+.wind-benefit-card>span{display:block;margin-bottom:28px;color:#1261A0;font-family:"Poppins",sans-serif;font-size:.68rem;font-weight:700;letter-spacing:1.5px}
+.wind-benefit-card>i{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;margin-bottom:22px;background:#071A2B;color:#F4B942}
+.wind-benefit-card h3{margin:0 0 10px;color:#071A2B;font-family:"Poppins",sans-serif;font-size:1.02rem}
+.wind-benefit-card p{margin:0;color:#687888;font-size:.82rem;line-height:1.65}
+
+.wind-landscape-section{position:relative;min-height:620px;overflow:hidden;background:#071A2B}
+.wind-landscape-image{position:absolute;inset:0}
+.wind-landscape-image img{display:block;width:100%;height:100%;object-fit:cover}
+.wind-landscape-overlay{position:absolute;inset:0;display:flex;align-items:center;background:linear-gradient(90deg,rgba(7,26,43,.88) 0%,rgba(7,26,43,.67) 42%,rgba(7,26,43,.22) 100%)}
+.wind-landscape-content{max-width:600px;padding:80px 0}
+.wind-landscape-content h2{margin:0 0 23px;color:#F7F5EF;font-family:"Poppins",sans-serif;font-size:clamp(2.5rem,4.8vw,4.5rem);font-weight:700;line-height:1.04;letter-spacing:-2px}
+.wind-landscape-content h2 span{color:#F4B942}
+.wind-landscape-content>p:last-child{max-width:560px;margin:0;color:rgba(247,245,239,.84);font-size:.98rem;line-height:1.8}
+
+.wind-future{padding:110px 0;background:#F7F5EF}
+.wind-future-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:75px;align-items:center}
+.wind-future-image{position:relative;min-height:520px;overflow:hidden;background:#071A2B}
+.wind-future-image img{display:block;width:100%;height:100%;min-height:520px;object-fit:cover}
+.future-image-label{position:absolute;left:23px;bottom:22px;padding:8px 12px;background:#071A2B;color:#fff;font-family:"Poppins",sans-serif;font-size:.65rem;font-weight:600;letter-spacing:1.6px}
+.wind-future-content{max-width:570px}
+.wind-future-content>p:not(.eyebrow){margin:0 0 18px;color:#607080;font-size:.95rem;line-height:1.8}
+.future-point{display:flex;align-items:center;gap:12px;margin-top:28px;padding-top:20px;border-top:1px solid rgba(7,26,43,.12)}
+.future-point i{color:#1261A0}
+.future-point span{color:#071A2B;font-family:"Poppins",sans-serif;font-size:.82rem;font-weight:600}
+
+.wind-cta{padding:105px 0;background:#EAF4EC;text-align:center}
+.wind-cta-content{max-width:700px;margin:0 auto}
+.wind-cta h2{margin-bottom:20px}
+.wind-cta-content>p:not(.eyebrow){max-width:590px;margin:0 auto 30px;color:#5D7180;font-size:.96rem;line-height:1.8}
+#backToTop.back-to-top{z-index:1000}
+
+/* RESPONSIVE */
+@media (max-width:1050px){
+    .wind-intro-layout{grid-template-columns:1fr 1fr;gap:45px}
+    .wind-interactive-layout{grid-template-columns:1fr .9fr;gap:55px}
+    .wind-benefits-heading{gap:45px}
+    .wind-benefit-grid{grid-template-columns:repeat(2,1fr)}
+    .wind-flow{grid-template-columns:repeat(4,1fr);gap:25px}
+    .wind-flow-line{display:none}
+}
+@media (max-width:850px){
+    .wind-hero-content{padding:85px 0 105px}
+    .wind-hero h1{font-size:clamp(3rem,8vw,5rem)}
+    .wind-intro-layout,.turbine-layout,.wind-interactive-layout,.wind-future-layout{grid-template-columns:1fr;gap:45px}
+    .wind-intro-content,.wind-future-content{max-width:100%}
+    .wind-intro-image,.wind-intro-image img{min-height:440px}
+    .turbine-image,.turbine-image img{min-height:500px}
+    .wind-interactive-content{max-width:700px}
+    .wind-control-panel{max-width:650px}
+    .wind-benefits-heading{grid-template-columns:1fr;gap:25px}
+    .wind-benefits-heading>p{max-width:650px}
+    .wind-future-image,.wind-future-image img{min-height:450px}
+    .wind-landscape-section{min-height:560px}
+}
+@media (max-width:600px){
+    .wind-hero{min-height:calc(100svh - var(--header-height))}
+        .wind-hero-image{background-image:linear-gradient(90deg,rgba(7,26,43,.90) 0%,rgba(7,26,43,.68) 100%),url("../images/wind/wind-turbines.jpg");background-position:62% center}
+    .wind-hero-content {
+    padding: 100px 20px 120px;
+    width: min(720px, 100%);
+    margin-left: 0;
+}
+    .wind-hero h1{font-size:clamp(2.9rem,14vw,4.1rem);letter-spacing:-2px}
+    .wind-hero-text{font-size:.94rem;line-height:1.7}
+    .wind-hero-label{left:5%;right:auto;bottom:22px}
+    .wind-hero-label p{font-size:.58rem}
+    .wind-introduction,.turbine-section,.wind-journey,.wind-chart-section,.wind-benefits,.wind-future,.wind-cta,.wind-interactive{padding-top:75px;padding-bottom:75px}
+    .wind-intro-content h2,.turbine-section h2,.wind-journey h2,.wind-chart-section h2,.wind-benefits h2,.wind-future h2,.wind-cta h2,.wind-interactive h2{font-size:clamp(2.25rem,10vw,3.2rem);letter-spacing:-1.5px}
+    .wind-intro-image,.wind-intro-image img{min-height:340px}
+    .wind-intro-highlight{align-items:flex-start;padding:17px}
+    .section-heading.centered{margin-bottom:40px}
+    .turbine-image,.turbine-image img{min-height:360px}
+    .turbine-part{grid-template-columns:32px minmax(0,1fr);gap:13px;padding:22px 0}
+    .turbine-part>i{display:none}
+    .wind-flow{grid-template-columns:1fr;gap:30px}
+    .wind-flow-item p{max-width:260px}
+    .wind-control-panel{padding:23px 20px}
+    .wind-panel-header{align-items:flex-start}
+    .wind-output{padding:20px}
+    .wind-output strong{font-size:2.15rem}
+    .wind-chart-card{padding:20px 16px 18px}
+    .wind-chart-header{align-items:flex-start}
+    .wind-chart-header>i{flex:0 0 40px;width:40px;height:40px}
+    .wind-chart-wrapper{height:280px;padding-top:16px}
+    .wind-benefit-grid{grid-template-columns:1fr}
+    .wind-benefit-card{min-height:auto}
+    .wind-landscape-section{min-height:540px}
+    .wind-landscape-content{padding:65px 0}
+    .wind-landscape-content h2{font-size:clamp(2.4rem,11vw,3.4rem)}
+    .wind-future-image,.wind-future-image img{min-height:340px}
+    .future-point{align-items:flex-start}
+}
+@media (max-width:380px){
+    .wind-hero h1{font-size:2.65rem}
+    .wind-hero-label{display:none}
+    .wind-intro-content h2,.turbine-section h2,.wind-journey h2,.wind-chart-section h2,.wind-benefits h2,.wind-future h2,.wind-cta h2,.wind-interactive h2{font-size:2.15rem}
+    .wind-chart-wrapper{height:240px}
+}
